@@ -1,14 +1,4 @@
 
-"""Extract flight details from a rendered airline booking page.
-
-The script captures the complete post-JavaScript HTML, analyzes visible text and
-structured data, then prints a JSON string containing price, flight number,
-and departure/arrival timings.
-
-Use only on pages you are permitted to access, and comply with the site's
-terms, robots policy, and applicable laws. This script does not bypass login,
-CAPTCHA, paywalls, or anti-bot controls.
-"""
 
 from __future__ import annotations
 
@@ -26,22 +16,20 @@ from playwright.async_api import Browser, Page, TimeoutError as PlaywrightTimeou
 
 SCRIPT_VERSION = "via-fixed-2026-09-01"
 
-# -------------------- USER CONFIGURATION --------------------
-# Edit only BASE_URL if you want to scrape a different route.
 BASE_URL = "https://in.via.com/flight/search?returnType=one-way&destination=BLR&bdestination=BLR&destinationL=Bangalore&destinationCity=&destinationCN=&source=DEL&bsource=DEL&sourceL=Delhi&sourceCity=&sourceCN=&month=9&day=1&year=2026&date=9/1/2026&numAdults=1&numChildren=0&numInfants=0&validation_result=&domesinter=international&livequote=-1&flightClass=ALL&travType=INTL&routingType=ALL&preferredCarrier=&prefCarrier=0&isAjax=false"
-# Route names and airport codes used by Via.com.
+
 ROUTES = [
     ("Delhi - Bombay", "DEL", "BOM", "Delhi", "Bombay"),
     ("Delhi - Bengaluru", "DEL", "BLR", "Delhi", "Bangalore"),
     ("Calcutta - Bombay", "CCU", "BOM", "Kolkata", "Bombay"),
 ]
-DATE_OFFSETS = [1, 7, 15, 30, 45]  # T+1, T+7, T+15, T+30, and T+45
-SHOW_BROWSER = True         # Always open Chromium visibly
-WAIT_MS = 2500              # Increase if the results take longer to load
-# Explicit Windows output folder. Change `shiva` if the Windows username differs.
+DATE_OFFSETS = [1, 7, 15, 30, 45] 
+SHOW_BROWSER = True         
+WAIT_MS = 2500             
+
 OUTPUT_FOLDER = Path(r"C:\Users\shiva\OneDrive\Desktop\CS")
 HTML_OUTPUT_BASE = OUTPUT_FOLDER / "rendered_flight_page.html"
-# This file is overwritten on every run with only the newest report.
+
 REPORT_OUTPUT = OUTPUT_FOLDER / "target_day.txt"
 # ------------------------------------------------------------
 
@@ -90,9 +78,7 @@ def parse_via_rows(row_texts: list[str]) -> list[dict[str, Any]]:
             r"\b[A-Z0-9]{2}\s*-\s*\d{3,4}(?:\s*,\s*[A-Z0-9]{2}\s*-\s*\d{3,4})*\b",
             text.upper(),
         )
-        # Via places the fare immediately after the Flight Details label.
-        # Anchoring there prevents times, durations, seat counts, and route
-        # numbers from being mistaken for the ticket price.
+        
         fare = re.search(
             r"Flight Details\s+((?:₹|Rs\.?|INR\s*)?[\d,]+(?:\.\d{1,2})?)",
             text,
@@ -101,8 +87,7 @@ def parse_via_rows(row_texts: list[str]) -> list[dict[str, Any]]:
         fare_value = fare.group(1).strip() if fare else None
         if fare_value and not re.match(r"^(?:₹|Rs\.?|INR)", fare_value, re.IGNORECASE):
             fare_value = f"₹{fare_value}"
-        # Via's row text usually looks like: depart, origin, duration, route,
-        # arrival, destination, airline, flight number, seats, details, fare.
+       
         flight_number = flight_matches[0] if flight_matches else None
         flights.append({
             "departure_time": times[0] if times else None,
@@ -120,7 +105,7 @@ def analyze_html(html: str, visible_text: str, url: str, row_texts: list[str] | 
     combined = f"{visible_text}\n{html}"
     via_flights = parse_via_rows(row_texts or []) if row_texts else []
 
-    # Common airline codes are two letters followed by 1-4 digits, for example AF123.
+    
     flight_candidates = unique(
         re.findall(r"\b([A-Z0-9]{2}\s*-\s*\d{3,4}(?:\s*,\s*[A-Z0-9]{2}\s*-\s*\d{3,4})*)\b", visible_text.upper())
         + re.findall(r"(?:flight(?:\s*(?:number|no\.?)?)?|flt)\s*[:#-]?\s*([A-Z0-9]{2}\s*-\s*\d{3,4}(?:\s*,\s*[A-Z0-9]{2}\s*-\s*\d{3,4})*)", combined)
@@ -129,7 +114,7 @@ def analyze_html(html: str, visible_text: str, url: str, row_texts: list[str] | 
         flight_candidates = unique([f["flight_number"] for f in via_flights if f.get("flight_number")]) + flight_candidates
     flight_number = flight_candidates[0] if flight_candidates else None
 
-    # Prefer values next to price labels, then fall back to currency-formatted values.
+   
     price = (via_flights[0].get("price") if via_flights else None) or first_match(
         [
             r"(?:total|price|fare|amount|from)\s*[:\-]?\s*((?:[$€£₹]|USD|EUR|GBP|INR)\s?[\d,]+(?:\.\d{1,2})?)",
@@ -140,7 +125,7 @@ def analyze_html(html: str, visible_text: str, url: str, row_texts: list[str] | 
     )
     currency = (via_flights[0].get("currency") if via_flights else None) or first_match([r"\b(USD|EUR|GBP|INR)\b", r"([$€£₹])"], price or visible_text)
 
-    # Extract clock times, supporting 12-hour and 24-hour display formats.
+   
     time_pattern = r"\b(?:[01]?\d|2[0-3]):[0-5]\d\s?(?:AM|PM)?\b|\b(?:0?[1-9]|1[0-2]):[0-5]\d\s?(?:AM|PM)\b"
     times = unique(re.findall(time_pattern, visible_text, re.IGNORECASE))
 
@@ -195,7 +180,7 @@ async def scrape(url: str, html_path: str | None = None, wait_ms: int = 2500, he
             if wait_ms:
                 await page.wait_for_timeout(wait_ms)
 
-            # page.content() is the complete current DOM, including JavaScript-rendered content.
+            
             html = await page.content()
             visible_text = await page.locator("body").inner_text(timeout=15_000)
             row_texts = await page.locator("#searchResultContainer .result").all_inner_texts()
@@ -240,8 +225,7 @@ def url_for_date(base_url: str, travel_date: date) -> str:
     """Update Via.com's date, month, day, and year query parameters."""
     parts = urlsplit(base_url)
     query = parse_qs(parts.query, keep_blank_values=True)
-    # Via.com expects calendar values based on the target date, not T.
-    # These assignments correctly handle month/year rollovers.
+    
     query["date"] = [f"{travel_date.month}/{travel_date.day}/{travel_date.year}"]
     query["month"] = [str(travel_date.month)]
     query["day"] = [str(travel_date.day)]
