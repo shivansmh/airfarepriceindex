@@ -47,7 +47,7 @@ jobs:
         run: cp /tmp/apix-scrape/target_day.txt dashboard/target_day.txt
 
       - name: Calculate APIx and write dashboard JSON
-        run: python cleaning/apix_model.py
+        run: python cleaning/matchedmodel.py
 
       - name: Commit refreshed data
         run: |
