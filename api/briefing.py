@@ -3,9 +3,9 @@ import os
 from google import genai
 
 def generate_comprehensive_briefing(
-    apix_json_path="apix_output.json",
-    target_data_json_path="target_day.json",
-    output_path="daily_briefing.json",
+    apix_json_path="apix_output.json", 
+    target_data_json_path="target_day_data.json", 
+    output_path="daily_briefing.json"
 ):
     # Initialize client with your API key
     client = genai.Client(api_key="AQ.Ab8RN6Ii3hwnKusEQ-hQSjVGH0Z8rlGp7Mubi0rkKUnpKYyzKw")
