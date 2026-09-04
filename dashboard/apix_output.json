@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-04T10:27:24",
+  "generated_at": "2026-09-04T10:49:30",
   "base_file": "/home/runner/work/airfarepriceindex/airfarepriceindex/data/base_day.txt",
   "target_file": "/home/runner/work/airfarepriceindex/airfarepriceindex/dashboard/target_day.txt",
   "json_output_file": "/home/runner/work/airfarepriceindex/airfarepriceindex/dashboard/apix_output.json",
@@ -35,9 +35,9 @@
       "T_plus_45": 6618
     },
     "Delhi - Bengaluru": {
-      "T_plus_1": 9501,
+      "T_plus_1": 9718.5,
       "T_plus_7": 9286,
-      "T_plus_15": 9315.5,
+      "T_plus_15": 9331,
       "T_plus_30": 9771,
       "T_plus_45": 10048
     },
@@ -62,7 +62,7 @@
     "Calcutta - Bombay": 0.3
   },
   "route_level_apix": {
-    "Delhi - Bengaluru": 104.042422,
+    "Delhi - Bengaluru": 104.194461,
     "Delhi - Bombay": 101.071741,
     "Calcutta - Bombay": 99.279777
   },
@@ -70,7 +70,7 @@
     "Delhi - Bengaluru": {
       "route_weight": 0.3,
       "active_window_weight": 1.0,
-      "route_level_apix": 104.042422,
+      "route_level_apix": 104.194461,
       "windows": {
         "T_plus_45": {
           "weight": 0.15,
@@ -89,9 +89,9 @@
         "T_plus_15": {
           "weight": 0.3,
           "base_median_price": 9286,
-          "target_median_price": 9315.5,
-          "price_relativity": 100.317683,
-          "weighted_contribution": 30.095305
+          "target_median_price": 9331,
+          "price_relativity": 100.4846,
+          "weighted_contribution": 30.14538
         },
         "T_plus_7": {
           "weight": 0.3,
@@ -103,9 +103,9 @@
         "T_plus_1": {
           "weight": 0.05,
           "base_median_price": 10665.5,
-          "target_median_price": 9501,
-          "price_relativity": 89.081618,
-          "weighted_contribution": 4.454081
+          "target_median_price": 9718.5,
+          "price_relativity": 91.120904,
+          "weighted_contribution": 4.556045
         }
       }
     },
@@ -195,8 +195,8 @@
     }
   },
   "active_route_weight": 1.0,
-  "daily_apix": 101.425356,
-  "price_change_from_base_percent": 1.425356,
+  "daily_apix": 101.470968,
+  "price_change_from_base_percent": 1.470968,
   "direction": "rose",
   "warnings": []
 }
