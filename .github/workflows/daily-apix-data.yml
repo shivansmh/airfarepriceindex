@@ -1,0 +1,75 @@
+name: Refresh daily APIx data
+
+on:
+  schedule:
+    # 00:00 India Standard Time = 18:30 UTC on the previous day.
+    - cron: "30 18 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: daily-apix-data
+  cancel-in-progress: false
+
+jobs:
+  refresh-data:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Install scraper dependencies
+        run: python -m pip install -r requirements.txt
+
+      - name: Install Playwright Chromium
+        run: python -m playwright install --with-deps chromium
+
+      - name: Scrape all routes and advance windows
+        env:
+          # Keep rendered HTML out of the repository; only the text report is copied below.
+          OUTPUT_FOLDER: /tmp/apix-scrape
+          SHOW_BROWSER: "false"
+          WAIT_MS: "3500"
+        run: python scraping/flight_scraper_multiplecities.py
+
+      - name: Copy the fresh target report into the dashboard data folder
+        run: |
+          cp /tmp/apix-scrape/target_day.txt dashboard/target_day.txt
+          cp /tmp/apix-scrape/target_day.json dashboard/target_day.json
+
+      - name: Calculate APIx and write dashboard JSON
+        run: python cleaning/matchedmodel.py
+
+      - name: Commit refreshed data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add dashboard/apix_output.json dashboard/target_day.txt dashboard/target_day.json
+          if git diff --cached --quiet; then
+            echo "No data changes to commit."
+          else
+            git commit -m "Refresh daily APIx data"
+            git push
+          fi
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload refreshed dashboard
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./dashboard
+
+      - name: Deploy refreshed dashboard
+        uses: actions/deploy-pages@v4

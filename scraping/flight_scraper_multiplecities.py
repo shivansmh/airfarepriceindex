@@ -5,6 +5,7 @@ from __future__ import annotations
 import argparse
 import asyncio
 import json
+import os
 import re
 from datetime import date, datetime, timedelta
 from urllib.parse import parse_qs, urlencode, urlsplit, urlunsplit
@@ -23,14 +24,15 @@ ROUTES = [
     ("Delhi - Bengaluru", "DEL", "BLR", "Delhi", "Bangalore"),
     ("Calcutta - Bombay", "CCU", "BOM", "Kolkata", "Bombay"),
 ]
-DATE_OFFSETS = [1, 7, 15, 30, 45] 
-SHOW_BROWSER = True         
-WAIT_MS = 2500             
+DATE_OFFSETS = [1, 7, 15, 30, 45]
+SHOW_BROWSER = os.getenv("SHOW_BROWSER", "false").lower() in {"1", "true", "yes"}
+WAIT_MS = int(os.getenv("WAIT_MS", "3500"))
 
-OUTPUT_FOLDER = Path(r"C:\Users\shiva\OneDrive\Desktop\CS")
+REPO_ROOT = Path(__file__).resolve().parents[1]
+OUTPUT_FOLDER = Path(os.getenv("OUTPUT_FOLDER", str(REPO_ROOT / "dashboard"))).expanduser()
 HTML_OUTPUT_BASE = OUTPUT_FOLDER / "rendered_flight_page.html"
-
 REPORT_OUTPUT = OUTPUT_FOLDER / "target_day.txt"
+JSON_OUTPUT = OUTPUT_FOLDER / "target_day.json"
 # ------------------------------------------------------------
 
 
@@ -396,11 +398,14 @@ if __name__ == "__main__":
         ))
         report = format_multi_route_report(payload)
         REPORT_OUTPUT.write_text(report + "\n", encoding="utf-8")
+        JSON_OUTPUT.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
         print(report)
         print(f"\nComplete report saved to: {REPORT_OUTPUT}")
+        print(f"Structured target data saved to: {JSON_OUTPUT}")
     except PlaywrightTimeoutError as exc:
         print(f"Page load timed out: {exc}")
     except Exception as exc:
         print(f"Scrape failed: {exc}")
     finally:
-        input("\nScraping finished. Press Enter to close this window...")
+        if os.getenv("INTERACTIVE", "false").lower() in {"1", "true", "yes"}:
+            input("\nScraping finished. Press Enter to close this window...")

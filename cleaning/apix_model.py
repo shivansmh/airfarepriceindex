@@ -19,7 +19,12 @@ ROUTE_WEIGHTS = {
     "Calcutta - Bombay": 0.30,
 }
 
-# --- 2. Data Parsing Engine ---
+REPO_ROOT = Path(__file__).resolve().parents[1]
+BASE_FILE = Path(os.getenv("BASE_FILE", str(REPO_ROOT / "data" / "base_day.txt"))).expanduser()
+TARGET_FILE = Path(os.getenv("TARGET_FILE", str(REPO_ROOT / "dashboard" / "target_day.txt"))).expanduser()
+JSON_OUTPUT = Path(os.getenv("JSON_OUTPUT", str(REPO_ROOT / "dashboard" / "apix_output.json"))).expanduser()
+
+
 def parse_and_calculate_medians(filepath):
     """Read a scraper text report and calculate median prices by route/window."""
     route_data = {}
