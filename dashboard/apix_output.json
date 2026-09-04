@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-04T17:59:07",
+  "generated_at": "2026-09-04T18:14:36",
   "base_file": "/home/runner/work/airfarepriceindex/airfarepriceindex/data/base_day.txt",
   "target_file": "/home/runner/work/airfarepriceindex/airfarepriceindex/dashboard/target_day.txt",
   "json_output_file": "/home/runner/work/airfarepriceindex/airfarepriceindex/dashboard/apix_output.json",
@@ -35,7 +35,7 @@
       "T_plus_45": 6618
     },
     "Delhi - Bengaluru": {
-      "T_plus_1": 9771,
+      "T_plus_1": 9834.5,
       "T_plus_7": 9286,
       "T_plus_15": 9329.5,
       "T_plus_30": 9725.5,
@@ -62,7 +62,7 @@
     "Calcutta - Bombay": 0.3
   },
   "route_level_apix": {
-    "Delhi - Bengaluru": 104.111158,
+    "Delhi - Bengaluru": 104.140927,
     "Delhi - Bombay": 100.830547,
     "Calcutta - Bombay": 98.773749
   },
@@ -70,7 +70,7 @@
     "Delhi - Bengaluru": {
       "route_weight": 0.3,
       "active_window_weight": 1.0,
-      "route_level_apix": 104.111158,
+      "route_level_apix": 104.140927,
       "windows": {
         "T_plus_45": {
           "weight": 0.15,
@@ -103,9 +103,9 @@
         "T_plus_1": {
           "weight": 0.05,
           "base_median_price": 10665.5,
-          "target_median_price": 9771,
-          "price_relativity": 91.613145,
-          "weighted_contribution": 4.580657
+          "target_median_price": 9834.5,
+          "price_relativity": 92.208523,
+          "weighted_contribution": 4.610426
         }
       }
     },
@@ -195,8 +195,8 @@
     }
   },
   "active_route_weight": 1.0,
-  "daily_apix": 101.197691,
-  "price_change_from_base_percent": 1.197691,
+  "daily_apix": 101.206622,
+  "price_change_from_base_percent": 1.206622,
   "direction": "rose",
   "warnings": []
 }

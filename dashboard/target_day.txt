@@ -70,117 +70,117 @@ Flight 11
   Price:         ₹6,529
 
 Flight 12
-  Flight number: IX-1056
-  Departure:     05:35
-  Arrival:       08:05
-  Price:         ₹6,529
-
-Flight 13
   Flight number: 6E-324
   Departure:     13:00
   Arrival:       15:10
   Price:         ₹6,530
 
-Flight 14
+Flight 13
   Flight number: 6E-303
   Departure:     20:00
   Arrival:       22:10
   Price:         ₹6,530
 
-Flight 15
+Flight 14
   Flight number: 6E-449
   Departure:     05:00
   Arrival:       07:15
   Price:         ₹6,530
 
-Flight 16
+Flight 15
   Flight number: 6E-6218
   Departure:     06:05
   Arrival:       08:20
   Price:         ₹6,530
 
-Flight 17
+Flight 16
   Flight number: 6E-6814
   Departure:     07:15
   Arrival:       09:30
   Price:         ₹6,530
 
-Flight 18
+Flight 17
   Flight number: 6E-675
   Departure:     08:45
   Arrival:       11:00
   Price:         ₹6,530
 
-Flight 19
+Flight 18
   Flight number: QP-1110
   Departure:     10:30
   Arrival:       12:45
   Price:         ₹6,530
 
-Flight 20
+Flight 19
   Flight number: 6E-6047
   Departure:     11:00
   Arrival:       13:15
   Price:         ₹6,530
 
-Flight 21
+Flight 20
   Flight number: 6E-6676
   Departure:     12:00
   Arrival:       14:15
   Price:         ₹6,530
 
-Flight 22
+Flight 21
   Flight number: 6E-6318
   Departure:     14:45
   Arrival:       17:00
   Price:         ₹6,530
 
-Flight 23
+Flight 22
   Flight number: 6E-864
   Departure:     15:30
   Arrival:       17:45
   Price:         ₹6,530
 
-Flight 24
+Flight 23
   Flight number: 6E-6706
   Departure:     17:00
   Arrival:       19:15
   Price:         ₹6,530
 
-Flight 25
+Flight 24
   Flight number: QP-1820
   Departure:     17:30
   Arrival:       19:45
   Price:         ₹6,530
 
-Flight 26
+Flight 25
   Flight number: 6E-329
   Departure:     18:00
   Arrival:       20:15
   Price:         ₹6,530
 
-Flight 27
+Flight 26
   Flight number: 6E-322
   Departure:     23:30
   Arrival:       01:45
   Price:         ₹6,530
 
-Flight 28
+Flight 27
   Flight number: QP-1833
   Departure:     06:50
   Arrival:       09:10
   Price:         ₹6,530
 
-Flight 29
+Flight 28
   Flight number: 6E-320
   Departure:     08:00
   Arrival:       10:20
   Price:         ₹6,530
 
-Flight 30
+Flight 29
   Flight number: QP-1112
   Departure:     09:20
   Arrival:       11:40
+  Price:         ₹6,530
+
+Flight 30
+  Flight number: 6E-6328
+  Departure:     10:15
+  Arrival:       12:35
   Price:         ₹6,530
 
 
@@ -921,10 +921,10 @@ ROUTE: Delhi - Bengaluru
 T_plus_1 (2026-09-05)
 ------------------------------------------------------------
 Flight 1
-  Flight number: 6E-820
-  Departure:     03:00
-  Arrival:       05:55
-  Price:         ₹9,286
+  Flight number: IX-1070
+  Departure:     18:20
+  Arrival:       21:15
+  Price:         ₹9,285
 
 Flight 2
   Flight number: 6E-2314
@@ -933,15 +933,15 @@ Flight 2
   Price:         ₹9,286
 
 Flight 3
-  Flight number: 6E-6515
-  Departure:     20:45
-  Arrival:       23:40
+  Flight number: 6E-810
+  Departure:     07:05
+  Arrival:       10:00
   Price:         ₹9,286
 
 Flight 4
-  Flight number: 6E-846
-  Departure:     22:00
-  Arrival:       00:55
+  Flight number: 6E-6515
+  Departure:     20:45
+  Arrival:       23:40
   Price:         ₹9,286
 
 Flight 5
@@ -975,129 +975,129 @@ Flight 9
   Price:         ₹9,328
 
 Flight 10
-  Flight number: QP-1308
-  Departure:     20:55
-  Arrival:       23:50
-  Price:         ₹9,328
-
-Flight 11
-  Flight number: QP-1824
-  Departure:     20:10
-  Arrival:       23:10
-  Price:         ₹9,328
-
-Flight 12
   Flight number: QP-1350
   Departure:     21:55
   Arrival:       00:50
   Price:         ₹9,501
 
-Flight 13
+Flight 11
   Flight number: QP-1822
   Departure:     16:40
   Arrival:       19:40
   Price:         ₹9,501
 
-Flight 14
-  Flight number: 6E-810
-  Departure:     07:05
-  Arrival:       10:00
+Flight 12
+  Flight number: 6E-820
+  Departure:     03:00
+  Arrival:       05:55
   Price:         ₹9,771
 
-Flight 15
+Flight 13
   Flight number: 6E-880
   Departure:     15:45
   Arrival:       18:40
   Price:         ₹9,771
 
-Flight 16
+Flight 14
   Flight number: 6E-837
   Departure:     17:00
   Arrival:       19:55
   Price:         ₹9,771
 
-Flight 17
+Flight 15
+  Flight number: 6E-846
+  Departure:     22:00
+  Arrival:       00:55
+  Price:         ₹9,771
+
+Flight 16
   Flight number: 6E-5073,6E-481
   Departure:     17:05
   Arrival:       22:05
   Price:         ₹9,898
 
-Flight 18
+Flight 17
   Flight number: 6E-329,6E-6188
   Departure:     18:00
   Arrival:       23:25
   Price:         ₹9,898
 
-Flight 19
+Flight 18
   Flight number: 6E-931,6E-996
   Departure:     19:35
   Arrival:       01:10
   Price:         ₹9,898
 
-Flight 20
+Flight 19
   Flight number: AI-427
   Departure:     08:30
   Arrival:       11:20
   Price:         ₹9,921
 
-Flight 21
+Flight 20
   Flight number: 6E-6091,6E-189
   Departure:     15:15
   Arrival:       20:10
   Price:         ₹9,977
 
-Flight 22
+Flight 21
   Flight number: 6E-6632,6E-593
   Departure:     17:50
   Arrival:       23:00
   Price:         ₹9,977
 
-Flight 23
+Flight 22
   Flight number: 6E-6115,6E-365
   Departure:     13:10
   Arrival:       18:45
   Price:         ₹9,977
 
+Flight 23
+  Flight number: QP-1308
+  Departure:     20:55
+  Arrival:       23:50
+  Price:         ₹10,184
+
 Flight 24
+  Flight number: QP-1824
+  Departure:     20:10
+  Arrival:       23:10
+  Price:         ₹10,231
+
+Flight 25
   Flight number: AI-2809
   Departure:     19:30
   Arrival:       22:20
   Price:         ₹10,242
 
-Flight 25
+Flight 26
   Flight number: AI-2487
   Departure:     18:30
   Arrival:       21:25
   Price:         ₹10,242
 
-Flight 26
+Flight 27
   Flight number: AI-2412
   Departure:     21:30
   Arrival:       00:25
   Price:         ₹10,242
 
-Flight 27
+Flight 28
   Flight number: 6E-873
   Departure:     08:20
   Arrival:       11:10
   Price:         ₹10,285
 
-Flight 28
+Flight 29
   Flight number: 6E-811
   Departure:     18:20
   Arrival:       21:10
   Price:         ₹10,285
 
-Flight 29
+Flight 30
   Flight number: 6E-828
   Departure:     14:30
   Arrival:       17:25
-  Price:         ₹10,285
-
-Flight 30
-  Flight number: 6E-861
-  Departure:     19:30
-  Arrival:       22:25
   Price:         ₹10,285
 
 
@@ -1838,10 +1838,10 @@ ROUTE: Calcutta - Bombay
 T_plus_1 (2026-09-05)
 ------------------------------------------------------------
 Flight 1
-  Flight number: QP-1136
-  Departure:     05:10
-  Arrival:       07:45
-  Price:         ₹8,396
+  Flight number: QP-1108
+  Departure:     17:05
+  Arrival:       19:45
+  Price:         ₹8,541
 
 Flight 2
   Flight number: 6E-798,6E-6598
@@ -1886,75 +1886,75 @@ Flight 8
   Price:         ₹8,955
 
 Flight 9
-  Flight number: 6E-6206
-  Departure:     16:15
-  Arrival:       19:05
-  Price:         ₹8,955
-
-Flight 10
   Flight number: 6E-474,6E-675
   Departure:     05:20
   Arrival:       11:00
   Price:         ₹9,041
 
-Flight 11
+Flight 10
   Flight number: 6E-344,6E-6348
   Departure:     05:05
   Arrival:       10:50
   Price:         ₹9,041
 
-Flight 12
+Flight 11
   Flight number: 6E-6358,6E-864
   Departure:     12:00
   Arrival:       17:45
   Price:         ₹9,041
 
-Flight 13
+Flight 12
   Flight number: 6E-896,6E-6676
   Departure:     08:25
   Arrival:       14:15
   Price:         ₹9,041
 
-Flight 14
+Flight 13
   Flight number: 6E-493,6E-6114
   Departure:     19:15
   Arrival:       01:05
   Price:         ₹9,041
 
-Flight 15
+Flight 14
   Flight number: 6E-6516,6E-303
   Departure:     16:10
   Arrival:       22:10
   Price:         ₹9,041
 
-Flight 16
+Flight 15
   Flight number: 6E-899,6E-6022
   Departure:     10:15
   Arrival:       16:25
   Price:         ₹9,041
 
-Flight 17
+Flight 16
   Flight number: 6E-891,6E-6047
   Departure:     07:00
   Arrival:       13:15
   Price:         ₹9,041
 
-Flight 18
-  Flight number: QP-1108
-  Departure:     17:05
-  Arrival:       19:45
+Flight 17
+  Flight number: QP-1126
+  Departure:     23:00
+  Arrival:       01:40
   Price:         ₹9,155
 
-Flight 19
+Flight 18
   Flight number: 6E-5227
   Departure:     13:45
   Arrival:       16:30
   Price:         ₹9,213
 
-Flight 20
+Flight 19
   Flight number: 6E-115
   Departure:     21:40
   Arrival:       00:25
+  Price:         ₹9,213
+
+Flight 20
+  Flight number: 6E-6206
+  Departure:     16:15
+  Arrival:       19:05
   Price:         ₹9,213
 
 Flight 21
@@ -1964,22 +1964,22 @@ Flight 21
   Price:         ₹9,213
 
 Flight 22
-  Flight number: QP-1126
-  Departure:     23:00
-  Arrival:       01:40
-  Price:         ₹9,317
-
-Flight 23
   Flight number: AI-2644
   Departure:     06:55
   Arrival:       09:55
   Price:         ₹9,425
 
-Flight 24
+Flight 23
   Flight number: AI-2472
   Departure:     15:10
   Arrival:       18:15
   Price:         ₹9,425
+
+Flight 24
+  Flight number: QP-1136
+  Departure:     05:10
+  Arrival:       07:45
+  Price:         ₹9,820
 
 Flight 25
   Flight number: 6E-634,6E-5231
@@ -1994,27 +1994,27 @@ Flight 26
   Price:         ₹12,810
 
 Flight 27
-  Flight number: AI-1832,AI-1745
-  Departure:     00:30
-  Arrival:       07:20
-  Price:         ₹12,810
-
-Flight 28
   Flight number: AI-2768,AI-2433
   Departure:     16:10
   Arrival:       23:55
   Price:         ₹12,810
 
-Flight 29
+Flight 28
   Flight number: AI-2710,AI-1745
   Departure:     22:30
   Arrival:       07:20
   Price:         ₹12,810
 
+Flight 29
+  Flight number: AI-2768,AI-2439
+  Departure:     16:10
+  Arrival:       01:25
+  Price:         ₹12,810
+
 Flight 30
-  Flight number: AI-1832,AI-2429
-  Departure:     00:30
-  Arrival:       09:25
+  Flight number: AI-2708,AI-1745
+  Departure:     21:00
+  Arrival:       07:20
   Price:         ₹12,810
 
 

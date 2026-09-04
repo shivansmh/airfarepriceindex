@@ -23,8 +23,8 @@
           "currency": "INR",
           "html_file": "/tmp/apix-scrape/rendered_flight_page_delhi_bombay_T_plus_1_2026-09-05.html",
           "analysis": {
-            "html_characters": 513668,
-            "visible_text_characters": 5768,
+            "html_characters": 513817,
+            "visible_text_characters": 5782,
             "flight_candidates": [
               "6E-5014,6E-679",
               "6E-6171,6E-233",
@@ -124,7 +124,7 @@
               "flight_number": "6E-955",
               "price": "₹6,529",
               "currency": "INR",
-              "raw_text": "20:20 Delhi 2h 0m Non-Stop DEL NMI 22:20 Navi Mumbai IndiGo 6E-955 * Arriving to Navi Mumbai 6 Seats Left Flight Details 6,529 * Regular Fare +2 More Fare(s) Book"
+              "raw_text": "20:20 Delhi 2h 0m Non-Stop DEL NMI 22:20 Navi Mumbai IndiGo 6E-955 * Arriving to Navi Mumbai 8 Seats Left Flight Details 6,529 * Regular Fare +2 More Fare(s) Book"
             },
             {
               "departure_time": "06:55",
@@ -132,7 +132,7 @@
               "flight_number": "6E-6470",
               "price": "₹6,529",
               "currency": "INR",
-              "raw_text": "06:55 Delhi 2h 10m Non-Stop DEL NMI 09:05 Navi Mumbai IndiGo 6E-6470 * Arriving to Navi Mumbai 9 Seats Left Flight Details 6,529 * Regular Fare +2 More Fare(s) Book"
+              "raw_text": "06:55 Delhi 2h 10m Non-Stop DEL NMI 09:05 Navi Mumbai IndiGo 6E-6470 * Arriving to Navi Mumbai 8 Seats Left Flight Details 6,529 * Regular Fare +2 More Fare(s) Book"
             },
             {
               "departure_time": "23:25",
@@ -140,15 +140,7 @@
               "flight_number": "IX-1235",
               "price": "₹6,529",
               "currency": "INR",
-              "raw_text": "23:25 Delhi 2h 25m Non-Stop DEL BOM 01:50 Mumbai AirIndiaExpress IX-1235 2 Seats Left Flight Details 6,529 * Value Book"
-            },
-            {
-              "departure_time": "05:35",
-              "arrival_time": "08:05",
-              "flight_number": "IX-1056",
-              "price": "₹6,529",
-              "currency": "INR",
-              "raw_text": "05:35 Delhi 2h 30m Non-Stop DEL BOM 08:05 Mumbai AirIndiaExpress IX-1056 3 Seats Left Flight Details 6,529 * Value Book"
+              "raw_text": "23:25 Delhi 2h 25m Non-Stop DEL BOM 01:50 Mumbai AirIndiaExpress IX-1235 6 Seats Left Flight Details 6,529 * Value Book"
             },
             {
               "departure_time": "13:00",
@@ -293,6 +285,14 @@
               "price": "₹6,530",
               "currency": "INR",
               "raw_text": "09:20 Delhi 2h 20m Non-Stop DEL BOM 11:40 Mumbai Akasa Air QP-1112 9 Seats Left Flight Details 6,530 * Akasa Regular +2 More Fare(s) Book"
+            },
+            {
+              "departure_time": "10:15",
+              "arrival_time": "12:35",
+              "flight_number": "6E-6328",
+              "price": "₹6,530",
+              "currency": "INR",
+              "raw_text": "10:15 Delhi 2h 20m Non-Stop DEL BOM 12:35 Mumbai IndiGo 6E-6328 9 Seats Left Flight Details 6,530 * Regular Fare +4 More Fare(s) Book"
             }
           ],
           "offset_days": 1,
@@ -307,7 +307,7 @@
           "currency": "INR",
           "html_file": "/tmp/apix-scrape/rendered_flight_page_delhi_bombay_T_plus_7_2026-09-11.html",
           "analysis": {
-            "html_characters": 514824,
+            "html_characters": 514710,
             "visible_text_characters": 5868,
             "flight_candidates": [
               "QP-1940",
@@ -591,7 +591,7 @@
           "currency": "INR",
           "html_file": "/tmp/apix-scrape/rendered_flight_page_delhi_bombay_T_plus_15_2026-09-19.html",
           "analysis": {
-            "html_characters": 512479,
+            "html_characters": 512482,
             "visible_text_characters": 5669,
             "flight_candidates": [
               "6E-6318",
@@ -875,7 +875,7 @@
           "currency": "INR",
           "html_file": "/tmp/apix-scrape/rendered_flight_page_delhi_bombay_T_plus_30_2026-10-04.html",
           "analysis": {
-            "html_characters": 512986,
+            "html_characters": 513091,
             "visible_text_characters": 5672,
             "flight_candidates": [
               "SG-802",
@@ -1159,7 +1159,7 @@
           "currency": "INR",
           "html_file": "/tmp/apix-scrape/rendered_flight_page_delhi_bombay_T_plus_45_2026-10-19.html",
           "analysis": {
-            "html_characters": 515732,
+            "html_characters": 515938,
             "visible_text_characters": 5952,
             "flight_candidates": [
               "SG-802",
@@ -1452,36 +1452,36 @@
       "results": {
         "T_plus_1": {
           "url": "https://in.via.com/flight/search?returnType=one-way&destination=BLR&bdestination=BLR&destinationL=Bangalore&destinationCity=Bangalore&destinationCN=&source=DEL&bsource=DEL&sourceL=Delhi&sourceCity=Delhi&sourceCN=&month=9&day=5&year=2026&date=9%2F5%2F2026&numAdults=1&numChildren=0&numInfants=0&validation_result=&domesinter=international&livequote=-1&flightClass=ALL&travType=INTL&routingType=ALL&preferredCarrier=&prefCarrier=0&isAjax=false",
-          "price": "₹9,286",
-          "flight_number": "6E-820",
-          "departure_time": "03:00",
-          "arrival_time": "05:55",
+          "price": "₹9,285",
+          "flight_number": "IX-1070",
+          "departure_time": "18:20",
+          "arrival_time": "21:15",
           "currency": "INR",
           "html_file": "/tmp/apix-scrape/rendered_flight_page_delhi_bengaluru_T_plus_1_2026-09-05.html",
           "analysis": {
-            "html_characters": 511842,
-            "visible_text_characters": 5747,
+            "html_characters": 511803,
+            "visible_text_characters": 5733,
             "flight_candidates": [
-              "6E-820",
+              "IX-1070",
               "6E-2314",
+              "6E-810",
               "6E-6515",
-              "6E-846",
               "AI-2653",
               "AI-2409",
               "AI-2803",
               "AI-2815",
               "QP-1812",
-              "QP-1308"
+              "QP-1350"
             ],
             "time_candidates": [
-              "03:00",
-              "05:55",
+              "18:20",
+              "21:15",
               "05:45",
               "08:40",
+              "07:05",
+              "10:00",
               "20:45",
               "23:40",
-              "22:00",
-              "00:55",
               "04:30",
               "07:20"
             ],
@@ -1491,12 +1491,12 @@
           },
           "flights": [
             {
-              "departure_time": "03:00",
-              "arrival_time": "05:55",
-              "flight_number": "6E-820",
-              "price": "₹9,286",
+              "departure_time": "18:20",
+              "arrival_time": "21:15",
+              "flight_number": "IX-1070",
+              "price": "₹9,285",
               "currency": "INR",
-              "raw_text": "03:00 Delhi 2h 55m Non-Stop DEL BLR 05:55 Bangalore IndiGo 6E-820 1 Seats Left Flight Details 9,286 * Regular Fare +4 More Fare(s) Book"
+              "raw_text": "18:20 Delhi 2h 55m Non-Stop DEL BLR 21:15 Bangalore AirIndiaExpress IX-1070 8 Seats Left Flight Details 9,285 * Value Book"
             },
             {
               "departure_time": "05:45",
@@ -1507,20 +1507,20 @@
               "raw_text": "05:45 Delhi 2h 55m Non-Stop DEL BLR 08:40 Bangalore IndiGo 6E-2314 1 Seats Left Flight Details 9,286 * Regular Fare +4 More Fare(s) Book"
             },
             {
+              "departure_time": "07:05",
+              "arrival_time": "10:00",
+              "flight_number": "6E-810",
+              "price": "₹9,286",
+              "currency": "INR",
+              "raw_text": "07:05 Delhi 2h 55m Non-Stop DEL BLR 10:00 Bangalore IndiGo 6E-810 2 Seats Left Flight Details 9,286 * Regular Fare +4 More Fare(s) Book"
+            },
+            {
               "departure_time": "20:45",
               "arrival_time": "23:40",
               "flight_number": "6E-6515",
               "price": "₹9,286",
               "currency": "INR",
               "raw_text": "20:45 Delhi 2h 55m Non-Stop DEL BLR 23:40 Bangalore IndiGo 6E-6515 3 Seats Left Flight Details 9,286 * Regular Fare +4 More Fare(s) Book"
-            },
-            {
-              "departure_time": "22:00",
-              "arrival_time": "00:55",
-              "flight_number": "6E-846",
-              "price": "₹9,286",
-              "currency": "INR",
-              "raw_text": "22:00 Delhi 2h 55m Non-Stop DEL BLR 00:55 Bangalore IndiGo 6E-846 2 Seats Left Flight Details 9,286 * Regular Fare +4 More Fare(s) Book"
             },
             {
               "departure_time": "04:30",
@@ -1563,22 +1563,6 @@
               "raw_text": "22:55 Delhi 2h 50m Non-Stop DEL BLR 01:45 Bangalore Akasa Air QP-1812 9 Seats Left Flight Details 9,328 * Akasa Regular +2 More Fare(s) Book"
             },
             {
-              "departure_time": "20:55",
-              "arrival_time": "23:50",
-              "flight_number": "QP-1308",
-              "price": "₹9,328",
-              "currency": "INR",
-              "raw_text": "20:55 Delhi 2h 55m Non-Stop DEL BLR 23:50 Bangalore Akasa Air QP-1308 9 Seats Left Flight Details 9,328 * Akasa Regular +2 More Fare(s) Book"
-            },
-            {
-              "departure_time": "20:10",
-              "arrival_time": "23:10",
-              "flight_number": "QP-1824",
-              "price": "₹9,328",
-              "currency": "INR",
-              "raw_text": "20:10 Delhi 3h 0m Non-Stop DEL BLR 23:10 Bangalore Akasa Air QP-1824 9 Seats Left Flight Details 9,328 * Akasa Regular +2 More Fare(s) Book"
-            },
-            {
               "departure_time": "21:55",
               "arrival_time": "00:50",
               "flight_number": "QP-1350",
@@ -1592,15 +1576,15 @@
               "flight_number": "QP-1822",
               "price": "₹9,501",
               "currency": "INR",
-              "raw_text": "16:40 Delhi 3h 0m Non-Stop DEL BLR 19:40 Bangalore Akasa Air QP-1822 9 Seats Left Flight Details 9,501 * Akasa Regular +2 More Fare(s) Book"
+              "raw_text": "16:40 Delhi 3h 0m Non-Stop DEL BLR 19:40 Bangalore Akasa Air QP-1822 6 Seats Left Flight Details 9,501 * Akasa Regular +2 More Fare(s) Book"
             },
             {
-              "departure_time": "07:05",
-              "arrival_time": "10:00",
-              "flight_number": "6E-810",
+              "departure_time": "03:00",
+              "arrival_time": "05:55",
+              "flight_number": "6E-820",
               "price": "₹9,771",
               "currency": "INR",
-              "raw_text": "07:05 Delhi 2h 55m Non-Stop DEL BLR 10:00 Bangalore IndiGo 6E-810 5 Seats Left Flight Details 9,771 * Regular Fare +4 More Fare(s) Book"
+              "raw_text": "03:00 Delhi 2h 55m Non-Stop DEL BLR 05:55 Bangalore IndiGo 6E-820 4 Seats Left Flight Details 9,771 * Regular Fare +4 More Fare(s) Book"
             },
             {
               "departure_time": "15:45",
@@ -1608,7 +1592,7 @@
               "flight_number": "6E-880",
               "price": "₹9,771",
               "currency": "INR",
-              "raw_text": "15:45 Delhi 2h 55m Non-Stop DEL BLR 18:40 Bangalore IndiGo 6E-880 3 Seats Left Flight Details 9,771 * Regular Fare +4 More Fare(s) Book"
+              "raw_text": "15:45 Delhi 2h 55m Non-Stop DEL BLR 18:40 Bangalore IndiGo 6E-880 8 Seats Left Flight Details 9,771 * Regular Fare +4 More Fare(s) Book"
             },
             {
               "departure_time": "17:00",
@@ -1619,12 +1603,20 @@
               "raw_text": "17:00 Delhi 2h 55m Non-Stop DEL BLR 19:55 Bangalore IndiGo 6E-837 9 Seats Left Flight Details 9,771 * Regular Fare +4 More Fare(s) Book"
             },
             {
+              "departure_time": "22:00",
+              "arrival_time": "00:55",
+              "flight_number": "6E-846",
+              "price": "₹9,771",
+              "currency": "INR",
+              "raw_text": "22:00 Delhi 2h 55m Non-Stop DEL BLR 00:55 Bangalore IndiGo 6E-846 9 Seats Left Flight Details 9,771 * Regular Fare +4 More Fare(s) Book"
+            },
+            {
               "departure_time": "17:05",
               "arrival_time": "22:05",
               "flight_number": "6E-5073,6E-481",
               "price": "₹9,898",
               "currency": "INR",
-              "raw_text": "17:05 Delhi 5h 0m 1 Stop(s) DEL AMD BLR 22:05 Bangalore IndiGo 6E-5073,6E-481 7 Seats Left Flight Details 9,898 * Regular Fare +2 More Fare(s) Book"
+              "raw_text": "17:05 Delhi 5h 0m 1 Stop(s) DEL AMD BLR 22:05 Bangalore IndiGo 6E-5073,6E-481 6 Seats Left Flight Details 9,898 * Regular Fare +2 More Fare(s) Book"
             },
             {
               "departure_time": "18:00",
@@ -1664,7 +1656,7 @@
               "flight_number": "6E-6632,6E-593",
               "price": "₹9,977",
               "currency": "INR",
-              "raw_text": "17:50 Delhi 5h 10m 1 Stop(s) DEL IXC BLR 23:00 Bangalore IndiGo 6E-6632,6E-593 3 Seats Left Flight Details 9,977 * Regular Fare +2 More Fare(s) Book"
+              "raw_text": "17:50 Delhi 5h 10m 1 Stop(s) DEL IXC BLR 23:00 Bangalore IndiGo 6E-6632,6E-593 4 Seats Left Flight Details 9,977 * Regular Fare +2 More Fare(s) Book"
             },
             {
               "departure_time": "13:10",
@@ -1673,6 +1665,22 @@
               "price": "₹9,977",
               "currency": "INR",
               "raw_text": "13:10 Delhi 5h 35m 1 Stop(s) DEL MAA BLR 18:45 Bangalore IndiGo 6E-6115,6E-365 5 Seats Left Flight Details 9,977 * Regular Fare +2 More Fare(s) Book"
+            },
+            {
+              "departure_time": "20:55",
+              "arrival_time": "23:50",
+              "flight_number": "QP-1308",
+              "price": "₹10,184",
+              "currency": "INR",
+              "raw_text": "20:55 Delhi 2h 55m Non-Stop DEL BLR 23:50 Bangalore Akasa Air QP-1308 9 Seats Left Flight Details 10,184 * Deal Fares 2 +2 More Fare(s) Book"
+            },
+            {
+              "departure_time": "20:10",
+              "arrival_time": "23:10",
+              "flight_number": "QP-1824",
+              "price": "₹10,231",
+              "currency": "INR",
+              "raw_text": "20:10 Delhi 3h 0m Non-Stop DEL BLR 23:10 Bangalore Akasa Air QP-1824 9 Seats Left Flight Details 10,231 * Akasa Regular +2 More Fare(s) Book"
             },
             {
               "departure_time": "19:30",
@@ -1721,14 +1729,6 @@
               "price": "₹10,285",
               "currency": "INR",
               "raw_text": "14:30 Delhi 2h 55m Non-Stop DEL BLR 17:25 Bangalore IndiGo 6E-828 2 Seats Left Flight Details 10,285 * Regular Fare +4 More Fare(s) Book"
-            },
-            {
-              "departure_time": "19:30",
-              "arrival_time": "22:25",
-              "flight_number": "6E-861",
-              "price": "₹10,285",
-              "currency": "INR",
-              "raw_text": "19:30 Delhi 2h 55m Non-Stop DEL BLR 22:25 Bangalore IndiGo 6E-861 4 Seats Left Flight Details 10,285 * Regular Fare +4 More Fare(s) Book"
             }
           ],
           "offset_days": 1,
@@ -1743,7 +1743,7 @@
           "currency": "INR",
           "html_file": "/tmp/apix-scrape/rendered_flight_page_delhi_bengaluru_T_plus_7_2026-09-11.html",
           "analysis": {
-            "html_characters": 512923,
+            "html_characters": 512922,
             "visible_text_characters": 5825,
             "flight_candidates": [
               "AI-2809",
@@ -2027,7 +2027,7 @@
           "currency": "INR",
           "html_file": "/tmp/apix-scrape/rendered_flight_page_delhi_bengaluru_T_plus_15_2026-09-19.html",
           "analysis": {
-            "html_characters": 512362,
+            "html_characters": 512561,
             "visible_text_characters": 5824,
             "flight_candidates": [
               "AI-2817",
@@ -2311,7 +2311,7 @@
           "currency": "INR",
           "html_file": "/tmp/apix-scrape/rendered_flight_page_delhi_bengaluru_T_plus_30_2026-10-04.html",
           "analysis": {
-            "html_characters": 511591,
+            "html_characters": 511786,
             "visible_text_characters": 5754,
             "flight_candidates": [
               "6E-6054",
@@ -2595,7 +2595,7 @@
           "currency": "INR",
           "html_file": "/tmp/apix-scrape/rendered_flight_page_delhi_bengaluru_T_plus_45_2026-10-19.html",
           "analysis": {
-            "html_characters": 512148,
+            "html_characters": 512154,
             "visible_text_characters": 5690,
             "flight_candidates": [
               "IX-1038,IX-1640",
@@ -2888,17 +2888,17 @@
       "results": {
         "T_plus_1": {
           "url": "https://in.via.com/flight/search?returnType=one-way&destination=BOM&bdestination=BOM&destinationL=Bombay&destinationCity=Bombay&destinationCN=&source=CCU&bsource=CCU&sourceL=Kolkata&sourceCity=Kolkata&sourceCN=&month=9&day=5&year=2026&date=9%2F5%2F2026&numAdults=1&numChildren=0&numInfants=0&validation_result=&domesinter=international&livequote=-1&flightClass=ALL&travType=INTL&routingType=ALL&preferredCarrier=&prefCarrier=0&isAjax=false",
-          "price": "₹8,396",
-          "flight_number": "QP-1136",
-          "departure_time": "05:10",
-          "arrival_time": "07:45",
+          "price": "₹8,541",
+          "flight_number": "QP-1108",
+          "departure_time": "17:05",
+          "arrival_time": "19:45",
           "currency": "INR",
           "html_file": "/tmp/apix-scrape/rendered_flight_page_calcutta_bombay_T_plus_1_2026-09-05.html",
           "analysis": {
-            "html_characters": 514532,
-            "visible_text_characters": 5924,
+            "html_characters": 514622,
+            "visible_text_characters": 5925,
             "flight_candidates": [
-              "QP-1136",
+              "QP-1108",
               "6E-798,6E-6598",
               "6E-6908,6E-5039",
               "6E-6623,6E-5174",
@@ -2906,12 +2906,12 @@
               "6E-318,6E-5139",
               "6E-5183",
               "6E-5194",
-              "6E-6206",
-              "6E-474,6E-675"
+              "6E-474,6E-675",
+              "6E-344,6E-6348"
             ],
             "time_candidates": [
-              "05:10",
-              "07:45",
+              "17:05",
+              "19:45",
               "18:55",
               "23:45",
               "15:00",
@@ -2927,12 +2927,12 @@
           },
           "flights": [
             {
-              "departure_time": "05:10",
-              "arrival_time": "07:45",
-              "flight_number": "QP-1136",
-              "price": "₹8,396",
+              "departure_time": "17:05",
+              "arrival_time": "19:45",
+              "flight_number": "QP-1108",
+              "price": "₹8,541",
               "currency": "INR",
-              "raw_text": "05:10 Kolkata 2h 35m Non-Stop CCU BOM 07:45 Mumbai Akasa Air QP-1136 1 Seats Left Flight Details 8,396 * Akasa Regular +1 More Fare(s) Book"
+              "raw_text": "17:05 Kolkata 2h 40m Non-Stop CCU BOM 19:45 Mumbai Akasa Air QP-1108 2 Seats Left Flight Details 8,541 * Akasa Regular +1 More Fare(s) Book"
             },
             {
               "departure_time": "18:55",
@@ -2972,7 +2972,7 @@
               "flight_number": "6E-318,6E-5139",
               "price": "₹8,910",
               "currency": "INR",
-              "raw_text": "13:30 Kolkata 4h 55m 1 Stop(s) CCU AMD BOM 18:25 Mumbai IndiGo 6E-318,6E-5139 2 Seats Left Flight Details 8,910 * Regular Fare +2 More Fare(s) Book"
+              "raw_text": "13:30 Kolkata 4h 55m 1 Stop(s) CCU AMD BOM 18:25 Mumbai IndiGo 6E-318,6E-5139 1 Seats Left Flight Details 8,910 * Regular Fare +2 More Fare(s) Book"
             },
             {
               "departure_time": "09:15",
@@ -2989,14 +2989,6 @@
               "price": "₹8,955",
               "currency": "INR",
               "raw_text": "06:25 Kolkata 2h 50m Non-Stop CCU BOM 09:15 Mumbai IndiGo 6E-5194 9 Seats Left Flight Details 8,955 * Regular Fare +4 More Fare(s) Book"
-            },
-            {
-              "departure_time": "16:15",
-              "arrival_time": "19:05",
-              "flight_number": "6E-6206",
-              "price": "₹8,955",
-              "currency": "INR",
-              "raw_text": "16:15 Kolkata 2h 50m Non-Stop CCU BOM 19:05 Mumbai IndiGo 6E-6206 5 Seats Left Flight Details 8,955 * Regular Fare +4 More Fare(s) Book"
             },
             {
               "departure_time": "05:20",
@@ -3063,12 +3055,12 @@
               "raw_text": "07:00 Kolkata 6h 15m 1 Stop(s) CCU DEL BOM 13:15 Mumbai IndiGo 6E-891,6E-6047 9 Seats Left Flight Details 9,041 * Regular Fare +4 More Fare(s) Book"
             },
             {
-              "departure_time": "17:05",
-              "arrival_time": "19:45",
-              "flight_number": "QP-1108",
+              "departure_time": "23:00",
+              "arrival_time": "01:40",
+              "flight_number": "QP-1126",
               "price": "₹9,155",
               "currency": "INR",
-              "raw_text": "17:05 Kolkata 2h 40m Non-Stop CCU BOM 19:45 Mumbai Akasa Air QP-1108 2 Seats Left Flight Details 9,155 * Akasa Regular +1 More Fare(s) Book"
+              "raw_text": "23:00 Kolkata 2h 40m Non-Stop CCU BOM 01:40 Mumbai Akasa Air QP-1126 2 Seats Left Flight Details 9,155 * Akasa Regular +1 More Fare(s) Book"
             },
             {
               "departure_time": "13:45",
@@ -3087,20 +3079,20 @@
               "raw_text": "21:40 Kolkata 2h 45m Non-Stop CCU BOM 00:25 Mumbai IndiGo 6E-115 9 Seats Left Flight Details 9,213 * Regular Fare +4 More Fare(s) Book"
             },
             {
+              "departure_time": "16:15",
+              "arrival_time": "19:05",
+              "flight_number": "6E-6206",
+              "price": "₹9,213",
+              "currency": "INR",
+              "raw_text": "16:15 Kolkata 2h 50m Non-Stop CCU BOM 19:05 Mumbai IndiGo 6E-6206 7 Seats Left Flight Details 9,213 * Regular Fare +4 More Fare(s) Book"
+            },
+            {
               "departure_time": "11:35",
               "arrival_time": "14:35",
               "flight_number": "6E-5288",
               "price": "₹9,213",
               "currency": "INR",
               "raw_text": "11:35 Kolkata 3h 0m Non-Stop CCU BOM 14:35 Mumbai IndiGo 6E-5288 9 Seats Left Flight Details 9,213 * Regular Fare +4 More Fare(s) Book"
-            },
-            {
-              "departure_time": "23:00",
-              "arrival_time": "01:40",
-              "flight_number": "QP-1126",
-              "price": "₹9,317",
-              "currency": "INR",
-              "raw_text": "23:00 Kolkata 2h 40m Non-Stop CCU BOM 01:40 Mumbai Akasa Air QP-1126 2 Seats Left Flight Details 9,317 * Akasa Regular +1 More Fare(s) Book"
             },
             {
               "departure_time": "06:55",
@@ -3116,7 +3108,15 @@
               "flight_number": "AI-2472",
               "price": "₹9,425",
               "currency": "INR",
-              "raw_text": "15:10 Kolkata 3h 5m Non-Stop CCU BOM 18:15 Mumbai AirIndia AI-2472 2 Seats Left Flight Details 9,425 * ECO VALUE +2 More Fare(s) Book"
+              "raw_text": "15:10 Kolkata 3h 5m Non-Stop CCU BOM 18:15 Mumbai AirIndia AI-2472 3 Seats Left Flight Details 9,425 * ECO VALUE +2 More Fare(s) Book"
+            },
+            {
+              "departure_time": "05:10",
+              "arrival_time": "07:45",
+              "flight_number": "QP-1136",
+              "price": "₹9,820",
+              "currency": "INR",
+              "raw_text": "05:10 Kolkata 2h 35m Non-Stop CCU BOM 07:45 Mumbai Akasa Air QP-1136 2 Seats Left Flight Details 9,820 * Akasa Regular +1 More Fare(s) Book"
             },
             {
               "departure_time": "11:50",
@@ -3135,14 +3135,6 @@
               "raw_text": "12:55 Kolkata 6h 30m 1 Stop(s) CCU DEL BOM 19:25 Mumbai AirIndia AI-1874,AI-441 9 Seats Left Flight Details 12,810 * ECO VALUE +2 More Fare(s) Book"
             },
             {
-              "departure_time": "00:30",
-              "arrival_time": "07:20",
-              "flight_number": "AI-1832,AI-1745",
-              "price": "₹12,810",
-              "currency": "INR",
-              "raw_text": "00:30 Kolkata 6h 50m 1 Stop(s) CCU DEL BOM 07:20 Mumbai AirIndia AI-1832,AI-1745 9 Seats Left Flight Details 12,810 * ECO VALUE +2 More Fare(s) Book"
-            },
-            {
               "departure_time": "16:10",
               "arrival_time": "23:55",
               "flight_number": "AI-2768,AI-2433",
@@ -3159,12 +3151,20 @@
               "raw_text": "22:30 Kolkata 8h 50m 1 Stop(s) CCU DEL BOM 07:20 Mumbai AirIndia AI-2710,AI-1745 9 Seats Left Flight Details 12,810 * ECO VALUE +2 More Fare(s) Book"
             },
             {
-              "departure_time": "00:30",
-              "arrival_time": "09:25",
-              "flight_number": "AI-1832,AI-2429",
+              "departure_time": "16:10",
+              "arrival_time": "01:25",
+              "flight_number": "AI-2768,AI-2439",
               "price": "₹12,810",
               "currency": "INR",
-              "raw_text": "00:30 Kolkata 8h 55m 1 Stop(s) CCU DEL BOM 09:25 Mumbai AirIndia AI-1832,AI-2429 9 Seats Left Flight Details 12,810 * ECO VALUE +2 More Fare(s) Book"
+              "raw_text": "16:10 Kolkata 9h 15m 1 Stop(s) CCU DEL BOM 01:25 Mumbai AirIndia AI-2768,AI-2439 9 Seats Left Flight Details 12,810 * ECO VALUE +2 More Fare(s) Book"
+            },
+            {
+              "departure_time": "21:00",
+              "arrival_time": "07:20",
+              "flight_number": "AI-2708,AI-1745",
+              "price": "₹12,810",
+              "currency": "INR",
+              "raw_text": "21:00 Kolkata 10h 20m 1 Stop(s) CCU DEL BOM 07:20 Mumbai AirIndia AI-2708,AI-1745 9 Seats Left Flight Details 12,810 * ECO VALUE +2 More Fare(s) Book"
             }
           ],
           "offset_days": 1,
@@ -3179,7 +3179,7 @@
           "currency": "INR",
           "html_file": "/tmp/apix-scrape/rendered_flight_page_calcutta_bombay_T_plus_7_2026-09-11.html",
           "analysis": {
-            "html_characters": 513757,
+            "html_characters": 513761,
             "visible_text_characters": 5921,
             "flight_candidates": [
               "IX-1248,IX-1547",
@@ -3463,7 +3463,7 @@
           "currency": "INR",
           "html_file": "/tmp/apix-scrape/rendered_flight_page_calcutta_bombay_T_plus_15_2026-09-19.html",
           "analysis": {
-            "html_characters": 515040,
+            "html_characters": 515143,
             "visible_text_characters": 5950,
             "flight_candidates": [
               "QP-1126",
@@ -3747,7 +3747,7 @@
           "currency": "INR",
           "html_file": "/tmp/apix-scrape/rendered_flight_page_calcutta_bombay_T_plus_30_2026-10-04.html",
           "analysis": {
-            "html_characters": 517458,
+            "html_characters": 517461,
             "visible_text_characters": 6183,
             "flight_candidates": [
               "QP-2028",
@@ -4031,7 +4031,7 @@
           "currency": "INR",
           "html_file": "/tmp/apix-scrape/rendered_flight_page_calcutta_bombay_T_plus_45_2026-10-19.html",
           "analysis": {
-            "html_characters": 515446,
+            "html_characters": 515647,
             "visible_text_characters": 6004,
             "flight_candidates": [
               "SG-487",
