@@ -42,6 +42,8 @@ def generate_comprehensive_briefing(
     2. Highlight which specific routes and advance booking windows (e.g., T+1 vs T+30) drove this movement using the raw data details.
     3. Point out any notable price variances or anomalies discovered in the granular scrape data.
     4. Maintain a formal, objective institutional tone. Do not use markdown headers inside the briefing text—format as clean narrative paragraphs.
+    5. Search for news article from trusted sources to explain the cause of inflations on specific routes and an all round aviation news of the country on the specific routes. Provide a brief summary of the news article in the briefing.
+    6. Conclude with a forward-looking statement on expected airfare trends and potential policy implications
     """
     
     print("Sending macro summary and full granular data to Gemini...")
