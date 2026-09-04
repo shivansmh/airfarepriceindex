@@ -1,0 +1,59 @@
+{
+  "generated_at": "Demo snapshot · replace with your latest apix_output.json",
+  "daily_apix": 103.42,
+  "price_change_from_base_percent": 3.42,
+  "direction": "rose",
+  "active_route_weight": 1,
+  "window_weights": {"T_plus_1": 0.05, "T_plus_7": 0.3, "T_plus_15": 0.3, "T_plus_30": 0.2, "T_plus_45": 0.15},
+  "route_weights": {"Delhi - Bombay": 0.4, "Delhi - Bengaluru": 0.3, "Calcutta - Bombay": 0.3},
+  "route_level_apix": {"Delhi - Bombay": 105.18, "Delhi - Bengaluru": 101.74, "Calcutta - Bombay": 102.89},
+  "base_medians": {
+    "Delhi - Bombay": {"T_plus_1": 8200, "T_plus_7": 7900, "T_plus_15": 7600, "T_plus_30": 7300, "T_plus_45": 7100},
+    "Delhi - Bengaluru": {"T_plus_1": 8500, "T_plus_7": 8100, "T_plus_15": 7800, "T_plus_30": 7500, "T_plus_45": 7200},
+    "Calcutta - Bombay": {"T_plus_1": 9200, "T_plus_7": 8700, "T_plus_15": 8300, "T_plus_30": 8000, "T_plus_45": 7700}
+  },
+  "target_medians": {
+    "Delhi - Bombay": {"T_plus_1": 8800, "T_plus_7": 8200, "T_plus_15": 7900, "T_plus_30": 7500, "T_plus_45": 7300},
+    "Delhi - Bengaluru": {"T_plus_1": 8900, "T_plus_7": 8250, "T_plus_15": 7900, "T_plus_30": 7600, "T_plus_45": 7350},
+    "Calcutta - Bombay": {"T_plus_1": 9600, "T_plus_7": 9000, "T_plus_15": 8500, "T_plus_30": 8200, "T_plus_45": 7800}
+  },
+  "route_details": {
+    "Delhi - Bombay": {
+      "route_weight": 0.4,
+      "active_window_weight": 1,
+      "route_level_apix": 105.18,
+      "windows": {
+        "T_plus_1": {"weight": 0.05, "base_median_price": 8200, "target_median_price": 8800, "price_relativity": 107.32, "weighted_contribution": 5.366},
+        "T_plus_7": {"weight": 0.3, "base_median_price": 7900, "target_median_price": 8200, "price_relativity": 103.8, "weighted_contribution": 31.14},
+        "T_plus_15": {"weight": 0.3, "base_median_price": 7600, "target_median_price": 7900, "price_relativity": 103.95, "weighted_contribution": 31.185},
+        "T_plus_30": {"weight": 0.2, "base_median_price": 7300, "target_median_price": 7500, "price_relativity": 102.74, "weighted_contribution": 20.548},
+        "T_plus_45": {"weight": 0.15, "base_median_price": 7100, "target_median_price": 7300, "price_relativity": 102.82, "weighted_contribution": 15.423}
+      }
+    },
+    "Delhi - Bengaluru": {
+      "route_weight": 0.3,
+      "active_window_weight": 1,
+      "route_level_apix": 101.74,
+      "windows": {
+        "T_plus_1": {"weight": 0.05, "base_median_price": 8500, "target_median_price": 8900, "price_relativity": 104.71, "weighted_contribution": 5.2355},
+        "T_plus_7": {"weight": 0.3, "base_median_price": 8100, "target_median_price": 8250, "price_relativity": 101.85, "weighted_contribution": 30.555},
+        "T_plus_15": {"weight": 0.3, "base_median_price": 7800, "target_median_price": 7900, "price_relativity": 101.28, "weighted_contribution": 30.384},
+        "T_plus_30": {"weight": 0.2, "base_median_price": 7500, "target_median_price": 7600, "price_relativity": 101.33, "weighted_contribution": 20.267},
+        "T_plus_45": {"weight": 0.15, "base_median_price": 7200, "target_median_price": 7350, "price_relativity": 102.08, "weighted_contribution": 15.312}
+      }
+    },
+    "Calcutta - Bombay": {
+      "route_weight": 0.3,
+      "active_window_weight": 1,
+      "route_level_apix": 102.89,
+      "windows": {
+        "T_plus_1": {"weight": 0.05, "base_median_price": 9200, "target_median_price": 9600, "price_relativity": 104.35, "weighted_contribution": 5.2175},
+        "T_plus_7": {"weight": 0.3, "base_median_price": 8700, "target_median_price": 9000, "price_relativity": 103.45, "weighted_contribution": 31.035},
+        "T_plus_15": {"weight": 0.3, "base_median_price": 8300, "target_median_price": 8500, "price_relativity": 102.41, "weighted_contribution": 30.723},
+        "T_plus_30": {"weight": 0.2, "base_median_price": 8000, "target_median_price": 8200, "price_relativity": 102.5, "weighted_contribution": 20.5},
+        "T_plus_45": {"weight": 0.15, "base_median_price": 7700, "target_median_price": 7800, "price_relativity": 101.3, "weighted_contribution": 15.195}
+      }
+    }
+  },
+  "warnings": []
+}
