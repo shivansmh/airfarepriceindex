@@ -4,6 +4,11 @@ import statistics
 from datetime import datetime
 from pathlib import Path
 
+REPO_ROOT = Path(__file__).resolve().parents[1]
+BASE_FILE = REPO_ROOT / "data" / "base_day.txt"
+TARGET_FILE = REPO_ROOT / "dashboard" / "target_day.txt"
+JSON_OUTPUT = REPO_ROOT / "dashboard" / "apix_output.json"
+
 # --- 1. Configuration & Weights ---
 WINDOW_WEIGHTS = {
     "T_plus_45": 0.15,
@@ -198,5 +203,7 @@ if __name__ == "__main__":
 
     except FileNotFoundError as error:
         print(f"Error: {error}")
+        raise
     except Exception as error:
         print(f"Unexpected error: {error}")
+        raise

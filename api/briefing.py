@@ -3,7 +3,6 @@ import os
 import sys
 from pathlib import Path
 
-from google import genai
 
 
 def generate_comprehensive_briefing(
@@ -12,12 +11,11 @@ def generate_comprehensive_briefing(
     output_path="api/daily_briefing.json",
 ):
     api_key = os.environ.get("GEMINI_API_KEY", "").strip()
-    if not api_key:
-        raise RuntimeError(
-            "GEMINI_API_KEY is not configured. Add a valid Gemini API key as a repository secret."
-        )
-
-    client = genai.Client(api_key=api_key)
+    if api_key:
+        from google import genai
+        client = genai.Client(api_key=api_key)
+    else:
+        client = None
 
     apix_path = Path(apix_json_path)
     target_path = Path(target_data_json_path)
@@ -53,15 +51,28 @@ def generate_comprehensive_briefing(
     6. Conclude with a forward-looking statement on expected airfare trends and potential policy implications.
     """
 
-    print("Sending macro summary and full granular data to Gemini...")
-    response = client.models.generate_content(
-        model=os.environ.get("GEMINI_MODEL", "gemini-2.5-flash"),
-        contents=prompt,
-    )
-
-    briefing_text = (response.text or "").strip()
-    if not briefing_text:
-        raise RuntimeError("Gemini returned an empty briefing.")
+    if client:
+        print("Sending macro summary and full granular data to Gemini...")
+        response = client.models.generate_content(
+            model=os.environ.get("GEMINI_MODEL", "gemini-2.5-flash"),
+            contents=prompt,
+        )
+        briefing_text = (response.text or "").strip()
+        if not briefing_text:
+            raise RuntimeError("Gemini returned an empty briefing.")
+    else:
+        print("GEMINI_API_KEY is not configured; generating a local data-derived briefing.")
+        daily = float(apix_data.get("daily_apix", apix_data.get("final_apix", 100)) or 100)
+        change = float(apix_data.get("price_change_from_base_percent", apix_data.get("percentage_change", daily - 100)) or 0)
+        direction = apix_data.get("direction", "rose" if change > 0 else "fell" if change < 0 else "was unchanged")
+        route_indices = apix_data.get("route_level_apix", {})
+        route_summary = ", ".join(f"{route} at {float(value):.2f}" for route, value in route_indices.items()) or "no route-level values available"
+        briefing_text = "\n\n".join([
+            f"The daily Airfare Price Index is {daily:.2f}, indicating that the monitored basket {direction} by {abs(change):.2f}% relative to its base level of 100.00.",
+            f"The route-level readings are {route_summary}. These values identify the corridors contributing most directly to the composite movement.",
+            "The refreshed report is based on the latest scraped target-day observations and the available advance-purchase windows. No additional causal interpretation is asserted without a configured external research source.",
+            "This local data-derived briefing will be replaced automatically by the Gemini-generated narrative whenever GEMINI_API_KEY is configured for the repository workflow.",
+        ])
 
     frontend_payload = {
         "timestamp": apix_data.get("timestamp", "Unknown"),
