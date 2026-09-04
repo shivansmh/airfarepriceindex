@@ -52,7 +52,7 @@
     function render(){
       const routes=ROUTE_ORDER.filter(r=>state.route_level_apix && state.route_level_apix[r] != null);
       $('dailyApix').innerHTML=`${fmt(state.daily_apix)} <span class="change">↗ ${state.price_change_from_base_percent >= 0 ? '+' : ''}${fmt(state.price_change_from_base_percent)}%</span>`;
-      $('change').style.display='none'; $('direction').textContent=state.direction==='rose'?'The monitored basket is running above its base-day level.':'The monitored basket is running below its base-day level.';
+      $('direction').textContent=state.direction==='rose'?'The monitored basket is running above its base-day level.':'The monitored basket is running below its base-day level.';
       $('routeCount').textContent=routes.length; $('coverage').textContent=`Coverage ${Math.round((state.active_route_weight || 0)*100)}%`;
       $('runTime').textContent=new Date().toLocaleTimeString([], {hour:'2-digit',minute:'2-digit'}); $('generated').textContent=state.generated_at || 'Latest repository export';
       $('routes').innerHTML=routes.map((route,i)=>{const value=state.route_level_apix[route], active=route===selectedRoute, weight=state.route_weights?.[route]||0; return `<button class="route ${active?'active':''}" data-route="${route.replace(/"/g,'&quot;')}"><div class="route-row"><div><div class="route-name">${route}</div><div class="route-code mono">weight ${Math.round(weight*100)}% · ${routeCode(route)}</div></div><div><div class="route-index" style="color:${active?'var(--paper)':value>=100?'var(--rust)':'#16805e'}">${fmt(value)}</div><span class="route-status">${value>=100?'above base':'below base'}</span></div></div><div class="bar"><span style="width:${Math.min(100,Math.max(8,(value-90)*5))}%"></span></div></button>`}).join('');
