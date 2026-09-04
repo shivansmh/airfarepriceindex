@@ -32,6 +32,7 @@ REPO_ROOT = Path(__file__).resolve().parents[1]
 OUTPUT_FOLDER = Path(os.getenv("OUTPUT_FOLDER", str(REPO_ROOT / "dashboard"))).expanduser()
 HTML_OUTPUT_BASE = OUTPUT_FOLDER / "rendered_flight_page.html"
 REPORT_OUTPUT = OUTPUT_FOLDER / "target_day.txt"
+JSON_OUTPUT = OUTPUT_FOLDER / "target_day.json"
 # ------------------------------------------------------------
 
 
@@ -397,8 +398,10 @@ if __name__ == "__main__":
         ))
         report = format_multi_route_report(payload)
         REPORT_OUTPUT.write_text(report + "\n", encoding="utf-8")
+        JSON_OUTPUT.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
         print(report)
         print(f"\nComplete report saved to: {REPORT_OUTPUT}")
+        print(f"Structured target data saved to: {JSON_OUTPUT}")
     except PlaywrightTimeoutError as exc:
         print(f"Page load timed out: {exc}")
     except Exception as exc:

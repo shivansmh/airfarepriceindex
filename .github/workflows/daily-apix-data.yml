@@ -44,7 +44,9 @@ jobs:
         run: python scraping/flight_scraper_multiplecities.py
 
       - name: Copy the fresh target report into the dashboard data folder
-        run: cp /tmp/apix-scrape/target_day.txt dashboard/target_day.txt
+        run: |
+          cp /tmp/apix-scrape/target_day.txt dashboard/target_day.txt
+          cp /tmp/apix-scrape/target_day.json dashboard/target_day.json
 
       - name: Calculate APIx and write dashboard JSON
         run: python cleaning/matchedmodel.py
@@ -53,7 +55,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add dashboard/apix_output.json dashboard/target_day.txt
+          git add dashboard/apix_output.json dashboard/target_day.txt dashboard/target_day.json
           if git diff --cached --quiet; then
             echo "No data changes to commit."
           else
