@@ -4,11 +4,6 @@ import statistics
 from datetime import datetime
 from pathlib import Path
 
-REPO_ROOT = Path(__file__).resolve().parents[1]
-BASE_FILE = REPO_ROOT / "data" / "base_day.txt"
-TARGET_FILE = REPO_ROOT / "dashboard" / "target_day.txt"
-JSON_OUTPUT = REPO_ROOT / "dashboard" / "apix_output.json"
-
 # --- 1. Configuration & Weights ---
 WINDOW_WEIGHTS = {
     "T_plus_45": 0.15,
@@ -24,7 +19,11 @@ ROUTE_WEIGHTS = {
     "Calcutta - Bombay": 0.30,
 }
 
-# --- 2. Data Parsing Engine ---
+BASE_FILE = Path(r"C:\Users\shiva\OneDrive\Desktop\CS\base_day.txt")
+TARGET_FILE = Path(r"C:\Users\shiva\OneDrive\Desktop\CS\target_day.txt")
+JSON_OUTPUT = Path(r"C:\Users\shiva\OneDrive\Desktop\CS\apix_output.json")
+
+
 def parse_and_calculate_medians(filepath):
     """Read a scraper text report and calculate median prices by route/window."""
     route_data = {}
@@ -203,7 +202,5 @@ if __name__ == "__main__":
 
     except FileNotFoundError as error:
         print(f"Error: {error}")
-        raise
     except Exception as error:
         print(f"Unexpected error: {error}")
-        raise

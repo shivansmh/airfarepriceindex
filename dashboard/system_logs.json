@@ -1,0 +1,1491 @@
+{
+  "repository": "shivansmh/airfarepriceindex",
+  "generated_at": "2026-09-04T21:00:44.363741+00:00",
+  "runs": [
+    {
+      "id": 33918715841,
+      "workflow": "Refresh daily APIx data",
+      "title": "Refresh daily APIx data",
+      "event": "schedule",
+      "status": "in_progress",
+      "conclusion": null,
+      "created_at": "2026-09-04T20:56:34Z",
+      "updated_at": "2026-09-04T20:56:38Z",
+      "url": "https://github.com/shivansmh/airfarepriceindex/actions/runs/33918715841",
+      "sha": "8bd42be",
+      "jobs": [
+        {
+          "name": "refresh-data",
+          "status": "in_progress",
+          "conclusion": null,
+          "started_at": "2026-09-04T20:56:37Z",
+          "completed_at": null,
+          "steps": [
+            {
+              "name": "Set up job",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Checkout repository",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Set up Python",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Install scraper dependencies",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Install Playwright Chromium",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Scrape all routes and advance windows",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Copy the fresh target report into the dashboard data folder",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Calculate APIx and write dashboard JSON",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Generate Gemini daily briefing JSON",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Copy briefing JSON into the public dashboard artifact",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Export GitHub Actions system logs",
+              "status": "in_progress",
+              "conclusion": null
+            },
+            {
+              "name": "Commit refreshed data",
+              "status": "pending",
+              "conclusion": null
+            },
+            {
+              "name": "Configure Pages",
+              "status": "pending",
+              "conclusion": null
+            },
+            {
+              "name": "Upload refreshed dashboard",
+              "status": "pending",
+              "conclusion": null
+            },
+            {
+              "name": "Deploy refreshed dashboard",
+              "status": "pending",
+              "conclusion": null
+            },
+            {
+              "name": "Post Set up Python",
+              "status": "pending",
+              "conclusion": null
+            },
+            {
+              "name": "Post Checkout repository",
+              "status": "pending",
+              "conclusion": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 33904564119,
+      "workflow": "Refresh daily APIx data",
+      "title": "Refresh daily APIx data",
+      "event": "workflow_dispatch",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-09-04T18:11:36Z",
+      "updated_at": "2026-09-04T18:15:31Z",
+      "url": "https://github.com/shivansmh/airfarepriceindex/actions/runs/33904564119",
+      "sha": "abc54d4",
+      "jobs": [
+        {
+          "name": "refresh-data",
+          "status": "completed",
+          "conclusion": "success",
+          "started_at": "2026-09-04T18:11:40Z",
+          "completed_at": "2026-09-04T18:15:30Z",
+          "steps": [
+            {
+              "name": "Set up job",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Checkout repository",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Set up Python",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Install scraper dependencies",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Install Playwright Chromium",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Scrape all routes and advance windows",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Copy the fresh target report into the dashboard data folder",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Calculate APIx and write dashboard JSON",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Generate Gemini daily briefing JSON",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Copy briefing JSON into the public dashboard artifact",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Export GitHub Actions system logs",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Commit refreshed data",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Configure Pages",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Upload refreshed dashboard",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Deploy refreshed dashboard",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Post Set up Python",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Post Checkout repository",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Complete job",
+              "status": "completed",
+              "conclusion": "success"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 33904548755,
+      "workflow": "Deploy APIx dashboard",
+      "title": "Use available Gemini briefing model",
+      "event": "push",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-09-04T18:11:26Z",
+      "updated_at": "2026-09-04T18:11:41Z",
+      "url": "https://github.com/shivansmh/airfarepriceindex/actions/runs/33904548755",
+      "sha": "abc54d4",
+      "jobs": [
+        {
+          "name": "deploy",
+          "status": "completed",
+          "conclusion": "success",
+          "started_at": "2026-09-04T18:11:29Z",
+          "completed_at": "2026-09-04T18:11:41Z",
+          "steps": [
+            {
+              "name": "Set up job",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Checkout",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Configure Pages",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Upload dashboard artifact",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Deploy to GitHub Pages",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Post Checkout",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Complete job",
+              "status": "completed",
+              "conclusion": "success"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 33904177647,
+      "workflow": "Refresh daily APIx data",
+      "title": "Refresh daily APIx data",
+      "event": "workflow_dispatch",
+      "status": "completed",
+      "conclusion": "failure",
+      "created_at": "2026-09-04T18:07:14Z",
+      "updated_at": "2026-09-04T18:10:23Z",
+      "url": "https://github.com/shivansmh/airfarepriceindex/actions/runs/33904177647",
+      "sha": "1a75ad6",
+      "jobs": [
+        {
+          "name": "refresh-data",
+          "status": "completed",
+          "conclusion": "failure",
+          "started_at": "2026-09-04T18:07:18Z",
+          "completed_at": "2026-09-04T18:10:22Z",
+          "steps": [
+            {
+              "name": "Set up job",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Checkout repository",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Set up Python",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Install scraper dependencies",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Install Playwright Chromium",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Scrape all routes and advance windows",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Copy the fresh target report into the dashboard data folder",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Calculate APIx and write dashboard JSON",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Generate Gemini daily briefing JSON",
+              "status": "completed",
+              "conclusion": "failure"
+            },
+            {
+              "name": "Copy briefing JSON into the public dashboard artifact",
+              "status": "completed",
+              "conclusion": "skipped"
+            },
+            {
+              "name": "Export GitHub Actions system logs",
+              "status": "completed",
+              "conclusion": "skipped"
+            },
+            {
+              "name": "Commit refreshed data",
+              "status": "completed",
+              "conclusion": "skipped"
+            },
+            {
+              "name": "Configure Pages",
+              "status": "completed",
+              "conclusion": "skipped"
+            },
+            {
+              "name": "Upload refreshed dashboard",
+              "status": "completed",
+              "conclusion": "skipped"
+            },
+            {
+              "name": "Deploy refreshed dashboard",
+              "status": "completed",
+              "conclusion": "skipped"
+            },
+            {
+              "name": "Post Set up Python",
+              "status": "completed",
+              "conclusion": "skipped"
+            },
+            {
+              "name": "Post Checkout repository",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Complete job",
+              "status": "completed",
+              "conclusion": "success"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 33903187960,
+      "workflow": "Refresh daily APIx data",
+      "title": "Refresh daily APIx data",
+      "event": "workflow_dispatch",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-09-04T17:56:06Z",
+      "updated_at": "2026-09-04T17:59:33Z",
+      "url": "https://github.com/shivansmh/airfarepriceindex/actions/runs/33903187960",
+      "sha": "08447e9",
+      "jobs": [
+        {
+          "name": "refresh-data",
+          "status": "completed",
+          "conclusion": "success",
+          "started_at": "2026-09-04T17:56:10Z",
+          "completed_at": "2026-09-04T17:59:32Z",
+          "steps": [
+            {
+              "name": "Set up job",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Checkout repository",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Set up Python",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Install scraper dependencies",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Install Playwright Chromium",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Scrape all routes and advance windows",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Copy the fresh target report into the dashboard data folder",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Calculate APIx and write dashboard JSON",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Generate Gemini daily briefing JSON",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Copy briefing JSON into the public dashboard artifact",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Export GitHub Actions system logs",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Commit refreshed data",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Configure Pages",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Upload refreshed dashboard",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Deploy refreshed dashboard",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Post Set up Python",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Post Checkout repository",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Complete job",
+              "status": "completed",
+              "conclusion": "success"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 33903172633,
+      "workflow": "Deploy APIx dashboard",
+      "title": "Make daily refresh resilient",
+      "event": "push",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-09-04T17:55:55Z",
+      "updated_at": "2026-09-04T17:56:15Z",
+      "url": "https://github.com/shivansmh/airfarepriceindex/actions/runs/33903172633",
+      "sha": "08447e9",
+      "jobs": [
+        {
+          "name": "deploy",
+          "status": "completed",
+          "conclusion": "success",
+          "started_at": "2026-09-04T17:55:59Z",
+          "completed_at": "2026-09-04T17:56:14Z",
+          "steps": [
+            {
+              "name": "Set up job",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Checkout",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Configure Pages",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Upload dashboard artifact",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Deploy to GitHub Pages",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Post Checkout",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Complete job",
+              "status": "completed",
+              "conclusion": "success"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 33902685975,
+      "workflow": "Refresh daily APIx data",
+      "title": "Refresh daily APIx data",
+      "event": "workflow_dispatch",
+      "status": "completed",
+      "conclusion": "failure",
+      "created_at": "2026-09-04T17:50:18Z",
+      "updated_at": "2026-09-04T17:53:17Z",
+      "url": "https://github.com/shivansmh/airfarepriceindex/actions/runs/33902685975",
+      "sha": "647614a",
+      "jobs": [
+        {
+          "name": "refresh-data",
+          "status": "completed",
+          "conclusion": "failure",
+          "started_at": "2026-09-04T17:50:22Z",
+          "completed_at": "2026-09-04T17:53:17Z",
+          "steps": [
+            {
+              "name": "Set up job",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Checkout repository",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Set up Python",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Install scraper dependencies",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Install Playwright Chromium",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Scrape all routes and advance windows",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Copy the fresh target report into the dashboard data folder",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Calculate APIx and write dashboard JSON",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Generate Gemini daily briefing JSON",
+              "status": "completed",
+              "conclusion": "failure"
+            },
+            {
+              "name": "Copy briefing JSON into the public dashboard artifact",
+              "status": "completed",
+              "conclusion": "skipped"
+            },
+            {
+              "name": "Export GitHub Actions system logs",
+              "status": "completed",
+              "conclusion": "skipped"
+            },
+            {
+              "name": "Commit refreshed data",
+              "status": "completed",
+              "conclusion": "skipped"
+            },
+            {
+              "name": "Configure Pages",
+              "status": "completed",
+              "conclusion": "skipped"
+            },
+            {
+              "name": "Upload refreshed dashboard",
+              "status": "completed",
+              "conclusion": "skipped"
+            },
+            {
+              "name": "Deploy refreshed dashboard",
+              "status": "completed",
+              "conclusion": "skipped"
+            },
+            {
+              "name": "Post Set up Python",
+              "status": "completed",
+              "conclusion": "skipped"
+            },
+            {
+              "name": "Post Checkout repository",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Complete job",
+              "status": "completed",
+              "conclusion": "success"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 33902665686,
+      "workflow": "Deploy APIx dashboard",
+      "title": "Fix Gemini briefing authentication",
+      "event": "push",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-09-04T17:50:05Z",
+      "updated_at": "2026-09-04T17:50:23Z",
+      "url": "https://github.com/shivansmh/airfarepriceindex/actions/runs/33902665686",
+      "sha": "647614a",
+      "jobs": [
+        {
+          "name": "deploy",
+          "status": "completed",
+          "conclusion": "success",
+          "started_at": "2026-09-04T17:50:09Z",
+          "completed_at": "2026-09-04T17:50:22Z",
+          "steps": [
+            {
+              "name": "Set up job",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Checkout",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Configure Pages",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Upload dashboard artifact",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Deploy to GitHub Pages",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Post Checkout",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Complete job",
+              "status": "completed",
+              "conclusion": "success"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 33901248089,
+      "workflow": "Refresh daily APIx data",
+      "title": "Refresh daily APIx data",
+      "event": "workflow_dispatch",
+      "status": "completed",
+      "conclusion": "failure",
+      "created_at": "2026-09-04T17:33:52Z",
+      "updated_at": "2026-09-04T17:45:03Z",
+      "url": "https://github.com/shivansmh/airfarepriceindex/actions/runs/33901248089",
+      "sha": "05a7def",
+      "jobs": [
+        {
+          "name": "refresh-data",
+          "status": "completed",
+          "conclusion": "failure",
+          "started_at": "2026-09-04T17:33:55Z",
+          "completed_at": "2026-09-04T17:45:02Z",
+          "steps": [
+            {
+              "name": "Set up job",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Checkout repository",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Set up Python",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Install scraper dependencies",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Install Playwright Chromium",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Scrape all routes and advance windows",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Copy the fresh target report into the dashboard data folder",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Calculate APIx and write dashboard JSON",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Generate Gemini daily briefing JSON",
+              "status": "completed",
+              "conclusion": "failure"
+            },
+            {
+              "name": "Copy briefing JSON into the public dashboard artifact",
+              "status": "completed",
+              "conclusion": "skipped"
+            },
+            {
+              "name": "Export GitHub Actions system logs",
+              "status": "completed",
+              "conclusion": "skipped"
+            },
+            {
+              "name": "Commit refreshed data",
+              "status": "completed",
+              "conclusion": "skipped"
+            },
+            {
+              "name": "Configure Pages",
+              "status": "completed",
+              "conclusion": "skipped"
+            },
+            {
+              "name": "Upload refreshed dashboard",
+              "status": "completed",
+              "conclusion": "skipped"
+            },
+            {
+              "name": "Deploy refreshed dashboard",
+              "status": "completed",
+              "conclusion": "skipped"
+            },
+            {
+              "name": "Post Set up Python",
+              "status": "completed",
+              "conclusion": "skipped"
+            },
+            {
+              "name": "Post Checkout repository",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Complete job",
+              "status": "completed",
+              "conclusion": "success"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 33889503526,
+      "workflow": "Deploy APIx dashboard",
+      "title": "Simplify sidebar navigation",
+      "event": "push",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-09-04T15:26:39Z",
+      "updated_at": "2026-09-04T15:26:57Z",
+      "url": "https://github.com/shivansmh/airfarepriceindex/actions/runs/33889503526",
+      "sha": "05a7def",
+      "jobs": [
+        {
+          "name": "deploy",
+          "status": "completed",
+          "conclusion": "success",
+          "started_at": "2026-09-04T15:26:43Z",
+          "completed_at": "2026-09-04T15:26:56Z",
+          "steps": [
+            {
+              "name": "Set up job",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Checkout",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Configure Pages",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Upload dashboard artifact",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Deploy to GitHub Pages",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Post Checkout",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Complete job",
+              "status": "completed",
+              "conclusion": "success"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 33889120400,
+      "workflow": "Deploy APIx dashboard",
+      "title": "Move airfare database into sidebar",
+      "event": "push",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-09-04T15:22:40Z",
+      "updated_at": "2026-09-04T15:23:01Z",
+      "url": "https://github.com/shivansmh/airfarepriceindex/actions/runs/33889120400",
+      "sha": "4576fe8",
+      "jobs": [
+        {
+          "name": "deploy",
+          "status": "completed",
+          "conclusion": "success",
+          "started_at": "2026-09-04T15:22:45Z",
+          "completed_at": "2026-09-04T15:23:01Z",
+          "steps": [
+            {
+              "name": "Set up job",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Checkout",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Configure Pages",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Upload dashboard artifact",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Deploy to GitHub Pages",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Post Checkout",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Complete job",
+              "status": "completed",
+              "conclusion": "success"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 33888610274,
+      "workflow": "Deploy APIx dashboard",
+      "title": "Add interactive airfare price dashboard",
+      "event": "push",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-09-04T15:17:18Z",
+      "updated_at": "2026-09-04T15:17:34Z",
+      "url": "https://github.com/shivansmh/airfarepriceindex/actions/runs/33888610274",
+      "sha": "5efa2be",
+      "jobs": [
+        {
+          "name": "deploy",
+          "status": "completed",
+          "conclusion": "success",
+          "started_at": "2026-09-04T15:17:21Z",
+          "completed_at": "2026-09-04T15:17:33Z",
+          "steps": [
+            {
+              "name": "Set up job",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Checkout",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Configure Pages",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Upload dashboard artifact",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Deploy to GitHub Pages",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Post Checkout",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Complete job",
+              "status": "completed",
+              "conclusion": "success"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 33887411608,
+      "workflow": "Deploy APIx dashboard",
+      "title": "Add lead time analytics and flight metadata",
+      "event": "push",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-09-04T15:04:47Z",
+      "updated_at": "2026-09-04T15:05:09Z",
+      "url": "https://github.com/shivansmh/airfarepriceindex/actions/runs/33887411608",
+      "sha": "4aeea76",
+      "jobs": [
+        {
+          "name": "deploy",
+          "status": "completed",
+          "conclusion": "success",
+          "started_at": "2026-09-04T15:04:53Z",
+          "completed_at": "2026-09-04T15:05:08Z",
+          "steps": [
+            {
+              "name": "Set up job",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Checkout",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Configure Pages",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Upload dashboard artifact",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Deploy to GitHub Pages",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Post Checkout",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Complete job",
+              "status": "completed",
+              "conclusion": "success"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 33883543653,
+      "workflow": "Deploy APIx dashboard",
+      "title": "Polish dashboard and add India route heatmap",
+      "event": "push",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-09-04T14:24:28Z",
+      "updated_at": "2026-09-04T14:24:48Z",
+      "url": "https://github.com/shivansmh/airfarepriceindex/actions/runs/33883543653",
+      "sha": "d0d6fb6",
+      "jobs": [
+        {
+          "name": "deploy",
+          "status": "completed",
+          "conclusion": "success",
+          "started_at": "2026-09-04T14:24:32Z",
+          "completed_at": "2026-09-04T14:24:47Z",
+          "steps": [
+            {
+              "name": "Set up job",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Checkout",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Configure Pages",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Upload dashboard artifact",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Deploy to GitHub Pages",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Post Checkout",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Complete job",
+              "status": "completed",
+              "conclusion": "success"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 33882561402,
+      "workflow": "Deploy APIx dashboard",
+      "title": "Add command line system logs panel",
+      "event": "push",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-09-04T14:14:17Z",
+      "updated_at": "2026-09-04T14:14:35Z",
+      "url": "https://github.com/shivansmh/airfarepriceindex/actions/runs/33882561402",
+      "sha": "cd79b0f",
+      "jobs": [
+        {
+          "name": "deploy",
+          "status": "completed",
+          "conclusion": "success",
+          "started_at": "2026-09-04T14:14:21Z",
+          "completed_at": "2026-09-04T14:14:34Z",
+          "steps": [
+            {
+              "name": "Set up job",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Checkout",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Configure Pages",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Upload dashboard artifact",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Deploy to GitHub Pages",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Post Checkout",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Complete job",
+              "status": "completed",
+              "conclusion": "success"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 33882138123,
+      "workflow": "Deploy APIx dashboard",
+      "title": "Rearrange APIx summary cards",
+      "event": "push",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-09-04T14:09:49Z",
+      "updated_at": "2026-09-04T14:10:11Z",
+      "url": "https://github.com/shivansmh/airfarepriceindex/actions/runs/33882138123",
+      "sha": "c7763cf",
+      "jobs": [
+        {
+          "name": "deploy",
+          "status": "completed",
+          "conclusion": "success",
+          "started_at": "2026-09-04T14:09:55Z",
+          "completed_at": "2026-09-04T14:10:10Z",
+          "steps": [
+            {
+              "name": "Set up job",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Checkout",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Configure Pages",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Upload dashboard artifact",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Deploy to GitHub Pages",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Post Checkout",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Complete job",
+              "status": "completed",
+              "conclusion": "success"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 33881686548,
+      "workflow": "Deploy APIx dashboard",
+      "title": "Add indicative weekly and monthly APIx",
+      "event": "push",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-09-04T14:05:06Z",
+      "updated_at": "2026-09-04T14:05:26Z",
+      "url": "https://github.com/shivansmh/airfarepriceindex/actions/runs/33881686548",
+      "sha": "63147a0",
+      "jobs": [
+        {
+          "name": "deploy",
+          "status": "completed",
+          "conclusion": "success",
+          "started_at": "2026-09-04T14:05:11Z",
+          "completed_at": "2026-09-04T14:05:25Z",
+          "steps": [
+            {
+              "name": "Set up job",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Checkout",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Configure Pages",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Upload dashboard artifact",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Deploy to GitHub Pages",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Post Checkout",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Complete job",
+              "status": "completed",
+              "conclusion": "success"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 33881143650,
+      "workflow": "Deploy APIx dashboard",
+      "title": "Update briefing.py",
+      "event": "push",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-09-04T13:59:33Z",
+      "updated_at": "2026-09-04T13:59:50Z",
+      "url": "https://github.com/shivansmh/airfarepriceindex/actions/runs/33881143650",
+      "sha": "ad9d880",
+      "jobs": [
+        {
+          "name": "deploy",
+          "status": "completed",
+          "conclusion": "success",
+          "started_at": "2026-09-04T13:59:39Z",
+          "completed_at": "2026-09-04T13:59:50Z",
+          "steps": [
+            {
+              "name": "Set up job",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Checkout",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Configure Pages",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Upload dashboard artifact",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Deploy to GitHub Pages",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Post Checkout",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Complete job",
+              "status": "completed",
+              "conclusion": "success"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 33881116427,
+      "workflow": "Deploy APIx dashboard",
+      "title": "Update briefing.py",
+      "event": "push",
+      "status": "completed",
+      "conclusion": "cancelled",
+      "created_at": "2026-09-04T13:59:16Z",
+      "updated_at": "2026-09-04T13:59:36Z",
+      "url": "https://github.com/shivansmh/airfarepriceindex/actions/runs/33881116427",
+      "sha": "bc5de2e",
+      "jobs": [
+        {
+          "name": "deploy",
+          "status": "completed",
+          "conclusion": "cancelled",
+          "started_at": "2026-09-04T13:59:20Z",
+          "completed_at": "2026-09-04T13:59:35Z",
+          "steps": [
+            {
+              "name": "Set up job",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Checkout",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Configure Pages",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Upload dashboard artifact",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Deploy to GitHub Pages",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Post Checkout",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Complete job",
+              "status": "completed",
+              "conclusion": "success"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 33877511949,
+      "workflow": "Deploy APIx dashboard",
+      "title": "Merge branch 'main' of https://github.com/shivansmh/airfarepriceindex",
+      "event": "push",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-09-04T13:20:27Z",
+      "updated_at": "2026-09-04T13:20:45Z",
+      "url": "https://github.com/shivansmh/airfarepriceindex/actions/runs/33877511949",
+      "sha": "d9cd494",
+      "jobs": [
+        {
+          "name": "deploy",
+          "status": "completed",
+          "conclusion": "success",
+          "started_at": "2026-09-04T13:20:31Z",
+          "completed_at": "2026-09-04T13:20:44Z",
+          "steps": [
+            {
+              "name": "Set up job",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Checkout",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Configure Pages",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Upload dashboard artifact",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Deploy to GitHub Pages",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Post Checkout",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Complete job",
+              "status": "completed",
+              "conclusion": "success"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,3 +1,15 @@
+
+"""Extract flight details from a rendered airline booking page.
+
+The script captures the complete post-JavaScript HTML, analyzes visible text and
+structured data, then prints a JSON string containing price, flight number,
+and departure/arrival timings.
+
+Use only on pages you are permitted to access, and comply with the site's
+terms, robots policy, and applicable laws. This script does not bypass login,
+CAPTCHA, paywalls, or anti-bot controls.
+"""
+
 from __future__ import annotations
 
 import argparse
@@ -14,16 +26,25 @@ from playwright.async_api import Browser, Page, TimeoutError as PlaywrightTimeou
 
 SCRIPT_VERSION = "via-fixed-2026-09-01"
 
+# -------------------- USER CONFIGURATION --------------------
+# Edit only BASE_URL if you want to scrape a different route.
 BASE_URL = "https://in.via.com/flight/search?returnType=one-way&destination=BLR&bdestination=BLR&destinationL=Bangalore&destinationCity=&destinationCN=&source=DEL&bsource=DEL&sourceL=Delhi&sourceCity=&sourceCN=&month=9&day=1&year=2026&date=9/1/2026&numAdults=1&numChildren=0&numInfants=0&validation_result=&domesinter=international&livequote=-1&flightClass=ALL&travType=INTL&routingType=ALL&preferredCarrier=&prefCarrier=0&isAjax=false"
-DATE_OFFSETS = [1, 7, 15, 30, 45]  
-SHOW_BROWSER = True         
-WAIT_MS = 2500              
-
+# Route names and airport codes used by Via.com.
+ROUTES = [
+    ("Delhi - Bombay", "DEL", "BOM", "Delhi", "Bombay"),
+    ("Delhi - Bengaluru", "DEL", "BLR", "Delhi", "Bangalore"),
+    ("Calcutta - Bombay", "CCU", "BOM", "Kolkata", "Bombay"),
+]
+DATE_OFFSETS = [1, 7, 15, 30, 45]  # T+1, T+7, T+15, T+30, and T+45
+SHOW_BROWSER = True         # Always open Chromium visibly
+WAIT_MS = 2500              # Increase if the results take longer to load
+# Explicit Windows output folder. Change `shiva` if the Windows username differs.
 OUTPUT_FOLDER = Path(r"C:\Users\shiva\OneDrive\Desktop\CS")
 HTML_OUTPUT_BASE = OUTPUT_FOLDER / "rendered_flight_page.html"
-
+# This file is overwritten on every run with only the newest report.
 REPORT_OUTPUT = OUTPUT_FOLDER / "target_day.txt"
-
+JSON_OUTPUT = OUTPUT_FOLDER / "target_day.json"
+# ------------------------------------------------------------
 
 
 @dataclass
@@ -58,6 +79,47 @@ def unique(values: Iterable[str]) -> list[str]:
     return output
 
 
+def classify_time_slot(time_text: str | None) -> str | None:
+    """Classify departure time using the requested half-open time ranges."""
+    if not time_text:
+        return None
+    match = re.search(r"(\d{1,2}):(\d{2})\s*(AM|PM)?", time_text, re.IGNORECASE)
+    if not match:
+        return None
+    hour = int(match.group(1))
+    minute = int(match.group(2))
+    meridiem = (match.group(3) or "").upper()
+    if meridiem:
+        if hour == 12:
+            hour = 0
+        if meridiem == "PM":
+            hour += 12
+    decimal_hour = hour + minute / 60
+    if 6 <= decimal_hour < 10:
+        return "Morning Peak"
+    if 10 <= decimal_hour < 17:
+        return "Noon"
+    if 17 <= decimal_hour < 20:
+        return "Evening"
+    if decimal_hour >= 20 or decimal_hour < 2:
+        return "Night"
+    return "Early morning"
+
+
+def extract_baggage(text: str) -> str | None:
+    """Extract baggage text when Via includes it in the rendered row/details."""
+    patterns = [
+        r"(?:check[- ]?in baggage|checked baggage|baggage allowance|baggage)\s*[:\-]?\s*([\d]+\s?(?:kg|kgs|pieces?|bags?)(?:[^|.;]*))",
+        r"(\d+\s?(?:kg|kgs|pieces?|bags?))\s*(?:baggage|check[- ]?in|checked)",
+        r"(?:cabin baggage|hand baggage)\s*[:\-]?\s*([^|.;]+)",
+    ]
+    for pattern in patterns:
+        match = re.search(pattern, text, re.IGNORECASE)
+        if match:
+            return re.sub(r"\s+", " ", match.group(1)).strip()
+    return None
+
+
 def parse_via_rows(row_texts: list[str]) -> list[dict[str, Any]]:
     """Parse Via.com `.result` rows, whose fields are in a stable visual order."""
     flights: list[dict[str, Any]] = []
@@ -70,7 +132,9 @@ def parse_via_rows(row_texts: list[str]) -> list[dict[str, Any]]:
             r"\b[A-Z0-9]{2}\s*-\s*\d{3,4}(?:\s*,\s*[A-Z0-9]{2}\s*-\s*\d{3,4})*\b",
             text.upper(),
         )
-        
+        # Via places the fare immediately after the Flight Details label.
+        # Anchoring there prevents times, durations, seat counts, and route
+        # numbers from being mistaken for the ticket price.
         fare = re.search(
             r"Flight Details\s+((?:₹|Rs\.?|INR\s*)?[\d,]+(?:\.\d{1,2})?)",
             text,
@@ -79,15 +143,17 @@ def parse_via_rows(row_texts: list[str]) -> list[dict[str, Any]]:
         fare_value = fare.group(1).strip() if fare else None
         if fare_value and not re.match(r"^(?:₹|Rs\.?|INR)", fare_value, re.IGNORECASE):
             fare_value = f"₹{fare_value}"
-       
+        # Via's row text usually looks like: depart, origin, duration, route,
+        # arrival, destination, airline, flight number, seats, details, fare.
         flight_number = flight_matches[0] if flight_matches else None
+        departure_time = times[0] if times else None
         flights.append({
-            "departure_time": times[0] if times else None,
+            "departure_time": departure_time,
             "arrival_time": times[1] if len(times) > 1 else None,
+            "time_slot": classify_time_slot(departure_time),
             "flight_number": flight_number,
             "price": fare_value,
-            "currency": "INR" if fare_value else None,
-            "raw_text": text,
+            "baggage": extract_baggage(text),
         })
     return flights
 
@@ -97,7 +163,7 @@ def analyze_html(html: str, visible_text: str, url: str, row_texts: list[str] | 
     combined = f"{visible_text}\n{html}"
     via_flights = parse_via_rows(row_texts or []) if row_texts else []
 
-    
+    # Common airline codes are two letters followed by 1-4 digits, for example AF123.
     flight_candidates = unique(
         re.findall(r"\b([A-Z0-9]{2}\s*-\s*\d{3,4}(?:\s*,\s*[A-Z0-9]{2}\s*-\s*\d{3,4})*)\b", visible_text.upper())
         + re.findall(r"(?:flight(?:\s*(?:number|no\.?)?)?|flt)\s*[:#-]?\s*([A-Z0-9]{2}\s*-\s*\d{3,4}(?:\s*,\s*[A-Z0-9]{2}\s*-\s*\d{3,4})*)", combined)
@@ -106,7 +172,7 @@ def analyze_html(html: str, visible_text: str, url: str, row_texts: list[str] | 
         flight_candidates = unique([f["flight_number"] for f in via_flights if f.get("flight_number")]) + flight_candidates
     flight_number = flight_candidates[0] if flight_candidates else None
 
-    
+    # Prefer values next to price labels, then fall back to currency-formatted values.
     price = (via_flights[0].get("price") if via_flights else None) or first_match(
         [
             r"(?:total|price|fare|amount|from)\s*[:\-]?\s*((?:[$€£₹]|USD|EUR|GBP|INR)\s?[\d,]+(?:\.\d{1,2})?)",
@@ -117,7 +183,7 @@ def analyze_html(html: str, visible_text: str, url: str, row_texts: list[str] | 
     )
     currency = (via_flights[0].get("currency") if via_flights else None) or first_match([r"\b(USD|EUR|GBP|INR)\b", r"([$€£₹])"], price or visible_text)
 
-    
+    # Extract clock times, supporting 12-hour and 24-hour display formats.
     time_pattern = r"\b(?:[01]?\d|2[0-3]):[0-5]\d\s?(?:AM|PM)?\b|\b(?:0?[1-9]|1[0-2]):[0-5]\d\s?(?:AM|PM)\b"
     times = unique(re.findall(time_pattern, visible_text, re.IGNORECASE))
 
@@ -172,7 +238,7 @@ async def scrape(url: str, html_path: str | None = None, wait_ms: int = 2500, he
             if wait_ms:
                 await page.wait_for_timeout(wait_ms)
 
-            
+            # page.content() is the complete current DOM, including JavaScript-rendered content.
             html = await page.content()
             visible_text = await page.locator("body").inner_text(timeout=15_000)
             row_texts = await page.locator("#searchResultContainer .result").all_inner_texts()
@@ -217,12 +283,46 @@ def url_for_date(base_url: str, travel_date: date) -> str:
     """Update Via.com's date, month, day, and year query parameters."""
     parts = urlsplit(base_url)
     query = parse_qs(parts.query, keep_blank_values=True)
-    
+    # Via.com expects calendar values based on the target date, not T.
+    # These assignments correctly handle month/year rollovers.
     query["date"] = [f"{travel_date.month}/{travel_date.day}/{travel_date.year}"]
     query["month"] = [str(travel_date.month)]
     query["day"] = [str(travel_date.day)]
     query["year"] = [str(travel_date.year)]
     return urlunsplit((parts.scheme, parts.netloc, parts.path, urlencode(query, doseq=True), parts.fragment))
+
+
+def url_for_route(base_url: str, source: str, destination: str, source_name: str, destination_name: str) -> str:
+    """Update Via.com's route query parameters while preserving other settings."""
+    parts = urlsplit(base_url)
+    query = parse_qs(parts.query, keep_blank_values=True)
+    query["source"] = [source]
+    query["bsource"] = [source]
+    query["sourceL"] = [source_name]
+    query["sourceCity"] = [source_name]
+    query["destination"] = [destination]
+    query["bdestination"] = [destination]
+    query["destinationL"] = [destination_name]
+    query["destinationCity"] = [destination_name]
+    return urlunsplit((parts.scheme, parts.netloc, parts.path, urlencode(query, doseq=True), parts.fragment))
+
+
+async def scrape_all_routes(routes: list[tuple[str, str, str, str, str]], offsets: list[int], html_out: str | None = "rendered_flight_page.html", wait_ms: int = 2500, headless: bool = True) -> str:
+    """Scrape every configured route for every configured relative date."""
+    route_results: list[dict[str, Any]] = []
+    for route_name, source, destination, source_name, destination_name in routes:
+        route_url = url_for_route(BASE_URL, source, destination, source_name, destination_name)
+        route_html_out = html_out
+        if html_out:
+            output_path = Path(html_out).expanduser()
+            suffix = output_path.suffix or ".html"
+            stem = output_path.stem if output_path.suffix else "rendered_flight_page"
+            safe_route_name = re.sub(r"[^A-Za-z0-9]+", "_", route_name).strip("_").lower()
+            route_html_out = str(output_path.with_name(f"{stem}_{safe_route_name}{suffix}"))
+        payload = json.loads(await scrape_date_offsets(route_url, offsets, route_html_out, wait_ms, headless))
+        payload["route_name"] = route_name
+        route_results.append(payload)
+    return json.dumps({"mode": "multi_route_relative_dates", "routes": route_results}, ensure_ascii=False, indent=2)
 
 
 async def scrape_date_offsets(base_url: str, offsets: list[int] = [1, 7, 15, 30, 45], html_out: str | None = "rendered_flight_page.html", wait_ms: int = 2500, headless: bool = True) -> str:
@@ -291,6 +391,16 @@ async def scrape_date_range(base_url: str, start_date: str, end_date: str, html_
     }, ensure_ascii=False, indent=2)
 
 
+def format_multi_route_report(payload: dict[str, Any]) -> str:
+    """Format all routes, keeping each route and date window in its own section."""
+    sections: list[str] = []
+    for route_payload in payload.get("routes", []):
+        route_name = route_payload.get("route_name", "Unnamed route")
+        report = format_clean_report(route_payload)
+        sections.append(f"ROUTE: {route_name}\n" + "=" * 60 + "\n" + report.split("\n", 2)[-1])
+    return "\n\n".join(sections)
+
+
 def format_clean_report(payload: dict[str, Any]) -> str:
     """Format relative-date results as a concise human-readable report."""
     base_url = payload.get("route", "")
@@ -335,18 +445,22 @@ def parse_args() -> argparse.Namespace:
 if __name__ == "__main__":
     try:
         payload = json.loads(asyncio.run(
-            scrape_date_offsets(
-                BASE_URL,
+            scrape_all_routes(
+                ROUTES,
                 DATE_OFFSETS,
                 str(HTML_OUTPUT_BASE),
                 WAIT_MS,
                 headless=not SHOW_BROWSER,
             )
         ))
-        report = format_clean_report(payload)
+        report = format_multi_route_report(payload)
+        # Both files use write mode, so every run replaces the previous run.
+        REPORT_OUTPUT.parent.mkdir(parents=True, exist_ok=True)
         REPORT_OUTPUT.write_text(report + "\n", encoding="utf-8")
+        JSON_OUTPUT.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
         print(report)
-        print(f"\nComplete report saved to: {REPORT_OUTPUT}")
+        print(f"\nComplete text report saved to: {REPORT_OUTPUT}")
+        print(f"Complete JSON report saved to: {JSON_OUTPUT}")
     except PlaywrightTimeoutError as exc:
         print(f"Page load timed out: {exc}")
     except Exception as exc:
