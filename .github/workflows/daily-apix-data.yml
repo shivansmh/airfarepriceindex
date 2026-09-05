@@ -7,6 +7,7 @@ on:
   workflow_dispatch:
 
 permissions:
+  actions: read
   contents: write
   pages: write
   id-token: write
@@ -54,11 +55,29 @@ jobs:
       - name: Build rolling 30-day APIx history
         run: python api/update_history.py
 
+      - name: Generate Gemini daily briefing JSON
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: >-
+          python api/briefing.py
+          dashboard/apix_output.json
+          dashboard/target_day.json
+          api/daily_briefing.json
+
+      - name: Copy briefing JSON into the public dashboard artifact
+        run: cp api/daily_briefing.json dashboard/daily_briefing.json
+
+      - name: Export GitHub Actions system logs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+        run: python api/system_logs.py dashboard/system_logs.json
+
       - name: Commit refreshed data
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add dashboard/apix_output.json dashboard/apix_history.json dashboard/target_day.txt dashboard/target_day.json
+          git add api/daily_briefing.json dashboard/apix_output.json dashboard/apix_history.json dashboard/target_day.txt dashboard/target_day.json dashboard/daily_briefing.json dashboard/system_logs.json
           if git diff --cached --quiet; then
             echo "No data changes to commit."
           else
