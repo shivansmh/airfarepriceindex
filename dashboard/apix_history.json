@@ -1,0 +1,14 @@
+[
+  {
+    "date": "2026-09-04",
+    "generated_at": "2026-09-04T10:27:24",
+    "daily_apix": 101.425356,
+    "price_change_from_base_percent": 1.425356,
+    "direction": "rose",
+    "route_level_apix": {
+      "Delhi - Bengaluru": 104.042422,
+      "Delhi - Bombay": 101.071741,
+      "Calcutta - Bombay": 99.279777
+    }
+  }
+]
