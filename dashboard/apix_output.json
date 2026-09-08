@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-07T21:45:45",
+  "generated_at": "2026-09-08T21:22:52",
   "base_file": "/home/runner/work/airfarepriceindex/airfarepriceindex/data/base_day.txt",
   "target_file": "/home/runner/work/airfarepriceindex/airfarepriceindex/dashboard/target_day.txt",
   "json_output_file": "/home/runner/work/airfarepriceindex/airfarepriceindex/dashboard/apix_output.json",
@@ -28,25 +28,25 @@
   },
   "target_medians": {
     "Delhi - Bombay": {
-      "T_plus_1": 6900.5,
+      "T_plus_1": 7475,
       "T_plus_7": 6530,
       "T_plus_15": 6300,
-      "T_plus_30": 6319,
+      "T_plus_30": 6300,
       "T_plus_45": 7019
     },
     "Delhi - Bengaluru": {
-      "T_plus_1": 10286.5,
-      "T_plus_7": 10011.5,
-      "T_plus_15": 8699.5,
+      "T_plus_1": 9568.5,
+      "T_plus_7": 9221,
+      "T_plus_15": 8584,
       "T_plus_30": 8570,
-      "T_plus_45": 10048
+      "T_plus_45": 10077
     },
     "Calcutta - Bombay": {
-      "T_plus_1": 12457,
+      "T_plus_1": 12810,
       "T_plus_7": 9348,
       "T_plus_15": 8955,
-      "T_plus_30": 8955,
-      "T_plus_45": 14899.5
+      "T_plus_30": 8932.5,
+      "T_plus_45": 13801
     }
   },
   "window_weights": {
@@ -62,22 +62,22 @@
     "Calcutta - Bombay": 0.3
   },
   "route_level_apix": {
-    "Delhi - Bengaluru": 102.228161,
-    "Delhi - Bombay": 100.071632,
-    "Calcutta - Bombay": 103.160665
+    "Delhi - Bengaluru": 98.807036,
+    "Delhi - Bombay": 100.453332,
+    "Calcutta - Bombay": 102.019739
   },
   "route_details": {
     "Delhi - Bengaluru": {
       "route_weight": 0.3,
       "active_window_weight": 1.0,
-      "route_level_apix": 102.228161,
+      "route_level_apix": 98.807036,
       "windows": {
         "T_plus_45": {
           "weight": 0.15,
           "base_median_price": 10048,
-          "target_median_price": 10048,
-          "price_relativity": 100.0,
-          "weighted_contribution": 15.0
+          "target_median_price": 10077,
+          "price_relativity": 100.288615,
+          "weighted_contribution": 15.043292
         },
         "T_plus_30": {
           "weight": 0.2,
@@ -89,30 +89,30 @@
         "T_plus_15": {
           "weight": 0.3,
           "base_median_price": 9286,
-          "target_median_price": 8699.5,
-          "price_relativity": 93.68404,
-          "weighted_contribution": 28.105212
+          "target_median_price": 8584,
+          "price_relativity": 92.440233,
+          "weighted_contribution": 27.73207
         },
         "T_plus_7": {
           "weight": 0.3,
           "base_median_price": 8609,
-          "target_median_price": 10011.5,
-          "price_relativity": 116.291091,
-          "weighted_contribution": 34.887327
+          "target_median_price": 9221,
+          "price_relativity": 107.10884,
+          "weighted_contribution": 32.132652
         },
         "T_plus_1": {
           "weight": 0.05,
           "base_median_price": 10665.5,
-          "target_median_price": 10286.5,
-          "price_relativity": 96.446486,
-          "weighted_contribution": 4.822324
+          "target_median_price": 9568.5,
+          "price_relativity": 89.7145,
+          "weighted_contribution": 4.485725
         }
       }
     },
     "Delhi - Bombay": {
       "route_weight": 0.4,
       "active_window_weight": 1.0,
-      "route_level_apix": 100.071632,
+      "route_level_apix": 100.453332,
       "windows": {
         "T_plus_45": {
           "weight": 0.15,
@@ -124,9 +124,9 @@
         "T_plus_30": {
           "weight": 0.2,
           "base_median_price": 6530,
-          "target_median_price": 6319,
-          "price_relativity": 96.76876,
-          "weighted_contribution": 19.353752
+          "target_median_price": 6300,
+          "price_relativity": 96.477795,
+          "weighted_contribution": 19.295559
         },
         "T_plus_15": {
           "weight": 0.3,
@@ -145,30 +145,30 @@
         "T_plus_1": {
           "weight": 0.05,
           "base_median_price": 6530,
-          "target_median_price": 6900.5,
-          "price_relativity": 105.673813,
-          "weighted_contribution": 5.283691
+          "target_median_price": 7475,
+          "price_relativity": 114.471669,
+          "weighted_contribution": 5.723583
         }
       }
     },
     "Calcutta - Bombay": {
       "route_weight": 0.3,
       "active_window_weight": 1.0,
-      "route_level_apix": 103.160665,
+      "route_level_apix": 102.019739,
       "windows": {
         "T_plus_45": {
           "weight": 0.15,
           "base_median_price": 12915,
-          "target_median_price": 14899.5,
-          "price_relativity": 115.365854,
-          "weighted_contribution": 17.304878
+          "target_median_price": 13801,
+          "price_relativity": 106.86024,
+          "weighted_contribution": 16.029036
         },
         "T_plus_30": {
           "weight": 0.2,
           "base_median_price": 9138,
-          "target_median_price": 8955,
-          "price_relativity": 97.997374,
-          "weighted_contribution": 19.599475
+          "target_median_price": 8932.5,
+          "price_relativity": 97.751149,
+          "weighted_contribution": 19.55023
         },
         "T_plus_15": {
           "weight": 0.3,
@@ -187,16 +187,16 @@
         "T_plus_1": {
           "weight": 0.05,
           "base_median_price": 9584,
-          "target_median_price": 12457,
-          "price_relativity": 129.977045,
-          "weighted_contribution": 6.498852
+          "target_median_price": 12810,
+          "price_relativity": 133.660267,
+          "weighted_contribution": 6.683013
         }
       }
     }
   },
   "active_route_weight": 1.0,
-  "daily_apix": 101.645301,
-  "price_change_from_base_percent": 1.645301,
+  "daily_apix": 100.429365,
+  "price_change_from_base_percent": 0.429365,
   "direction": "rose",
   "warnings": []
 }
