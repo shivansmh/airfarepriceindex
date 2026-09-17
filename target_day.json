@@ -1,0 +1,4313 @@
+{
+  "mode": "multi_route_relative_dates",
+  "routes": [
+    {
+      "script_version": "via-fixed-2026-09-01",
+      "mode": "relative_dates",
+      "run_date_T": "2026-09-04",
+      "route": "https://in.via.com/flight/search?returnType=one-way&destination=BOM&bdestination=BOM&destinationL=Bombay&destinationCity=Bombay&destinationCN=&source=DEL&bsource=DEL&sourceL=Delhi&sourceCity=Delhi&sourceCN=&month=9&day=1&year=2026&date=9%2F1%2F2026&numAdults=1&numChildren=0&numInfants=0&validation_result=&domesinter=international&livequote=-1&flightClass=ALL&travType=INTL&routingType=ALL&preferredCarrier=&prefCarrier=0&isAjax=false",
+      "requested_offsets": [
+        1,
+        7,
+        15,
+        30,
+        45
+      ],
+      "results": {
+        "T_plus_1": {
+          "url": "https://in.via.com/flight/search?returnType=one-way&destination=BOM&bdestination=BOM&destinationL=Bombay&destinationCity=Bombay&destinationCN=&source=DEL&bsource=DEL&sourceL=Delhi&sourceCity=Delhi&sourceCN=&month=9&day=5&year=2026&date=9%2F5%2F2026&numAdults=1&numChildren=0&numInfants=0&validation_result=&domesinter=international&livequote=-1&flightClass=ALL&travType=INTL&routingType=ALL&preferredCarrier=&prefCarrier=0&isAjax=false",
+          "price": "₹6,090",
+          "flight_number": "6E-5014,6E-679",
+          "departure_time": "18:30",
+          "arrival_time": "22:25",
+          "currency": "₹",
+          "html_file": "C:\\Users\\shiva\\OneDrive\\Desktop\\CS\\rendered_flight_page_delhi_bombay_T_plus_1_2026-09-05.html",
+          "analysis": {
+            "html_characters": 516646,
+            "visible_text_characters": 5816,
+            "flight_candidates": [
+              "6E-5014,6E-679",
+              "6E-5073,6E-5160",
+              "6E-5119,6E-5146",
+              "6E-6171,6E-233",
+              "6E-2013,6E-6205",
+              "6E-6261,6E-6285",
+              "6E-6983,6E-2104",
+              "6E-5138,6E-5049",
+              "6E-6479,6E-2058",
+              "6E-5206,6E-708"
+            ],
+            "time_candidates": [
+              "18:30",
+              "22:25",
+              "17:05",
+              "21:05",
+              "05:10",
+              "09:35",
+              "05:40",
+              "10:25",
+              "21:50",
+              "02:55"
+            ],
+            "structured_data_present": false,
+            "via_rows_found": 30,
+            "script_version": "via-fixed-2026-09-01"
+          },
+          "flights": [
+            {
+              "departure_time": "18:30",
+              "arrival_time": "22:25",
+              "time_slot": "Evening",
+              "flight_number": "6E-5014,6E-679",
+              "price": "₹6,090",
+              "baggage": null
+            },
+            {
+              "departure_time": "17:05",
+              "arrival_time": "21:05",
+              "time_slot": "Evening",
+              "flight_number": "6E-5073,6E-5160",
+              "price": "₹6,090",
+              "baggage": null
+            },
+            {
+              "departure_time": "05:10",
+              "arrival_time": "09:35",
+              "time_slot": "Early morning",
+              "flight_number": "6E-5119,6E-5146",
+              "price": "₹6,090",
+              "baggage": null
+            },
+            {
+              "departure_time": "05:40",
+              "arrival_time": "10:25",
+              "time_slot": "Early morning",
+              "flight_number": "6E-6171,6E-233",
+              "price": "₹6,090",
+              "baggage": null
+            },
+            {
+              "departure_time": "21:50",
+              "arrival_time": "02:55",
+              "time_slot": "Night",
+              "flight_number": "6E-2013,6E-6205",
+              "price": "₹6,090",
+              "baggage": null
+            },
+            {
+              "departure_time": "00:15",
+              "arrival_time": "05:30",
+              "time_slot": "Night",
+              "flight_number": "6E-6261,6E-6285",
+              "price": "₹6,090",
+              "baggage": null
+            },
+            {
+              "departure_time": "15:35",
+              "arrival_time": "20:50",
+              "time_slot": "Noon",
+              "flight_number": "6E-6983,6E-2104",
+              "price": "₹6,090",
+              "baggage": null
+            },
+            {
+              "departure_time": "19:10",
+              "arrival_time": "00:10",
+              "time_slot": "Evening",
+              "flight_number": "6E-5138,6E-5049",
+              "price": "₹6,222",
+              "baggage": null
+            },
+            {
+              "departure_time": "21:25",
+              "arrival_time": "02:15",
+              "time_slot": "Night",
+              "flight_number": "6E-6479,6E-2058",
+              "price": "₹6,300",
+              "baggage": null
+            },
+            {
+              "departure_time": "13:20",
+              "arrival_time": "18:30",
+              "time_slot": "Noon",
+              "flight_number": "6E-5206,6E-708",
+              "price": "₹6,300",
+              "baggage": null
+            },
+            {
+              "departure_time": "08:15",
+              "arrival_time": "13:30",
+              "time_slot": "Morning Peak",
+              "flight_number": "6E-6050,6E-6382",
+              "price": "₹6,300",
+              "baggage": null
+            },
+            {
+              "departure_time": "17:00",
+              "arrival_time": "19:05",
+              "time_slot": "Evening",
+              "flight_number": "6E-5096",
+              "price": "₹6,442",
+              "baggage": null
+            },
+            {
+              "departure_time": "20:20",
+              "arrival_time": "22:20",
+              "time_slot": "Night",
+              "flight_number": "6E-955",
+              "price": "₹6,529",
+              "baggage": null
+            },
+            {
+              "departure_time": "06:55",
+              "arrival_time": "09:05",
+              "time_slot": "Morning Peak",
+              "flight_number": "6E-6470",
+              "price": "₹6,529",
+              "baggage": null
+            },
+            {
+              "departure_time": "23:25",
+              "arrival_time": "01:50",
+              "time_slot": "Night",
+              "flight_number": "IX-1235",
+              "price": "₹6,529",
+              "baggage": null
+            },
+            {
+              "departure_time": "05:35",
+              "arrival_time": "08:05",
+              "time_slot": "Early morning",
+              "flight_number": "IX-1056",
+              "price": "₹6,529",
+              "baggage": null
+            },
+            {
+              "departure_time": "13:00",
+              "arrival_time": "15:10",
+              "time_slot": "Noon",
+              "flight_number": "6E-324",
+              "price": "₹6,530",
+              "baggage": null
+            },
+            {
+              "departure_time": "20:00",
+              "arrival_time": "22:10",
+              "time_slot": "Night",
+              "flight_number": "6E-303",
+              "price": "₹6,530",
+              "baggage": null
+            },
+            {
+              "departure_time": "05:00",
+              "arrival_time": "07:15",
+              "time_slot": "Early morning",
+              "flight_number": "6E-449",
+              "price": "₹6,530",
+              "baggage": null
+            },
+            {
+              "departure_time": "06:05",
+              "arrival_time": "08:20",
+              "time_slot": "Morning Peak",
+              "flight_number": "6E-6218",
+              "price": "₹6,530",
+              "baggage": null
+            },
+            {
+              "departure_time": "07:15",
+              "arrival_time": "09:30",
+              "time_slot": "Morning Peak",
+              "flight_number": "6E-6814",
+              "price": "₹6,530",
+              "baggage": null
+            },
+            {
+              "departure_time": "08:45",
+              "arrival_time": "11:00",
+              "time_slot": "Morning Peak",
+              "flight_number": "6E-675",
+              "price": "₹6,530",
+              "baggage": null
+            },
+            {
+              "departure_time": "10:30",
+              "arrival_time": "12:45",
+              "time_slot": "Noon",
+              "flight_number": "QP-1110",
+              "price": "₹6,530",
+              "baggage": null
+            },
+            {
+              "departure_time": "11:00",
+              "arrival_time": "13:15",
+              "time_slot": "Noon",
+              "flight_number": "6E-6047",
+              "price": "₹6,530",
+              "baggage": null
+            },
+            {
+              "departure_time": "12:00",
+              "arrival_time": "14:15",
+              "time_slot": "Noon",
+              "flight_number": "6E-6676",
+              "price": "₹6,530",
+              "baggage": null
+            },
+            {
+              "departure_time": "14:45",
+              "arrival_time": "17:00",
+              "time_slot": "Noon",
+              "flight_number": "6E-6318",
+              "price": "₹6,530",
+              "baggage": null
+            },
+            {
+              "departure_time": "15:30",
+              "arrival_time": "17:45",
+              "time_slot": "Noon",
+              "flight_number": "6E-864",
+              "price": "₹6,530",
+              "baggage": null
+            },
+            {
+              "departure_time": "17:00",
+              "arrival_time": "19:15",
+              "time_slot": "Evening",
+              "flight_number": "6E-6706",
+              "price": "₹6,530",
+              "baggage": null
+            },
+            {
+              "departure_time": "17:30",
+              "arrival_time": "19:45",
+              "time_slot": "Evening",
+              "flight_number": "QP-1820",
+              "price": "₹6,530",
+              "baggage": null
+            },
+            {
+              "departure_time": "18:00",
+              "arrival_time": "20:15",
+              "time_slot": "Evening",
+              "flight_number": "6E-329",
+              "price": "₹6,530",
+              "baggage": null
+            }
+          ],
+          "offset_days": 1,
+          "requested_date": "2026-09-05"
+        },
+        "T_plus_7": {
+          "url": "https://in.via.com/flight/search?returnType=one-way&destination=BOM&bdestination=BOM&destinationL=Bombay&destinationCity=Bombay&destinationCN=&source=DEL&bsource=DEL&sourceL=Delhi&sourceCity=Delhi&sourceCN=&month=9&day=11&year=2026&date=9%2F11%2F2026&numAdults=1&numChildren=0&numInfants=0&validation_result=&domesinter=international&livequote=-1&flightClass=ALL&travType=INTL&routingType=ALL&preferredCarrier=&prefCarrier=0&isAjax=false",
+          "price": "₹5,458",
+          "flight_number": "QP-1940",
+          "departure_time": "14:00",
+          "arrival_time": "16:20",
+          "currency": "₹",
+          "html_file": "C:\\Users\\shiva\\OneDrive\\Desktop\\CS\\rendered_flight_page_delhi_bombay_T_plus_7_2026-09-11.html",
+          "analysis": {
+            "html_characters": 516701,
+            "visible_text_characters": 5824,
+            "flight_candidates": [
+              "QP-1940",
+              "6E-5119,6E-5146",
+              "6E-2076,6E-5078",
+              "6E-2013,6E-6205",
+              "6E-6261,6E-6285",
+              "6E-6190,6E-2719",
+              "6E-6443,6E-5344",
+              "6E-5298,6E-5021",
+              "6E-6479,6E-2058",
+              "6E-5096"
+            ],
+            "time_candidates": [
+              "14:00",
+              "16:20",
+              "05:10",
+              "09:35",
+              "07:30",
+              "12:20",
+              "21:50",
+              "02:55",
+              "00:15",
+              "05:30"
+            ],
+            "structured_data_present": false,
+            "via_rows_found": 30,
+            "script_version": "via-fixed-2026-09-01"
+          },
+          "flights": [
+            {
+              "departure_time": "14:00",
+              "arrival_time": "16:20",
+              "time_slot": "Noon",
+              "flight_number": "QP-1940",
+              "price": "₹5,458",
+              "baggage": null
+            },
+            {
+              "departure_time": "05:10",
+              "arrival_time": "09:35",
+              "time_slot": "Early morning",
+              "flight_number": "6E-5119,6E-5146",
+              "price": "₹6,090",
+              "baggage": null
+            },
+            {
+              "departure_time": "07:30",
+              "arrival_time": "12:20",
+              "time_slot": "Morning Peak",
+              "flight_number": "6E-2076,6E-5078",
+              "price": "₹6,090",
+              "baggage": null
+            },
+            {
+              "departure_time": "21:50",
+              "arrival_time": "02:55",
+              "time_slot": "Night",
+              "flight_number": "6E-2013,6E-6205",
+              "price": "₹6,090",
+              "baggage": null
+            },
+            {
+              "departure_time": "00:15",
+              "arrival_time": "05:30",
+              "time_slot": "Night",
+              "flight_number": "6E-6261,6E-6285",
+              "price": "₹6,090",
+              "baggage": null
+            },
+            {
+              "departure_time": "07:40",
+              "arrival_time": "12:50",
+              "time_slot": "Morning Peak",
+              "flight_number": "6E-6190,6E-2719",
+              "price": "₹6,095",
+              "baggage": null
+            },
+            {
+              "departure_time": "09:00",
+              "arrival_time": "13:45",
+              "time_slot": "Morning Peak",
+              "flight_number": "6E-6443,6E-5344",
+              "price": "₹6,222",
+              "baggage": null
+            },
+            {
+              "departure_time": "09:00",
+              "arrival_time": "13:50",
+              "time_slot": "Morning Peak",
+              "flight_number": "6E-5298,6E-5021",
+              "price": "₹6,300",
+              "baggage": null
+            },
+            {
+              "departure_time": "21:25",
+              "arrival_time": "02:15",
+              "time_slot": "Night",
+              "flight_number": "6E-6479,6E-2058",
+              "price": "₹6,300",
+              "baggage": null
+            },
+            {
+              "departure_time": "17:00",
+              "arrival_time": "19:05",
+              "time_slot": "Evening",
+              "flight_number": "6E-5096",
+              "price": "₹6,442",
+              "baggage": null
+            },
+            {
+              "departure_time": "14:10",
+              "arrival_time": "16:15",
+              "time_slot": "Noon",
+              "flight_number": "QP-2074",
+              "price": "₹6,500",
+              "baggage": null
+            },
+            {
+              "departure_time": "06:55",
+              "arrival_time": "09:05",
+              "time_slot": "Morning Peak",
+              "flight_number": "6E-6470",
+              "price": "₹6,529",
+              "baggage": null
+            },
+            {
+              "departure_time": "05:35",
+              "arrival_time": "08:05",
+              "time_slot": "Early morning",
+              "flight_number": "IX-1056",
+              "price": "₹6,529",
+              "baggage": null
+            },
+            {
+              "departure_time": "05:45",
+              "arrival_time": "11:05",
+              "time_slot": "Early morning",
+              "flight_number": "IX-1165,IX-1027",
+              "price": "₹6,529",
+              "baggage": null
+            },
+            {
+              "departure_time": "23:25",
+              "arrival_time": "11:05",
+              "time_slot": "Night",
+              "flight_number": "IX-1392,IX-1027",
+              "price": "₹6,529",
+              "baggage": null
+            },
+            {
+              "departure_time": "13:00",
+              "arrival_time": "15:10",
+              "time_slot": "Noon",
+              "flight_number": "6E-324",
+              "price": "₹6,530",
+              "baggage": null
+            },
+            {
+              "departure_time": "05:00",
+              "arrival_time": "07:15",
+              "time_slot": "Early morning",
+              "flight_number": "6E-449",
+              "price": "₹6,530",
+              "baggage": null
+            },
+            {
+              "departure_time": "06:05",
+              "arrival_time": "08:20",
+              "time_slot": "Morning Peak",
+              "flight_number": "6E-6218",
+              "price": "₹6,530",
+              "baggage": null
+            },
+            {
+              "departure_time": "07:15",
+              "arrival_time": "09:30",
+              "time_slot": "Morning Peak",
+              "flight_number": "6E-6814",
+              "price": "₹6,530",
+              "baggage": null
+            },
+            {
+              "departure_time": "08:45",
+              "arrival_time": "11:00",
+              "time_slot": "Morning Peak",
+              "flight_number": "6E-675",
+              "price": "₹6,530",
+              "baggage": null
+            },
+            {
+              "departure_time": "10:30",
+              "arrival_time": "12:45",
+              "time_slot": "Noon",
+              "flight_number": "QP-1110",
+              "price": "₹6,530",
+              "baggage": null
+            },
+            {
+              "departure_time": "11:00",
+              "arrival_time": "13:15",
+              "time_slot": "Noon",
+              "flight_number": "6E-6047",
+              "price": "₹6,530",
+              "baggage": null
+            },
+            {
+              "departure_time": "12:00",
+              "arrival_time": "14:15",
+              "time_slot": "Noon",
+              "flight_number": "6E-6676",
+              "price": "₹6,530",
+              "baggage": null
+            },
+            {
+              "departure_time": "14:45",
+              "arrival_time": "17:00",
+              "time_slot": "Noon",
+              "flight_number": "6E-6318",
+              "price": "₹6,530",
+              "baggage": null
+            },
+            {
+              "departure_time": "15:30",
+              "arrival_time": "17:45",
+              "time_slot": "Noon",
+              "flight_number": "6E-864",
+              "price": "₹6,530",
+              "baggage": null
+            },
+            {
+              "departure_time": "23:30",
+              "arrival_time": "01:45",
+              "time_slot": "Night",
+              "flight_number": "6E-322",
+              "price": "₹6,530",
+              "baggage": null
+            },
+            {
+              "departure_time": "06:50",
+              "arrival_time": "09:10",
+              "time_slot": "Morning Peak",
+              "flight_number": "QP-1833",
+              "price": "₹6,530",
+              "baggage": null
+            },
+            {
+              "departure_time": "08:00",
+              "arrival_time": "10:20",
+              "time_slot": "Morning Peak",
+              "flight_number": "6E-320",
+              "price": "₹6,530",
+              "baggage": null
+            },
+            {
+              "departure_time": "10:15",
+              "arrival_time": "12:35",
+              "time_slot": "Noon",
+              "flight_number": "6E-6328",
+              "price": "₹6,530",
+              "baggage": null
+            },
+            {
+              "departure_time": "16:15",
+              "arrival_time": "18:35",
+              "time_slot": "Noon",
+              "flight_number": "6E-327",
+              "price": "₹6,530",
+              "baggage": null
+            }
+          ],
+          "offset_days": 7,
+          "requested_date": "2026-09-11"
+        },
+        "T_plus_15": {
+          "url": "https://in.via.com/flight/search?returnType=one-way&destination=BOM&bdestination=BOM&destinationL=Bombay&destinationCity=Bombay&destinationCN=&source=DEL&bsource=DEL&sourceL=Delhi&sourceCity=Delhi&sourceCN=&month=9&day=19&year=2026&date=9%2F19%2F2026&numAdults=1&numChildren=0&numInfants=0&validation_result=&domesinter=international&livequote=-1&flightClass=ALL&travType=INTL&routingType=ALL&preferredCarrier=&prefCarrier=0&isAjax=false",
+          "price": "₹6,442",
+          "flight_number": "6E-5096",
+          "departure_time": "17:00",
+          "arrival_time": "19:05",
+          "currency": "₹",
+          "html_file": "C:\\Users\\shiva\\OneDrive\\Desktop\\CS\\rendered_flight_page_delhi_bombay_T_plus_15_2026-09-19.html",
+          "analysis": {
+            "html_characters": 515302,
+            "visible_text_characters": 5728,
+            "flight_candidates": [
+              "6E-5096",
+              "IX-1235",
+              "6E-6814",
+              "6E-675",
+              "QP-1110",
+              "6E-6047",
+              "6E-6676",
+              "6E-6318",
+              "6E-864",
+              "QP-1820"
+            ],
+            "time_candidates": [
+              "17:00",
+              "19:05",
+              "23:25",
+              "01:50",
+              "07:15",
+              "09:30",
+              "08:45",
+              "11:00",
+              "10:30",
+              "12:45"
+            ],
+            "structured_data_present": false,
+            "via_rows_found": 30,
+            "script_version": "via-fixed-2026-09-01"
+          },
+          "flights": [
+            {
+              "departure_time": "17:00",
+              "arrival_time": "19:05",
+              "time_slot": "Evening",
+              "flight_number": "6E-5096",
+              "price": "₹6,442",
+              "baggage": null
+            },
+            {
+              "departure_time": "23:25",
+              "arrival_time": "01:50",
+              "time_slot": "Night",
+              "flight_number": "IX-1235",
+              "price": "₹6,529",
+              "baggage": null
+            },
+            {
+              "departure_time": "07:15",
+              "arrival_time": "09:30",
+              "time_slot": "Morning Peak",
+              "flight_number": "6E-6814",
+              "price": "₹6,530",
+              "baggage": null
+            },
+            {
+              "departure_time": "08:45",
+              "arrival_time": "11:00",
+              "time_slot": "Morning Peak",
+              "flight_number": "6E-675",
+              "price": "₹6,530",
+              "baggage": null
+            },
+            {
+              "departure_time": "10:30",
+              "arrival_time": "12:45",
+              "time_slot": "Noon",
+              "flight_number": "QP-1110",
+              "price": "₹6,530",
+              "baggage": null
+            },
+            {
+              "departure_time": "11:00",
+              "arrival_time": "13:15",
+              "time_slot": "Noon",
+              "flight_number": "6E-6047",
+              "price": "₹6,530",
+              "baggage": null
+            },
+            {
+              "departure_time": "12:00",
+              "arrival_time": "14:15",
+              "time_slot": "Noon",
+              "flight_number": "6E-6676",
+              "price": "₹6,530",
+              "baggage": null
+            },
+            {
+              "departure_time": "14:45",
+              "arrival_time": "17:00",
+              "time_slot": "Noon",
+              "flight_number": "6E-6318",
+              "price": "₹5,998",
+              "baggage": null
+            },
+            {
+              "departure_time": "15:30",
+              "arrival_time": "17:45",
+              "time_slot": "Noon",
+              "flight_number": "6E-864",
+              "price": "₹5,998",
+              "baggage": null
+            },
+            {
+              "departure_time": "17:30",
+              "arrival_time": "19:45",
+              "time_slot": "Evening",
+              "flight_number": "QP-1820",
+              "price": "₹6,530",
+              "baggage": null
+            },
+            {
+              "departure_time": "18:00",
+              "arrival_time": "20:15",
+              "time_slot": "Evening",
+              "flight_number": "6E-329",
+              "price": "₹6,530",
+              "baggage": null
+            },
+            {
+              "departure_time": "23:30",
+              "arrival_time": "01:45",
+              "time_slot": "Night",
+              "flight_number": "6E-322",
+              "price": "₹6,530",
+              "baggage": null
+            },
+            {
+              "departure_time": "06:50",
+              "arrival_time": "09:10",
+              "time_slot": "Morning Peak",
+              "flight_number": "QP-1833",
+              "price": "₹6,530",
+              "baggage": null
+            },
+            {
+              "departure_time": "08:00",
+              "arrival_time": "10:20",
+              "time_slot": "Morning Peak",
+              "flight_number": "6E-320",
+              "price": "₹6,530",
+              "baggage": null
+            },
+            {
+              "departure_time": "09:20",
+              "arrival_time": "11:40",
+              "time_slot": "Morning Peak",
+              "flight_number": "QP-1112",
+              "price": "₹6,530",
+              "baggage": null
+            },
+            {
+              "departure_time": "10:15",
+              "arrival_time": "12:35",
+              "time_slot": "Noon",
+              "flight_number": "6E-6328",
+              "price": "₹6,530",
+              "baggage": null
+            },
+            {
+              "departure_time": "16:00",
+              "arrival_time": "18:20",
+              "time_slot": "Noon",
+              "flight_number": "QP-1128",
+              "price": "₹6,530",
+              "baggage": null
+            },
+            {
+              "departure_time": "16:15",
+              "arrival_time": "18:35",
+              "time_slot": "Noon",
+              "flight_number": "6E-327",
+              "price": "₹5,998",
+              "baggage": null
+            },
+            {
+              "departure_time": "22:45",
+              "arrival_time": "01:05",
+              "time_slot": "Night",
+              "flight_number": "6E-6114",
+              "price": "₹6,530",
+              "baggage": null
+            },
+            {
+              "departure_time": "08:40",
+              "arrival_time": "11:05",
+              "time_slot": "Morning Peak",
+              "flight_number": "QP-1119",
+              "price": "₹6,530",
+              "baggage": null
+            },
+            {
+              "departure_time": "09:30",
+              "arrival_time": "11:55",
+              "time_slot": "Morning Peak",
+              "flight_number": "6E-6107",
+              "price": "₹6,530",
+              "baggage": null
+            },
+            {
+              "departure_time": "12:30",
+              "arrival_time": "14:55",
+              "time_slot": "Noon",
+              "flight_number": "QP-1836",
+              "price": "₹6,530",
+              "baggage": null
+            },
+            {
+              "departure_time": "14:00",
+              "arrival_time": "16:25",
+              "time_slot": "Noon",
+              "flight_number": "6E-6022",
+              "price": "₹5,998",
+              "baggage": null
+            },
+            {
+              "departure_time": "19:00",
+              "arrival_time": "21:25",
+              "time_slot": "Evening",
+              "flight_number": "6E-354",
+              "price": "₹6,530",
+              "baggage": null
+            },
+            {
+              "departure_time": "19:55",
+              "arrival_time": "22:20",
+              "time_slot": "Evening",
+              "flight_number": "QP-1826",
+              "price": "₹6,530",
+              "baggage": null
+            },
+            {
+              "departure_time": "05:10",
+              "arrival_time": "09:35",
+              "time_slot": "Early morning",
+              "flight_number": "6E-5119,6E-5146",
+              "price": "₹6,618",
+              "baggage": null
+            },
+            {
+              "departure_time": "07:30",
+              "arrival_time": "12:20",
+              "time_slot": "Morning Peak",
+              "flight_number": "6E-2076,6E-5078",
+              "price": "₹6,618",
+              "baggage": null
+            },
+            {
+              "departure_time": "19:35",
+              "arrival_time": "00:30",
+              "time_slot": "Evening",
+              "flight_number": "6E-931,6E-6351",
+              "price": "₹6,618",
+              "baggage": null
+            },
+            {
+              "departure_time": "21:50",
+              "arrival_time": "02:55",
+              "time_slot": "Night",
+              "flight_number": "6E-2013,6E-6205",
+              "price": "₹6,618",
+              "baggage": null
+            },
+            {
+              "departure_time": "15:35",
+              "arrival_time": "20:50",
+              "time_slot": "Noon",
+              "flight_number": "6E-6983,6E-2104",
+              "price": "₹6,618",
+              "baggage": null
+            }
+          ],
+          "offset_days": 15,
+          "requested_date": "2026-09-19"
+        },
+        "T_plus_30": {
+          "url": "https://in.via.com/flight/search?returnType=one-way&destination=BOM&bdestination=BOM&destinationL=Bombay&destinationCity=Bombay&destinationCN=&source=DEL&bsource=DEL&sourceL=Delhi&sourceCity=Delhi&sourceCN=&month=10&day=4&year=2026&date=10%2F4%2F2026&numAdults=1&numChildren=0&numInfants=0&validation_result=&domesinter=international&livequote=-1&flightClass=ALL&travType=INTL&routingType=ALL&preferredCarrier=&prefCarrier=0&isAjax=false",
+          "price": "₹6,417",
+          "flight_number": "SG-802",
+          "departure_time": "22:30",
+          "arrival_time": "00:50",
+          "currency": "₹",
+          "html_file": "C:\\Users\\shiva\\OneDrive\\Desktop\\CS\\rendered_flight_page_delhi_bombay_T_plus_30_2026-10-04.html",
+          "analysis": {
+            "html_characters": 515215,
+            "visible_text_characters": 5662,
+            "flight_candidates": [
+              "SG-802",
+              "QP-2012",
+              "IX-1463",
+              "6E-6470",
+              "IX-1235",
+              "6E-449",
+              "6E-6218",
+              "6E-6814",
+              "6E-675",
+              "QP-1833"
+            ],
+            "time_candidates": [
+              "22:30",
+              "00:50",
+              "08:55",
+              "11:15",
+              "13:20",
+              "06:55",
+              "09:05",
+              "23:25",
+              "01:50",
+              "05:00"
+            ],
+            "structured_data_present": false,
+            "via_rows_found": 30,
+            "script_version": "via-fixed-2026-09-01"
+          },
+          "flights": [
+            {
+              "departure_time": "22:30",
+              "arrival_time": "00:50",
+              "time_slot": "Night",
+              "flight_number": "SG-802",
+              "price": "₹6,417",
+              "baggage": null
+            },
+            {
+              "departure_time": "08:55",
+              "arrival_time": "11:15",
+              "time_slot": "Morning Peak",
+              "flight_number": "QP-2012",
+              "price": "₹6,500",
+              "baggage": null
+            },
+            {
+              "departure_time": "11:15",
+              "arrival_time": "13:20",
+              "time_slot": "Noon",
+              "flight_number": "IX-1463",
+              "price": "₹6,529",
+              "baggage": null
+            },
+            {
+              "departure_time": "06:55",
+              "arrival_time": "09:05",
+              "time_slot": "Morning Peak",
+              "flight_number": "6E-6470",
+              "price": "₹6,529",
+              "baggage": null
+            },
+            {
+              "departure_time": "23:25",
+              "arrival_time": "01:50",
+              "time_slot": "Night",
+              "flight_number": "IX-1235",
+              "price": "₹6,529",
+              "baggage": null
+            },
+            {
+              "departure_time": "05:00",
+              "arrival_time": "07:15",
+              "time_slot": "Early morning",
+              "flight_number": "6E-449",
+              "price": "₹6,530",
+              "baggage": null
+            },
+            {
+              "departure_time": "06:05",
+              "arrival_time": "08:20",
+              "time_slot": "Morning Peak",
+              "flight_number": "6E-6218",
+              "price": "₹6,530",
+              "baggage": null
+            },
+            {
+              "departure_time": "07:15",
+              "arrival_time": "09:30",
+              "time_slot": "Morning Peak",
+              "flight_number": "6E-6814",
+              "price": "₹6,530",
+              "baggage": null
+            },
+            {
+              "departure_time": "08:45",
+              "arrival_time": "11:00",
+              "time_slot": "Morning Peak",
+              "flight_number": "6E-675",
+              "price": "₹6,530",
+              "baggage": null
+            },
+            {
+              "departure_time": "06:50",
+              "arrival_time": "09:10",
+              "time_slot": "Morning Peak",
+              "flight_number": "QP-1833",
+              "price": "₹6,530",
+              "baggage": null
+            },
+            {
+              "departure_time": "08:00",
+              "arrival_time": "10:20",
+              "time_slot": "Morning Peak",
+              "flight_number": "6E-320",
+              "price": "₹6,530",
+              "baggage": null
+            },
+            {
+              "departure_time": "10:00",
+              "arrival_time": "12:20",
+              "time_slot": "Noon",
+              "flight_number": "QP-1110",
+              "price": "₹6,530",
+              "baggage": null
+            },
+            {
+              "departure_time": "22:45",
+              "arrival_time": "01:05",
+              "time_slot": "Night",
+              "flight_number": "6E-6114",
+              "price": "₹6,530",
+              "baggage": null
+            },
+            {
+              "departure_time": "08:40",
+              "arrival_time": "11:05",
+              "time_slot": "Morning Peak",
+              "flight_number": "QP-1119",
+              "price": "₹6,530",
+              "baggage": null
+            },
+            {
+              "departure_time": "09:30",
+              "arrival_time": "11:55",
+              "time_slot": "Morning Peak",
+              "flight_number": "6E-6107",
+              "price": "₹6,530",
+              "baggage": null
+            },
+            {
+              "departure_time": "11:00",
+              "arrival_time": "13:15",
+              "time_slot": "Noon",
+              "flight_number": "6E-6047",
+              "price": "₹6,688",
+              "baggage": null
+            },
+            {
+              "departure_time": "12:00",
+              "arrival_time": "14:15",
+              "time_slot": "Noon",
+              "flight_number": "6E-6676",
+              "price": "₹6,688",
+              "baggage": null
+            },
+            {
+              "departure_time": "10:15",
+              "arrival_time": "12:35",
+              "time_slot": "Noon",
+              "flight_number": "6E-6328",
+              "price": "₹6,688",
+              "baggage": null
+            },
+            {
+              "departure_time": "18:40",
+              "arrival_time": "21:05",
+              "time_slot": "Evening",
+              "flight_number": "IX-1024",
+              "price": "₹6,739",
+              "baggage": null
+            },
+            {
+              "departure_time": "06:00",
+              "arrival_time": "11:05",
+              "time_slot": "Morning Peak",
+              "flight_number": "IX-1165,IX-1027",
+              "price": "₹6,790",
+              "baggage": null
+            },
+            {
+              "departure_time": "17:30",
+              "arrival_time": "19:50",
+              "time_slot": "Evening",
+              "flight_number": "QP-1820",
+              "price": "₹6,866",
+              "baggage": null
+            },
+            {
+              "departure_time": "13:00",
+              "arrival_time": "15:10",
+              "time_slot": "Noon",
+              "flight_number": "6E-324",
+              "price": "₹6,898",
+              "baggage": null
+            },
+            {
+              "departure_time": "14:45",
+              "arrival_time": "17:00",
+              "time_slot": "Noon",
+              "flight_number": "6E-6318",
+              "price": "₹6,898",
+              "baggage": null
+            },
+            {
+              "departure_time": "17:50",
+              "arrival_time": "20:10",
+              "time_slot": "Evening",
+              "flight_number": "IX-1056",
+              "price": "₹6,898",
+              "baggage": null
+            },
+            {
+              "departure_time": "14:00",
+              "arrival_time": "16:25",
+              "time_slot": "Noon",
+              "flight_number": "6E-6022",
+              "price": "₹6,898",
+              "baggage": null
+            },
+            {
+              "departure_time": "20:20",
+              "arrival_time": "22:20",
+              "time_slot": "Night",
+              "flight_number": "6E-955",
+              "price": "₹6,949",
+              "baggage": null
+            },
+            {
+              "departure_time": "06:30",
+              "arrival_time": "08:50",
+              "time_slot": "Morning Peak",
+              "flight_number": "AI-2975",
+              "price": "₹7,000",
+              "baggage": null
+            },
+            {
+              "departure_time": "05:00",
+              "arrival_time": "07:25",
+              "time_slot": "Early morning",
+              "flight_number": "AI-1745",
+              "price": "₹7,000",
+              "baggage": null
+            },
+            {
+              "departure_time": "07:00",
+              "arrival_time": "09:25",
+              "time_slot": "Morning Peak",
+              "flight_number": "AI-2429",
+              "price": "₹7,000",
+              "baggage": null
+            },
+            {
+              "departure_time": "14:30",
+              "arrival_time": "18:20",
+              "time_slot": "Noon",
+              "flight_number": "AI-1780",
+              "price": "₹7,000",
+              "baggage": null
+            }
+          ],
+          "offset_days": 30,
+          "requested_date": "2026-10-04"
+        },
+        "T_plus_45": {
+          "url": "https://in.via.com/flight/search?returnType=one-way&destination=BOM&bdestination=BOM&destinationL=Bombay&destinationCity=Bombay&destinationCN=&source=DEL&bsource=DEL&sourceL=Delhi&sourceCity=Delhi&sourceCN=&month=10&day=19&year=2026&date=10%2F19%2F2026&numAdults=1&numChildren=0&numInfants=0&validation_result=&domesinter=international&livequote=-1&flightClass=ALL&travType=INTL&routingType=ALL&preferredCarrier=&prefCarrier=0&isAjax=false",
+          "price": "₹6,498",
+          "flight_number": "SG-802",
+          "departure_time": "22:30",
+          "arrival_time": "00:50",
+          "currency": "₹",
+          "html_file": "C:\\Users\\shiva\\OneDrive\\Desktop\\CS\\rendered_flight_page_delhi_bombay_T_plus_45_2026-10-19.html",
+          "analysis": {
+            "html_characters": 518229,
+            "visible_text_characters": 5951,
+            "flight_candidates": [
+              "SG-802",
+              "SG-162",
+              "QP-2012",
+              "IX-1463",
+              "IX-1038",
+              "IX-1056",
+              "IX-1024",
+              "IX-1235",
+              "IX-1165,IX-1027",
+              "QP-1833"
+            ],
+            "time_candidates": [
+              "22:30",
+              "00:50",
+              "19:55",
+              "08:55",
+              "11:15",
+              "13:20",
+              "17:35",
+              "19:45",
+              "17:50",
+              "20:10"
+            ],
+            "structured_data_present": false,
+            "via_rows_found": 30,
+            "script_version": "via-fixed-2026-09-01"
+          },
+          "flights": [
+            {
+              "departure_time": "22:30",
+              "arrival_time": "00:50",
+              "time_slot": "Night",
+              "flight_number": "SG-802",
+              "price": "₹6,498",
+              "baggage": null
+            },
+            {
+              "departure_time": "19:55",
+              "arrival_time": "22:30",
+              "time_slot": "Evening",
+              "flight_number": "SG-162",
+              "price": "₹6,498",
+              "baggage": null
+            },
+            {
+              "departure_time": "08:55",
+              "arrival_time": "11:15",
+              "time_slot": "Morning Peak",
+              "flight_number": "QP-2012",
+              "price": "₹6,500",
+              "baggage": null
+            },
+            {
+              "departure_time": "11:15",
+              "arrival_time": "13:20",
+              "time_slot": "Noon",
+              "flight_number": "IX-1463",
+              "price": "₹6,529",
+              "baggage": null
+            },
+            {
+              "departure_time": "17:35",
+              "arrival_time": "19:45",
+              "time_slot": "Evening",
+              "flight_number": "IX-1038",
+              "price": "₹6,529",
+              "baggage": null
+            },
+            {
+              "departure_time": "17:50",
+              "arrival_time": "20:10",
+              "time_slot": "Evening",
+              "flight_number": "IX-1056",
+              "price": "₹6,529",
+              "baggage": null
+            },
+            {
+              "departure_time": "18:40",
+              "arrival_time": "21:05",
+              "time_slot": "Evening",
+              "flight_number": "IX-1024",
+              "price": "₹6,529",
+              "baggage": null
+            },
+            {
+              "departure_time": "23:25",
+              "arrival_time": "01:50",
+              "time_slot": "Night",
+              "flight_number": "IX-1235",
+              "price": "₹6,529",
+              "baggage": null
+            },
+            {
+              "departure_time": "06:00",
+              "arrival_time": "11:05",
+              "time_slot": "Morning Peak",
+              "flight_number": "IX-1165,IX-1027",
+              "price": "₹6,529",
+              "baggage": null
+            },
+            {
+              "departure_time": "06:50",
+              "arrival_time": "09:10",
+              "time_slot": "Morning Peak",
+              "flight_number": "QP-1833",
+              "price": "₹6,530",
+              "baggage": null
+            },
+            {
+              "departure_time": "16:00",
+              "arrival_time": "18:20",
+              "time_slot": "Noon",
+              "flight_number": "QP-1128",
+              "price": "₹6,530",
+              "baggage": null
+            },
+            {
+              "departure_time": "17:30",
+              "arrival_time": "19:50",
+              "time_slot": "Evening",
+              "flight_number": "QP-1820",
+              "price": "₹6,530",
+              "baggage": null
+            },
+            {
+              "departure_time": "05:10",
+              "arrival_time": "10:00",
+              "time_slot": "Early morning",
+              "flight_number": "6E-5119,6E-2046",
+              "price": "₹6,598",
+              "baggage": null
+            },
+            {
+              "departure_time": "07:40",
+              "arrival_time": "12:50",
+              "time_slot": "Morning Peak",
+              "flight_number": "6E-6190,6E-2719",
+              "price": "₹6,598",
+              "baggage": null
+            },
+            {
+              "departure_time": "17:05",
+              "arrival_time": "21:05",
+              "time_slot": "Evening",
+              "flight_number": "6E-5073,6E-5160",
+              "price": "₹6,618",
+              "baggage": null
+            },
+            {
+              "departure_time": "05:10",
+              "arrival_time": "09:35",
+              "time_slot": "Early morning",
+              "flight_number": "6E-5119,6E-5146",
+              "price": "₹6,618",
+              "baggage": null
+            },
+            {
+              "departure_time": "05:40",
+              "arrival_time": "10:30",
+              "time_slot": "Early morning",
+              "flight_number": "6E-6171,6E-233",
+              "price": "₹6,618",
+              "baggage": null
+            },
+            {
+              "departure_time": "07:30",
+              "arrival_time": "12:20",
+              "time_slot": "Morning Peak",
+              "flight_number": "6E-2076,6E-5078",
+              "price": "₹6,618",
+              "baggage": null
+            },
+            {
+              "departure_time": "19:30",
+              "arrival_time": "00:30",
+              "time_slot": "Evening",
+              "flight_number": "6E-931,6E-6351",
+              "price": "₹6,618",
+              "baggage": null
+            },
+            {
+              "departure_time": "21:50",
+              "arrival_time": "02:55",
+              "time_slot": "Night",
+              "flight_number": "6E-2013,6E-6205",
+              "price": "₹6,618",
+              "baggage": null
+            },
+            {
+              "departure_time": "19:40",
+              "arrival_time": "23:45",
+              "time_slot": "Evening",
+              "flight_number": "6E-2169,6E-6598",
+              "price": "₹6,750",
+              "baggage": null
+            },
+            {
+              "departure_time": "15:00",
+              "arrival_time": "19:35",
+              "time_slot": "Noon",
+              "flight_number": "6E-2249,6E-5132",
+              "price": "₹6,750",
+              "baggage": null
+            },
+            {
+              "departure_time": "09:00",
+              "arrival_time": "13:45",
+              "time_slot": "Morning Peak",
+              "flight_number": "6E-6443,6E-5344",
+              "price": "₹6,750",
+              "baggage": null
+            },
+            {
+              "departure_time": "17:20",
+              "arrival_time": "22:05",
+              "time_slot": "Evening",
+              "flight_number": "6E-6829,6E-552",
+              "price": "₹6,750",
+              "baggage": null
+            },
+            {
+              "departure_time": "19:10",
+              "arrival_time": "00:10",
+              "time_slot": "Evening",
+              "flight_number": "6E-5138,6E-5049",
+              "price": "₹6,750",
+              "baggage": null
+            },
+            {
+              "departure_time": "21:25",
+              "arrival_time": "02:15",
+              "time_slot": "Night",
+              "flight_number": "6E-6479,6E-2058",
+              "price": "₹6,828",
+              "baggage": null
+            },
+            {
+              "departure_time": "13:20",
+              "arrival_time": "18:30",
+              "time_slot": "Noon",
+              "flight_number": "6E-2113,6E-708",
+              "price": "₹6,828",
+              "baggage": null
+            },
+            {
+              "departure_time": "16:10",
+              "arrival_time": "21:20",
+              "time_slot": "Noon",
+              "flight_number": "6E-758,6E-5083",
+              "price": "₹6,828",
+              "baggage": null
+            },
+            {
+              "departure_time": "15:00",
+              "arrival_time": "17:10",
+              "time_slot": "Noon",
+              "flight_number": "6E-5198",
+              "price": "₹6,920",
+              "baggage": null
+            },
+            {
+              "departure_time": "06:50",
+              "arrival_time": "08:40",
+              "time_slot": "Morning Peak",
+              "flight_number": "6E-6470",
+              "price": "₹7,019",
+              "baggage": null
+            }
+          ],
+          "offset_days": 45,
+          "requested_date": "2026-10-19"
+        }
+      },
+      "route_name": "Delhi - Bombay"
+    },
+    {
+      "script_version": "via-fixed-2026-09-01",
+      "mode": "relative_dates",
+      "run_date_T": "2026-09-04",
+      "route": "https://in.via.com/flight/search?returnType=one-way&destination=BLR&bdestination=BLR&destinationL=Bangalore&destinationCity=Bangalore&destinationCN=&source=DEL&bsource=DEL&sourceL=Delhi&sourceCity=Delhi&sourceCN=&month=9&day=1&year=2026&date=9%2F1%2F2026&numAdults=1&numChildren=0&numInfants=0&validation_result=&domesinter=international&livequote=-1&flightClass=ALL&travType=INTL&routingType=ALL&preferredCarrier=&prefCarrier=0&isAjax=false",
+      "requested_offsets": [
+        1,
+        7,
+        15,
+        30,
+        45
+      ],
+      "results": {
+        "T_plus_1": {
+          "url": "https://in.via.com/flight/search?returnType=one-way&destination=BLR&bdestination=BLR&destinationL=Bangalore&destinationCity=Bangalore&destinationCN=&source=DEL&bsource=DEL&sourceL=Delhi&sourceCity=Delhi&sourceCN=&month=9&day=5&year=2026&date=9%2F5%2F2026&numAdults=1&numChildren=0&numInfants=0&validation_result=&domesinter=international&livequote=-1&flightClass=ALL&travType=INTL&routingType=ALL&preferredCarrier=&prefCarrier=0&isAjax=false",
+          "price": "₹8,992",
+          "flight_number": "QP-1308",
+          "departure_time": "20:55",
+          "arrival_time": "23:50",
+          "currency": "₹",
+          "html_file": "C:\\Users\\shiva\\OneDrive\\Desktop\\CS\\rendered_flight_page_delhi_bengaluru_T_plus_1_2026-09-05.html",
+          "analysis": {
+            "html_characters": 514296,
+            "visible_text_characters": 5754,
+            "flight_candidates": [
+              "QP-1308",
+              "QP-1350",
+              "6E-820",
+              "6E-2314",
+              "6E-810",
+              "6E-861",
+              "6E-6515",
+              "6E-846",
+              "AI-2653",
+              "AI-2409"
+            ],
+            "time_candidates": [
+              "20:55",
+              "23:50",
+              "21:55",
+              "00:50",
+              "03:00",
+              "05:55",
+              "05:45",
+              "08:40",
+              "07:05",
+              "10:00"
+            ],
+            "structured_data_present": false,
+            "via_rows_found": 30,
+            "script_version": "via-fixed-2026-09-01"
+          },
+          "flights": [
+            {
+              "departure_time": "20:55",
+              "arrival_time": "23:50",
+              "time_slot": "Night",
+              "flight_number": "QP-1308",
+              "price": "₹8,992",
+              "baggage": null
+            },
+            {
+              "departure_time": "21:55",
+              "arrival_time": "00:50",
+              "time_slot": "Night",
+              "flight_number": "QP-1350",
+              "price": "₹8,992",
+              "baggage": null
+            },
+            {
+              "departure_time": "03:00",
+              "arrival_time": "05:55",
+              "time_slot": "Early morning",
+              "flight_number": "6E-820",
+              "price": "₹9,286",
+              "baggage": null
+            },
+            {
+              "departure_time": "05:45",
+              "arrival_time": "08:40",
+              "time_slot": "Early morning",
+              "flight_number": "6E-2314",
+              "price": "₹9,286",
+              "baggage": null
+            },
+            {
+              "departure_time": "07:05",
+              "arrival_time": "10:00",
+              "time_slot": "Morning Peak",
+              "flight_number": "6E-810",
+              "price": "₹9,286",
+              "baggage": null
+            },
+            {
+              "departure_time": "19:30",
+              "arrival_time": "22:25",
+              "time_slot": "Evening",
+              "flight_number": "6E-861",
+              "price": "₹9,286",
+              "baggage": null
+            },
+            {
+              "departure_time": "20:45",
+              "arrival_time": "23:40",
+              "time_slot": "Night",
+              "flight_number": "6E-6515",
+              "price": "₹9,286",
+              "baggage": null
+            },
+            {
+              "departure_time": "22:00",
+              "arrival_time": "00:55",
+              "time_slot": "Night",
+              "flight_number": "6E-846",
+              "price": "₹9,286",
+              "baggage": null
+            },
+            {
+              "departure_time": "04:30",
+              "arrival_time": "07:20",
+              "time_slot": "Early morning",
+              "flight_number": "AI-2653",
+              "price": "₹9,300",
+              "baggage": null
+            },
+            {
+              "departure_time": "06:00",
+              "arrival_time": "08:55",
+              "time_slot": "Morning Peak",
+              "flight_number": "AI-2409",
+              "price": "₹9,300",
+              "baggage": null
+            },
+            {
+              "departure_time": "06:30",
+              "arrival_time": "09:25",
+              "time_slot": "Morning Peak",
+              "flight_number": "AI-2803",
+              "price": "₹9,300",
+              "baggage": null
+            },
+            {
+              "departure_time": "16:40",
+              "arrival_time": "19:40",
+              "time_slot": "Noon",
+              "flight_number": "QP-1822",
+              "price": "₹9,680",
+              "baggage": null
+            },
+            {
+              "departure_time": "00:15",
+              "arrival_time": "03:10",
+              "time_slot": "Night",
+              "flight_number": "AI-2757",
+              "price": "₹9,757",
+              "baggage": null
+            },
+            {
+              "departure_time": "07:00",
+              "arrival_time": "09:55",
+              "time_slot": "Morning Peak",
+              "flight_number": "AI-2815",
+              "price": "₹9,757",
+              "baggage": null
+            },
+            {
+              "departure_time": "19:00",
+              "arrival_time": "21:55",
+              "time_slot": "Evening",
+              "flight_number": "AI-2512",
+              "price": "₹9,757",
+              "baggage": null
+            },
+            {
+              "departure_time": "21:30",
+              "arrival_time": "00:25",
+              "time_slot": "Night",
+              "flight_number": "AI-2412",
+              "price": "₹9,757",
+              "baggage": null
+            },
+            {
+              "departure_time": "15:45",
+              "arrival_time": "18:40",
+              "time_slot": "Noon",
+              "flight_number": "6E-880",
+              "price": "₹9,771",
+              "baggage": null
+            },
+            {
+              "departure_time": "17:00",
+              "arrival_time": "19:55",
+              "time_slot": "Evening",
+              "flight_number": "6E-837",
+              "price": "₹9,771",
+              "baggage": null
+            },
+            {
+              "departure_time": "20:10",
+              "arrival_time": "23:10",
+              "time_slot": "Night",
+              "flight_number": "QP-1824",
+              "price": "₹9,859",
+              "baggage": null
+            },
+            {
+              "departure_time": "17:05",
+              "arrival_time": "22:05",
+              "time_slot": "Evening",
+              "flight_number": "6E-5073,6E-481",
+              "price": "₹9,898",
+              "baggage": null
+            },
+            {
+              "departure_time": "18:00",
+              "arrival_time": "23:25",
+              "time_slot": "Evening",
+              "flight_number": "6E-329,6E-6188",
+              "price": "₹9,898",
+              "baggage": null
+            },
+            {
+              "departure_time": "19:35",
+              "arrival_time": "01:10",
+              "time_slot": "Evening",
+              "flight_number": "6E-931,6E-996",
+              "price": "₹9,898",
+              "baggage": null
+            },
+            {
+              "departure_time": "21:15",
+              "arrival_time": "02:55",
+              "time_slot": "Night",
+              "flight_number": "6E-6673,6E-361",
+              "price": "₹9,898",
+              "baggage": null
+            },
+            {
+              "departure_time": "15:15",
+              "arrival_time": "20:10",
+              "time_slot": "Noon",
+              "flight_number": "6E-6091,6E-189",
+              "price": "₹9,977",
+              "baggage": null
+            },
+            {
+              "departure_time": "17:50",
+              "arrival_time": "23:00",
+              "time_slot": "Evening",
+              "flight_number": "6E-6632,6E-593",
+              "price": "₹9,977",
+              "baggage": null
+            },
+            {
+              "departure_time": "13:10",
+              "arrival_time": "18:45",
+              "time_slot": "Noon",
+              "flight_number": "6E-6115,6E-365",
+              "price": "₹9,977",
+              "baggage": null
+            },
+            {
+              "departure_time": "19:30",
+              "arrival_time": "22:20",
+              "time_slot": "Evening",
+              "flight_number": "AI-2809",
+              "price": "₹10,242",
+              "baggage": null
+            },
+            {
+              "departure_time": "15:50",
+              "arrival_time": "18:45",
+              "time_slot": "Noon",
+              "flight_number": "AI-2664",
+              "price": "₹10,242",
+              "baggage": null
+            },
+            {
+              "departure_time": "18:30",
+              "arrival_time": "21:25",
+              "time_slot": "Evening",
+              "flight_number": "AI-2487",
+              "price": "₹10,242",
+              "baggage": null
+            },
+            {
+              "departure_time": "08:20",
+              "arrival_time": "11:10",
+              "time_slot": "Morning Peak",
+              "flight_number": "6E-873",
+              "price": "₹10,285",
+              "baggage": null
+            }
+          ],
+          "offset_days": 1,
+          "requested_date": "2026-09-05"
+        },
+        "T_plus_7": {
+          "url": "https://in.via.com/flight/search?returnType=one-way&destination=BLR&bdestination=BLR&destinationL=Bangalore&destinationCity=Bangalore&destinationCN=&source=DEL&bsource=DEL&sourceL=Delhi&sourceCity=Delhi&sourceCN=&month=9&day=11&year=2026&date=9%2F11%2F2026&numAdults=1&numChildren=0&numInfants=0&validation_result=&domesinter=international&livequote=-1&flightClass=ALL&travType=INTL&routingType=ALL&preferredCarrier=&prefCarrier=0&isAjax=false",
+          "price": "₹7,996",
+          "flight_number": "AI-2809",
+          "departure_time": "19:30",
+          "arrival_time": "22:20",
+          "currency": "₹",
+          "html_file": "C:\\Users\\shiva\\OneDrive\\Desktop\\CS\\rendered_flight_page_delhi_bengaluru_T_plus_7_2026-09-11.html",
+          "analysis": {
+            "html_characters": 515447,
+            "visible_text_characters": 5848,
+            "flight_candidates": [
+              "AI-2809",
+              "6E-5119,6E-823",
+              "6E-6632,6E-593",
+              "6E-5001,6E-472",
+              "6E-2456",
+              "QP-1812",
+              "6E-820",
+              "6E-2314",
+              "QP-1350",
+              "6E-846"
+            ],
+            "time_candidates": [
+              "19:30",
+              "22:20",
+              "05:10",
+              "10:45",
+              "17:50",
+              "23:00",
+              "17:10",
+              "22:50",
+              "14:55",
+              "17:30"
+            ],
+            "structured_data_present": false,
+            "via_rows_found": 30,
+            "script_version": "via-fixed-2026-09-01"
+          },
+          "flights": [
+            {
+              "departure_time": "19:30",
+              "arrival_time": "22:20",
+              "time_slot": "Evening",
+              "flight_number": "AI-2809",
+              "price": "₹7,996",
+              "baggage": null
+            },
+            {
+              "departure_time": "05:10",
+              "arrival_time": "10:45",
+              "time_slot": "Early morning",
+              "flight_number": "6E-5119,6E-823",
+              "price": "₹8,491",
+              "baggage": null
+            },
+            {
+              "departure_time": "17:50",
+              "arrival_time": "23:00",
+              "time_slot": "Evening",
+              "flight_number": "6E-6632,6E-593",
+              "price": "₹8,570",
+              "baggage": null
+            },
+            {
+              "departure_time": "17:10",
+              "arrival_time": "22:50",
+              "time_slot": "Evening",
+              "flight_number": "6E-5001,6E-472",
+              "price": "₹8,727",
+              "baggage": null
+            },
+            {
+              "departure_time": "14:55",
+              "arrival_time": "17:30",
+              "time_slot": "Noon",
+              "flight_number": "6E-2456",
+              "price": "₹8,829",
+              "baggage": null
+            },
+            {
+              "departure_time": "22:55",
+              "arrival_time": "01:45",
+              "time_slot": "Night",
+              "flight_number": "QP-1812",
+              "price": "₹8,829",
+              "baggage": null
+            },
+            {
+              "departure_time": "03:00",
+              "arrival_time": "05:55",
+              "time_slot": "Early morning",
+              "flight_number": "6E-820",
+              "price": "₹8,829",
+              "baggage": null
+            },
+            {
+              "departure_time": "05:45",
+              "arrival_time": "08:40",
+              "time_slot": "Early morning",
+              "flight_number": "6E-2314",
+              "price": "₹8,829",
+              "baggage": null
+            },
+            {
+              "departure_time": "21:55",
+              "arrival_time": "00:50",
+              "time_slot": "Night",
+              "flight_number": "QP-1350",
+              "price": "₹8,829",
+              "baggage": null
+            },
+            {
+              "departure_time": "22:00",
+              "arrival_time": "00:55",
+              "time_slot": "Night",
+              "flight_number": "6E-846",
+              "price": "₹8,829",
+              "baggage": null
+            },
+            {
+              "departure_time": "23:30",
+              "arrival_time": "02:25",
+              "time_slot": "Night",
+              "flight_number": "6E-871",
+              "price": "₹8,829",
+              "baggage": null
+            },
+            {
+              "departure_time": "13:00",
+              "arrival_time": "16:05",
+              "time_slot": "Noon",
+              "flight_number": "6E-2519",
+              "price": "₹8,829",
+              "baggage": null
+            },
+            {
+              "departure_time": "19:45",
+              "arrival_time": "01:00",
+              "time_slot": "Evening",
+              "flight_number": "6E-2151,6E-906",
+              "price": "₹9,239",
+              "baggage": null
+            },
+            {
+              "departure_time": "07:05",
+              "arrival_time": "10:00",
+              "time_slot": "Morning Peak",
+              "flight_number": "6E-810",
+              "price": "₹9,286",
+              "baggage": null
+            },
+            {
+              "departure_time": "13:15",
+              "arrival_time": "16:10",
+              "time_slot": "Noon",
+              "flight_number": "6E-176",
+              "price": "₹9,286",
+              "baggage": null
+            },
+            {
+              "departure_time": "14:30",
+              "arrival_time": "17:25",
+              "time_slot": "Noon",
+              "flight_number": "6E-828",
+              "price": "₹9,286",
+              "baggage": null
+            },
+            {
+              "departure_time": "15:45",
+              "arrival_time": "18:40",
+              "time_slot": "Noon",
+              "flight_number": "6E-880",
+              "price": "₹9,286",
+              "baggage": null
+            },
+            {
+              "departure_time": "06:30",
+              "arrival_time": "12:00",
+              "time_slot": "Morning Peak",
+              "flight_number": "IX-1046,IX-1244",
+              "price": "₹9,331",
+              "baggage": null
+            },
+            {
+              "departure_time": "11:50",
+              "arrival_time": "17:25",
+              "time_slot": "Noon",
+              "flight_number": "IX-1617,IX-1520",
+              "price": "₹9,331",
+              "baggage": null
+            },
+            {
+              "departure_time": "06:30",
+              "arrival_time": "14:40",
+              "time_slot": "Morning Peak",
+              "flight_number": "IX-1046,IX-1530",
+              "price": "₹9,331",
+              "baggage": null
+            },
+            {
+              "departure_time": "11:00",
+              "arrival_time": "18:50",
+              "time_slot": "Noon",
+              "flight_number": "IX-1074,IX-1168",
+              "price": "₹9,422",
+              "baggage": null
+            },
+            {
+              "departure_time": "17:20",
+              "arrival_time": "22:00",
+              "time_slot": "Evening",
+              "flight_number": "6E-7653,6E-6466",
+              "price": "₹9,557",
+              "baggage": null
+            },
+            {
+              "departure_time": "18:20",
+              "arrival_time": "21:15",
+              "time_slot": "Evening",
+              "flight_number": "IX-1070",
+              "price": "₹9,205",
+              "baggage": null
+            },
+            {
+              "departure_time": "06:15",
+              "arrival_time": "11:00",
+              "time_slot": "Morning Peak",
+              "flight_number": "6E-7646,6E-6142",
+              "price": "₹9,636",
+              "baggage": null
+            },
+            {
+              "departure_time": "04:30",
+              "arrival_time": "07:20",
+              "time_slot": "Early morning",
+              "flight_number": "AI-2653",
+              "price": "₹9,757",
+              "baggage": null
+            },
+            {
+              "departure_time": "00:15",
+              "arrival_time": "03:10",
+              "time_slot": "Night",
+              "flight_number": "AI-2757",
+              "price": "₹9,757",
+              "baggage": null
+            },
+            {
+              "departure_time": "06:00",
+              "arrival_time": "08:55",
+              "time_slot": "Morning Peak",
+              "flight_number": "AI-2409",
+              "price": "₹9,757",
+              "baggage": null
+            },
+            {
+              "departure_time": "06:30",
+              "arrival_time": "09:25",
+              "time_slot": "Morning Peak",
+              "flight_number": "AI-2803",
+              "price": "₹9,757",
+              "baggage": null
+            },
+            {
+              "departure_time": "07:00",
+              "arrival_time": "09:55",
+              "time_slot": "Morning Peak",
+              "flight_number": "AI-2815",
+              "price": "₹9,757",
+              "baggage": null
+            },
+            {
+              "departure_time": "15:50",
+              "arrival_time": "18:45",
+              "time_slot": "Noon",
+              "flight_number": "AI-2664",
+              "price": "₹9,757",
+              "baggage": null
+            }
+          ],
+          "offset_days": 7,
+          "requested_date": "2026-09-11"
+        },
+        "T_plus_15": {
+          "url": "https://in.via.com/flight/search?returnType=one-way&destination=BLR&bdestination=BLR&destinationL=Bangalore&destinationCity=Bangalore&destinationCN=&source=DEL&bsource=DEL&sourceL=Delhi&sourceCity=Delhi&sourceCN=&month=9&day=19&year=2026&date=9%2F19%2F2026&numAdults=1&numChildren=0&numInfants=0&validation_result=&domesinter=international&livequote=-1&flightClass=ALL&travType=INTL&routingType=ALL&preferredCarrier=&prefCarrier=0&isAjax=false",
+          "price": "₹8,829",
+          "flight_number": "6E-820",
+          "departure_time": "03:00",
+          "arrival_time": "05:55",
+          "currency": "₹",
+          "html_file": "C:\\Users\\shiva\\OneDrive\\Desktop\\CS\\rendered_flight_page_delhi_bengaluru_T_plus_15_2026-09-19.html",
+          "analysis": {
+            "html_characters": 515400,
+            "visible_text_characters": 5863,
+            "flight_candidates": [
+              "6E-820",
+              "6E-2314",
+              "QP-1812",
+              "QP-1350",
+              "QP-1824",
+              "IX-1070",
+              "6E-810",
+              "6E-6515",
+              "6E-846",
+              "AI-2653"
+            ],
+            "time_candidates": [
+              "03:00",
+              "05:55",
+              "05:45",
+              "08:40",
+              "22:55",
+              "01:45",
+              "21:55",
+              "00:50",
+              "20:10",
+              "23:10"
+            ],
+            "structured_data_present": false,
+            "via_rows_found": 30,
+            "script_version": "via-fixed-2026-09-01"
+          },
+          "flights": [
+            {
+              "departure_time": "03:00",
+              "arrival_time": "05:55",
+              "time_slot": "Early morning",
+              "flight_number": "6E-820",
+              "price": "₹8,829",
+              "baggage": null
+            },
+            {
+              "departure_time": "05:45",
+              "arrival_time": "08:40",
+              "time_slot": "Early morning",
+              "flight_number": "6E-2314",
+              "price": "₹8,829",
+              "baggage": null
+            },
+            {
+              "departure_time": "22:55",
+              "arrival_time": "01:45",
+              "time_slot": "Night",
+              "flight_number": "QP-1812",
+              "price": "₹9,158",
+              "baggage": null
+            },
+            {
+              "departure_time": "21:55",
+              "arrival_time": "00:50",
+              "time_slot": "Night",
+              "flight_number": "QP-1350",
+              "price": "₹9,158",
+              "baggage": null
+            },
+            {
+              "departure_time": "20:10",
+              "arrival_time": "23:10",
+              "time_slot": "Night",
+              "flight_number": "QP-1824",
+              "price": "₹9,158",
+              "baggage": null
+            },
+            {
+              "departure_time": "18:20",
+              "arrival_time": "21:15",
+              "time_slot": "Evening",
+              "flight_number": "IX-1070",
+              "price": "₹9,027",
+              "baggage": null
+            },
+            {
+              "departure_time": "07:05",
+              "arrival_time": "10:00",
+              "time_slot": "Morning Peak",
+              "flight_number": "6E-810",
+              "price": "₹9,286",
+              "baggage": null
+            },
+            {
+              "departure_time": "20:45",
+              "arrival_time": "23:40",
+              "time_slot": "Night",
+              "flight_number": "6E-6515",
+              "price": "₹9,286",
+              "baggage": null
+            },
+            {
+              "departure_time": "22:00",
+              "arrival_time": "00:55",
+              "time_slot": "Night",
+              "flight_number": "6E-846",
+              "price": "₹9,286",
+              "baggage": null
+            },
+            {
+              "departure_time": "04:30",
+              "arrival_time": "07:20",
+              "time_slot": "Early morning",
+              "flight_number": "AI-2653",
+              "price": "₹9,300",
+              "baggage": null
+            },
+            {
+              "departure_time": "00:15",
+              "arrival_time": "03:10",
+              "time_slot": "Night",
+              "flight_number": "AI-2757",
+              "price": "₹9,300",
+              "baggage": null
+            },
+            {
+              "departure_time": "06:00",
+              "arrival_time": "08:55",
+              "time_slot": "Morning Peak",
+              "flight_number": "AI-2409",
+              "price": "₹9,300",
+              "baggage": null
+            },
+            {
+              "departure_time": "06:30",
+              "arrival_time": "09:25",
+              "time_slot": "Morning Peak",
+              "flight_number": "AI-2803",
+              "price": "₹9,300",
+              "baggage": null
+            },
+            {
+              "departure_time": "20:55",
+              "arrival_time": "23:50",
+              "time_slot": "Night",
+              "flight_number": "QP-1308",
+              "price": "₹9,328",
+              "baggage": null
+            },
+            {
+              "departure_time": "13:10",
+              "arrival_time": "19:05",
+              "time_slot": "Noon",
+              "flight_number": "IX-1090,IX-1368",
+              "price": "₹9,331",
+              "baggage": null
+            },
+            {
+              "departure_time": "05:45",
+              "arrival_time": "12:05",
+              "time_slot": "Early morning",
+              "flight_number": "IX-1165,IX-1503",
+              "price": "₹9,331",
+              "baggage": null
+            },
+            {
+              "departure_time": "07:00",
+              "arrival_time": "09:55",
+              "time_slot": "Morning Peak",
+              "flight_number": "AI-2815",
+              "price": "₹9,757",
+              "baggage": null
+            },
+            {
+              "departure_time": "17:00",
+              "arrival_time": "19:55",
+              "time_slot": "Evening",
+              "flight_number": "6E-837",
+              "price": "₹9,771",
+              "baggage": null
+            },
+            {
+              "departure_time": "06:15",
+              "arrival_time": "11:00",
+              "time_slot": "Morning Peak",
+              "flight_number": "6E-7646,6E-6142",
+              "price": "₹9,831",
+              "baggage": null
+            },
+            {
+              "departure_time": "16:30",
+              "arrival_time": "21:20",
+              "time_slot": "Noon",
+              "flight_number": "6E-6433,6E-6432",
+              "price": "₹9,867",
+              "baggage": null
+            },
+            {
+              "departure_time": "17:55",
+              "arrival_time": "22:45",
+              "time_slot": "Evening",
+              "flight_number": "6E-717,6E-6505",
+              "price": "₹9,946",
+              "baggage": null
+            },
+            {
+              "departure_time": "16:15",
+              "arrival_time": "21:20",
+              "time_slot": "Noon",
+              "flight_number": "6E-6217,6E-285",
+              "price": "₹9,946",
+              "baggage": null
+            },
+            {
+              "departure_time": "02:25",
+              "arrival_time": "07:40",
+              "time_slot": "Early morning",
+              "flight_number": "6E-704,6E-413",
+              "price": "₹9,946",
+              "baggage": null
+            },
+            {
+              "departure_time": "13:30",
+              "arrival_time": "19:05",
+              "time_slot": "Noon",
+              "flight_number": "6E-6282,6E-6417",
+              "price": "₹9,946",
+              "baggage": null
+            },
+            {
+              "departure_time": "19:45",
+              "arrival_time": "01:00",
+              "time_slot": "Evening",
+              "flight_number": "6E-2151,6E-906",
+              "price": "₹10,000",
+              "baggage": null
+            },
+            {
+              "departure_time": "17:05",
+              "arrival_time": "22:05",
+              "time_slot": "Evening",
+              "flight_number": "6E-5073,6E-481",
+              "price": "₹10,077",
+              "baggage": null
+            },
+            {
+              "departure_time": "18:30",
+              "arrival_time": "23:35",
+              "time_slot": "Evening",
+              "flight_number": "6E-6179,6E-499",
+              "price": "₹10,077",
+              "baggage": null
+            },
+            {
+              "departure_time": "11:20",
+              "arrival_time": "16:45",
+              "time_slot": "Noon",
+              "flight_number": "6E-6488,6E-6739",
+              "price": "₹10,077",
+              "baggage": null
+            },
+            {
+              "departure_time": "18:00",
+              "arrival_time": "23:25",
+              "time_slot": "Evening",
+              "flight_number": "6E-329,6E-6188",
+              "price": "₹10,077",
+              "baggage": null
+            },
+            {
+              "departure_time": "05:10",
+              "arrival_time": "10:45",
+              "time_slot": "Early morning",
+              "flight_number": "6E-5119,6E-823",
+              "price": "₹10,077",
+              "baggage": null
+            }
+          ],
+          "offset_days": 15,
+          "requested_date": "2026-09-19"
+        },
+        "T_plus_30": {
+          "url": "https://in.via.com/flight/search?returnType=one-way&destination=BLR&bdestination=BLR&destinationL=Bangalore&destinationCity=Bangalore&destinationCN=&source=DEL&bsource=DEL&sourceL=Delhi&sourceCity=Delhi&sourceCN=&month=10&day=4&year=2026&date=10%2F4%2F2026&numAdults=1&numChildren=0&numInfants=0&validation_result=&domesinter=international&livequote=-1&flightClass=ALL&travType=INTL&routingType=ALL&preferredCarrier=&prefCarrier=0&isAjax=false",
+          "price": "₹8,829",
+          "flight_number": "6E-6054",
+          "departure_time": "01:05",
+          "arrival_time": "04:00",
+          "currency": "₹",
+          "html_file": "C:\\Users\\shiva\\OneDrive\\Desktop\\CS\\rendered_flight_page_delhi_bengaluru_T_plus_30_2026-10-04.html",
+          "analysis": {
+            "html_characters": 513982,
+            "visible_text_characters": 5740,
+            "flight_candidates": [
+              "6E-6054",
+              "6E-820",
+              "6E-2314",
+              "6E-810",
+              "6E-871",
+              "6E-2519",
+              "IX-2749",
+              "6E-873",
+              "6E-846",
+              "IX-1046,IX-1244"
+            ],
+            "time_candidates": [
+              "01:05",
+              "04:00",
+              "03:00",
+              "05:55",
+              "05:45",
+              "08:40",
+              "07:05",
+              "10:00",
+              "23:30",
+              "02:25"
+            ],
+            "structured_data_present": false,
+            "via_rows_found": 30,
+            "script_version": "via-fixed-2026-09-01"
+          },
+          "flights": [
+            {
+              "departure_time": "01:05",
+              "arrival_time": "04:00",
+              "time_slot": "Night",
+              "flight_number": "6E-6054",
+              "price": "₹8,829",
+              "baggage": null
+            },
+            {
+              "departure_time": "03:00",
+              "arrival_time": "05:55",
+              "time_slot": "Early morning",
+              "flight_number": "6E-820",
+              "price": "₹8,829",
+              "baggage": null
+            },
+            {
+              "departure_time": "05:45",
+              "arrival_time": "08:40",
+              "time_slot": "Early morning",
+              "flight_number": "6E-2314",
+              "price": "₹8,829",
+              "baggage": null
+            },
+            {
+              "departure_time": "07:05",
+              "arrival_time": "10:00",
+              "time_slot": "Morning Peak",
+              "flight_number": "6E-810",
+              "price": "₹8,829",
+              "baggage": null
+            },
+            {
+              "departure_time": "23:30",
+              "arrival_time": "02:25",
+              "time_slot": "Night",
+              "flight_number": "6E-871",
+              "price": "₹8,829",
+              "baggage": null
+            },
+            {
+              "departure_time": "13:00",
+              "arrival_time": "16:05",
+              "time_slot": "Noon",
+              "flight_number": "6E-2519",
+              "price": "₹8,829",
+              "baggage": null
+            },
+            {
+              "departure_time": "10:25",
+              "arrival_time": "13:20",
+              "time_slot": "Noon",
+              "flight_number": "IX-2749",
+              "price": "₹9,285",
+              "baggage": null
+            },
+            {
+              "departure_time": "08:20",
+              "arrival_time": "11:10",
+              "time_slot": "Morning Peak",
+              "flight_number": "6E-873",
+              "price": "₹9,286",
+              "baggage": null
+            },
+            {
+              "departure_time": "22:00",
+              "arrival_time": "00:55",
+              "time_slot": "Night",
+              "flight_number": "6E-846",
+              "price": "₹9,286",
+              "baggage": null
+            },
+            {
+              "departure_time": "06:30",
+              "arrival_time": "12:00",
+              "time_slot": "Morning Peak",
+              "flight_number": "IX-1046,IX-1244",
+              "price": "₹9,331",
+              "baggage": null
+            },
+            {
+              "departure_time": "06:00",
+              "arrival_time": "12:05",
+              "time_slot": "Morning Peak",
+              "flight_number": "IX-1165,IX-1503",
+              "price": "₹9,331",
+              "baggage": null
+            },
+            {
+              "departure_time": "12:05",
+              "arrival_time": "18:10",
+              "time_slot": "Noon",
+              "flight_number": "IX-1054,IX-2085",
+              "price": "₹9,331",
+              "baggage": null
+            },
+            {
+              "departure_time": "09:30",
+              "arrival_time": "12:25",
+              "time_slot": "Morning Peak",
+              "flight_number": "6E-826",
+              "price": "₹9,286",
+              "baggage": null
+            },
+            {
+              "departure_time": "21:15",
+              "arrival_time": "00:10",
+              "time_slot": "Night",
+              "flight_number": "IX-1070",
+              "price": "₹9,585",
+              "baggage": null
+            },
+            {
+              "departure_time": "21:55",
+              "arrival_time": "00:45",
+              "time_slot": "Night",
+              "flight_number": "QP-1350",
+              "price": "₹9,680",
+              "baggage": null
+            },
+            {
+              "departure_time": "13:15",
+              "arrival_time": "16:10",
+              "time_slot": "Noon",
+              "flight_number": "6E-176",
+              "price": "₹9,771",
+              "baggage": null
+            },
+            {
+              "departure_time": "14:30",
+              "arrival_time": "17:25",
+              "time_slot": "Noon",
+              "flight_number": "6E-828",
+              "price": "₹9,771",
+              "baggage": null
+            },
+            {
+              "departure_time": "17:00",
+              "arrival_time": "19:55",
+              "time_slot": "Evening",
+              "flight_number": "6E-837",
+              "price": "₹9,771",
+              "baggage": null
+            },
+            {
+              "departure_time": "20:45",
+              "arrival_time": "23:40",
+              "time_slot": "Night",
+              "flight_number": "6E-6515",
+              "price": "₹9,771",
+              "baggage": null
+            },
+            {
+              "departure_time": "12:15",
+              "arrival_time": "15:20",
+              "time_slot": "Noon",
+              "flight_number": "6E-850",
+              "price": "₹9,771",
+              "baggage": null
+            },
+            {
+              "departure_time": "11:00",
+              "arrival_time": "18:50",
+              "time_slot": "Noon",
+              "flight_number": "IX-1074,IX-1168",
+              "price": "₹9,821",
+              "baggage": null
+            },
+            {
+              "departure_time": "21:00",
+              "arrival_time": "23:55",
+              "time_slot": "Night",
+              "flight_number": "IX-5975",
+              "price": "₹9,936",
+              "baggage": null
+            },
+            {
+              "departure_time": "17:55",
+              "arrival_time": "22:50",
+              "time_slot": "Evening",
+              "flight_number": "6E-717,6E-6505",
+              "price": "₹9,946",
+              "baggage": null
+            },
+            {
+              "departure_time": "16:15",
+              "arrival_time": "21:20",
+              "time_slot": "Noon",
+              "flight_number": "6E-6217,6E-285",
+              "price": "₹9,946",
+              "baggage": null
+            },
+            {
+              "departure_time": "19:45",
+              "arrival_time": "01:00",
+              "time_slot": "Evening",
+              "flight_number": "6E-6601,6E-949",
+              "price": "₹9,946",
+              "baggage": null
+            },
+            {
+              "departure_time": "14:45",
+              "arrival_time": "20:05",
+              "time_slot": "Noon",
+              "flight_number": "6E-6212,6E-6783",
+              "price": "₹9,946",
+              "baggage": null
+            },
+            {
+              "departure_time": "02:25",
+              "arrival_time": "07:50",
+              "time_slot": "Early morning",
+              "flight_number": "6E-704,6E-413",
+              "price": "₹9,946",
+              "baggage": null
+            },
+            {
+              "departure_time": "05:30",
+              "arrival_time": "10:55",
+              "time_slot": "Early morning",
+              "flight_number": "6E-6026,6E-6066",
+              "price": "₹9,946",
+              "baggage": null
+            },
+            {
+              "departure_time": "13:30",
+              "arrival_time": "19:05",
+              "time_slot": "Noon",
+              "flight_number": "6E-6282,6E-6417",
+              "price": "₹9,946",
+              "baggage": null
+            },
+            {
+              "departure_time": "22:55",
+              "arrival_time": "02:05",
+              "time_slot": "Night",
+              "flight_number": "QP-1812",
+              "price": "₹10,042",
+              "baggage": null
+            }
+          ],
+          "offset_days": 30,
+          "requested_date": "2026-10-04"
+        },
+        "T_plus_45": {
+          "url": "https://in.via.com/flight/search?returnType=one-way&destination=BLR&bdestination=BLR&destinationL=Bangalore&destinationCity=Bangalore&destinationCN=&source=DEL&bsource=DEL&sourceL=Delhi&sourceCity=Delhi&sourceCN=&month=10&day=19&year=2026&date=10%2F19%2F2026&numAdults=1&numChildren=0&numInfants=0&validation_result=&domesinter=international&livequote=-1&flightClass=ALL&travType=INTL&routingType=ALL&preferredCarrier=&prefCarrier=0&isAjax=false",
+          "price": "₹8,934",
+          "flight_number": "IX-1038,IX-1640",
+          "departure_time": "17:35",
+          "arrival_time": "23:00",
+          "currency": "₹",
+          "html_file": "C:\\Users\\shiva\\OneDrive\\Desktop\\CS\\rendered_flight_page_delhi_bengaluru_T_plus_45_2026-10-19.html",
+          "analysis": {
+            "html_characters": 515061,
+            "visible_text_characters": 5749,
+            "flight_candidates": [
+              "IX-1038,IX-1640",
+              "IX-1165,IX-1503",
+              "IX-1617,IX-1520",
+              "IX-5975",
+              "IX-1070",
+              "QP-1350",
+              "SG-646",
+              "SG-142",
+              "6E-717,6E-6505",
+              "6E-6217,6E-285"
+            ],
+            "time_candidates": [
+              "17:35",
+              "23:00",
+              "06:00",
+              "12:05",
+              "11:50",
+              "18:30",
+              "21:00",
+              "23:55",
+              "21:15",
+              "00:10"
+            ],
+            "structured_data_present": false,
+            "via_rows_found": 30,
+            "script_version": "via-fixed-2026-09-01"
+          },
+          "flights": [
+            {
+              "departure_time": "17:35",
+              "arrival_time": "23:00",
+              "time_slot": "Evening",
+              "flight_number": "IX-1038,IX-1640",
+              "price": "₹8,934",
+              "baggage": null
+            },
+            {
+              "departure_time": "06:00",
+              "arrival_time": "12:05",
+              "time_slot": "Morning Peak",
+              "flight_number": "IX-1165,IX-1503",
+              "price": "₹9,331",
+              "baggage": null
+            },
+            {
+              "departure_time": "11:50",
+              "arrival_time": "18:30",
+              "time_slot": "Noon",
+              "flight_number": "IX-1617,IX-1520",
+              "price": "₹9,331",
+              "baggage": null
+            },
+            {
+              "departure_time": "21:00",
+              "arrival_time": "23:55",
+              "time_slot": "Night",
+              "flight_number": "IX-5975",
+              "price": "₹9,585",
+              "baggage": null
+            },
+            {
+              "departure_time": "21:15",
+              "arrival_time": "00:10",
+              "time_slot": "Night",
+              "flight_number": "IX-1070",
+              "price": "₹9,585",
+              "baggage": null
+            },
+            {
+              "departure_time": "21:55",
+              "arrival_time": "00:45",
+              "time_slot": "Night",
+              "flight_number": "QP-1350",
+              "price": "₹9,680",
+              "baggage": null
+            },
+            {
+              "departure_time": "13:20",
+              "arrival_time": "15:40",
+              "time_slot": "Noon",
+              "flight_number": "SG-646",
+              "price": "₹9,752",
+              "baggage": null
+            },
+            {
+              "departure_time": "20:50",
+              "arrival_time": "23:40",
+              "time_slot": "Night",
+              "flight_number": "SG-142",
+              "price": "₹9,752",
+              "baggage": null
+            },
+            {
+              "departure_time": "17:55",
+              "arrival_time": "22:50",
+              "time_slot": "Evening",
+              "flight_number": "6E-717,6E-6505",
+              "price": "₹9,946",
+              "baggage": null
+            },
+            {
+              "departure_time": "16:15",
+              "arrival_time": "21:20",
+              "time_slot": "Noon",
+              "flight_number": "6E-6217,6E-285",
+              "price": "₹9,946",
+              "baggage": null
+            },
+            {
+              "departure_time": "14:45",
+              "arrival_time": "20:05",
+              "time_slot": "Noon",
+              "flight_number": "6E-6212,6E-6783",
+              "price": "₹9,946",
+              "baggage": null
+            },
+            {
+              "departure_time": "05:30",
+              "arrival_time": "10:55",
+              "time_slot": "Early morning",
+              "flight_number": "6E-6026,6E-6066",
+              "price": "₹9,946",
+              "baggage": null
+            },
+            {
+              "departure_time": "14:55",
+              "arrival_time": "17:30",
+              "time_slot": "Noon",
+              "flight_number": "6E-2456",
+              "price": "₹10,048",
+              "baggage": null
+            },
+            {
+              "departure_time": "08:20",
+              "arrival_time": "11:10",
+              "time_slot": "Morning Peak",
+              "flight_number": "6E-873",
+              "price": "₹10,048",
+              "baggage": null
+            },
+            {
+              "departure_time": "18:20",
+              "arrival_time": "21:10",
+              "time_slot": "Evening",
+              "flight_number": "6E-811",
+              "price": "₹10,048",
+              "baggage": null
+            },
+            {
+              "departure_time": "01:05",
+              "arrival_time": "04:00",
+              "time_slot": "Night",
+              "flight_number": "6E-6054",
+              "price": "₹10,048",
+              "baggage": null
+            },
+            {
+              "departure_time": "03:00",
+              "arrival_time": "05:55",
+              "time_slot": "Early morning",
+              "flight_number": "6E-820",
+              "price": "₹10,048",
+              "baggage": null
+            },
+            {
+              "departure_time": "05:45",
+              "arrival_time": "08:40",
+              "time_slot": "Early morning",
+              "flight_number": "6E-2314",
+              "price": "₹10,048",
+              "baggage": null
+            },
+            {
+              "departure_time": "07:05",
+              "arrival_time": "10:00",
+              "time_slot": "Morning Peak",
+              "flight_number": "6E-810",
+              "price": "₹10,048",
+              "baggage": null
+            },
+            {
+              "departure_time": "09:30",
+              "arrival_time": "12:25",
+              "time_slot": "Morning Peak",
+              "flight_number": "6E-826",
+              "price": "₹10,048",
+              "baggage": null
+            },
+            {
+              "departure_time": "10:45",
+              "arrival_time": "13:40",
+              "time_slot": "Noon",
+              "flight_number": "6E-842",
+              "price": "₹10,048",
+              "baggage": null
+            },
+            {
+              "departure_time": "13:15",
+              "arrival_time": "16:10",
+              "time_slot": "Noon",
+              "flight_number": "6E-176",
+              "price": "₹10,048",
+              "baggage": null
+            },
+            {
+              "departure_time": "14:30",
+              "arrival_time": "17:25",
+              "time_slot": "Noon",
+              "flight_number": "6E-828",
+              "price": "₹10,048",
+              "baggage": null
+            },
+            {
+              "departure_time": "15:45",
+              "arrival_time": "18:40",
+              "time_slot": "Noon",
+              "flight_number": "6E-880",
+              "price": "₹10,048",
+              "baggage": null
+            },
+            {
+              "departure_time": "17:00",
+              "arrival_time": "19:55",
+              "time_slot": "Evening",
+              "flight_number": "6E-837",
+              "price": "₹10,048",
+              "baggage": null
+            },
+            {
+              "departure_time": "19:30",
+              "arrival_time": "22:25",
+              "time_slot": "Evening",
+              "flight_number": "6E-861",
+              "price": "₹10,048",
+              "baggage": null
+            },
+            {
+              "departure_time": "20:45",
+              "arrival_time": "23:40",
+              "time_slot": "Night",
+              "flight_number": "6E-6515",
+              "price": "₹10,048",
+              "baggage": null
+            },
+            {
+              "departure_time": "23:30",
+              "arrival_time": "02:25",
+              "time_slot": "Night",
+              "flight_number": "6E-871",
+              "price": "₹10,048",
+              "baggage": null
+            },
+            {
+              "departure_time": "12:15",
+              "arrival_time": "15:20",
+              "time_slot": "Noon",
+              "flight_number": "6E-850",
+              "price": "₹10,048",
+              "baggage": null
+            },
+            {
+              "departure_time": "13:00",
+              "arrival_time": "16:05",
+              "time_slot": "Noon",
+              "flight_number": "6E-2519",
+              "price": "₹10,048",
+              "baggage": null
+            }
+          ],
+          "offset_days": 45,
+          "requested_date": "2026-10-19"
+        }
+      },
+      "route_name": "Delhi - Bengaluru"
+    },
+    {
+      "script_version": "via-fixed-2026-09-01",
+      "mode": "relative_dates",
+      "run_date_T": "2026-09-04",
+      "route": "https://in.via.com/flight/search?returnType=one-way&destination=BOM&bdestination=BOM&destinationL=Bombay&destinationCity=Bombay&destinationCN=&source=CCU&bsource=CCU&sourceL=Kolkata&sourceCity=Kolkata&sourceCN=&month=9&day=1&year=2026&date=9%2F1%2F2026&numAdults=1&numChildren=0&numInfants=0&validation_result=&domesinter=international&livequote=-1&flightClass=ALL&travType=INTL&routingType=ALL&preferredCarrier=&prefCarrier=0&isAjax=false",
+      "requested_offsets": [
+        1,
+        7,
+        15,
+        30,
+        45
+      ],
+      "results": {
+        "T_plus_1": {
+          "url": "https://in.via.com/flight/search?returnType=one-way&destination=BOM&bdestination=BOM&destinationL=Bombay&destinationCity=Bombay&destinationCN=&source=CCU&bsource=CCU&sourceL=Kolkata&sourceCity=Kolkata&sourceCN=&month=9&day=5&year=2026&date=9%2F5%2F2026&numAdults=1&numChildren=0&numInfants=0&validation_result=&domesinter=international&livequote=-1&flightClass=ALL&travType=INTL&routingType=ALL&preferredCarrier=&prefCarrier=0&isAjax=false",
+          "price": "₹8,113",
+          "flight_number": "QP-1136",
+          "departure_time": "05:10",
+          "arrival_time": "07:45",
+          "currency": "₹",
+          "html_file": "C:\\Users\\shiva\\OneDrive\\Desktop\\CS\\rendered_flight_page_calcutta_bombay_T_plus_1_2026-09-05.html",
+          "analysis": {
+            "html_characters": 516828,
+            "visible_text_characters": 5908,
+            "flight_candidates": [
+              "QP-1136",
+              "QP-1126",
+              "6E-798,6E-6598",
+              "6E-6908,6E-5039",
+              "6E-6623,6E-5174",
+              "6E-2122",
+              "6E-318,6E-5139",
+              "6E-5183",
+              "6E-5227",
+              "6E-115"
+            ],
+            "time_candidates": [
+              "05:10",
+              "07:45",
+              "23:00",
+              "01:40",
+              "18:55",
+              "23:45",
+              "15:00",
+              "20:30",
+              "05:20",
+              "10:55"
+            ],
+            "structured_data_present": false,
+            "via_rows_found": 30,
+            "script_version": "via-fixed-2026-09-01"
+          },
+          "flights": [
+            {
+              "departure_time": "05:10",
+              "arrival_time": "07:45",
+              "time_slot": "Early morning",
+              "flight_number": "QP-1136",
+              "price": "₹8,113",
+              "baggage": null
+            },
+            {
+              "departure_time": "23:00",
+              "arrival_time": "01:40",
+              "time_slot": "Night",
+              "flight_number": "QP-1126",
+              "price": "₹8,396",
+              "baggage": null
+            },
+            {
+              "departure_time": "18:55",
+              "arrival_time": "23:45",
+              "time_slot": "Evening",
+              "flight_number": "6E-798,6E-6598",
+              "price": "₹8,831",
+              "baggage": null
+            },
+            {
+              "departure_time": "15:00",
+              "arrival_time": "20:30",
+              "time_slot": "Noon",
+              "flight_number": "6E-6908,6E-5039",
+              "price": "₹8,831",
+              "baggage": null
+            },
+            {
+              "departure_time": "05:20",
+              "arrival_time": "10:55",
+              "time_slot": "Early morning",
+              "flight_number": "6E-6623,6E-5174",
+              "price": "₹8,831",
+              "baggage": null
+            },
+            {
+              "departure_time": "07:40",
+              "arrival_time": "10:15",
+              "time_slot": "Morning Peak",
+              "flight_number": "6E-2122",
+              "price": "₹8,855",
+              "baggage": null
+            },
+            {
+              "departure_time": "13:30",
+              "arrival_time": "18:25",
+              "time_slot": "Noon",
+              "flight_number": "6E-318,6E-5139",
+              "price": "₹8,910",
+              "baggage": null
+            },
+            {
+              "departure_time": "09:15",
+              "arrival_time": "11:45",
+              "time_slot": "Morning Peak",
+              "flight_number": "6E-5183",
+              "price": "₹8,955",
+              "baggage": null
+            },
+            {
+              "departure_time": "13:45",
+              "arrival_time": "16:30",
+              "time_slot": "Noon",
+              "flight_number": "6E-5227",
+              "price": "₹8,955",
+              "baggage": null
+            },
+            {
+              "departure_time": "21:40",
+              "arrival_time": "00:25",
+              "time_slot": "Night",
+              "flight_number": "6E-115",
+              "price": "₹8,955",
+              "baggage": null
+            },
+            {
+              "departure_time": "06:25",
+              "arrival_time": "09:15",
+              "time_slot": "Morning Peak",
+              "flight_number": "6E-5194",
+              "price": "₹8,955",
+              "baggage": null
+            },
+            {
+              "departure_time": "16:15",
+              "arrival_time": "19:05",
+              "time_slot": "Noon",
+              "flight_number": "6E-6206",
+              "price": "₹8,955",
+              "baggage": null
+            },
+            {
+              "departure_time": "11:35",
+              "arrival_time": "14:35",
+              "time_slot": "Noon",
+              "flight_number": "6E-5288",
+              "price": "₹8,955",
+              "baggage": null
+            },
+            {
+              "departure_time": "05:20",
+              "arrival_time": "11:00",
+              "time_slot": "Early morning",
+              "flight_number": "6E-474,6E-675",
+              "price": "₹9,041",
+              "baggage": null
+            },
+            {
+              "departure_time": "05:05",
+              "arrival_time": "10:50",
+              "time_slot": "Early morning",
+              "flight_number": "6E-344,6E-6348",
+              "price": "₹9,041",
+              "baggage": null
+            },
+            {
+              "departure_time": "12:00",
+              "arrival_time": "17:45",
+              "time_slot": "Noon",
+              "flight_number": "6E-6358,6E-864",
+              "price": "₹9,041",
+              "baggage": null
+            },
+            {
+              "departure_time": "08:25",
+              "arrival_time": "14:15",
+              "time_slot": "Morning Peak",
+              "flight_number": "6E-896,6E-6676",
+              "price": "₹9,041",
+              "baggage": null
+            },
+            {
+              "departure_time": "19:15",
+              "arrival_time": "01:05",
+              "time_slot": "Evening",
+              "flight_number": "6E-493,6E-6114",
+              "price": "₹9,041",
+              "baggage": null
+            },
+            {
+              "departure_time": "16:10",
+              "arrival_time": "22:10",
+              "time_slot": "Noon",
+              "flight_number": "6E-6516,6E-303",
+              "price": "₹9,041",
+              "baggage": null
+            },
+            {
+              "departure_time": "08:35",
+              "arrival_time": "14:45",
+              "time_slot": "Morning Peak",
+              "flight_number": "6E-563,6E-5258",
+              "price": "₹9,041",
+              "baggage": null
+            },
+            {
+              "departure_time": "10:15",
+              "arrival_time": "16:25",
+              "time_slot": "Noon",
+              "flight_number": "6E-899,6E-6022",
+              "price": "₹9,041",
+              "baggage": null
+            },
+            {
+              "departure_time": "06:55",
+              "arrival_time": "09:55",
+              "time_slot": "Morning Peak",
+              "flight_number": "AI-2644",
+              "price": "₹9,425",
+              "baggage": null
+            },
+            {
+              "departure_time": "10:30",
+              "arrival_time": "13:35",
+              "time_slot": "Noon",
+              "flight_number": "AI-2772",
+              "price": "₹9,425",
+              "baggage": null
+            },
+            {
+              "departure_time": "15:10",
+              "arrival_time": "18:15",
+              "time_slot": "Noon",
+              "flight_number": "AI-2472",
+              "price": "₹9,425",
+              "baggage": null
+            },
+            {
+              "departure_time": "17:05",
+              "arrival_time": "19:45",
+              "time_slot": "Evening",
+              "flight_number": "QP-1108",
+              "price": "₹9,482",
+              "baggage": null
+            },
+            {
+              "departure_time": "11:50",
+              "arrival_time": "17:50",
+              "time_slot": "Noon",
+              "flight_number": "6E-634,6E-5231",
+              "price": "₹10,297",
+              "baggage": null
+            },
+            {
+              "departure_time": "12:55",
+              "arrival_time": "19:25",
+              "time_slot": "Noon",
+              "flight_number": "AI-1874,AI-441",
+              "price": "₹12,810",
+              "baggage": null
+            },
+            {
+              "departure_time": "00:30",
+              "arrival_time": "07:20",
+              "time_slot": "Night",
+              "flight_number": "AI-1832,AI-1745",
+              "price": "₹12,810",
+              "baggage": null
+            },
+            {
+              "departure_time": "16:10",
+              "arrival_time": "23:55",
+              "time_slot": "Noon",
+              "flight_number": "AI-2768,AI-2433",
+              "price": "₹12,810",
+              "baggage": null
+            },
+            {
+              "departure_time": "10:30",
+              "arrival_time": "18:25",
+              "time_slot": "Noon",
+              "flight_number": "AI-2704,AI-1777",
+              "price": "₹12,810",
+              "baggage": null
+            }
+          ],
+          "offset_days": 1,
+          "requested_date": "2026-09-05"
+        },
+        "T_plus_7": {
+          "url": "https://in.via.com/flight/search?returnType=one-way&destination=BOM&bdestination=BOM&destinationL=Bombay&destinationCity=Bombay&destinationCN=&source=CCU&bsource=CCU&sourceL=Kolkata&sourceCity=Kolkata&sourceCN=&month=9&day=11&year=2026&date=9%2F11%2F2026&numAdults=1&numChildren=0&numInfants=0&validation_result=&domesinter=international&livequote=-1&flightClass=ALL&travType=INTL&routingType=ALL&preferredCarrier=&prefCarrier=0&isAjax=false",
+          "price": "₹8,225",
+          "flight_number": "IX-1248,IX-1547",
+          "departure_time": "07:45",
+          "arrival_time": "21:55",
+          "currency": "₹",
+          "html_file": "C:\\Users\\shiva\\OneDrive\\Desktop\\CS\\rendered_flight_page_calcutta_bombay_T_plus_7_2026-09-11.html",
+          "analysis": {
+            "html_characters": 517592,
+            "visible_text_characters": 5982,
+            "flight_candidates": [
+              "IX-1248,IX-1547",
+              "QP-1136",
+              "6E-798,6E-6598",
+              "6E-6623,6E-5174",
+              "6E-2122",
+              "6E-5194",
+              "6E-474,6E-675",
+              "6E-344,6E-6348",
+              "6E-6358,6E-864",
+              "6E-896,6E-6676"
+            ],
+            "time_candidates": [
+              "07:45",
+              "21:55",
+              "05:10",
+              "18:55",
+              "23:45",
+              "05:20",
+              "10:55",
+              "07:40",
+              "10:15",
+              "06:25"
+            ],
+            "structured_data_present": false,
+            "via_rows_found": 30,
+            "script_version": "via-fixed-2026-09-01"
+          },
+          "flights": [
+            {
+              "departure_time": "07:45",
+              "arrival_time": "21:55",
+              "time_slot": "Morning Peak",
+              "flight_number": "IX-1248,IX-1547",
+              "price": "₹8,225",
+              "baggage": null
+            },
+            {
+              "departure_time": "05:10",
+              "arrival_time": "07:45",
+              "time_slot": "Early morning",
+              "flight_number": "QP-1136",
+              "price": "₹8,252",
+              "baggage": null
+            },
+            {
+              "departure_time": "18:55",
+              "arrival_time": "23:45",
+              "time_slot": "Evening",
+              "flight_number": "6E-798,6E-6598",
+              "price": "₹8,831",
+              "baggage": null
+            },
+            {
+              "departure_time": "05:20",
+              "arrival_time": "10:55",
+              "time_slot": "Early morning",
+              "flight_number": "6E-6623,6E-5174",
+              "price": "₹8,831",
+              "baggage": null
+            },
+            {
+              "departure_time": "07:40",
+              "arrival_time": "10:15",
+              "time_slot": "Morning Peak",
+              "flight_number": "6E-2122",
+              "price": "₹8,855",
+              "baggage": null
+            },
+            {
+              "departure_time": "06:25",
+              "arrival_time": "09:15",
+              "time_slot": "Morning Peak",
+              "flight_number": "6E-5194",
+              "price": "₹8,955",
+              "baggage": null
+            },
+            {
+              "departure_time": "05:20",
+              "arrival_time": "11:00",
+              "time_slot": "Early morning",
+              "flight_number": "6E-474,6E-675",
+              "price": "₹9,041",
+              "baggage": null
+            },
+            {
+              "departure_time": "05:05",
+              "arrival_time": "10:50",
+              "time_slot": "Early morning",
+              "flight_number": "6E-344,6E-6348",
+              "price": "₹9,041",
+              "baggage": null
+            },
+            {
+              "departure_time": "12:00",
+              "arrival_time": "17:45",
+              "time_slot": "Noon",
+              "flight_number": "6E-6358,6E-864",
+              "price": "₹9,041",
+              "baggage": null
+            },
+            {
+              "departure_time": "08:25",
+              "arrival_time": "14:15",
+              "time_slot": "Morning Peak",
+              "flight_number": "6E-896,6E-6676",
+              "price": "₹9,041",
+              "baggage": null
+            },
+            {
+              "departure_time": "08:35",
+              "arrival_time": "14:45",
+              "time_slot": "Morning Peak",
+              "flight_number": "6E-563,6E-5258",
+              "price": "₹9,041",
+              "baggage": null
+            },
+            {
+              "departure_time": "10:15",
+              "arrival_time": "16:25",
+              "time_slot": "Noon",
+              "flight_number": "6E-899,6E-6022",
+              "price": "₹9,041",
+              "baggage": null
+            },
+            {
+              "departure_time": "06:05",
+              "arrival_time": "12:00",
+              "time_slot": "Morning Peak",
+              "flight_number": "6E-271,6E-6224",
+              "price": "₹9,173",
+              "baggage": null
+            },
+            {
+              "departure_time": "18:00",
+              "arrival_time": "00:10",
+              "time_slot": "Evening",
+              "flight_number": "6E-7215,6E-5049",
+              "price": "₹9,282",
+              "baggage": null
+            },
+            {
+              "departure_time": "06:55",
+              "arrival_time": "09:55",
+              "time_slot": "Morning Peak",
+              "flight_number": "AI-2644",
+              "price": "₹9,425",
+              "baggage": null
+            },
+            {
+              "departure_time": "09:15",
+              "arrival_time": "11:45",
+              "time_slot": "Morning Peak",
+              "flight_number": "6E-5183",
+              "price": "₹9,585",
+              "baggage": null
+            },
+            {
+              "departure_time": "13:45",
+              "arrival_time": "16:30",
+              "time_slot": "Noon",
+              "flight_number": "6E-5227",
+              "price": "₹10,215",
+              "baggage": null
+            },
+            {
+              "departure_time": "11:35",
+              "arrival_time": "14:35",
+              "time_slot": "Noon",
+              "flight_number": "6E-5288",
+              "price": "₹10,215",
+              "baggage": null
+            },
+            {
+              "departure_time": "10:15",
+              "arrival_time": "16:05",
+              "time_slot": "Noon",
+              "flight_number": "6E-386,6E-5351",
+              "price": "₹10,428",
+              "baggage": null
+            },
+            {
+              "departure_time": "10:30",
+              "arrival_time": "13:35",
+              "time_slot": "Noon",
+              "flight_number": "AI-2772",
+              "price": "₹10,526",
+              "baggage": null
+            },
+            {
+              "departure_time": "23:00",
+              "arrival_time": "01:40",
+              "time_slot": "Night",
+              "flight_number": "QP-1126",
+              "price": "₹10,725",
+              "baggage": null
+            },
+            {
+              "departure_time": "17:00",
+              "arrival_time": "22:35",
+              "time_slot": "Evening",
+              "flight_number": "6E-6528,6E-2084",
+              "price": "₹10,825",
+              "baggage": null
+            },
+            {
+              "departure_time": "16:15",
+              "arrival_time": "19:05",
+              "time_slot": "Noon",
+              "flight_number": "6E-6206",
+              "price": "₹10,845",
+              "baggage": null
+            },
+            {
+              "departure_time": "15:10",
+              "arrival_time": "18:15",
+              "time_slot": "Noon",
+              "flight_number": "AI-2472",
+              "price": "₹11,051",
+              "baggage": null
+            },
+            {
+              "departure_time": "06:20",
+              "arrival_time": "12:05",
+              "time_slot": "Morning Peak",
+              "flight_number": "6E-771,6E-5237",
+              "price": "₹11,226",
+              "baggage": null
+            },
+            {
+              "departure_time": "09:05",
+              "arrival_time": "16:15",
+              "time_slot": "Morning Peak",
+              "flight_number": "QP-1802,QP-2074",
+              "price": "₹11,269",
+              "baggage": null
+            },
+            {
+              "departure_time": "21:40",
+              "arrival_time": "00:25",
+              "time_slot": "Night",
+              "flight_number": "6E-115",
+              "price": "₹11,580",
+              "baggage": null
+            },
+            {
+              "departure_time": "16:10",
+              "arrival_time": "22:10",
+              "time_slot": "Noon",
+              "flight_number": "6E-6516,6E-303",
+              "price": "₹12,104",
+              "baggage": null
+            },
+            {
+              "departure_time": "07:00",
+              "arrival_time": "13:25",
+              "time_slot": "Morning Peak",
+              "flight_number": "AI-2720,AI-2945",
+              "price": "₹12,810",
+              "baggage": null
+            },
+            {
+              "departure_time": "12:55",
+              "arrival_time": "19:25",
+              "time_slot": "Noon",
+              "flight_number": "AI-1874,AI-441",
+              "price": "₹12,810",
+              "baggage": null
+            }
+          ],
+          "offset_days": 7,
+          "requested_date": "2026-09-11"
+        },
+        "T_plus_15": {
+          "url": "https://in.via.com/flight/search?returnType=one-way&destination=BOM&bdestination=BOM&destinationL=Bombay&destinationCity=Bombay&destinationCN=&source=CCU&bsource=CCU&sourceL=Kolkata&sourceCity=Kolkata&sourceCN=&month=9&day=19&year=2026&date=9%2F19%2F2026&numAdults=1&numChildren=0&numInfants=0&validation_result=&domesinter=international&livequote=-1&flightClass=ALL&travType=INTL&routingType=ALL&preferredCarrier=&prefCarrier=0&isAjax=false",
+          "price": "₹8,113",
+          "flight_number": "QP-1126",
+          "departure_time": "23:00",
+          "arrival_time": "01:40",
+          "currency": "₹",
+          "html_file": "C:\\Users\\shiva\\OneDrive\\Desktop\\CS\\rendered_flight_page_calcutta_bombay_T_plus_15_2026-09-19.html",
+          "analysis": {
+            "html_characters": 517350,
+            "visible_text_characters": 5950,
+            "flight_candidates": [
+              "QP-1126",
+              "6E-2122",
+              "6E-5183",
+              "6E-5227",
+              "6E-115",
+              "6E-5288",
+              "QP-1136",
+              "6E-6528,6E-2084",
+              "6E-798,6E-6598",
+              "6E-334,6E-5099"
+            ],
+            "time_candidates": [
+              "23:00",
+              "01:40",
+              "07:40",
+              "10:15",
+              "09:15",
+              "11:45",
+              "13:45",
+              "16:30",
+              "21:40",
+              "00:25"
+            ],
+            "structured_data_present": false,
+            "via_rows_found": 30,
+            "script_version": "via-fixed-2026-09-01"
+          },
+          "flights": [
+            {
+              "departure_time": "23:00",
+              "arrival_time": "01:40",
+              "time_slot": "Night",
+              "flight_number": "QP-1126",
+              "price": "₹8,113",
+              "baggage": null
+            },
+            {
+              "departure_time": "07:40",
+              "arrival_time": "10:15",
+              "time_slot": "Morning Peak",
+              "flight_number": "6E-2122",
+              "price": "₹8,855",
+              "baggage": null
+            },
+            {
+              "departure_time": "09:15",
+              "arrival_time": "11:45",
+              "time_slot": "Morning Peak",
+              "flight_number": "6E-5183",
+              "price": "₹8,955",
+              "baggage": null
+            },
+            {
+              "departure_time": "13:45",
+              "arrival_time": "16:30",
+              "time_slot": "Noon",
+              "flight_number": "6E-5227",
+              "price": "₹8,955",
+              "baggage": null
+            },
+            {
+              "departure_time": "21:40",
+              "arrival_time": "00:25",
+              "time_slot": "Night",
+              "flight_number": "6E-115",
+              "price": "₹8,955",
+              "baggage": null
+            },
+            {
+              "departure_time": "11:35",
+              "arrival_time": "14:35",
+              "time_slot": "Noon",
+              "flight_number": "6E-5288",
+              "price": "₹8,955",
+              "baggage": null
+            },
+            {
+              "departure_time": "05:10",
+              "arrival_time": "07:45",
+              "time_slot": "Early morning",
+              "flight_number": "QP-1136",
+              "price": "₹8,997",
+              "baggage": null
+            },
+            {
+              "departure_time": "17:00",
+              "arrival_time": "22:35",
+              "time_slot": "Evening",
+              "flight_number": "6E-6528,6E-2084",
+              "price": "₹9,036",
+              "baggage": null
+            },
+            {
+              "departure_time": "18:55",
+              "arrival_time": "23:45",
+              "time_slot": "Evening",
+              "flight_number": "6E-798,6E-6598",
+              "price": "₹9,138",
+              "baggage": null
+            },
+            {
+              "departure_time": "10:55",
+              "arrival_time": "15:55",
+              "time_slot": "Noon",
+              "flight_number": "6E-334,6E-5099",
+              "price": "₹9,138",
+              "baggage": null
+            },
+            {
+              "departure_time": "15:00",
+              "arrival_time": "20:30",
+              "time_slot": "Noon",
+              "flight_number": "6E-6908,6E-5039",
+              "price": "₹9,138",
+              "baggage": null
+            },
+            {
+              "departure_time": "05:20",
+              "arrival_time": "10:55",
+              "time_slot": "Early morning",
+              "flight_number": "6E-6623,6E-5174",
+              "price": "₹9,138",
+              "baggage": null
+            },
+            {
+              "departure_time": "08:40",
+              "arrival_time": "14:25",
+              "time_slot": "Morning Peak",
+              "flight_number": "6E-6513,6E-5384",
+              "price": "₹9,138",
+              "baggage": null
+            },
+            {
+              "departure_time": "13:30",
+              "arrival_time": "18:25",
+              "time_slot": "Noon",
+              "flight_number": "6E-318,6E-5139",
+              "price": "₹9,217",
+              "baggage": null
+            },
+            {
+              "departure_time": "05:20",
+              "arrival_time": "11:00",
+              "time_slot": "Early morning",
+              "flight_number": "6E-474,6E-675",
+              "price": "₹9,348",
+              "baggage": null
+            },
+            {
+              "departure_time": "13:25",
+              "arrival_time": "19:05",
+              "time_slot": "Noon",
+              "flight_number": "6E-455,6E-5255",
+              "price": "₹9,348",
+              "baggage": null
+            },
+            {
+              "departure_time": "05:05",
+              "arrival_time": "10:50",
+              "time_slot": "Early morning",
+              "flight_number": "6E-344,6E-6348",
+              "price": "₹9,348",
+              "baggage": null
+            },
+            {
+              "departure_time": "06:20",
+              "arrival_time": "12:05",
+              "time_slot": "Morning Peak",
+              "flight_number": "6E-771,6E-5237",
+              "price": "₹9,348",
+              "baggage": null
+            },
+            {
+              "departure_time": "12:00",
+              "arrival_time": "17:45",
+              "time_slot": "Noon",
+              "flight_number": "6E-6358,6E-864",
+              "price": "₹9,348",
+              "baggage": null
+            },
+            {
+              "departure_time": "08:25",
+              "arrival_time": "14:15",
+              "time_slot": "Morning Peak",
+              "flight_number": "6E-896,6E-6676",
+              "price": "₹9,348",
+              "baggage": null
+            },
+            {
+              "departure_time": "19:15",
+              "arrival_time": "01:05",
+              "time_slot": "Evening",
+              "flight_number": "6E-493,6E-6114",
+              "price": "₹9,348",
+              "baggage": null
+            },
+            {
+              "departure_time": "11:45",
+              "arrival_time": "17:45",
+              "time_slot": "Noon",
+              "flight_number": "6E-235,6E-5031",
+              "price": "₹9,348",
+              "baggage": null
+            },
+            {
+              "departure_time": "16:10",
+              "arrival_time": "22:10",
+              "time_slot": "Noon",
+              "flight_number": "6E-6516,6E-303",
+              "price": "₹9,348",
+              "baggage": null
+            },
+            {
+              "departure_time": "06:25",
+              "arrival_time": "09:15",
+              "time_slot": "Morning Peak",
+              "flight_number": "6E-5194",
+              "price": "₹9,585",
+              "baggage": null
+            },
+            {
+              "departure_time": "16:15",
+              "arrival_time": "19:05",
+              "time_slot": "Noon",
+              "flight_number": "6E-6206",
+              "price": "₹9,585",
+              "baggage": null
+            },
+            {
+              "departure_time": "18:00",
+              "arrival_time": "00:10",
+              "time_slot": "Evening",
+              "flight_number": "6E-7215,6E-5049",
+              "price": "₹9,619",
+              "baggage": null
+            },
+            {
+              "departure_time": "20:35",
+              "arrival_time": "23:45",
+              "time_slot": "Night",
+              "flight_number": "AI-2482",
+              "price": "₹9,686",
+              "baggage": null
+            },
+            {
+              "departure_time": "07:50",
+              "arrival_time": "13:15",
+              "time_slot": "Morning Peak",
+              "flight_number": "6E-7623,6E-2304",
+              "price": "₹9,698",
+              "baggage": null
+            },
+            {
+              "departure_time": "06:55",
+              "arrival_time": "09:55",
+              "time_slot": "Morning Peak",
+              "flight_number": "AI-2644",
+              "price": "₹10,106",
+              "baggage": null
+            },
+            {
+              "departure_time": "10:30",
+              "arrival_time": "13:35",
+              "time_slot": "Noon",
+              "flight_number": "AI-2772",
+              "price": "₹10,526",
+              "baggage": null
+            }
+          ],
+          "offset_days": 15,
+          "requested_date": "2026-09-19"
+        },
+        "T_plus_30": {
+          "url": "https://in.via.com/flight/search?returnType=one-way&destination=BOM&bdestination=BOM&destinationL=Bombay&destinationCity=Bombay&destinationCN=&source=CCU&bsource=CCU&sourceL=Kolkata&sourceCity=Kolkata&sourceCN=&month=10&day=4&year=2026&date=10%2F4%2F2026&numAdults=1&numChildren=0&numInfants=0&validation_result=&domesinter=international&livequote=-1&flightClass=ALL&travType=INTL&routingType=ALL&preferredCarrier=&prefCarrier=0&isAjax=false",
+          "price": "₹8,633",
+          "flight_number": "QP-2028",
+          "departure_time": "08:30",
+          "arrival_time": "11:15",
+          "currency": "₹",
+          "html_file": "C:\\Users\\shiva\\OneDrive\\Desktop\\CS\\rendered_flight_page_calcutta_bombay_T_plus_30_2026-10-04.html",
+          "analysis": {
+            "html_characters": 519805,
+            "visible_text_characters": 6183,
+            "flight_candidates": [
+              "QP-2028",
+              "6E-5194",
+              "6E-2122",
+              "6E-6438,6E-5051",
+              "6E-771,6E-5237",
+              "6E-474,6E-675",
+              "6E-344,6E-6348",
+              "6E-6358,6E-864",
+              "6E-896,6E-6676",
+              "6E-493,6E-6114"
+            ],
+            "time_candidates": [
+              "08:30",
+              "11:15",
+              "06:25",
+              "09:15",
+              "07:40",
+              "10:15",
+              "04:50",
+              "06:30",
+              "12:05",
+              "05:20"
+            ],
+            "structured_data_present": false,
+            "via_rows_found": 30,
+            "script_version": "via-fixed-2026-09-01"
+          },
+          "flights": [
+            {
+              "departure_time": "08:30",
+              "arrival_time": "11:15",
+              "time_slot": "Morning Peak",
+              "flight_number": "QP-2028",
+              "price": "₹8,633",
+              "baggage": null
+            },
+            {
+              "departure_time": "06:25",
+              "arrival_time": "09:15",
+              "time_slot": "Morning Peak",
+              "flight_number": "6E-5194",
+              "price": "₹8,955",
+              "baggage": null
+            },
+            {
+              "departure_time": "07:40",
+              "arrival_time": "10:15",
+              "time_slot": "Morning Peak",
+              "flight_number": "6E-2122",
+              "price": "₹9,185",
+              "baggage": null
+            },
+            {
+              "departure_time": "04:50",
+              "arrival_time": "10:15",
+              "time_slot": "Early morning",
+              "flight_number": "6E-6438,6E-5051",
+              "price": "₹9,505",
+              "baggage": null
+            },
+            {
+              "departure_time": "06:30",
+              "arrival_time": "12:05",
+              "time_slot": "Morning Peak",
+              "flight_number": "6E-771,6E-5237",
+              "price": "₹9,505",
+              "baggage": null
+            },
+            {
+              "departure_time": "05:20",
+              "arrival_time": "11:00",
+              "time_slot": "Early morning",
+              "flight_number": "6E-474,6E-675",
+              "price": "₹9,505",
+              "baggage": null
+            },
+            {
+              "departure_time": "05:05",
+              "arrival_time": "10:50",
+              "time_slot": "Early morning",
+              "flight_number": "6E-344,6E-6348",
+              "price": "₹9,505",
+              "baggage": null
+            },
+            {
+              "departure_time": "12:00",
+              "arrival_time": "17:45",
+              "time_slot": "Noon",
+              "flight_number": "6E-6358,6E-864",
+              "price": "₹9,505",
+              "baggage": null
+            },
+            {
+              "departure_time": "08:25",
+              "arrival_time": "14:15",
+              "time_slot": "Morning Peak",
+              "flight_number": "6E-896,6E-6676",
+              "price": "₹9,505",
+              "baggage": null
+            },
+            {
+              "departure_time": "19:15",
+              "arrival_time": "01:05",
+              "time_slot": "Evening",
+              "flight_number": "6E-493,6E-6114",
+              "price": "₹9,505",
+              "baggage": null
+            },
+            {
+              "departure_time": "06:05",
+              "arrival_time": "12:00",
+              "time_slot": "Morning Peak",
+              "flight_number": "6E-271,6E-6224",
+              "price": "₹9,637",
+              "baggage": null
+            },
+            {
+              "departure_time": "17:00",
+              "arrival_time": "22:35",
+              "time_slot": "Evening",
+              "flight_number": "6E-6528,6E-2084",
+              "price": "₹9,859",
+              "baggage": null
+            },
+            {
+              "departure_time": "10:55",
+              "arrival_time": "15:55",
+              "time_slot": "Noon",
+              "flight_number": "6E-334,6E-5099",
+              "price": "₹10,002",
+              "baggage": null
+            },
+            {
+              "departure_time": "15:00",
+              "arrival_time": "20:30",
+              "time_slot": "Noon",
+              "flight_number": "6E-6908,6E-5039",
+              "price": "₹10,002",
+              "baggage": null
+            },
+            {
+              "departure_time": "05:20",
+              "arrival_time": "10:55",
+              "time_slot": "Early morning",
+              "flight_number": "6E-6623,6E-5174",
+              "price": "₹10,002",
+              "baggage": null
+            },
+            {
+              "departure_time": "19:20",
+              "arrival_time": "01:00",
+              "time_slot": "Evening",
+              "flight_number": "6E-2256,6E-6363",
+              "price": "₹10,002",
+              "baggage": null
+            },
+            {
+              "departure_time": "08:40",
+              "arrival_time": "14:25",
+              "time_slot": "Morning Peak",
+              "flight_number": "6E-6513,6E-5384",
+              "price": "₹10,002",
+              "baggage": null
+            },
+            {
+              "departure_time": "15:15",
+              "arrival_time": "22:40",
+              "time_slot": "Noon",
+              "flight_number": "IX-1543,IX-1360",
+              "price": "₹10,030",
+              "baggage": null
+            },
+            {
+              "departure_time": "11:15",
+              "arrival_time": "20:25",
+              "time_slot": "Noon",
+              "flight_number": "IX-1496,IX-1581",
+              "price": "₹10,030",
+              "baggage": null
+            },
+            {
+              "departure_time": "11:15",
+              "arrival_time": "22:40",
+              "time_slot": "Noon",
+              "flight_number": "IX-1496,IX-1360",
+              "price": "₹10,030",
+              "baggage": null
+            },
+            {
+              "departure_time": "18:50",
+              "arrival_time": "07:45",
+              "time_slot": "Evening",
+              "flight_number": "IX-1371,IX-2914",
+              "price": "₹10,030",
+              "baggage": null
+            },
+            {
+              "departure_time": "13:30",
+              "arrival_time": "18:25",
+              "time_slot": "Noon",
+              "flight_number": "6E-318,6E-5139",
+              "price": "₹10,081",
+              "baggage": null
+            },
+            {
+              "departure_time": "06:55",
+              "arrival_time": "09:55",
+              "time_slot": "Morning Peak",
+              "flight_number": "AI-2644",
+              "price": "₹10,106",
+              "baggage": null
+            },
+            {
+              "departure_time": "11:25",
+              "arrival_time": "16:40",
+              "time_slot": "Noon",
+              "flight_number": "6E-833,6E-5371",
+              "price": "₹10,212",
+              "baggage": null
+            },
+            {
+              "departure_time": "13:25",
+              "arrival_time": "19:05",
+              "time_slot": "Noon",
+              "flight_number": "6E-455,6E-5255",
+              "price": "₹10,212",
+              "baggage": null
+            },
+            {
+              "departure_time": "10:15",
+              "arrival_time": "16:05",
+              "time_slot": "Noon",
+              "flight_number": "6E-386,6E-5351",
+              "price": "₹10,212",
+              "baggage": null
+            },
+            {
+              "departure_time": "06:00",
+              "arrival_time": "08:45",
+              "time_slot": "Morning Peak",
+              "flight_number": "QP-1251",
+              "price": "₹10,538",
+              "baggage": null
+            },
+            {
+              "departure_time": "20:50",
+              "arrival_time": "23:50",
+              "time_slot": "Night",
+              "flight_number": "QP-1184",
+              "price": "₹10,538",
+              "baggage": null
+            },
+            {
+              "departure_time": "17:50",
+              "arrival_time": "20:35",
+              "time_slot": "Evening",
+              "flight_number": "QP-2024",
+              "price": "₹10,996",
+              "baggage": null
+            },
+            {
+              "departure_time": "07:50",
+              "arrival_time": "13:15",
+              "time_slot": "Morning Peak",
+              "flight_number": "6E-7623,6E-2304",
+              "price": "₹11,502",
+              "baggage": null
+            }
+          ],
+          "offset_days": 30,
+          "requested_date": "2026-10-04"
+        },
+        "T_plus_45": {
+          "url": "https://in.via.com/flight/search?returnType=one-way&destination=BOM&bdestination=BOM&destinationL=Bombay&destinationCity=Bombay&destinationCN=&source=CCU&bsource=CCU&sourceL=Kolkata&sourceCity=Kolkata&sourceCN=&month=10&day=19&year=2026&date=10%2F19%2F2026&numAdults=1&numChildren=0&numInfants=0&validation_result=&domesinter=international&livequote=-1&flightClass=ALL&travType=INTL&routingType=ALL&preferredCarrier=&prefCarrier=0&isAjax=false",
+          "price": "₹8,926",
+          "flight_number": "SG-487",
+          "departure_time": "17:10",
+          "arrival_time": "20:00",
+          "currency": "₹",
+          "html_file": "C:\\Users\\shiva\\OneDrive\\Desktop\\CS\\rendered_flight_page_calcutta_bombay_T_plus_45_2026-10-19.html",
+          "analysis": {
+            "html_characters": 518430,
+            "visible_text_characters": 6031,
+            "flight_candidates": [
+              "SG-487",
+              "QP-2028",
+              "QP-2030",
+              "6E-6528,6E-2084",
+              "IX-1371,IX-2914",
+              "6E-334,6E-5099",
+              "6E-6908,6E-5039",
+              "6E-6623,6E-5174",
+              "6E-2256,6E-6363",
+              "6E-6513,6E-5384"
+            ],
+            "time_candidates": [
+              "17:10",
+              "20:00",
+              "08:30",
+              "11:15",
+              "22:05",
+              "00:50",
+              "17:00",
+              "22:35",
+              "18:50",
+              "07:45"
+            ],
+            "structured_data_present": false,
+            "via_rows_found": 30,
+            "script_version": "via-fixed-2026-09-01"
+          },
+          "flights": [
+            {
+              "departure_time": "17:10",
+              "arrival_time": "20:00",
+              "time_slot": "Evening",
+              "flight_number": "SG-487",
+              "price": "₹8,926",
+              "baggage": null
+            },
+            {
+              "departure_time": "08:30",
+              "arrival_time": "11:15",
+              "time_slot": "Morning Peak",
+              "flight_number": "QP-2028",
+              "price": "₹8,932",
+              "baggage": null
+            },
+            {
+              "departure_time": "22:05",
+              "arrival_time": "00:50",
+              "time_slot": "Night",
+              "flight_number": "QP-2030",
+              "price": "₹8,932",
+              "baggage": null
+            },
+            {
+              "departure_time": "17:00",
+              "arrival_time": "22:35",
+              "time_slot": "Evening",
+              "flight_number": "6E-6528,6E-2084",
+              "price": "₹9,036",
+              "baggage": null
+            },
+            {
+              "departure_time": "18:50",
+              "arrival_time": "07:45",
+              "time_slot": "Evening",
+              "flight_number": "IX-1371,IX-2914",
+              "price": "₹9,131",
+              "baggage": null
+            },
+            {
+              "departure_time": "10:55",
+              "arrival_time": "15:55",
+              "time_slot": "Noon",
+              "flight_number": "6E-334,6E-5099",
+              "price": "₹9,138",
+              "baggage": null
+            },
+            {
+              "departure_time": "15:00",
+              "arrival_time": "20:30",
+              "time_slot": "Noon",
+              "flight_number": "6E-6908,6E-5039",
+              "price": "₹9,138",
+              "baggage": null
+            },
+            {
+              "departure_time": "05:20",
+              "arrival_time": "10:55",
+              "time_slot": "Early morning",
+              "flight_number": "6E-6623,6E-5174",
+              "price": "₹9,138",
+              "baggage": null
+            },
+            {
+              "departure_time": "19:20",
+              "arrival_time": "01:00",
+              "time_slot": "Evening",
+              "flight_number": "6E-2256,6E-6363",
+              "price": "₹9,138",
+              "baggage": null
+            },
+            {
+              "departure_time": "08:40",
+              "arrival_time": "14:25",
+              "time_slot": "Morning Peak",
+              "flight_number": "6E-6513,6E-5384",
+              "price": "₹9,138",
+              "baggage": null
+            },
+            {
+              "departure_time": "04:50",
+              "arrival_time": "10:15",
+              "time_slot": "Early morning",
+              "flight_number": "6E-6438,6E-5051",
+              "price": "₹9,348",
+              "baggage": null
+            },
+            {
+              "departure_time": "15:10",
+              "arrival_time": "20:40",
+              "time_slot": "Noon",
+              "flight_number": "6E-958,6E-6283",
+              "price": "₹9,348",
+              "baggage": null
+            },
+            {
+              "departure_time": "06:30",
+              "arrival_time": "12:05",
+              "time_slot": "Morning Peak",
+              "flight_number": "6E-771,6E-5237",
+              "price": "₹9,348",
+              "baggage": null
+            },
+            {
+              "departure_time": "05:05",
+              "arrival_time": "07:40",
+              "time_slot": "Early morning",
+              "flight_number": "QP-1136",
+              "price": "₹9,482",
+              "baggage": null
+            },
+            {
+              "departure_time": "02:00",
+              "arrival_time": "04:45",
+              "time_slot": "Early morning",
+              "flight_number": "6E-6366",
+              "price": "₹9,585",
+              "baggage": null
+            },
+            {
+              "departure_time": "18:45",
+              "arrival_time": "21:30",
+              "time_slot": "Evening",
+              "flight_number": "6E-5128",
+              "price": "₹9,585",
+              "baggage": null
+            },
+            {
+              "departure_time": "21:40",
+              "arrival_time": "00:25",
+              "time_slot": "Night",
+              "flight_number": "6E-115",
+              "price": "₹9,585",
+              "baggage": null
+            },
+            {
+              "departure_time": "06:25",
+              "arrival_time": "09:15",
+              "time_slot": "Morning Peak",
+              "flight_number": "6E-5194",
+              "price": "₹9,585",
+              "baggage": null
+            },
+            {
+              "departure_time": "16:15",
+              "arrival_time": "19:05",
+              "time_slot": "Noon",
+              "flight_number": "6E-6206",
+              "price": "₹9,585",
+              "baggage": null
+            },
+            {
+              "departure_time": "17:05",
+              "arrival_time": "20:00",
+              "time_slot": "Evening",
+              "flight_number": "QP-1253",
+              "price": "₹9,993",
+              "baggage": null
+            },
+            {
+              "departure_time": "11:15",
+              "arrival_time": "20:25",
+              "time_slot": "Noon",
+              "flight_number": "IX-1496,IX-1581",
+              "price": "₹10,030",
+              "baggage": null
+            },
+            {
+              "departure_time": "11:15",
+              "arrival_time": "22:40",
+              "time_slot": "Noon",
+              "flight_number": "IX-1496,IX-1360",
+              "price": "₹10,030",
+              "baggage": null
+            },
+            {
+              "departure_time": "13:25",
+              "arrival_time": "19:05",
+              "time_slot": "Noon",
+              "flight_number": "6E-455,6E-5255",
+              "price": "₹10,039",
+              "baggage": null
+            },
+            {
+              "departure_time": "10:15",
+              "arrival_time": "16:05",
+              "time_slot": "Noon",
+              "flight_number": "6E-386,6E-5351",
+              "price": "₹10,039",
+              "baggage": null
+            },
+            {
+              "departure_time": "23:00",
+              "arrival_time": "01:40",
+              "time_slot": "Night",
+              "flight_number": "QP-1126",
+              "price": "₹10,171",
+              "baggage": null
+            },
+            {
+              "departure_time": "20:50",
+              "arrival_time": "23:50",
+              "time_slot": "Night",
+              "flight_number": "QP-1184",
+              "price": "₹10,171",
+              "baggage": null
+            },
+            {
+              "departure_time": "09:15",
+              "arrival_time": "11:45",
+              "time_slot": "Morning Peak",
+              "flight_number": "6E-5183",
+              "price": "₹10,215",
+              "baggage": null
+            },
+            {
+              "departure_time": "13:45",
+              "arrival_time": "16:30",
+              "time_slot": "Noon",
+              "flight_number": "6E-5227",
+              "price": "₹10,215",
+              "baggage": null
+            },
+            {
+              "departure_time": "11:35",
+              "arrival_time": "14:35",
+              "time_slot": "Noon",
+              "flight_number": "6E-5288",
+              "price": "₹10,215",
+              "baggage": null
+            },
+            {
+              "departure_time": "07:40",
+              "arrival_time": "10:15",
+              "time_slot": "Morning Peak",
+              "flight_number": "6E-2122",
+              "price": "₹10,445",
+              "baggage": null
+            }
+          ],
+          "offset_days": 45,
+          "requested_date": "2026-10-19"
+        }
+      },
+      "route_name": "Calcutta - Bombay"
+    }
+  ]
+}
