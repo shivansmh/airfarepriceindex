@@ -73,11 +73,14 @@ jobs:
           GITHUB_REPOSITORY: ${{ github.repository }}
         run: python api/system_logs.py dashboard/system_logs.json
 
+      - name: Export daily database snapshots
+        run: python api/export_daily_database.py
+
       - name: Commit refreshed data
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add api/daily_briefing.json dashboard/apix_output.json dashboard/apix_history.json dashboard/target_day.txt dashboard/target_day.json dashboard/daily_briefing.json dashboard/system_logs.json
+          git add api/daily_briefing.json dashboard/apix_output.json dashboard/apix_history.json dashboard/target_day.txt dashboard/target_day.json dashboard/daily_briefing.json dashboard/system_logs.json database/
           if git diff --cached --quiet; then
             echo "No data changes to commit."
           else

@@ -8,6 +8,7 @@ import json
 import os
 import re
 from datetime import date, datetime, timedelta
+from zoneinfo import ZoneInfo
 from urllib.parse import parse_qs, urlencode, urlsplit, urlunsplit
 from dataclasses import asdict, dataclass
 from pathlib import Path
@@ -270,7 +271,7 @@ async def scrape_all_routes(routes: list[tuple[str, str, str, str, str]], offset
 
 async def scrape_date_offsets(base_url: str, offsets: list[int] = [1, 7, 15, 30, 45], html_out: str | None = "rendered_flight_page.html", wait_ms: int = 2500, headless: bool = True) -> str:
     """Scrape one route at dates relative to the date on which the script runs."""
-    run_date = date.today()
+    run_date = datetime.now(ZoneInfo("Asia/Kolkata")).date()
     results_by_offset: dict[str, dict[str, Any]] = {}
     for offset in offsets:
         travel_date = run_date + timedelta(days=offset)
