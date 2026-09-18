@@ -1,0 +1,29 @@
+{
+  "table": "daily_apix",
+  "schema": [
+    "date",
+    "frequency",
+    "apix_value",
+    "base_period_used"
+  ],
+  "rows": [
+    {
+      "date": "2026-09-19",
+      "frequency": "daily",
+      "apix_value": 107.124922,
+      "base_period_used": "data/base_day.txt"
+    },
+    {
+      "date": "2026-09-19",
+      "frequency": "weekly",
+      "apix_value": 103.292491,
+      "base_period_used": "data/base_day.txt"
+    },
+    {
+      "date": "2026-09-19",
+      "frequency": "monthly",
+      "apix_value": 102.621898,
+      "base_period_used": "data/base_day.txt"
+    }
+  ]
+}
