@@ -16,7 +16,23 @@ from typing import Any, Iterable
 
 from playwright.async_api import Browser, Page, TimeoutError as PlaywrightTimeoutError, async_playwright
 
-SCRIPT_VERSION = "via-fixed-2026-09-01"
+SCRIPT_VERSION = "via-airline-enriched-2026-09-18"
+
+# IATA-style designators used by the carriers commonly returned by Via.com.
+# The fallback keeps the original code available when a new carrier appears.
+AIRLINE_NAMES = {
+    "6E": "IndiGo",
+    "AI": "Air India",
+    "QP": "Akasa Air",
+    "IX": "Air India Express",
+    "UK": "Vistara",
+    "SG": "SpiceJet",
+    "G8": "Go First",
+    "I5": "AirAsia India",
+    "S5": "Star Air",
+    "9I": "Alliance Air",
+    "2T": "TruJet",
+}
 
 BASE_URL = "https://in.via.com/flight/search?returnType=one-way&destination=BLR&bdestination=BLR&destinationL=Bangalore&destinationCity=&destinationCN=&source=DEL&bsource=DEL&sourceL=Delhi&sourceCity=&sourceCN=&month=9&day=1&year=2026&date=9/1/2026&numAdults=1&numChildren=0&numInfants=0&validation_result=&domesinter=international&livequote=-1&flightClass=ALL&travType=INTL&routingType=ALL&preferredCarrier=&prefCarrier=0&isAjax=false"
 
@@ -69,6 +85,25 @@ def unique(values: Iterable[str]) -> list[str]:
     return output
 
 
+def airline_names(flight_number: str | None) -> list[str]:
+    """Return normalized airline names for all legs in a flight itinerary.
+
+    Via.com can represent a connecting itinerary as, for example,
+    ``6E-1234,AI-456``. Preserve both carriers rather than silently assigning
+    only the first leg's airline.
+    """
+    if not flight_number:
+        return []
+    codes = re.findall(r"\b([A-Z0-9]{2})\s*-\s*\d{3,4}\b", flight_number.upper())
+    return unique([AIRLINE_NAMES.get(code, code) for code in codes])
+
+
+def airline_label(flight_number: str | None) -> str | None:
+    """Return a display-friendly airline value for a flight record."""
+    names = airline_names(flight_number)
+    return ", ".join(names) if names else None
+
+
 def parse_via_rows(row_texts: list[str]) -> list[dict[str, Any]]:
     """Parse Via.com `.result` rows, whose fields are in a stable visual order."""
     flights: list[dict[str, Any]] = []
@@ -96,6 +131,7 @@ def parse_via_rows(row_texts: list[str]) -> list[dict[str, Any]]:
             "departure_time": times[0] if times else None,
             "arrival_time": times[1] if len(times) > 1 else None,
             "flight_number": flight_number,
+            "airline": airline_label(flight_number),
             "price": fare_value,
             "currency": "INR" if fare_value else None,
             "raw_text": text,
@@ -364,6 +400,7 @@ def format_clean_report(payload: dict[str, Any]) -> str:
             lines.extend([
                 f"Flight {number}",
                 f"  Flight number: {flight.get('flight_number') or 'N/A'}",
+                f"  Airline:       {flight.get('airline') or 'N/A'}",
                 f"  Departure:     {flight.get('departure_time') or 'N/A'}",
                 f"  Arrival:       {flight.get('arrival_time') or 'N/A'}",
                 f"  Price:         {flight.get('price') or 'N/A'}",

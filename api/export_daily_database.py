@@ -110,7 +110,7 @@ def export_daily_database() -> dict[str, Any]:
                     "scrape_date": run_date,
                     "route": route,
                     "booking_window": booking_window,
-                    "carrier": carrier_from_flight_number(flight.get("flight_number")),
+                    "carrier": flight.get("airline") or carrier_from_flight_number(flight.get("flight_number")),
                     "departure_date": departure_date,
                     "departure_time": flight.get("departure_time"),
                     "price": price,
