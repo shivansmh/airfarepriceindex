@@ -10,19 +10,19 @@
     {
       "date": "2026-09-20",
       "frequency": "daily",
-      "apix_value": 165.638365,
+      "apix_value": 164.617407,
       "base_period_used": "data/base_day.txt"
     },
     {
       "date": "2026-09-20",
       "frequency": "weekly",
-      "apix_value": 120.58985,
+      "apix_value": 120.298148,
       "base_period_used": "data/base_day.txt"
     },
     {
       "date": "2026-09-20",
       "frequency": "monthly",
-      "apix_value": 110.723892,
+      "apix_value": 110.587764,
       "base_period_used": "data/base_day.txt"
     }
   ]

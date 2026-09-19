@@ -22,7 +22,7 @@ Flight 3
   Airline:       Air India Express
   Departure:     04:45
   Arrival:       15:40
-  Price:         ₹26,113
+  Price:         ₹25,483
 
 Flight 4
   Flight number: AI-1745
@@ -141,7 +141,7 @@ Flight 20
   Airline:       Air India
   Departure:     06:55
   Arrival:       16:45
-  Price:         ₹12,671
+  Price:         ₹10,947
 
 Flight 21
   Flight number: AI-2509,AI-9559
@@ -428,7 +428,7 @@ Flight 61
   Airline:       Air India
   Departure:     12:30
   Arrival:       13:25
-  Price:         ₹14,638
+  Price:         ₹14,948
 
 Flight 62
   Flight number: QP-1836
@@ -540,7 +540,7 @@ Flight 77
   Airline:       Air India
   Departure:     14:30
   Arrival:       13:25
-  Price:         ₹14,638
+  Price:         ₹14,948
 
 Flight 78
   Flight number: AI-9550,AI-2932
@@ -596,7 +596,7 @@ Flight 85
   Airline:       Air India
   Departure:     15:30
   Arrival:       13:25
-  Price:         ₹14,638
+  Price:         ₹14,948
 
 Flight 86
   Flight number: AI-2933
@@ -1299,7 +1299,7 @@ Flight 19
   Airline:       Air India
   Departure:     06:30
   Arrival:       08:50
-  Price:         ₹21,077
+  Price:         ₹17,000
 
 Flight 20
   Flight number: QP-1833
@@ -1348,7 +1348,7 @@ Flight 26
   Airline:       IndiGo
   Departure:     07:15
   Arrival:       09:30
-  Price:         ₹33,500
+  Price:         ₹18,500
 
 Flight 27
   Flight number: 6E-2076,6E-5078
@@ -1922,7 +1922,7 @@ Flight 108
   Airline:       Akasa Air
   Departure:     17:30
   Arrival:       19:45
-  Price:         ₹6,851
+  Price:         ₹6,729
 
 Flight 109
   Flight number: IX-1038
@@ -2355,641 +2355,641 @@ Flight 1
   Price:         ₹14,526
 
 Flight 2
+  Flight number: AI-2577,AI-2447
+  Airline:       Air India
+  Departure:     02:00
+  Arrival:       19:25
+  Price:         ₹14,774
+
+Flight 3
   Flight number: 6E-353
   Airline:       IndiGo
   Departure:     03:00
   Arrival:       05:20
   Price:         ₹7,790
 
-Flight 3
+Flight 4
   Flight number: 6E-449
   Airline:       IndiGo
   Departure:     05:00
   Arrival:       07:15
   Price:         ₹7,475
 
-Flight 4
+Flight 5
   Flight number: AI-1745
   Airline:       Air India
   Departure:     05:00
   Arrival:       07:25
   Price:         ₹7,473
 
-Flight 5
+Flight 6
   Flight number: IX-1108,IX-1214
   Airline:       Air India Express
   Departure:     05:00
   Arrival:       15:40
   Price:         ₹19,168
 
-Flight 6
+Flight 7
   Flight number: 6E-5119,6E-2046
   Airline:       IndiGo
   Departure:     05:10
   Arrival:       10:00
   Price:         ₹6,095
 
-Flight 7
+Flight 8
   Flight number: 6E-5119,6E-5146
   Airline:       IndiGo
   Departure:     05:10
   Arrival:       09:35
   Price:         ₹6,090
 
-Flight 8
+Flight 9
   Flight number: 6E-6171,6E-233
   Airline:       IndiGo
   Departure:     05:40
   Arrival:       10:30
   Price:         ₹10,554
 
-Flight 9
+Flight 10
   Flight number: AI-817,AI-2494
   Airline:       Air India
   Departure:     05:55
   Arrival:       22:40
   Price:         ₹14,651
 
-Flight 10
+Flight 11
   Flight number: AI-817,AI-2504
   Airline:       Air India
   Departure:     05:55
   Arrival:       16:35
   Price:         ₹14,651
 
-Flight 11
+Flight 12
   Flight number: AI-817,AI-2848
   Airline:       Air India
   Departure:     05:55
   Arrival:       13:40
   Price:         ₹14,651
 
-Flight 12
+Flight 13
   Flight number: AI-817,AI-2916
   Airline:       Air India
   Departure:     05:55
   Arrival:       19:40
   Price:         ₹14,651
 
-Flight 13
+Flight 14
   Flight number: AI-2499,AI-9752
   Airline:       Air India
   Departure:     06:00
   Arrival:       11:05
   Price:         ₹10,157
 
-Flight 14
+Flight 15
   Flight number: AI-9759,AI-2492
   Airline:       Air India
   Departure:     06:00
   Arrival:       16:40
   Price:         ₹11,858
 
-Flight 15
+Flight 16
   Flight number: IX-1165,IX-1027
   Airline:       Air India Express
   Departure:     06:00
   Arrival:       11:05
   Price:         ₹6,611
 
-Flight 16
+Flight 17
   Flight number: 6E-6218
   Airline:       IndiGo
   Departure:     06:05
   Arrival:       08:20
   Price:         ₹7,475
 
-Flight 17
+Flight 18
   Flight number: AI-1705,AI-9890
   Airline:       Air India
   Departure:     06:30
   Arrival:       12:20
   Price:         ₹10,880
 
-Flight 18
+Flight 19
   Flight number: AI-2975
   Airline:       Air India
   Departure:     06:30
   Arrival:       08:50
   Price:         ₹7,788
 
-Flight 19
+Flight 20
   Flight number: QP--1833
   Airline:       Akasa Air
   Departure:     06:50
   Arrival:       09:10
   Price:         ₹7,466
 
-Flight 20
+Flight 21
   Flight number: QP-1833
   Airline:       Akasa Air
   Departure:     06:50
   Arrival:       09:10
   Price:         ₹6,929
 
-Flight 21
+Flight 22
   Flight number: 6E-6470
   Airline:       IndiGo
   Departure:     06:55
   Arrival:       09:05
   Price:         ₹8,839
 
-Flight 22
+Flight 23
   Flight number: AI-2429
   Airline:       Air India
   Departure:     07:00
   Arrival:       09:25
   Price:         ₹8,308
 
-Flight 23
+Flight 24
   Flight number: AI-2509,AI-9519
   Airline:       Air India
   Departure:     07:00
   Arrival:       16:45
-  Price:         ₹12,943
+  Price:         ₹13,959
 
-Flight 24
+Flight 25
   Flight number: AI-2509,AI-9559
   Airline:       Air India
   Departure:     07:00
   Arrival:       12:50
   Price:         ₹13,397
 
-Flight 25
+Flight 26
   Flight number: AI-2959,AI-2494
   Airline:       Air India
   Departure:     07:10
   Arrival:       22:40
   Price:         ₹14,404
 
-Flight 26
+Flight 27
   Flight number: AI-2959,AI-2504
   Airline:       Air India
   Departure:     07:10
   Arrival:       16:35
   Price:         ₹14,293
 
-Flight 27
+Flight 28
   Flight number: AI-2959,AI-2848
   Airline:       Air India
   Departure:     07:10
   Arrival:       13:40
   Price:         ₹14,293
 
-Flight 28
+Flight 29
   Flight number: AI-2959,AI-2916
   Airline:       Air India
   Departure:     07:10
   Arrival:       19:40
   Price:         ₹14,404
 
-Flight 29
+Flight 30
   Flight number: AI-2959,AI-2918
   Airline:       Air India
   Departure:     07:10
   Arrival:       07:45
   Price:         ₹14,293
 
-Flight 30
+Flight 31
   Flight number: 6E-6814
   Airline:       IndiGo
   Departure:     07:15
   Arrival:       09:30
   Price:         ₹7,552
 
-Flight 31
+Flight 32
   Flight number: 6E-2076,6E-5078
   Airline:       IndiGo
   Departure:     07:30
   Arrival:       12:20
   Price:         ₹8,276
 
-Flight 32
+Flight 33
   Flight number: AI-2943
   Airline:       Air India
   Departure:     07:30
   Arrival:       09:55
   Price:         ₹8,308
 
-Flight 33
+Flight 34
   Flight number: 6E-6190,6E-2719
   Airline:       IndiGo
   Departure:     07:40
   Arrival:       12:50
   Price:         ₹6,095
 
-Flight 34
+Flight 35
   Flight number: 6E-320
   Airline:       IndiGo
   Departure:     08:00
   Arrival:       10:20
   Price:         ₹9,103
 
-Flight 35
+Flight 36
   Flight number: AI-2678
   Airline:       Air India
   Departure:     08:30
   Arrival:       10:45
   Price:         ₹7,449
 
-Flight 36
+Flight 37
   Flight number: QP-1119
   Airline:       Akasa Air
   Departure:     08:40
   Arrival:       11:05
   Price:         ₹7,501
 
-Flight 37
+Flight 38
   Flight number: 6E-675
   Airline:       IndiGo
   Departure:     08:45
   Arrival:       11:00
   Price:         ₹6,898
 
-Flight 38
+Flight 39
   Flight number: 6E-5298,6E-5021
   Airline:       IndiGo
   Departure:     09:00
   Arrival:       13:50
   Price:         ₹9,174
 
-Flight 39
+Flight 40
   Flight number: 6E-6443,6E-5344
   Airline:       IndiGo
   Departure:     09:00
   Arrival:       13:45
   Price:         ₹6,222
 
-Flight 40
+Flight 41
   Flight number: AI-2963
   Airline:       Air India
   Departure:     09:00
   Arrival:       11:15
   Price:         ₹7,001
 
-Flight 41
+Flight 42
   Flight number: IX-1782,IX-1671
   Airline:       Air India Express
   Departure:     09:25
   Arrival:       15:50
   Price:         ₹13,970
 
-Flight 42
+Flight 43
   Flight number: 6E-6107
   Airline:       IndiGo
   Departure:     09:30
   Arrival:       11:55
   Price:         ₹6,530
 
-Flight 43
+Flight 44
   Flight number: AI-2927
   Airline:       Air India
   Departure:     09:30
   Arrival:       12:00
   Price:         ₹6,843
 
-Flight 44
+Flight 45
   Flight number: AI-423,AI-2494
   Airline:       Air India
   Departure:     09:50
   Arrival:       22:40
   Price:         ₹14,404
 
-Flight 45
+Flight 46
   Flight number: AI-423,AI-2504
   Airline:       Air India
   Departure:     09:50
   Arrival:       16:35
   Price:         ₹14,293
 
-Flight 46
+Flight 47
   Flight number: AI-423,AI-2916
   Airline:       Air India
   Departure:     09:50
   Arrival:       19:40
   Price:         ₹14,404
 
-Flight 47
+Flight 48
   Flight number: AI-423,AI-2918
   Airline:       Air India
   Departure:     09:50
   Arrival:       07:45
   Price:         ₹14,293
 
-Flight 48
+Flight 49
   Flight number: AI-423,AI-494
   Airline:       Air India
   Departure:     09:50
   Arrival:       10:30
   Price:         ₹14,293
 
-Flight 49
+Flight 50
   Flight number: AI-2995
   Airline:       Air India
   Departure:     10:00
   Arrival:       12:25
   Price:         ₹6,843
 
-Flight 50
+Flight 51
   Flight number: QP-1110
   Airline:       Akasa Air
   Departure:     10:00
   Arrival:       12:20
   Price:         ₹6,530
 
-Flight 51
+Flight 52
   Flight number: 6E-6328
   Airline:       IndiGo
   Departure:     10:15
   Arrival:       12:35
   Price:         ₹6,449
 
-Flight 52
+Flight 53
   Flight number: IX-2749,IX-1581
   Airline:       Air India Express
   Departure:     10:25
   Arrival:       20:25
   Price:         ₹15,350
 
-Flight 53
+Flight 54
   Flight number: AI-2425
   Airline:       Air India
   Departure:     10:30
   Arrival:       12:50
   Price:         ₹6,843
 
-Flight 54
+Flight 55
   Flight number: 6E-6047
   Airline:       IndiGo
   Departure:     11:00
   Arrival:       13:15
   Price:         ₹6,530
 
-Flight 55
+Flight 56
   Flight number: AI-2945
   Airline:       Air India
   Departure:     11:00
   Arrival:       13:25
   Price:         ₹6,843
 
-Flight 56
+Flight 57
   Flight number: IX-1812,IX-1800
   Airline:       Air India Express
   Departure:     11:15
   Arrival:       18:35
   Price:         ₹18,481
 
-Flight 57
+Flight 58
   Flight number: AI-2715,AI-2494
   Airline:       Air India
   Departure:     11:40
   Arrival:       22:40
   Price:         ₹14,404
 
-Flight 58
+Flight 59
   Flight number: AI-2715,AI-2504
   Airline:       Air India
   Departure:     11:40
   Arrival:       16:35
   Price:         ₹14,293
 
-Flight 59
+Flight 60
   Flight number: AI-2715,AI-2848
   Airline:       Air India
   Departure:     11:40
   Arrival:       13:40
   Price:         ₹14,293
 
-Flight 60
+Flight 61
   Flight number: AI-2715,AI-2916
   Airline:       Air India
   Departure:     11:40
   Arrival:       19:40
   Price:         ₹14,404
 
-Flight 61
+Flight 62
   Flight number: AI-2715,AI-2918
   Airline:       Air India
   Departure:     11:40
   Arrival:       07:45
   Price:         ₹14,293
 
-Flight 62
+Flight 63
   Flight number: AI-2715,AI-494
   Airline:       Air India
   Departure:     11:40
   Arrival:       10:30
   Price:         ₹14,293
 
-Flight 63
+Flight 64
   Flight number: AI-9757,AI-2492
   Airline:       Air India
   Departure:     11:50
   Arrival:       16:40
   Price:         ₹11,858
 
-Flight 64
+Flight 65
   Flight number: 6E-6021,6E-6259
   Airline:       IndiGo
   Departure:     11:55
   Arrival:       16:15
   Price:         ₹6,562
 
-Flight 65
+Flight 66
   Flight number: AI-1719,AI-9717
   Airline:       Air India
   Departure:     11:55
   Arrival:       10:30
   Price:         ₹11,335
 
-Flight 66
+Flight 67
   Flight number: AI-1719,AI-9719
   Airline:       Air India
   Departure:     11:55
   Arrival:       19:15
   Price:         ₹11,335
 
-Flight 67
+Flight 68
   Flight number: AI-9722,AI-604
   Airline:       Air India
   Departure:     11:55
   Arrival:       08:30
   Price:         ₹13,495
 
-Flight 68
+Flight 69
   Flight number: IX-1068,IX-1241
   Airline:       Air India Express
   Departure:     11:55
   Arrival:       19:50
   Price:         ₹15,287
 
-Flight 69
+Flight 70
   Flight number: 6E-6676
   Airline:       IndiGo
   Departure:     12:00
   Arrival:       14:10
   Price:         ₹6,530
 
-Flight 70
+Flight 71
   Flight number: AI-2907,AI-2742
   Airline:       Air India
   Departure:     12:00
   Arrival:       13:05
   Price:         ₹14,387
 
-Flight 71
+Flight 72
   Flight number: IX-1273,IX-1547
   Airline:       Air India Express
   Departure:     12:05
   Arrival:       21:55
   Price:         ₹8,139
 
-Flight 72
+Flight 73
   Flight number: IX-1059,IX-1025
   Airline:       Air India Express
   Departure:     12:15
   Arrival:       23:05
   Price:         ₹10,870
 
-Flight 73
+Flight 74
   Flight number: 6E-324
   Airline:       IndiGo
   Departure:     13:00
   Arrival:       15:10
   Price:         ₹6,530
 
-Flight 74
+Flight 75
   Flight number: AI-9418,AI-2750
   Airline:       Air India
   Departure:     13:10
   Arrival:       21:25
   Price:         ₹13,277
 
-Flight 75
+Flight 76
   Flight number: 6E-2113,6E-708
   Airline:       IndiGo
   Departure:     13:20
   Arrival:       18:30
   Price:         ₹8,486
 
-Flight 76
+Flight 77
   Flight number: AI-2951
   Airline:       Air India
   Departure:     13:30
   Arrival:       15:50
   Price:         ₹8,471
 
-Flight 77
+Flight 78
   Flight number: AI-881,AI-2494
   Airline:       Air India
   Departure:     13:35
   Arrival:       22:40
   Price:         ₹14,404
 
-Flight 78
+Flight 79
   Flight number: AI-881,AI-2848
   Airline:       Air India
   Departure:     13:35
   Arrival:       13:40
   Price:         ₹14,293
 
-Flight 79
+Flight 80
   Flight number: AI-881,AI-2916
   Airline:       Air India
   Departure:     13:35
   Arrival:       19:40
   Price:         ₹14,404
 
-Flight 80
+Flight 81
   Flight number: AI-881,AI-2918
   Airline:       Air India
   Departure:     13:35
   Arrival:       07:45
   Price:         ₹14,293
 
-Flight 81
+Flight 82
   Flight number: AI-881,AI-494
   Airline:       Air India
   Departure:     13:35
   Arrival:       10:30
   Price:         ₹14,293
 
-Flight 82
+Flight 83
   Flight number: 6E-6022
   Airline:       IndiGo
   Departure:     14:00
   Arrival:       16:25
   Price:         ₹6,530
 
-Flight 83
+Flight 84
   Flight number: AI-2441
   Airline:       Air India
   Departure:     14:10
   Arrival:       16:35
   Price:         ₹7,001
 
-Flight 84
+Flight 85
   Flight number: AI-1717,AI-9752
   Airline:       Air India
   Departure:     14:20
   Arrival:       11:05
   Price:         ₹9,957
 
-Flight 85
+Flight 86
   Flight number: AI-1780
   Airline:       Air India
   Departure:     14:30
   Arrival:       18:20
   Price:         ₹10,388
 
-Flight 86
+Flight 87
   Flight number: 6E-6318
   Airline:       IndiGo
   Departure:     14:45
   Arrival:       17:00
   Price:         ₹6,530
 
-Flight 87
+Flight 88
   Flight number: AI-9550,AI-2932
   Airline:       Air India
   Departure:     14:50
   Arrival:       10:10
   Price:         ₹14,534
 
-Flight 88
+Flight 89
   Flight number: 6E-2249,6E-5132
   Airline:       IndiGo
   Departure:     15:00
   Arrival:       19:35
   Price:         ₹6,222
 
-Flight 89
+Flight 90
   Flight number: 6E-5198
   Airline:       IndiGo
   Departure:     15:00
   Arrival:       17:10
   Price:         ₹8,351
 
-Flight 90
+Flight 91
   Flight number: IX-1081,IX-1547
   Airline:       Air India Express
   Departure:     15:25
   Arrival:       21:55
   Price:         ₹8,139
 
-Flight 91
+Flight 92
   Flight number: 6E-864
   Airline:       IndiGo
   Departure:     15:30
   Arrival:       17:45
   Price:         ₹6,530
-
-Flight 92
-  Flight number: AI-2519,AI-2872
-  Airline:       Air India
-  Departure:     15:30
-  Arrival:       07:45
-  Price:         ₹14,529
 
 Flight 93
   Flight number: AI-2933
@@ -2999,256 +2999,256 @@ Flight 93
   Price:         ₹7,001
 
 Flight 94
-  Flight number: AI-2521,AI-432
-  Airline:       Air India
-  Departure:     15:40
-  Arrival:       17:25
-  Price:         ₹14,261
-
-Flight 95
   Flight number: AI-1777
   Airline:       Air India
   Departure:     16:00
   Arrival:       18:25
   Price:         ₹7,011
 
-Flight 96
+Flight 95
   Flight number: AI-487,AI-9530
   Airline:       Air India
   Departure:     16:00
   Arrival:       15:40
   Price:         ₹13,721
 
-Flight 97
+Flight 96
   Flight number: QP-1128
   Airline:       Akasa Air
   Departure:     16:00
   Arrival:       18:20
   Price:         ₹6,361
 
-Flight 98
+Flight 97
   Flight number: 6E-758,6E-5083
   Airline:       IndiGo
   Departure:     16:10
   Arrival:       21:20
   Price:         ₹7,860
 
-Flight 99
+Flight 98
   Flight number: 6E-327
   Airline:       IndiGo
   Departure:     16:15
   Arrival:       18:35
   Price:         ₹6,898
 
-Flight 100
+Flight 99
   Flight number: AI-2761,AI-9717
   Airline:       Air India
   Departure:     16:25
   Arrival:       10:30
   Price:         ₹11,335
 
-Flight 101
+Flight 100
   Flight number: AI-2939,AI-2494
   Airline:       Air India
   Departure:     16:40
   Arrival:       22:40
   Price:         ₹14,404
 
-Flight 102
+Flight 101
   Flight number: AI-2939,AI-2504
   Airline:       Air India
   Departure:     16:40
   Arrival:       16:35
   Price:         ₹14,293
 
-Flight 103
+Flight 102
   Flight number: AI-2939,AI-2848
   Airline:       Air India
   Departure:     16:40
   Arrival:       13:40
   Price:         ₹14,293
 
-Flight 104
+Flight 103
   Flight number: AI-2939,AI-2918
   Airline:       Air India
   Departure:     16:40
   Arrival:       07:45
   Price:         ₹14,293
 
-Flight 105
+Flight 104
   Flight number: AI-2939,AI-494
   Airline:       Air India
   Departure:     16:40
   Arrival:       10:30
   Price:         ₹14,293
 
-Flight 106
+Flight 105
   Flight number: AI-9674,AI-2750
   Airline:       Air India
   Departure:     16:40
   Arrival:       21:25
   Price:         ₹13,277
 
-Flight 107
+Flight 106
   Flight number: 6E-5096
   Airline:       IndiGo
   Departure:     17:00
   Arrival:       19:05
   Price:         ₹6,442
 
-Flight 108
+Flight 107
   Flight number: 6E-6706
   Airline:       IndiGo
   Departure:     17:00
   Arrival:       19:15
   Price:         ₹9,103
 
-Flight 109
+Flight 108
   Flight number: AI-441
   Airline:       Air India
   Departure:     17:00
   Arrival:       19:25
   Price:         ₹8,103
 
-Flight 110
+Flight 109
   Flight number: 6E-5073,6E-5160
   Airline:       IndiGo
   Departure:     17:05
   Arrival:       21:05
   Price:         ₹8,964
 
-Flight 111
+Flight 110
   Flight number: 6E-6829,6E-552
   Airline:       IndiGo
   Departure:     17:20
   Arrival:       22:05
   Price:         ₹6,222
 
-Flight 112
+Flight 111
   Flight number: 6E-7653,6E-753
   Airline:       IndiGo
   Departure:     17:20
   Arrival:       22:20
   Price:         ₹7,595
 
-Flight 113
+Flight 112
   Flight number: QP-1820
   Airline:       Akasa Air
   Departure:     17:30
   Arrival:       19:50
   Price:         ₹6,361
 
-Flight 114
+Flight 113
   Flight number: IX-1038
   Airline:       Air India Express
   Departure:     17:35
   Arrival:       19:45
   Price:         ₹6,529
 
-Flight 115
+Flight 114
   Flight number: AI-809,AI-2494
   Airline:       Air India
   Departure:     17:40
   Arrival:       22:40
   Price:         ₹14,404
 
-Flight 116
+Flight 115
   Flight number: AI-809,AI-2504
   Airline:       Air India
   Departure:     17:40
   Arrival:       16:35
   Price:         ₹14,293
 
-Flight 117
+Flight 116
   Flight number: AI-809,AI-2848
   Airline:       Air India
   Departure:     17:40
   Arrival:       13:40
   Price:         ₹14,293
 
-Flight 118
+Flight 117
   Flight number: AI-809,AI-2918
   Airline:       Air India
   Departure:     17:40
   Arrival:       07:45
   Price:         ₹14,293
 
-Flight 119
+Flight 118
   Flight number: AI-809,AI-494
   Airline:       Air India
   Departure:     17:40
   Arrival:       10:30
   Price:         ₹14,293
 
-Flight 120
+Flight 119
   Flight number: IX-1056
   Airline:       Air India Express
   Departure:     17:50
   Arrival:       20:10
   Price:         ₹6,688
 
-Flight 121
+Flight 120
   Flight number: 6E-329
   Airline:       IndiGo
   Departure:     18:00
   Arrival:       20:15
   Price:         ₹9,103
 
-Flight 122
+Flight 121
   Flight number: AI-2879,AI-418
   Airline:       Air India
   Departure:     18:00
   Arrival:       13:25
   Price:         ₹14,638
 
-Flight 123
+Flight 122
   Flight number: AI-2955
   Airline:       Air India
   Departure:     18:00
   Arrival:       20:25
   Price:         ₹8,514
 
-Flight 124
+Flight 123
   Flight number: 6E-5014,6E-679
   Airline:       IndiGo
   Departure:     18:30
   Arrival:       22:25
   Price:         ₹6,090
 
-Flight 125
+Flight 124
   Flight number: AI-1710,AI-9752
   Airline:       Air India
   Departure:     18:35
   Arrival:       11:05
   Price:         ₹9,527
 
-Flight 126
+Flight 125
   Flight number: IX-1024
   Airline:       Air India Express
   Departure:     18:40
   Arrival:       21:05
   Price:         ₹6,529
 
-Flight 127
+Flight 126
   Flight number: IX-1049,IX-1209
   Airline:       Air India Express
   Departure:     18:40
   Arrival:       00:05
   Price:         ₹18,194
 
-Flight 128
+Flight 127
   Flight number: 6E-354
   Airline:       IndiGo
   Departure:     19:00
   Arrival:       21:25
   Price:         ₹6,898
 
-Flight 129
+Flight 128
   Flight number: AI-2977
   Airline:       Air India
   Departure:     19:00
   Arrival:       21:25
   Price:         ₹7,688
+
+Flight 129
+  Flight number: AI-9428,AI-2790
+  Airline:       Air India
+  Departure:     19:00
+  Arrival:       16:45
+  Price:         ₹14,534
 
 Flight 130
   Flight number: AI-9428,AI-2932
@@ -3629,7 +3629,7 @@ Flight 12
   Airline:       Air India
   Departure:     05:55
   Arrival:       07:45
-  Price:         ₹14,651
+  Price:         ₹10,163
 
 Flight 13
   Flight number: AI-1793,AI-2699
@@ -3793,725 +3793,725 @@ Flight 35
   Price:         ₹7,332
 
 Flight 36
-  Flight number: AI-1749,AI-2932
-  Airline:       Air India
-  Departure:     08:40
-  Arrival:       10:10
-  Price:         ₹14,971
-
-Flight 37
   Flight number: QP-1119
   Airline:       Akasa Air
   Departure:     08:40
   Arrival:       11:05
   Price:         ₹6,609
 
-Flight 38
+Flight 37
   Flight number: 6E-675
   Airline:       IndiGo
   Departure:     08:45
   Arrival:       11:00
   Price:         ₹7,019
 
-Flight 39
+Flight 38
   Flight number: 6E-5298,6E-5021
   Airline:       IndiGo
   Departure:     09:00
   Arrival:       13:50
   Price:         ₹10,022
 
-Flight 40
+Flight 39
   Flight number: 6E-6443,6E-5344
   Airline:       IndiGo
   Departure:     09:00
   Arrival:       13:45
   Price:         ₹7,849
 
-Flight 41
+Flight 40
   Flight number: AI-2963
   Airline:       Air India
   Departure:     09:00
   Arrival:       11:15
   Price:         ₹7,332
 
-Flight 42
+Flight 41
   Flight number: IX-1076,IX-1547
   Airline:       Air India Express
   Departure:     09:00
   Arrival:       21:55
   Price:         ₹28,272
 
-Flight 43
+Flight 42
   Flight number: 6E-6107
   Airline:       IndiGo
   Departure:     09:30
   Arrival:       11:55
   Price:         ₹7,019
 
-Flight 44
+Flight 43
   Flight number: AI-2927
   Airline:       Air India
   Departure:     09:30
   Arrival:       12:00
   Price:         ₹7,332
 
-Flight 45
+Flight 44
   Flight number: AI-2995
   Airline:       Air India
   Departure:     10:00
   Arrival:       12:25
   Price:         ₹7,332
 
-Flight 46
+Flight 45
   Flight number: QP-1110
   Airline:       Akasa Air
   Departure:     10:00
   Arrival:       12:20
   Price:         ₹6,977
 
-Flight 47
+Flight 46
   Flight number: 6E-6328
   Airline:       IndiGo
   Departure:     10:15
   Arrival:       12:35
   Price:         ₹7,019
 
-Flight 48
+Flight 47
   Flight number: IX-2749,IX-1360
   Airline:       Air India Express
   Departure:     10:25
   Arrival:       22:40
   Price:         ₹13,384
 
-Flight 49
+Flight 48
   Flight number: IX-2749,IX-1581
   Airline:       Air India Express
   Departure:     10:25
   Arrival:       20:25
   Price:         ₹15,350
 
-Flight 50
+Flight 49
   Flight number: AI-2425
   Airline:       Air India
   Departure:     10:30
   Arrival:       12:50
   Price:         ₹7,332
 
-Flight 51
+Flight 50
   Flight number: AI-2859,AI-2872
   Airline:       Air India
   Departure:     10:30
   Arrival:       07:45
   Price:         ₹14,948
 
-Flight 52
+Flight 51
   Flight number: AI-9920,AI-2998
   Airline:       Air India
   Departure:     10:50
   Arrival:       16:00
   Price:         ₹14,214
 
-Flight 53
+Flight 52
   Flight number: 6E-6047
   Airline:       IndiGo
   Departure:     11:00
   Arrival:       13:15
   Price:         ₹7,019
 
-Flight 54
+Flight 53
   Flight number: AI-2945
   Airline:       Air India
   Departure:     11:00
   Arrival:       13:25
   Price:         ₹7,332
 
-Flight 55
+Flight 54
   Flight number: AI-2715,AI-2494
   Airline:       Air India
   Departure:     11:40
   Arrival:       22:40
   Price:         ₹14,404
 
-Flight 56
+Flight 55
   Flight number: AI-2715,AI-2504
   Airline:       Air India
   Departure:     11:40
   Arrival:       16:35
   Price:         ₹14,293
 
-Flight 57
+Flight 56
   Flight number: AI-2715,AI-2848
   Airline:       Air India
   Departure:     11:40
   Arrival:       13:05
   Price:         ₹14,293
 
-Flight 58
+Flight 57
   Flight number: AI-2715,AI-2916
   Airline:       Air India
   Departure:     11:40
   Arrival:       19:40
   Price:         ₹14,404
 
-Flight 59
+Flight 58
   Flight number: AI-2715,AI-2918
   Airline:       Air India
   Departure:     11:40
   Arrival:       07:45
   Price:         ₹14,293
 
-Flight 60
+Flight 59
   Flight number: AI-2715,AI-494
   Airline:       Air India
   Departure:     11:40
   Arrival:       10:30
   Price:         ₹14,293
 
-Flight 61
+Flight 60
   Flight number: AI-9757,AI-2492
   Airline:       Air India
   Departure:     11:50
   Arrival:       16:40
   Price:         ₹11,175
 
-Flight 62
-  Flight number: AI-1719,AI-414
-  Airline:       Air India
-  Departure:     11:55
-  Arrival:       08:00
-  Price:         ₹14,760
-
-Flight 63
-  Flight number: AI-1719,AI-622
-  Airline:       Air India
-  Departure:     11:55
-  Arrival:       21:35
-  Price:         ₹14,760
-
-Flight 64
+Flight 61
   Flight number: AI-1719,AI-9717
   Airline:       Air India
   Departure:     11:55
   Arrival:       10:30
   Price:         ₹11,035
 
-Flight 65
+Flight 62
   Flight number: AI-1719,AI-9719
   Airline:       Air India
   Departure:     11:55
   Arrival:       19:15
   Price:         ₹11,035
 
-Flight 66
+Flight 63
   Flight number: IX-1068,IX-1241
   Airline:       Air India Express
   Departure:     11:55
   Arrival:       19:50
   Price:         ₹16,937
 
-Flight 67
+Flight 64
   Flight number: 6E-6676
   Airline:       IndiGo
   Departure:     12:00
   Arrival:       14:15
   Price:         ₹7,019
 
-Flight 68
+Flight 65
   Flight number: AI-1785
   Airline:       Air India
   Departure:     12:00
   Arrival:       14:25
   Price:         ₹7,515
 
-Flight 69
+Flight 66
   Flight number: IX-1059,IX-1025
   Airline:       Air India Express
   Departure:     12:15
   Arrival:       23:05
   Price:         ₹10,870
 
-Flight 70
+Flight 67
   Flight number: AI-2899,AI-2872
   Airline:       Air India
   Departure:     12:30
   Arrival:       07:45
   Price:         ₹14,948
 
-Flight 71
+Flight 68
   Flight number: 6E-324
   Airline:       IndiGo
   Departure:     13:00
   Arrival:       15:10
   Price:         ₹7,019
 
-Flight 72
+Flight 69
   Flight number: AI-9418,AI-1780
   Airline:       Air India
   Departure:     13:10
   Arrival:       18:20
-  Price:         ₹13,111
+  Price:         ₹12,723
 
-Flight 73
+Flight 70
   Flight number: AI-9418,AI-2750
   Airline:       Air India
   Departure:     13:10
   Arrival:       21:25
-  Price:         ₹13,111
+  Price:         ₹12,723
 
-Flight 74
+Flight 71
   Flight number: 6E-2113,6E-708
   Airline:       IndiGo
   Departure:     13:20
   Arrival:       18:30
   Price:         ₹6,828
 
-Flight 75
+Flight 72
   Flight number: AI-2951
   Airline:       Air India
   Departure:     13:30
   Arrival:       15:50
   Price:         ₹7,782
 
-Flight 76
+Flight 73
   Flight number: AI-881,AI-2494
   Airline:       Air India
   Departure:     13:35
   Arrival:       22:40
   Price:         ₹14,404
 
-Flight 77
+Flight 74
   Flight number: AI-881,AI-2848
   Airline:       Air India
   Departure:     13:35
   Arrival:       13:05
   Price:         ₹14,293
 
-Flight 78
+Flight 75
   Flight number: AI-881,AI-2916
   Airline:       Air India
   Departure:     13:35
   Arrival:       19:40
   Price:         ₹14,404
 
-Flight 79
+Flight 76
   Flight number: AI-881,AI-2918
   Airline:       Air India
   Departure:     13:35
   Arrival:       07:45
   Price:         ₹14,293
 
-Flight 80
+Flight 77
   Flight number: AI-881,AI-494
   Airline:       Air India
   Departure:     13:35
   Arrival:       10:30
   Price:         ₹14,293
 
-Flight 81
+Flight 78
   Flight number: QP-1807
   Airline:       Akasa Air
   Departure:     13:40
   Arrival:       15:55
   Price:         ₹6,977
 
-Flight 82
+Flight 79
   Flight number: 6E-6454,6E-5265
   Airline:       IndiGo
   Departure:     13:50
   Arrival:       18:10
   Price:         ₹6,618
 
-Flight 83
+Flight 80
   Flight number: 6E-6022
   Airline:       IndiGo
   Departure:     14:00
   Arrival:       16:25
   Price:         ₹7,019
 
-Flight 84
+Flight 81
   Flight number: AI-2441
   Airline:       Air India
   Departure:     14:10
   Arrival:       16:35
   Price:         ₹7,782
 
-Flight 85
+Flight 82
   Flight number: AI-1717,AI-9752
   Airline:       Air India
   Departure:     14:20
   Arrival:       11:05
   Price:         ₹9,957
 
-Flight 86
+Flight 83
   Flight number: AI-1780
   Airline:       Air India
   Departure:     14:30
   Arrival:       18:20
   Price:         ₹7,332
 
-Flight 87
+Flight 84
   Flight number: AI-2465,AI-2872
   Airline:       Air India
   Departure:     14:30
   Arrival:       07:45
   Price:         ₹15,261
 
-Flight 88
+Flight 85
   Flight number: 6E-6318
   Airline:       IndiGo
   Departure:     14:45
   Arrival:       17:00
   Price:         ₹7,019
 
-Flight 89
+Flight 86
   Flight number: 6E-990,6E-2139
   Airline:       IndiGo
   Departure:     14:50
   Arrival:       19:00
   Price:         ₹6,598
 
-Flight 90
+Flight 87
   Flight number: 6E-2249,6E-5132
   Airline:       IndiGo
   Departure:     15:00
   Arrival:       19:35
   Price:         ₹6,750
 
-Flight 91
+Flight 88
   Flight number: 6E-5198
   Airline:       IndiGo
   Departure:     15:00
   Arrival:       17:10
   Price:         ₹8,180
 
-Flight 92
+Flight 89
   Flight number: IX-1081,IX-1547
   Airline:       Air India Express
   Departure:     15:25
   Arrival:       21:55
   Price:         ₹20,764
 
-Flight 93
+Flight 90
   Flight number: 6E-864
   Airline:       IndiGo
   Departure:     15:30
   Arrival:       17:45
   Price:         ₹7,019
 
-Flight 94
+Flight 91
   Flight number: AI-2519,AI-2872
   Airline:       Air India
   Departure:     15:30
   Arrival:       07:45
   Price:         ₹14,948
 
-Flight 95
+Flight 92
   Flight number: AI-2933
   Airline:       Air India
   Departure:     15:30
   Arrival:       17:55
   Price:         ₹7,332
 
-Flight 96
+Flight 93
   Flight number: AI-1777
   Airline:       Air India
   Departure:     16:00
   Arrival:       18:25
   Price:         ₹7,515
 
-Flight 97
+Flight 94
   Flight number: AI-487,AI-2506
   Airline:       Air India
   Departure:     16:00
   Arrival:       23:10
   Price:         ₹15,628
 
-Flight 98
+Flight 95
+  Flight number: AI-487,AI-2842
+  Airline:       Air India
+  Departure:     16:00
+  Arrival:       15:00
+  Price:         ₹12,550
+
+Flight 96
   Flight number: AI-487,AI-9530
   Airline:       Air India
   Departure:     16:00
   Arrival:       15:40
   Price:         ₹13,258
 
-Flight 99
+Flight 97
   Flight number: QP-1128
   Airline:       Akasa Air
   Departure:     16:00
   Arrival:       18:20
   Price:         ₹6,977
 
-Flight 100
+Flight 98
   Flight number: 6E-327
   Airline:       IndiGo
   Departure:     16:15
   Arrival:       18:35
   Price:         ₹7,019
 
-Flight 101
-  Flight number: AI-2761,AI-414
+Flight 99
+  Flight number: AI-2761,AI-2782
   Airline:       Air India
   Departure:     16:25
-  Arrival:       08:00
-  Price:         ₹14,760
+  Arrival:       15:40
+  Price:         ₹13,541
 
-Flight 102
-  Flight number: AI-2761,AI-622
-  Airline:       Air India
-  Departure:     16:25
-  Arrival:       21:35
-  Price:         ₹14,760
-
-Flight 103
+Flight 100
   Flight number: AI-2761,AI-9717
   Airline:       Air India
   Departure:     16:25
   Arrival:       10:30
   Price:         ₹11,635
 
-Flight 104
+Flight 101
   Flight number: AI-2939,AI-2494
   Airline:       Air India
   Departure:     16:40
   Arrival:       22:40
   Price:         ₹14,404
 
-Flight 105
+Flight 102
   Flight number: AI-2939,AI-2504
   Airline:       Air India
   Departure:     16:40
   Arrival:       17:35
-  Price:         ₹14,293
+  Price:         ₹11,847
 
-Flight 106
+Flight 103
   Flight number: AI-2939,AI-2848
   Airline:       Air India
   Departure:     16:40
   Arrival:       13:05
   Price:         ₹14,293
 
-Flight 107
+Flight 104
   Flight number: AI-2939,AI-2918
   Airline:       Air India
   Departure:     16:40
   Arrival:       07:45
   Price:         ₹14,293
 
-Flight 108
+Flight 105
   Flight number: AI-2939,AI-494
   Airline:       Air India
   Departure:     16:40
   Arrival:       10:30
   Price:         ₹14,293
 
-Flight 109
+Flight 106
+  Flight number: AI-2549,AI-2790
+  Airline:       Air India
+  Departure:     16:45
+  Arrival:       16:45
+  Price:         ₹14,801
+
+Flight 107
   Flight number: AI-2549,AI-2932
   Airline:       Air India
   Departure:     16:45
   Arrival:       10:10
   Price:         ₹14,801
 
-Flight 110
+Flight 108
   Flight number: 6E-5096
   Airline:       IndiGo
   Departure:     17:00
   Arrival:       19:05
   Price:         ₹6,442
 
-Flight 111
+Flight 109
   Flight number: 6E-6706
   Airline:       IndiGo
   Departure:     17:00
   Arrival:       19:15
   Price:         ₹7,169
 
-Flight 112
+Flight 110
   Flight number: AI-441
   Airline:       Air India
   Departure:     17:00
   Arrival:       19:25
   Price:         ₹7,782
 
-Flight 113
+Flight 111
   Flight number: 6E-5073,6E-5160
   Airline:       IndiGo
   Departure:     17:05
   Arrival:       21:05
   Price:         ₹7,718
 
-Flight 114
+Flight 112
   Flight number: 6E-6829,6E-552
   Airline:       IndiGo
   Departure:     17:20
   Arrival:       22:05
   Price:         ₹7,274
 
-Flight 115
+Flight 113
   Flight number: 6E-7653,6E-753
   Airline:       IndiGo
   Departure:     17:20
   Arrival:       22:20
   Price:         ₹7,155
 
-Flight 116
+Flight 114
   Flight number: QP-1820
   Airline:       Akasa Air
   Departure:     17:30
   Arrival:       19:50
   Price:         ₹6,977
 
-Flight 117
+Flight 115
   Flight number: IX-1038
   Airline:       Air India Express
   Departure:     17:35
   Arrival:       19:45
   Price:         ₹6,739
 
-Flight 118
+Flight 116
   Flight number: AI-809,AI-2494
   Airline:       Air India
   Departure:     17:40
   Arrival:       22:40
   Price:         ₹14,404
 
-Flight 119
+Flight 117
   Flight number: AI-809,AI-2504
   Airline:       Air India
   Departure:     17:40
   Arrival:       17:35
   Price:         ₹14,293
 
-Flight 120
+Flight 118
   Flight number: AI-809,AI-2848
   Airline:       Air India
   Departure:     17:40
   Arrival:       13:05
   Price:         ₹14,293
 
-Flight 121
+Flight 119
   Flight number: AI-809,AI-2918
   Airline:       Air India
   Departure:     17:40
   Arrival:       07:45
   Price:         ₹14,293
 
-Flight 122
+Flight 120
   Flight number: AI-809,AI-494
   Airline:       Air India
   Departure:     17:40
   Arrival:       10:30
   Price:         ₹14,293
 
-Flight 123
+Flight 121
   Flight number: IX-1056
   Airline:       Air India Express
   Departure:     17:50
   Arrival:       20:10
   Price:         ₹6,898
 
-Flight 124
+Flight 122
   Flight number: 6E-329
   Airline:       IndiGo
   Departure:     18:00
   Arrival:       20:15
   Price:         ₹9,329
 
-Flight 125
+Flight 123
   Flight number: 6E-5014,6E-679
   Airline:       IndiGo
   Departure:     18:30
   Arrival:       22:25
   Price:         ₹7,718
 
-Flight 126
+Flight 124
   Flight number: AI-1710,AI-9752
   Airline:       Air India
   Departure:     18:35
   Arrival:       11:05
   Price:         ₹9,527
 
-Flight 127
+Flight 125
+  Flight number: AI-2565,AI-1780
+  Airline:       Air India
+  Departure:     18:40
+  Arrival:       18:20
+  Price:         ₹13,028
+
+Flight 126
   Flight number: IX-1024
   Airline:       Air India Express
   Departure:     18:40
   Arrival:       21:05
   Price:         ₹7,318
 
-Flight 128
+Flight 127
   Flight number: IX-1049,IX-1209
   Airline:       Air India Express
   Departure:     18:40
   Arrival:       00:05
   Price:         ₹10,110
 
-Flight 129
+Flight 128
   Flight number: 6E-354
   Airline:       IndiGo
   Departure:     19:00
   Arrival:       21:25
   Price:         ₹7,469
 
-Flight 130
+Flight 129
   Flight number: AI-2977
   Airline:       Air India
   Departure:     19:00
   Arrival:       21:25
   Price:         ₹8,305
 
-Flight 131
+Flight 130
   Flight number: 6E-5138,6E-5049
   Airline:       IndiGo
   Departure:     19:10
   Arrival:       00:10
   Price:         ₹7,849
 
-Flight 132
+Flight 131
   Flight number: IX-1064,IX-1243
   Airline:       Air India Express
   Departure:     19:10
   Arrival:       08:15
   Price:         ₹12,222
 
-Flight 133
+Flight 132
   Flight number: 6E-2169,6E-6598
   Airline:       IndiGo
   Departure:     19:20
   Arrival:       23:45
   Price:         ₹6,750
 
-Flight 134
+Flight 133
   Flight number: AI-531,AI-2504
   Airline:       Air India
   Departure:     19:20
   Arrival:       17:35
-  Price:         ₹14,293
+  Price:         ₹11,431
 
-Flight 135
+Flight 134
   Flight number: AI-531,AI-2848
   Airline:       Air India
   Departure:     19:20
   Arrival:       13:05
   Price:         ₹14,293
 
-Flight 136
+Flight 135
   Flight number: AI-531,AI-2918
   Airline:       Air India
   Departure:     19:20
   Arrival:       07:45
   Price:         ₹14,293
 
-Flight 137
+Flight 136
   Flight number: AI-531,AI-494
   Airline:       Air India
   Departure:     19:20
   Arrival:       10:30
   Price:         ₹14,293
 
-Flight 138
+Flight 137
   Flight number: 6E-931,6E-6351
   Airline:       IndiGo
   Departure:     19:30
   Arrival:       00:30
   Price:         ₹7,718
+
+Flight 138
+  Flight number: AI-1708,AI-2445
+  Airline:       Air India
+  Departure:     19:30
+  Arrival:       16:25
+  Price:         ₹15,105
 
 Flight 139
   Flight number: AI-1708,AI-2626
@@ -4567,7 +4567,7 @@ Flight 146
   Airline:       Air India
   Departure:     20:30
   Arrival:       17:35
-  Price:         ₹14,293
+  Price:         ₹11,431
 
 Flight 147
   Flight number: AI-2545,AI-2848
@@ -4591,67 +4591,67 @@ Flight 149
   Price:         ₹14,293
 
 Flight 150
-  Flight number: AI-2569,AI-2492
-  Airline:       Air India
-  Departure:     20:30
-  Arrival:       16:40
-  Price:         ₹15,384
-
-Flight 151
   Flight number: AI-2569,AI-9752
   Airline:       Air India
   Departure:     20:30
   Arrival:       11:05
   Price:         ₹9,527
 
-Flight 152
+Flight 151
   Flight number: AI-2957
   Airline:       Air India
   Departure:     20:30
   Arrival:       23:00
   Price:         ₹7,782
 
-Flight 153
+Flight 152
   Flight number: 6E-853
   Airline:       IndiGo
   Departure:     20:45
   Arrival:       23:00
   Price:         ₹7,469
 
-Flight 154
+Flight 153
   Flight number: AI-2981
   Airline:       Air India
   Departure:     21:00
   Arrival:       23:20
   Price:         ₹7,782
 
-Flight 155
+Flight 154
   Flight number: 6E-6479,6E-2058
   Airline:       IndiGo
   Departure:     21:25
   Arrival:       02:15
   Price:         ₹6,828
 
-Flight 156
+Flight 155
   Flight number: AI-2433
   Airline:       Air India
   Departure:     21:30
   Arrival:       23:55
   Price:         ₹7,979
 
-Flight 157
+Flight 156
   Flight number: 6E-395
   Airline:       IndiGo
   Departure:     21:45
   Arrival:       00:05
   Price:         ₹7,169
 
-Flight 158
+Flight 157
   Flight number: 6E-2013,6E-6205
   Airline:       IndiGo
   Departure:     21:50
   Arrival:       02:55
   Price:         ₹6,618
+
+Flight 158
+  Flight number: AI-2449,AI-2445
+  Airline:       Air India
+  Departure:     22:00
+  Arrival:       16:25
+  Price:         ₹14,948
 
 Flight 159
   Flight number: AI-2449,AI-2626
@@ -4741,95 +4741,95 @@ Flight 170
 T_plus_45 (2026-11-04)
 ------------------------------------------------------------
 Flight 1
+  Flight number: AI-2757,AI-2604
+  Airline:       Air India
+  Departure:     00:15
+  Arrival:       11:00
+  Price:         ₹17,458
+
+Flight 2
+  Flight number: AI-2757,AI-2852
+  Airline:       Air India
+  Departure:     00:15
+  Arrival:       12:20
+  Price:         ₹17,331
+
+Flight 3
   Flight number: 6E-353
   Airline:       IndiGo
   Departure:     03:30
   Arrival:       05:55
   Price:         ₹7,019
 
-Flight 2
+Flight 4
+  Flight number: AI-1723,AI-2684
+  Airline:       Air India
+  Departure:     04:45
+  Arrival:       10:50
+  Price:         ₹17,679
+
+Flight 5
   Flight number: 6E-449
   Airline:       IndiGo
   Departure:     05:00
   Arrival:       07:25
   Price:         ₹7,019
 
-Flight 3
+Flight 6
   Flight number: 6E-6220,6E-6289
   Airline:       IndiGo
   Departure:     05:00
   Arrival:       10:15
   Price:         ₹7,120
 
-Flight 4
+Flight 7
   Flight number: 6E-2105,6E-2046
   Airline:       IndiGo
   Departure:     05:10
   Arrival:       10:35
   Price:         ₹7,695
 
-Flight 5
+Flight 8
   Flight number: 6E-2105,6E-7014
   Airline:       IndiGo
   Departure:     05:10
   Arrival:       10:35
   Price:         ₹15,755
 
-Flight 6
+Flight 9
   Flight number: 6E-6004,6E-5229
   Airline:       IndiGo
   Departure:     05:10
   Arrival:       10:35
   Price:         ₹7,252
 
-Flight 7
+Flight 10
   Flight number: 6E-5252,6E-233
   Airline:       IndiGo
   Departure:     05:30
   Arrival:       10:10
   Price:         ₹9,780
 
-Flight 8
+Flight 11
   Flight number: AI-2573
   Airline:       Air India
   Departure:     05:30
   Arrival:       07:55
   Price:         ₹7,489
 
-Flight 9
+Flight 12
   Flight number: IX-1080
   Airline:       Air India Express
   Departure:     05:30
   Arrival:       07:45
   Price:         ₹6,739
 
-Flight 10
+Flight 13
   Flight number: SG-603
   Airline:       SpiceJet
   Departure:     05:45
   Arrival:       08:05
   Price:         ₹6,498
-
-Flight 11
-  Flight number: AI-817,AI-2446
-  Airline:       Air India
-  Departure:     05:55
-  Arrival:       19:05
-  Price:         ₹14,867
-
-Flight 12
-  Flight number: AI-817,AI-2494
-  Airline:       Air India
-  Departure:     05:55
-  Arrival:       22:40
-  Price:         ₹14,867
-
-Flight 13
-  Flight number: AI-817,AI-2918
-  Airline:       Air India
-  Departure:     05:55
-  Arrival:       07:25
-  Price:         ₹14,867
 
 Flight 14
   Flight number: AI-2499,AI-2492
@@ -4867,879 +4867,879 @@ Flight 18
   Price:         ₹12,415
 
 Flight 19
+  Flight number: AI-2643,AI-2660
+  Airline:       Air India
+  Departure:     06:00
+  Arrival:       20:10
+  Price:         ₹16,450
+
+Flight 20
+  Flight number: AI-2643,AI-2682
+  Airline:       Air India
+  Departure:     06:00
+  Arrival:       16:55
+  Price:         ₹16,450
+
+Flight 21
   Flight number: AI-2643,AI-472
   Airline:       Air India
   Departure:     06:00
   Arrival:       11:30
   Price:         ₹16,450
 
-Flight 20
+Flight 22
   Flight number: 6E-6218
   Airline:       IndiGo
   Departure:     06:05
   Arrival:       08:30
   Price:         ₹7,019
 
-Flight 21
+Flight 23
   Flight number: 6E-6569,6E-6026
   Airline:       IndiGo
   Departure:     06:05
   Arrival:       10:55
   Price:         ₹7,252
 
-Flight 22
+Flight 24
   Flight number: 6E-2402,6E-6282
   Airline:       IndiGo
   Departure:     06:30
   Arrival:       11:00
   Price:         ₹7,252
 
-Flight 23
+Flight 25
   Flight number: AI-1705,AI-9893
   Airline:       Air India
   Departure:     06:30
   Arrival:       15:15
   Price:         ₹11,951
 
-Flight 24
+Flight 26
   Flight number: AI-2975
   Airline:       Air India
   Departure:     06:30
   Arrival:       08:55
   Price:         ₹7,489
 
-Flight 25
+Flight 27
   Flight number: SG-510
   Airline:       SpiceJet
   Departure:     06:30
   Arrival:       08:45
   Price:         ₹6,498
 
-Flight 26
+Flight 28
   Flight number: 6E-5289
   Airline:       IndiGo
   Departure:     06:45
   Arrival:       08:50
   Price:         ₹7,019
 
-Flight 27
+Flight 29
   Flight number: 6E-6814
   Airline:       IndiGo
   Departure:     07:00
   Arrival:       09:25
   Price:         ₹7,469
 
-Flight 28
+Flight 30
   Flight number: AI-2429
   Airline:       Air India
   Departure:     07:00
   Arrival:       09:25
   Price:         ₹7,940
 
-Flight 29
+Flight 31
+  Flight number: AI-2560,AI-2699
+  Airline:       Air India
+  Departure:     07:00
+  Arrival:       23:50
+  Price:         ₹14,901
+
+Flight 32
   Flight number: QP-1805
   Airline:       Akasa Air
   Departure:     07:00
   Arrival:       09:30
   Price:         ₹14,437
 
-Flight 30
+Flight 33
   Flight number: 6E-2164,6E-2719
   Airline:       IndiGo
   Departure:     07:05
   Arrival:       12:00
   Price:         ₹7,695
 
-Flight 31
+Flight 34
+  Flight number: AI-495,AI-2998
+  Airline:       Air India
+  Departure:     07:15
+  Arrival:       16:00
+  Price:         ₹17,679
+
+Flight 35
   Flight number: AI-9542,AI-2998
   Airline:       Air India
   Departure:     07:20
   Arrival:       16:00
   Price:         ₹13,322
 
-Flight 32
+Flight 36
   Flight number: 6E-6878,6E-6468
   Airline:       IndiGo
   Departure:     07:30
   Arrival:       12:35
   Price:         ₹9,780
 
-Flight 33
+Flight 37
   Flight number: AI-2943
   Airline:       Air India
   Departure:     07:30
   Arrival:       09:45
   Price:         ₹7,676
 
-Flight 34
+Flight 38
   Flight number: 6E-320
   Airline:       IndiGo
   Departure:     08:00
   Arrival:       10:25
   Price:         ₹7,019
 
-Flight 35
+Flight 39
   Flight number: AI-2678
   Airline:       Air India
   Departure:     08:30
   Arrival:       10:45
   Price:         ₹7,489
 
-Flight 36
+Flight 40
   Flight number: AI-1704,AI-2786
   Airline:       Air India
   Departure:     08:35
   Arrival:       09:45
   Price:         ₹14,172
 
-Flight 37
+Flight 41
   Flight number: IX-1525,IX-1581
   Airline:       Air India Express
   Departure:     08:40
   Arrival:       16:50
-  Price:         ₹13,179
+  Price:         ₹16,846
 
-Flight 38
+Flight 42
   Flight number: 6E-675
   Airline:       IndiGo
   Departure:     08:45
   Arrival:       11:10
   Price:         ₹7,019
 
-Flight 39
+Flight 43
   Flight number: IX-1056
   Airline:       Air India Express
   Departure:     08:45
   Arrival:       11:15
   Price:         ₹6,688
 
-Flight 40
+Flight 44
   Flight number: AI-2963
   Airline:       Air India
   Departure:     09:00
   Arrival:       11:15
   Price:         ₹7,489
 
-Flight 41
+Flight 45
   Flight number: 6E-5025,6E-6544
   Airline:       IndiGo
   Departure:     09:20
   Arrival:       14:25
   Price:         ₹14,348
 
-Flight 42
+Flight 46
   Flight number: 6E-6050,6E-754
   Airline:       IndiGo
   Departure:     09:20
   Arrival:       14:50
   Price:         ₹10,907
 
-Flight 43
+Flight 47
+  Flight number: AI-437,AI-432
+  Airline:       Air India
+  Departure:     09:20
+  Arrival:       17:25
+  Price:         ₹17,719
+
+Flight 48
   Flight number: 6E-6107
   Airline:       IndiGo
   Departure:     09:30
   Arrival:       11:55
   Price:         ₹7,019
 
-Flight 44
+Flight 49
   Flight number: AI-2927
   Airline:       Air India
   Departure:     09:30
   Arrival:       11:55
   Price:         ₹7,489
 
-Flight 45
+Flight 50
   Flight number: AI-2542,AI-2626
   Airline:       Air India
   Departure:     09:40
   Arrival:       09:20
   Price:         ₹14,901
 
-Flight 46
+Flight 51
+  Flight number: AI-421,AI-2998
+  Airline:       Air India
+  Departure:     09:45
+  Arrival:       16:00
+  Price:         ₹17,679
+
+Flight 52
   Flight number: AI-1768,AI-9918
   Airline:       Air India
   Departure:     10:05
   Arrival:       16:30
   Price:         ₹14,230
 
-Flight 47
+Flight 53
   Flight number: 6E-6328
   Airline:       IndiGo
   Departure:     10:15
   Arrival:       12:40
   Price:         ₹7,019
 
-Flight 48
+Flight 54
   Flight number: QP-1112
   Airline:       Akasa Air
   Departure:     10:15
   Arrival:       12:40
   Price:         ₹7,103
 
-Flight 49
+Flight 55
   Flight number: AI-2425
   Airline:       Air India
   Departure:     10:30
   Arrival:       12:55
   Price:         ₹7,489
 
-Flight 50
+Flight 56
   Flight number: 6E-6047
   Airline:       IndiGo
   Departure:     11:00
   Arrival:       13:25
   Price:         ₹7,019
 
-Flight 51
+Flight 57
   Flight number: AI-2545,AI-9630
   Airline:       Air India
   Departure:     11:00
   Arrival:       19:35
   Price:         ₹13,097
 
-Flight 52
+Flight 58
   Flight number: AI-2545,AI-9862
   Airline:       Air India
   Departure:     11:00
   Arrival:       23:15
   Price:         ₹12,415
 
-Flight 53
+Flight 59
   Flight number: AI-2859,AI-2626
   Airline:       Air India
   Departure:     11:00
   Arrival:       09:20
   Price:         ₹14,901
 
-Flight 54
+Flight 60
   Flight number: AI-2859,AI-418
   Airline:       Air India
   Departure:     11:00
   Arrival:       12:55
   Price:         ₹14,901
 
-Flight 55
+Flight 61
   Flight number: AI-2945
   Airline:       Air India
   Departure:     11:00
   Arrival:       13:25
   Price:         ₹7,489
 
-Flight 56
+Flight 62
   Flight number: AI-2532,AI-2660
   Airline:       Air India
   Departure:     11:05
   Arrival:       20:10
   Price:         ₹16,450
 
-Flight 57
+Flight 63
   Flight number: AI-2532,AI-2682
   Airline:       Air India
   Departure:     11:05
   Arrival:       16:55
   Price:         ₹16,450
 
-Flight 58
+Flight 64
+  Flight number: AI-2532,AI-472
+  Airline:       Air India
+  Departure:     11:05
+  Arrival:       11:30
+  Price:         ₹16,450
+
+Flight 65
   Flight number: IX-1979,IX-1262
   Airline:       Air India Express
   Departure:     11:10
   Arrival:       16:30
   Price:         ₹8,252
 
-Flight 59
+Flight 66
   Flight number: 6E-6051
   Airline:       IndiGo
   Departure:     11:45
   Arrival:       14:15
   Price:         ₹7,019
 
-Flight 60
+Flight 67
   Flight number: AI-2495,AI-2478
   Airline:       Air India
   Departure:     11:50
   Arrival:       17:00
   Price:         ₹16,733
 
-Flight 61
+Flight 68
+  Flight number: AI-2495,AI-2506
+  Airline:       Air India
+  Departure:     11:50
+  Arrival:       00:15
+  Price:         ₹16,733
+
+Flight 69
   Flight number: AI-2495,AI-2746
   Airline:       Air India
   Departure:     11:50
   Arrival:       18:50
   Price:         ₹16,954
 
-Flight 62
+Flight 70
+  Flight number: AI-2495,AI-604
+  Airline:       Air India
+  Departure:     11:50
+  Arrival:       08:30
+  Price:         ₹16,733
+
+Flight 71
   Flight number: AI-2587
   Airline:       Air India
   Departure:     12:00
   Arrival:       14:25
   Price:         ₹7,489
 
-Flight 63
+Flight 72
   Flight number: IX-1286,IX-2547
   Airline:       Air India Express
   Departure:     12:00
   Arrival:       17:35
   Price:         ₹14,303
 
-Flight 64
+Flight 73
   Flight number: 6E-6676
   Airline:       IndiGo
   Departure:     12:30
   Arrival:       14:55
   Price:         ₹7,019
 
-Flight 65
+Flight 74
   Flight number: AI-2899,AI-418
   Airline:       Air India
   Departure:     12:30
   Arrival:       12:55
   Price:         ₹14,901
 
-Flight 66
+Flight 75
   Flight number: IX-2764,IX-1238
   Airline:       Air India Express
   Departure:     12:30
   Arrival:       18:50
   Price:         ₹21,519
 
-Flight 67
+Flight 76
+  Flight number: AI-2581,AI-432
+  Airline:       Air India
+  Departure:     12:50
+  Arrival:       17:25
+  Price:         ₹17,719
+
+Flight 77
   Flight number: 6E-5175
   Airline:       IndiGo
   Departure:     12:55
   Arrival:       14:55
   Price:         ₹6,919
 
-Flight 68
+Flight 78
   Flight number: AI-9581,AI-2592
   Airline:       Air India
   Departure:     12:55
   Arrival:       09:30
   Price:         ₹13,531
 
-Flight 69
+Flight 79
   Flight number: AI-9581,AI-2616
   Airline:       Air India
   Departure:     12:55
   Arrival:       17:25
   Price:         ₹13,531
 
-Flight 70
+Flight 80
   Flight number: AI-9581,AI-2750
   Airline:       Air India
   Departure:     12:55
   Arrival:       21:25
   Price:         ₹13,531
 
-Flight 71
+Flight 81
   Flight number: IX-1090,IX-2175
   Airline:       Air India Express
   Departure:     12:55
   Arrival:       19:55
   Price:         ₹8,219
 
-Flight 72
+Flight 82
   Flight number: 6E-324
   Airline:       IndiGo
   Departure:     13:15
   Arrival:       15:40
   Price:         ₹7,019
 
-Flight 73
+Flight 83
   Flight number: 6E-5058,6E-5259
   Airline:       IndiGo
   Departure:     13:30
   Arrival:       19:00
   Price:         ₹9,360
 
-Flight 74
+Flight 84
   Flight number: AI-2951
   Airline:       Air India
   Departure:     13:30
   Arrival:       15:55
   Price:         ₹7,489
 
-Flight 75
+Flight 85
   Flight number: 6E-6022
   Airline:       IndiGo
   Departure:     14:00
   Arrival:       16:25
   Price:         ₹7,019
 
-Flight 76
+Flight 86
   Flight number: AI-2706,AI-2660
   Airline:       Air India
   Departure:     14:10
   Arrival:       20:10
   Price:         ₹16,450
 
-Flight 77
+Flight 87
   Flight number: AI-2706,AI-472
   Airline:       Air India
   Departure:     14:10
   Arrival:       11:30
-  Price:         ₹14,559
+  Price:         ₹16,450
 
-Flight 78
-  Flight number: AI-2967,AI-2684
-  Airline:       Air India
-  Departure:     14:10
-  Arrival:       10:50
-  Price:         ₹14,654
-
-Flight 79
+Flight 88
   Flight number: 6E-5068
   Airline:       IndiGo
   Departure:     14:30
   Arrival:       16:30
   Price:         ₹6,920
 
-Flight 80
-  Flight number: AI-2465,AI-2626
+Flight 89
+  Flight number: AI-2465,AI-2618
   Airline:       Air India
   Departure:     14:30
-  Arrival:       09:20
+  Arrival:       15:35
   Price:         ₹15,220
 
-Flight 81
-  Flight number: AI-2465,AI-418
-  Airline:       Air India
-  Departure:     14:30
-  Arrival:       12:55
-  Price:         ₹15,220
-
-Flight 82
+Flight 90
   Flight number: 6E-6787,6E-5139
   Airline:       IndiGo
   Departure:     14:40
   Arrival:       19:05
   Price:         ₹7,120
 
-Flight 83
+Flight 91
   Flight number: 6E-6318
   Airline:       IndiGo
   Departure:     14:45
   Arrival:       17:10
   Price:         ₹7,019
 
-Flight 84
+Flight 92
   Flight number: QP-1815,QP-2004
   Airline:       Akasa Air
   Departure:     14:50
   Arrival:       22:00
   Price:         ₹16,939
 
-Flight 85
+Flight 93
   Flight number: 6E-864
   Airline:       IndiGo
   Departure:     15:30
   Arrival:       17:55
   Price:         ₹7,019
 
-Flight 86
+Flight 94
   Flight number: AI-2519,AI-2618
   Airline:       Air India
   Departure:     15:30
   Arrival:       15:35
   Price:         ₹14,901
 
-Flight 87
-  Flight number: AI-2519,AI-2626
-  Airline:       Air India
-  Departure:     15:30
-  Arrival:       09:20
-  Price:         ₹14,901
-
-Flight 88
-  Flight number: AI-2519,AI-418
-  Airline:       Air India
-  Departure:     15:30
-  Arrival:       12:55
-  Price:         ₹14,901
-
-Flight 89
+Flight 95
   Flight number: AI-2933
   Airline:       Air India
   Departure:     15:30
   Arrival:       17:45
   Price:         ₹7,640
 
-Flight 90
-  Flight number: AI-9863,AI-2492
-  Airline:       Air India
-  Departure:     15:40
-  Arrival:       16:30
-  Price:         ₹14,645
-
-Flight 91
+Flight 96
   Flight number: IX-1385,IX-1381
   Airline:       Air India Express
   Departure:     15:40
   Arrival:       22:40
   Price:         ₹11,825
 
-Flight 92
+Flight 97
   Flight number: 6E-5225,6E-5157
   Airline:       IndiGo
   Departure:     15:45
   Arrival:       21:00
   Price:         ₹10,828
 
-Flight 93
+Flight 98
+  Flight number: AI-487,AI-2478
+  Airline:       Air India
+  Departure:     16:00
+  Arrival:       17:00
+  Price:         ₹15,232
+
+Flight 99
   Flight number: AI-487,AI-2506
   Airline:       Air India
   Departure:     16:00
   Arrival:       00:15
   Price:         ₹16,733
 
-Flight 94
+Flight 100
   Flight number: AI-487,AI-604
   Airline:       Air India
   Departure:     16:00
   Arrival:       08:30
   Price:         ₹14,806
 
-Flight 95
+Flight 101
   Flight number: 6E-327
   Airline:       IndiGo
   Departure:     16:15
   Arrival:       18:40
   Price:         ₹7,169
 
-Flight 96
+Flight 102
   Flight number: QP-1114
   Airline:       Akasa Air
   Departure:     16:20
   Arrival:       18:45
   Price:         ₹7,233
 
-Flight 97
+Flight 103
   Flight number: AI-2941
   Airline:       Air India
   Departure:     16:30
   Arrival:       18:55
   Price:         ₹7,489
 
-Flight 98
+Flight 104
   Flight number: 6E-428,6E-792
   Airline:       IndiGo
   Departure:     16:45
   Arrival:       21:35
   Price:         ₹11,566
 
-Flight 99
+Flight 105
   Flight number: 6E-6706
   Airline:       IndiGo
   Departure:     17:00
   Arrival:       19:25
   Price:         ₹7,019
 
-Flight 100
+Flight 106
   Flight number: AI-441
   Airline:       Air India
   Departure:     17:00
   Arrival:       19:25
   Price:         ₹7,489
 
-Flight 101
+Flight 107
   Flight number: 6E-2289,6E-6351
   Airline:       IndiGo
   Departure:     17:05
   Arrival:       22:40
   Price:         ₹9,019
 
-Flight 102
+Flight 108
   Flight number: SG-475
   Airline:       SpiceJet
   Departure:     17:10
   Arrival:       19:25
   Price:         ₹6,498
 
-Flight 103
+Flight 109
   Flight number: 6E-5116,6E-6093
   Airline:       IndiGo
   Departure:     17:15
   Arrival:       21:55
   Price:         ₹7,075
 
-Flight 104
+Flight 110
   Flight number: AI-2555
   Airline:       Air India
   Departure:     17:30
   Arrival:       19:55
   Price:         ₹7,489
 
-Flight 105
+Flight 111
   Flight number: IX-1463
   Airline:       Air India Express
   Departure:     17:40
   Arrival:       19:55
   Price:         ₹6,529
 
-Flight 106
+Flight 112
   Flight number: 6E-328
   Airline:       IndiGo
   Departure:     17:45
   Arrival:       20:10
   Price:         ₹7,019
 
-Flight 107
+Flight 113
   Flight number: AI-2879,AI-2447
   Airline:       Air India
   Departure:     18:00
   Arrival:       19:15
   Price:         ₹15,154
 
-Flight 108
+Flight 114
   Flight number: AI-2879,AI-2618
   Airline:       Air India
   Departure:     18:00
   Arrival:       15:35
   Price:         ₹14,901
 
-Flight 109
+Flight 115
   Flight number: AI-2879,AI-418
   Airline:       Air India
   Departure:     18:00
   Arrival:       12:55
   Price:         ₹14,901
 
-Flight 110
+Flight 116
   Flight number: AI-2955
   Airline:       Air India
   Departure:     18:00
   Arrival:       20:25
   Price:         ₹7,988
 
-Flight 111
-  Flight number: AI-531,AI-2446
-  Airline:       Air India
-  Departure:     18:00
-  Arrival:       19:05
-  Price:         ₹14,503
-
-Flight 112
-  Flight number: AI-531,AI-2848
-  Airline:       Air India
-  Departure:     18:00
-  Arrival:       13:35
-  Price:         ₹14,503
-
-Flight 113
-  Flight number: AI-531,AI-2918
-  Airline:       Air India
-  Departure:     18:00
-  Arrival:       07:25
-  Price:         ₹14,503
-
-Flight 114
-  Flight number: AI-531,AI-494
-  Airline:       Air India
-  Departure:     18:00
-  Arrival:       09:55
-  Price:         ₹14,503
-
-Flight 115
+Flight 117
   Flight number: QP-1118
   Airline:       Akasa Air
   Departure:     18:10
   Arrival:       20:40
   Price:         ₹7,103
 
-Flight 116
+Flight 118
   Flight number: 6E-6849,6E-5226
   Airline:       IndiGo
   Departure:     18:15
   Arrival:       23:25
   Price:         ₹8,325
 
-Flight 117
+Flight 119
   Flight number: 6E-717,6E-5203
   Airline:       IndiGo
   Departure:     18:15
   Arrival:       23:45
   Price:         ₹9,360
 
-Flight 118
+Flight 120
   Flight number: 6E-329
   Airline:       IndiGo
   Departure:     18:30
   Arrival:       20:55
   Price:         ₹7,769
 
-Flight 119
+Flight 121
   Flight number: QP-2022
   Airline:       Akasa Air
   Departure:     18:30
   Arrival:       20:35
   Price:         ₹11,596
 
-Flight 120
+Flight 122
   Flight number: AI-1710,AI-2492
   Airline:       Air India
   Departure:     18:35
   Arrival:       16:30
   Price:         ₹13,599
 
-Flight 121
+Flight 123
   Flight number: AI-9567,AI-2478
   Airline:       Air India
   Departure:     18:35
   Arrival:       17:00
   Price:         ₹13,971
 
-Flight 122
+Flight 124
   Flight number: AI-9567,AI-2506
   Airline:       Air India
   Departure:     18:35
   Arrival:       00:15
   Price:         ₹13,525
 
-Flight 123
+Flight 125
   Flight number: AI-9567,AI-2842
   Airline:       Air India
   Departure:     18:35
   Arrival:       14:50
   Price:         ₹14,602
 
-Flight 124
+Flight 126
   Flight number: AI-9567,AI-604
   Airline:       Air India
   Departure:     18:35
   Arrival:       08:30
   Price:         ₹13,100
 
-Flight 125
+Flight 127
   Flight number: IX-1196,IX-1052
   Airline:       Air India Express
   Departure:     18:35
   Arrival:       00:10
   Price:         ₹12,908
 
-Flight 126
+Flight 128
   Flight number: AI-2977
   Airline:       Air India
   Departure:     19:00
   Arrival:       21:25
   Price:         ₹8,152
 
-Flight 127
+Flight 129
   Flight number: AI-9937,AI-2636
   Airline:       Air India
   Departure:     19:00
   Arrival:       20:40
   Price:         ₹13,736
 
-Flight 128
+Flight 130
   Flight number: AI-9937,AI-414
   Airline:       Air India
   Departure:     19:00
   Arrival:       08:55
   Price:         ₹13,053
 
-Flight 129
+Flight 131
   Flight number: IX-1371,IX-1247
   Airline:       Air India Express
   Departure:     19:00
   Arrival:       23:15
   Price:         ₹11,497
 
-Flight 130
+Flight 132
   Flight number: SG-612
   Airline:       SpiceJet
   Departure:     19:00
   Arrival:       21:10
   Price:         ₹6,498
 
-Flight 131
+Flight 133
   Flight number: IX-1064,IX-1025
   Airline:       Air India Express
   Departure:     19:10
   Arrival:       02:15
   Price:         ₹15,767
 
-Flight 132
+Flight 134
   Flight number: 6E-354
   Airline:       IndiGo
   Departure:     19:15
   Arrival:       21:40
   Price:         ₹7,169
 
-Flight 133
+Flight 135
   Flight number: 6E-955
   Airline:       IndiGo
   Departure:     19:30
   Arrival:       21:35
   Price:         ₹7,701
 
-Flight 134
+Flight 136
+  Flight number: AI-1742,AI-2660
+  Airline:       Air India
+  Departure:     19:30
+  Arrival:       20:10
+  Price:         ₹15,680
+
+Flight 137
   Flight number: AI-1742,AI-2682
   Airline:       Air India
   Departure:     19:30
   Arrival:       16:55
   Price:         ₹14,744
 
-Flight 135
+Flight 138
+  Flight number: AI-1742,AI-472
+  Airline:       Air India
+  Departure:     19:30
+  Arrival:       11:30
+  Price:         ₹16,450
+
+Flight 139
   Flight number: AI-2549,AI-2447
   Airline:       Air India
   Departure:     19:30
   Arrival:       19:15
   Price:         ₹15,154
 
-Flight 136
+Flight 140
   Flight number: AI-2549,AI-2618
   Airline:       Air India
   Departure:     19:30
   Arrival:       15:35
   Price:         ₹14,901
 
-Flight 137
+Flight 141
   Flight number: AI-2549,AI-418
   Airline:       Air India
   Departure:     19:30
   Arrival:       12:55
   Price:         ₹14,901
 
-Flight 138
+Flight 142
   Flight number: AI-2985
   Airline:       Air India
   Departure:     19:30
   Arrival:       21:55
   Price:         ₹7,832
 
-Flight 139
+Flight 143
   Flight number: IX-1021,IX-1209
   Airline:       Air India Express
   Departure:     19:35
   Arrival:       00:40
   Price:         ₹11,264
-
-Flight 140
-  Flight number: AI-2619,AI-2446
-  Airline:       Air India
-  Departure:     19:50
-  Arrival:       19:05
-  Price:         ₹14,503
-
-Flight 141
-  Flight number: AI-2619,AI-2848
-  Airline:       Air India
-  Departure:     19:50
-  Arrival:       13:35
-  Price:         ₹14,503
-
-Flight 142
-  Flight number: AI-2619,AI-2918
-  Airline:       Air India
-  Departure:     19:50
-  Arrival:       07:25
-  Price:         ₹14,503
-
-Flight 143
-  Flight number: AI-2619,AI-494
-  Airline:       Air India
-  Departure:     19:50
-  Arrival:       09:55
-  Price:         ₹14,503
 
 Flight 144
   Flight number: 6E-303
@@ -5756,200 +5756,200 @@ Flight 145
   Price:         ₹13,589
 
 Flight 146
+  Flight number: AI-2509,AI-604
+  Airline:       Air India
+  Departure:     20:00
+  Arrival:       08:30
+  Price:         ₹16,733
+
+Flight 147
   Flight number: AI-2509,AI-9566
   Airline:       Air India
   Departure:     20:00
   Arrival:       15:20
   Price:         ₹12,890
 
-Flight 147
+Flight 148
   Flight number: AI-2805
   Airline:       Air India
   Departure:     20:00
   Arrival:       22:25
   Price:         ₹8,275
 
-Flight 148
+Flight 149
   Flight number: AI-1713,AI-9893
   Airline:       Air India
   Departure:     20:15
   Arrival:       15:15
   Price:         ₹10,795
 
-Flight 149
+Flight 150
   Flight number: AI-2957
   Airline:       Air India
   Departure:     20:30
   Arrival:       22:55
   Price:         ₹7,489
 
-Flight 150
+Flight 151
   Flight number: IX-1235
   Airline:       Air India Express
   Departure:     20:40
   Arrival:       23:10
   Price:         ₹6,688
 
-Flight 151
+Flight 152
   Flight number: 6E-853
   Airline:       IndiGo
   Departure:     21:00
   Arrival:       23:25
   Price:         ₹7,019
 
-Flight 152
+Flight 153
   Flight number: AI-2981
   Airline:       Air India
   Departure:     21:00
   Arrival:       23:25
   Price:         ₹7,489
 
-Flight 153
+Flight 154
   Flight number: AI-9633,AI-2446
   Airline:       Air India
   Departure:     21:20
   Arrival:       19:05
   Price:         ₹12,190
 
-Flight 154
+Flight 155
   Flight number: AI-9633,AI-2848
   Airline:       Air India
   Departure:     21:20
   Arrival:       13:35
   Price:         ₹11,634
 
-Flight 155
+Flight 156
   Flight number: AI-9633,AI-2918
   Airline:       Air India
   Departure:     21:20
   Arrival:       07:25
   Price:         ₹12,190
 
-Flight 156
+Flight 157
   Flight number: AI-9633,AI-494
   Airline:       Air India
   Departure:     21:20
   Arrival:       09:55
   Price:         ₹14,364
 
-Flight 157
+Flight 158
   Flight number: AI-2433
   Airline:       Air India
   Departure:     21:30
   Arrival:       23:55
   Price:         ₹7,676
 
-Flight 158
+Flight 159
   Flight number: QP-1116
   Airline:       Akasa Air
   Departure:     21:45
   Arrival:       00:10
   Price:         ₹8,217
 
-Flight 159
+Flight 160
   Flight number: 6E-2013,6E-6267
   Airline:       IndiGo
   Departure:     21:55
   Arrival:       02:15
-  Price:         ₹13,665
+  Price:         ₹12,552
 
-Flight 160
+Flight 161
   Flight number: 6E-395
   Airline:       IndiGo
   Departure:     22:00
   Arrival:       00:25
   Price:         ₹7,019
 
-Flight 161
+Flight 162
   Flight number: AI-2449,AI-2447
   Airline:       Air India
   Departure:     22:00
   Arrival:       19:15
   Price:         ₹15,154
 
-Flight 162
+Flight 163
   Flight number: AI-2449,AI-2618
   Airline:       Air India
   Departure:     22:00
   Arrival:       15:35
   Price:         ₹14,901
 
-Flight 163
+Flight 164
+  Flight number: AI-2449,AI-2699
+  Airline:       Air India
+  Departure:     22:00
+  Arrival:       23:50
+  Price:         ₹15,532
+
+Flight 165
   Flight number: AI-2999
   Airline:       Air India
   Departure:     22:00
   Arrival:       00:25
   Price:         ₹7,489
 
-Flight 164
+Flight 166
   Flight number: AI-2437
   Airline:       Air India
   Departure:     22:30
   Arrival:       00:55
   Price:         ₹7,489
 
-Flight 165
+Flight 167
   Flight number: AI-2909,AI-2446
   Airline:       Air India
   Departure:     22:30
   Arrival:       19:05
-  Price:         ₹14,503
+  Price:         ₹11,806
 
-Flight 166
-  Flight number: AI-2909,AI-2494
-  Airline:       Air India
-  Departure:     22:30
-  Arrival:       22:40
-  Price:         ₹14,616
-
-Flight 167
+Flight 168
   Flight number: AI-2909,AI-2848
   Airline:       Air India
   Departure:     22:30
   Arrival:       13:35
   Price:         ₹14,503
 
-Flight 168
-  Flight number: AI-2909,AI-2918
-  Airline:       Air India
-  Departure:     22:30
-  Arrival:       07:25
-  Price:         ₹14,503
-
 Flight 169
-  Flight number: AI-2909,AI-494
-  Airline:       Air India
-  Departure:     22:30
-  Arrival:       09:55
-  Price:         ₹14,503
-
-Flight 170
   Flight number: QP-1812,QP-2002
   Airline:       Akasa Air
   Departure:     22:55
   Arrival:       10:00
   Price:         ₹17,949
 
-Flight 171
+Flight 170
   Flight number: 6E-6114
   Airline:       IndiGo
   Departure:     23:00
   Arrival:       01:25
   Price:         ₹7,019
 
-Flight 172
+Flight 171
   Flight number: AI-1706,AI-2447
   Airline:       Air India
   Departure:     23:00
   Arrival:       19:15
   Price:         ₹15,154
 
-Flight 173
+Flight 172
   Flight number: AI-1706,AI-2618
   Airline:       Air India
   Departure:     23:00
   Arrival:       15:35
   Price:         ₹14,901
+
+Flight 173
+  Flight number: AI-1706,AI-2699
+  Airline:       Air India
+  Departure:     23:00
+  Arrival:       23:50
+  Price:         ₹15,532
 
 Flight 174
   Flight number: AI-2439
@@ -6024,7 +6024,7 @@ Flight 9
   Airline:       IndiGo
   Departure:     05:10
   Arrival:       10:45
-  Price:         ₹16,414
+  Price:         ₹17,149
 
 Flight 10
   Flight number: 6E-2314
@@ -6038,7 +6038,7 @@ Flight 11
   Airline:       Air India Express
   Departure:     05:45
   Arrival:       12:05
-  Price:         ₹9,606
+  Price:         ₹9,483
 
 Flight 12
   Flight number: AI-2499,AI-9474
@@ -6122,7 +6122,7 @@ Flight 23
   Airline:       Air India Express
   Departure:     07:20
   Arrival:       14:15
-  Price:         ₹18,329
+  Price:         ₹19,589
 
 Flight 24
   Flight number: 6E-873
@@ -6199,7 +6199,7 @@ Flight 34
   Airline:       Air India Express
   Departure:     11:50
   Arrival:       18:30
-  Price:         ₹9,483
+  Price:         ₹9,799
 
 Flight 35
   Flight number: 6E-850
@@ -6248,7 +6248,7 @@ Flight 41
   Airline:       IndiGo
   Departure:     13:15
   Arrival:       16:10
-  Price:         ₹10,832
+  Price:         ₹11,414
 
 Flight 42
   Flight number: 6E-6282,6E-6417
@@ -6269,14 +6269,14 @@ Flight 44
   Airline:       Air India
   Departure:     14:20
   Arrival:       12:05
-  Price:         ₹10,725
+  Price:         ₹10,295
 
 Flight 45
   Flight number: 6E-828
   Airline:       IndiGo
   Departure:     14:30
   Arrival:       17:25
-  Price:         ₹10,832
+  Price:         ₹11,414
 
 Flight 46
   Flight number: 6E-6212,6E-6783
@@ -6311,167 +6311,167 @@ Flight 50
   Airline:       IndiGo
   Departure:     15:15
   Arrival:       20:10
-  Price:         ₹17,278
+  Price:         ₹17,983
 
 Flight 51
+  Flight number: AI-2473,AI-9452
+  Airline:       Air India
+  Departure:     15:25
+  Arrival:       11:35
+  Price:         ₹15,691
+
+Flight 52
   Flight number: AI-2933,AI-2812
   Airline:       Air India
   Departure:     15:30
   Arrival:       04:10
   Price:         ₹15,523
 
-Flight 52
+Flight 53
   Flight number: 6E-880
   Airline:       IndiGo
   Departure:     15:45
   Arrival:       18:40
   Price:         ₹10,832
 
-Flight 53
+Flight 54
   Flight number: AI-537,AI-9427
   Airline:       Air India
   Departure:     15:45
   Arrival:       07:50
   Price:         ₹14,019
 
-Flight 54
+Flight 55
   Flight number: AI-537,AI-9479
   Airline:       Air India
   Departure:     15:45
   Arrival:       22:35
   Price:         ₹14,220
 
-Flight 55
+Flight 56
   Flight number: AI-537,AI-9481
   Airline:       Air India
   Departure:     15:45
   Arrival:       11:55
   Price:         ₹14,019
 
-Flight 56
+Flight 57
   Flight number: AI-537,AI-9483
   Airline:       Air India
   Departure:     15:45
   Arrival:       08:35
   Price:         ₹14,220
 
-Flight 57
+Flight 58
   Flight number: AI-537,AI-9763
   Airline:       Air India
   Departure:     15:45
   Arrival:       10:05
   Price:         ₹14,019
 
-Flight 58
+Flight 59
   Flight number: AI-537,AI-9971
   Airline:       Air India
   Departure:     15:45
   Arrival:       17:35
   Price:         ₹14,220
 
-Flight 59
+Flight 60
   Flight number: AI-2664
   Airline:       Air India
   Departure:     15:50
   Arrival:       18:45
   Price:         ₹10,598
 
-Flight 60
+Flight 61
   Flight number: AI-1777,AI-2632
   Airline:       Air India
   Departure:     16:00
   Arrival:       14:05
   Price:         ₹15,523
 
-Flight 61
+Flight 62
   Flight number: AI-1777,AI-2812
   Airline:       Air India
   Departure:     16:00
   Arrival:       04:10
   Price:         ₹15,523
 
-Flight 62
+Flight 63
   Flight number: AI-1777,AI-2851
   Airline:       Air India
   Departure:     16:00
   Arrival:       10:05
   Price:         ₹15,523
 
-Flight 63
+Flight 64
   Flight number: AI-1777,AI-2857
   Airline:       Air India
   Departure:     16:00
   Arrival:       01:35
   Price:         ₹15,523
 
-Flight 64
+Flight 65
   Flight number: AI-2971,AI-9805
   Airline:       Air India
   Departure:     16:00
   Arrival:       22:25
-  Price:         ₹11,938
+  Price:         ₹12,295
 
-Flight 65
+Flight 66
   Flight number: AI-2971,AI-9809
   Airline:       Air India
   Departure:     16:00
   Arrival:       16:40
   Price:         ₹12,270
 
-Flight 66
+Flight 67
   Flight number: AI-2971,AI-9811
   Airline:       Air India
   Departure:     16:00
   Arrival:       01:40
-  Price:         ₹11,223
+  Price:         ₹11,580
 
-Flight 67
+Flight 68
   Flight number: 6E-6217,6E-285
   Airline:       IndiGo
   Departure:     16:15
   Arrival:       21:20
   Price:         ₹9,946
 
-Flight 68
+Flight 69
   Flight number: 6E-734,6E-979
   Airline:       IndiGo
   Departure:     16:20
   Arrival:       21:55
   Price:         ₹10,077
 
-Flight 69
+Flight 70
   Flight number: AI-2761,AI-9707
   Airline:       Air India
   Departure:     16:25
   Arrival:       15:50
   Price:         ₹13,487
 
-Flight 70
+Flight 71
   Flight number: AI-2817
   Airline:       Air India
   Departure:     16:30
   Arrival:       19:15
   Price:         ₹12,343
 
-Flight 71
+Flight 72
   Flight number: AI-2941,AI-2812
   Airline:       Air India
   Departure:     16:30
   Arrival:       04:10
   Price:         ₹15,523
 
-Flight 72
+Flight 73
   Flight number: AI-2941,AI-2851
   Airline:       Air India
   Departure:     16:30
   Arrival:       10:05
-  Price:         ₹15,523
-
-Flight 73
-  Flight number: AI-2941,AI-2853
-  Airline:       Air India
-  Departure:     16:30
-  Arrival:       17:35
   Price:         ₹15,523
 
 Flight 74
@@ -6493,7 +6493,7 @@ Flight 76
   Airline:       Akasa Air
   Departure:     16:40
   Arrival:       19:40
-  Price:         ₹11,018
+  Price:         ₹10,617
 
 Flight 77
   Flight number: AI-2549,AI-9899
@@ -6507,41 +6507,41 @@ Flight 78
   Airline:       IndiGo
   Departure:     17:00
   Arrival:       19:55
-  Price:         ₹10,285
+  Price:         ₹10,832
 
 Flight 79
+  Flight number: AI-1738,AI-9452
+  Airline:       Air India
+  Departure:     17:00
+  Arrival:       11:35
+  Price:         ₹15,691
+
+Flight 80
   Flight number: AI-441,AI-2603
   Airline:       Air India
   Departure:     17:00
   Arrival:       08:35
   Price:         ₹15,792
 
-Flight 80
+Flight 81
   Flight number: AI-441,AI-2632
   Airline:       Air India
   Departure:     17:00
   Arrival:       14:05
   Price:         ₹15,523
 
-Flight 81
+Flight 82
   Flight number: AI-441,AI-2812
   Airline:       Air India
   Departure:     17:00
   Arrival:       04:10
   Price:         ₹15,523
 
-Flight 82
+Flight 83
   Flight number: AI-441,AI-2851
   Airline:       Air India
   Departure:     17:00
   Arrival:       10:05
-  Price:         ₹15,523
-
-Flight 83
-  Flight number: AI-441,AI-2853
-  Airline:       Air India
-  Departure:     17:00
-  Arrival:       17:35
   Price:         ₹15,523
 
 Flight 84
@@ -6752,7 +6752,7 @@ Flight 113
   Airline:       Air India
   Departure:     19:10
   Arrival:       01:40
-  Price:         ₹11,649
+  Price:         ₹12,190
 
 Flight 114
   Flight number: 6E-861
@@ -6983,7 +6983,7 @@ Flight 146
   Airline:       Air India
   Departure:     21:55
   Arrival:       08:35
-  Price:         ₹14,220
+  Price:         ₹14,019
 
 Flight 147
   Flight number: AI-2895,AI-9763
@@ -7087,704 +7087,704 @@ Flight 1
   Price:         ₹9,142
 
 Flight 2
-  Flight number: AI-2577,AI-9575
-  Airline:       Air India
-  Departure:     02:00
-  Arrival:       20:45
-  Price:         ₹14,671
-
-Flight 3
   Flight number: AI-2711,AI-9805
   Airline:       Air India
   Departure:     02:00
   Arrival:       22:25
   Price:         ₹14,378
 
-Flight 4
+Flight 3
   Flight number: AI-2711,AI-9807
   Airline:       Air India
   Departure:     02:00
   Arrival:       20:40
   Price:         ₹13,830
 
-Flight 5
+Flight 4
   Flight number: AI-2711,AI-9809
   Airline:       Air India
   Departure:     02:00
   Arrival:       16:40
   Price:         ₹14,730
 
-Flight 6
+Flight 5
   Flight number: AI-2711,AI-9811
   Airline:       Air India
   Departure:     02:00
   Arrival:       01:40
   Price:         ₹12,249
 
-Flight 7
+Flight 6
   Flight number: AI-2711,AI-9811
   Airline:       Air India
   Departure:     02:00
   Arrival:       07:25
   Price:         ₹13,030
 
-Flight 8
+Flight 7
   Flight number: 6E-820
   Airline:       IndiGo
   Departure:     03:00
   Arrival:       05:55
   Price:         ₹8,829
 
-Flight 9
+Flight 8
   Flight number: AI-2653
   Airline:       Air India
   Departure:     04:30
   Arrival:       07:20
   Price:         ₹11,052
 
-Flight 10
+Flight 9
   Flight number: AI-2469,AI-9805
   Airline:       Air India
   Departure:     04:45
   Arrival:       22:25
   Price:         ₹13,030
 
-Flight 11
+Flight 10
   Flight number: AI-2469,AI-9807
   Airline:       Air India
   Departure:     04:45
   Arrival:       20:40
   Price:         ₹13,830
 
-Flight 12
+Flight 11
   Flight number: AI-2469,AI-9809
   Airline:       Air India
   Departure:     04:45
   Arrival:       16:40
   Price:         ₹14,730
 
-Flight 13
+Flight 12
   Flight number: AI-2469,AI-9811
   Airline:       Air India
   Departure:     04:45
   Arrival:       01:40
   Price:         ₹12,249
 
-Flight 14
+Flight 13
   Flight number: AI-1745,AI-2863
   Airline:       Air India
   Departure:     05:00
   Arrival:       12:05
   Price:         ₹15,792
 
-Flight 15
+Flight 14
   Flight number: 6E-5119,6E-823
   Airline:       IndiGo
   Departure:     05:10
   Arrival:       10:45
   Price:         ₹10,077
 
-Flight 16
+Flight 15
   Flight number: AI-9486,AI-2863
   Airline:       Air India
   Departure:     05:35
   Arrival:       12:05
   Price:         ₹15,590
 
-Flight 17
+Flight 16
   Flight number: 6E-2314
   Airline:       IndiGo
   Departure:     05:45
   Arrival:       08:40
   Price:         ₹8,829
 
-Flight 18
+Flight 17
   Flight number: AI-1797,AI-9805
   Airline:       Air India
   Departure:     05:45
   Arrival:       22:25
   Price:         ₹13,435
 
-Flight 19
+Flight 18
   Flight number: AI-1797,AI-9807
   Airline:       Air India
   Departure:     05:45
   Arrival:       20:40
   Price:         ₹14,235
 
-Flight 20
+Flight 19
   Flight number: AI-1797,AI-9809
   Airline:       Air India
   Departure:     05:45
   Arrival:       16:40
   Price:         ₹15,135
 
-Flight 21
+Flight 20
   Flight number: AI-1797,AI-9811
   Airline:       Air India
   Departure:     05:45
   Arrival:       01:40
   Price:         ₹12,654
 
-Flight 22
+Flight 21
   Flight number: IX-1165,IX-1503
   Airline:       Air India Express
   Departure:     05:45
   Arrival:       12:05
   Price:         ₹8,977
 
-Flight 23
+Flight 22
   Flight number: AI-2499,AI-9546
   Airline:       Air India
   Departure:     05:55
   Arrival:       01:05
   Price:         ₹10,820
 
-Flight 24
+Flight 23
   Flight number: AI-2499,AI-9748
   Airline:       Air India
   Departure:     05:55
   Arrival:       12:05
   Price:         ₹10,505
 
-Flight 25
+Flight 24
   Flight number: AI-2409
   Airline:       Air India
   Departure:     06:00
   Arrival:       08:55
   Price:         ₹9,142
 
-Flight 26
+Flight 25
   Flight number: 6E-7646,6E-6142
   Airline:       IndiGo
   Departure:     06:15
   Arrival:       11:00
   Price:         ₹11,091
 
-Flight 27
+Flight 26
   Flight number: AI-2803
   Airline:       Air India
   Departure:     06:30
   Arrival:       09:25
   Price:         ₹9,142
 
-Flight 28
+Flight 27
   Flight number: AI-2975,AI-2632
   Airline:       Air India
   Departure:     06:30
   Arrival:       14:05
   Price:         ₹15,657
 
-Flight 29
+Flight 28
   Flight number: AI-2975,AI-2863
   Airline:       Air India
   Departure:     06:30
   Arrival:       12:05
   Price:         ₹15,792
 
-Flight 30
+Flight 29
   Flight number: IX-1811,IX-1896
   Airline:       Air India Express
   Departure:     06:50
   Arrival:       15:00
   Price:         ₹21,154
 
-Flight 31
+Flight 30
   Flight number: AI-2429,AI-2632
   Airline:       Air India
   Departure:     07:00
   Arrival:       14:05
   Price:         ₹15,657
 
-Flight 32
+Flight 31
   Flight number: AI-2815
   Airline:       Air India
   Departure:     07:00
   Arrival:       09:55
   Price:         ₹9,142
 
-Flight 33
+Flight 32
   Flight number: 6E-810
   Airline:       IndiGo
   Departure:     07:05
   Arrival:       10:00
   Price:         ₹8,829
 
-Flight 34
+Flight 33
   Flight number: IX-1783,IX-1216
   Airline:       Air India Express
   Departure:     07:20
   Arrival:       14:15
-  Price:         ₹19,589
+  Price:         ₹20,536
 
-Flight 35
+Flight 34
   Flight number: AI-2833,AI-9427
   Airline:       Air India
   Departure:     07:30
   Arrival:       07:50
   Price:         ₹14,019
 
-Flight 36
+Flight 35
   Flight number: AI-2833,AI-9479
   Airline:       Air India
   Departure:     07:30
   Arrival:       22:35
   Price:         ₹14,019
 
-Flight 37
+Flight 36
   Flight number: AI-2833,AI-9483
   Airline:       Air India
   Departure:     07:30
   Arrival:       08:35
   Price:         ₹14,019
 
-Flight 38
+Flight 37
   Flight number: AI-2943,AI-2632
   Airline:       Air India
   Departure:     07:30
   Arrival:       14:05
   Price:         ₹15,657
 
-Flight 39
+Flight 38
   Flight number: IX-1035,IX-2932
   Airline:       Air India Express
   Departure:     08:10
   Arrival:       15:25
   Price:         ₹11,827
 
-Flight 40
+Flight 39
   Flight number: 6E-873
   Airline:       IndiGo
   Departure:     08:20
   Arrival:       11:10
   Price:         ₹9,771
 
-Flight 41
+Flight 40
   Flight number: AI-2678,AI-2632
   Airline:       Air India
   Departure:     08:30
   Arrival:       14:05
   Price:         ₹15,657
 
-Flight 42
+Flight 41
   Flight number: AI-427
   Airline:       Air India
   Departure:     08:30
   Arrival:       11:20
   Price:         ₹9,761
 
-Flight 43
+Flight 42
   Flight number: AI-2963,AI-2849
   Airline:       Air India
   Departure:     09:00
   Arrival:       19:35
   Price:         ₹15,792
 
-Flight 44
+Flight 43
   Flight number: IX-1001,IX-2963
   Airline:       Air India Express
   Departure:     09:00
   Arrival:       15:25
   Price:         ₹16,327
 
-Flight 45
+Flight 44
   Flight number: 6E-826
   Airline:       IndiGo
   Departure:     09:30
   Arrival:       12:25
   Price:         ₹10,285
 
-Flight 46
+Flight 45
   Flight number: AI-2415
   Airline:       Air India
   Departure:     09:30
   Arrival:       12:25
   Price:         ₹11,627
 
-Flight 47
+Flight 46
   Flight number: AI-2927,AI-2849
   Airline:       Air India
   Departure:     09:30
   Arrival:       19:35
   Price:         ₹15,792
 
-Flight 48
-  Flight number: AI-2542,AI-9575
+Flight 47
+  Flight number: AI-2927,AI-2865
   Airline:       Air India
-  Departure:     09:40
-  Arrival:       20:45
-  Price:         ₹15,561
+  Departure:     09:30
+  Arrival:       21:50
+  Price:         ₹15,523
 
-Flight 49
+Flight 48
   Flight number: 6E-2277,6E-633
   Airline:       IndiGo
   Departure:     10:25
   Arrival:       15:45
   Price:         ₹18,778
 
-Flight 50
+Flight 49
   Flight number: AI-2485
   Airline:       Air India
   Departure:     10:30
   Arrival:       13:20
   Price:         ₹14,268
 
-Flight 51
-  Flight number: AI-2859,AI-9573
-  Airline:       Air India
-  Departure:     10:30
-  Arrival:       07:55
-  Price:         ₹14,078
-
-Flight 52
+Flight 50
   Flight number: 6E-842
   Airline:       IndiGo
   Departure:     10:45
   Arrival:       13:40
   Price:         ₹11,414
 
-Flight 53
+Flight 51
   Flight number: AI-2945,AI-2865
   Airline:       Air India
   Departure:     11:00
   Arrival:       21:50
   Price:         ₹15,523
 
-Flight 54
+Flight 52
   Flight number: IX-1074,IX-1168
   Airline:       Air India Express
   Departure:     11:00
   Arrival:       18:50
   Price:         ₹27,846
 
-Flight 55
+Flight 53
   Flight number: IX-1812,IX-2115
   Airline:       Air India Express
   Departure:     11:15
   Arrival:       18:50
-  Price:         ₹19,879
+  Price:         ₹18,871
 
-Flight 56
+Flight 54
   Flight number: 6E-6488,6E-6739
   Airline:       IndiGo
   Departure:     11:20
   Arrival:       16:45
   Price:         ₹10,077
 
-Flight 57
+Flight 55
   Flight number: AI-2715,AI-9779
   Airline:       Air India
   Departure:     11:40
   Arrival:       11:15
   Price:         ₹13,709
 
-Flight 58
+Flight 56
   Flight number: IX-1617,IX-1520
   Airline:       Air India Express
   Departure:     11:50
   Arrival:       18:30
   Price:         ₹13,263
 
-Flight 59
+Flight 57
   Flight number: IX-1068,IX-2004
   Airline:       Air India Express
   Departure:     11:55
   Arrival:       20:10
   Price:         ₹18,939
 
-Flight 60
+Flight 58
   Flight number: AI-1785,AI-2865
   Airline:       Air India
   Departure:     12:00
   Arrival:       21:50
   Price:         ₹15,523
 
-Flight 61
+Flight 59
   Flight number: 6E-850
   Airline:       IndiGo
   Departure:     12:20
   Arrival:       15:20
   Price:         ₹12,687
 
-Flight 62
+Flight 60
   Flight number: AI-2417
   Airline:       Air India
   Departure:     13:00
   Arrival:       15:55
   Price:         ₹16,504
 
-Flight 63
+Flight 61
   Flight number: 6E-176
   Airline:       IndiGo
   Departure:     13:15
   Arrival:       16:10
   Price:         ₹13,383
 
-Flight 64
+Flight 62
   Flight number: 6E-6282,6E-6417
   Airline:       IndiGo
   Departure:     13:30
   Arrival:       19:05
   Price:         ₹12,489
 
-Flight 65
+Flight 63
   Flight number: AI-881,AI-9779
   Airline:       Air India
   Departure:     13:35
   Arrival:       11:15
   Price:         ₹13,926
 
-Flight 66
-  Flight number: AI-2706,AI-9489
-  Airline:       Air India
-  Departure:     14:10
-  Arrival:       09:55
-  Price:         ₹14,103
-
-Flight 67
+Flight 64
   Flight number: AI-1717,AI-9546
   Airline:       Air India
   Departure:     14:20
   Arrival:       01:05
   Price:         ₹11,660
 
-Flight 68
+Flight 65
   Flight number: AI-1717,AI-9748
   Airline:       Air India
   Departure:     14:20
   Arrival:       12:05
   Price:         ₹11,975
 
-Flight 69
+Flight 66
   Flight number: 6E-828
   Airline:       IndiGo
   Departure:     14:30
   Arrival:       17:25
   Price:         ₹12,687
 
-Flight 70
+Flight 67
   Flight number: 6E-6212,6E-6783
   Airline:       IndiGo
   Departure:     14:45
   Arrival:       20:05
   Price:         ₹18,575
 
-Flight 71
+Flight 68
   Flight number: 6E-2456
   Airline:       IndiGo
   Departure:     14:55
   Arrival:       17:30
   Price:         ₹11,429
 
-Flight 72
+Flight 69
   Flight number: AI-2819
   Airline:       Air India
   Departure:     15:00
   Arrival:       17:55
   Price:         ₹14,511
 
-Flight 73
+Flight 70
   Flight number: 6E-2491,6E-6783
   Airline:       IndiGo
   Departure:     15:15
   Arrival:       20:05
   Price:         ₹10,372
 
-Flight 74
+Flight 71
   Flight number: 6E-6091,6E-189
   Airline:       IndiGo
   Departure:     15:15
   Arrival:       20:10
   Price:         ₹10,156
 
-Flight 75
+Flight 72
+  Flight number: AI-2473,AI-9452
+  Airline:       Air India
+  Departure:     15:25
+  Arrival:       11:35
+  Price:         ₹14,633
+
+Flight 73
   Flight number: 6E-880
   Airline:       IndiGo
   Departure:     15:45
   Arrival:       18:40
   Price:         ₹12,030
 
-Flight 76
+Flight 74
   Flight number: AI-2664
   Airline:       Air India
   Departure:     15:50
   Arrival:       18:45
   Price:         ₹14,268
 
-Flight 77
+Flight 75
   Flight number: AI-1777,AI-2865
   Airline:       Air India
   Departure:     16:00
   Arrival:       21:50
   Price:         ₹15,797
 
-Flight 78
+Flight 76
   Flight number: AI-2971,AI-9809
   Airline:       Air India
   Departure:     16:00
   Arrival:       16:40
   Price:         ₹14,184
 
-Flight 79
+Flight 77
   Flight number: 6E-6217,6E-285
   Airline:       IndiGo
   Departure:     16:15
   Arrival:       21:20
   Price:         ₹17,460
 
-Flight 80
+Flight 78
   Flight number: 6E-734,6E-979
   Airline:       IndiGo
   Departure:     16:20
   Arrival:       21:55
   Price:         ₹10,077
 
-Flight 81
+Flight 79
   Flight number: AI-2761,AI-9707
   Airline:       Air India
   Departure:     16:25
   Arrival:       15:50
   Price:         ₹12,049
 
-Flight 82
+Flight 80
   Flight number: 6E-6433,6E-6432
   Airline:       IndiGo
   Departure:     16:30
   Arrival:       21:20
   Price:         ₹17,048
 
-Flight 83
+Flight 81
   Flight number: AI-2817
   Airline:       Air India
   Departure:     16:30
   Arrival:       19:15
   Price:         ₹19,033
 
-Flight 84
+Flight 82
   Flight number: AI-2941,AI-2603
   Airline:       Air India
   Departure:     16:30
   Arrival:       08:35
-  Price:         ₹14,901
+  Price:         ₹13,464
 
-Flight 85
+Flight 83
   Flight number: AI-2941,AI-2812
   Airline:       Air India
   Departure:     16:30
   Arrival:       04:10
   Price:         ₹15,523
 
-Flight 86
+Flight 84
   Flight number: AI-2941,AI-2857
   Airline:       Air India
   Departure:     16:30
   Arrival:       01:35
   Price:         ₹15,657
 
-Flight 87
+Flight 85
   Flight number: AI-2941,AI-2865
   Airline:       Air India
   Departure:     16:30
   Arrival:       21:50
   Price:         ₹15,523
 
-Flight 88
+Flight 86
   Flight number: QP-1822
   Airline:       Akasa Air
   Departure:     16:40
   Arrival:       19:40
   Price:         ₹12,096
 
-Flight 89
+Flight 87
   Flight number: 6E-837
   Airline:       IndiGo
   Departure:     17:00
   Arrival:       19:55
   Price:         ₹12,687
 
-Flight 90
+Flight 88
   Flight number: AI-2601,AI-9489
   Airline:       Air India
   Departure:     17:00
   Arrival:       09:55
   Price:         ₹14,103
 
-Flight 91
+Flight 89
   Flight number: AI-2601,AI-9491
   Airline:       Air India
   Departure:     17:00
   Arrival:       17:30
   Price:         ₹13,463
 
-Flight 92
+Flight 90
   Flight number: AI-441,AI-2401
   Airline:       Air India
   Departure:     17:00
   Arrival:       22:45
   Price:         ₹15,523
 
-Flight 93
+Flight 91
   Flight number: AI-441,AI-2812
   Airline:       Air India
   Departure:     17:00
   Arrival:       04:10
   Price:         ₹15,523
 
-Flight 94
+Flight 92
   Flight number: AI-441,AI-2857
   Airline:       Air India
   Departure:     17:00
   Arrival:       01:35
   Price:         ₹15,657
 
-Flight 95
+Flight 93
   Flight number: AI-441,AI-3305
   Airline:       Air India
   Departure:     17:00
   Arrival:       01:40
   Price:         ₹15,523
 
-Flight 96
+Flight 94
   Flight number: 6E-5073,6E-481
   Airline:       IndiGo
   Departure:     17:05
   Arrival:       22:05
   Price:         ₹10,077
 
-Flight 97
+Flight 95
   Flight number: 6E-7653,6E-6466
   Airline:       IndiGo
   Departure:     17:20
   Arrival:       22:00
   Price:         ₹11,182
 
-Flight 98
+Flight 96
   Flight number: IX-1038,IX-1640
   Airline:       Air India Express
   Departure:     17:35
   Arrival:       23:00
   Price:         ₹28,556
 
-Flight 99
+Flight 97
   Flight number: 6E-2037,6E-593
   Airline:       IndiGo
   Departure:     17:45
   Arrival:       23:00
   Price:         ₹10,156
 
-Flight 100
+Flight 98
   Flight number: 6E-717,6E-6505
   Airline:       IndiGo
   Departure:     17:55
   Arrival:       22:45
   Price:         ₹17,135
 
-Flight 101
+Flight 99
   Flight number: 6E-329,6E-6188
   Airline:       IndiGo
   Departure:     18:00
   Arrival:       23:25
   Price:         ₹10,077
+
+Flight 100
+  Flight number: AI-2879,AI-9571
+  Airline:       Air India
+  Departure:     18:00
+  Arrival:       09:25
+  Price:         ₹14,671
+
+Flight 101
+  Flight number: AI-2955,AI-2603
+  Airline:       Air India
+  Departure:     18:00
+  Arrival:       08:35
+  Price:         ₹13,095
 
 Flight 102
   Flight number: AI-2955,AI-2857
@@ -7917,7 +7917,7 @@ Flight 120
   Airline:       Air India
   Departure:     20:00
   Arrival:       09:55
-  Price:         ₹14,103
+  Price:         ₹14,807
 
 Flight 121
   Flight number: AI-1742,AI-9491
@@ -8148,14 +8148,14 @@ Flight 153
   Airline:       Air India
   Departure:     23:25
   Arrival:       07:35
-  Price:         ₹13,825
+  Price:         ₹13,983
 
 Flight 154
   Flight number: AI-9484,AI-2603
   Airline:       Air India
   Departure:     23:25
   Arrival:       08:35
-  Price:         ₹13,712
+  Price:         ₹13,871
 
 Flight 155
   Flight number: AI-9484,AI-2863
@@ -8231,157 +8231,157 @@ Flight 5
   Price:         ₹14,268
 
 Flight 6
-  Flight number: AI-2469,AI-9805
-  Airline:       Air India
-  Departure:     04:45
-  Arrival:       22:15
-  Price:         ₹11,520
-
-Flight 7
   Flight number: 6E-5119,6E-823
   Airline:       IndiGo
   Departure:     05:10
   Arrival:       10:45
   Price:         ₹9,898
 
-Flight 8
+Flight 7
   Flight number: 6E-2314
   Airline:       IndiGo
   Departure:     05:45
   Arrival:       08:40
   Price:         ₹10,832
 
-Flight 9
+Flight 8
   Flight number: AI-1793,AI-9565
   Airline:       Air India
   Departure:     06:00
   Arrival:       22:30
   Price:         ₹14,271
 
-Flight 10
+Flight 9
   Flight number: AI-2409
   Airline:       Air India
   Departure:     06:00
   Arrival:       08:55
   Price:         ₹11,433
 
-Flight 11
+Flight 10
   Flight number: AI-2499,AI-9748
   Airline:       Air India
   Departure:     06:00
   Arrival:       12:20
   Price:         ₹11,607
 
-Flight 12
+Flight 11
   Flight number: IX-1165,IX-1503
   Airline:       Air India Express
   Departure:     06:00
   Arrival:       12:20
   Price:         ₹8,977
 
-Flight 13
+Flight 12
   Flight number: AI-1743,AI-9491
   Airline:       Air India
   Departure:     06:15
   Arrival:       17:35
   Price:         ₹14,010
 
-Flight 14
+Flight 13
   Flight number: IX-1057,IX-1216
   Airline:       Air India Express
   Departure:     06:20
   Arrival:       14:15
   Price:         ₹24,745
 
-Flight 15
+Flight 14
   Flight number: AI-2803
   Airline:       Air India
   Departure:     06:30
   Arrival:       09:25
   Price:         ₹11,627
 
-Flight 16
+Flight 15
   Flight number: IX-1046,IX-1244
   Airline:       Air India Express
   Departure:     06:30
   Arrival:       12:00
   Price:         ₹8,977
 
-Flight 17
+Flight 16
   Flight number: AI-2815
   Airline:       Air India
   Departure:     07:00
   Arrival:       09:55
   Price:         ₹11,931
 
-Flight 18
+Flight 17
   Flight number: 6E-810
   Airline:       IndiGo
   Departure:     07:05
   Arrival:       10:00
   Price:         ₹10,285
 
-Flight 19
+Flight 18
   Flight number: IX-1783,IX-1216
   Airline:       Air India Express
   Departure:     07:20
   Arrival:       14:15
   Price:         ₹23,905
 
-Flight 20
+Flight 19
   Flight number: IX-1035,IX-2932
   Airline:       Air India Express
   Departure:     08:10
   Arrival:       15:45
   Price:         ₹18,072
 
-Flight 21
+Flight 20
   Flight number: 6E-873
   Airline:       IndiGo
   Departure:     08:20
   Arrival:       11:10
   Price:         ₹10,285
 
-Flight 22
+Flight 21
   Flight number: AI-427
   Airline:       Air India
   Departure:     08:30
   Arrival:       11:20
   Price:         ₹10,779
 
-Flight 23
+Flight 22
   Flight number: IX-1076,IX-2963
   Airline:       Air India Express
   Departure:     09:00
   Arrival:       15:25
   Price:         ₹16,114
 
-Flight 24
+Flight 23
   Flight number: 6E-826
   Airline:       IndiGo
   Departure:     09:30
   Arrival:       12:25
   Price:         ₹10,285
 
-Flight 25
+Flight 24
   Flight number: AI-2415
   Airline:       Air India
   Departure:     09:30
   Arrival:       12:25
   Price:         ₹10,779
 
-Flight 26
+Flight 25
   Flight number: AI-423,AI-9779
   Airline:       Air India
   Departure:     09:50
   Arrival:       11:15
   Price:         ₹13,514
 
-Flight 27
+Flight 26
   Flight number: AI-2467,AI-9427
   Airline:       Air India
   Departure:     10:00
   Arrival:       07:50
+  Price:         ₹14,019
+
+Flight 27
+  Flight number: AI-2467,AI-9483
+  Airline:       Air India
+  Departure:     10:00
+  Arrival:       08:35
   Price:         ₹14,019
 
 Flight 28
@@ -8462,459 +8462,459 @@ Flight 38
   Price:         ₹9,286
 
 Flight 39
+  Flight number: AI-2483,AI-9427
+  Airline:       Air India
+  Departure:     12:20
+  Arrival:       07:50
+  Price:         ₹14,198
+
+Flight 40
   Flight number: AI-2483,AI-9479
   Airline:       Air India
   Departure:     12:20
   Arrival:       22:35
   Price:         ₹14,198
 
-Flight 40
+Flight 41
   Flight number: AI-2483,AI-9481
   Airline:       Air India
   Departure:     12:20
   Arrival:       11:55
   Price:         ₹13,942
 
-Flight 41
+Flight 42
   Flight number: AI-2483,AI-9483
   Airline:       Air India
   Departure:     12:20
   Arrival:       08:35
   Price:         ₹13,942
 
-Flight 42
+Flight 43
   Flight number: AI-2483,AI-9763
   Airline:       Air India
   Departure:     12:20
   Arrival:       10:00
   Price:         ₹13,942
 
-Flight 43
+Flight 44
   Flight number: AI-2483,AI-9971
   Airline:       Air India
   Departure:     12:20
   Arrival:       17:45
   Price:         ₹14,198
 
-Flight 44
+Flight 45
   Flight number: 6E-2519
   Airline:       IndiGo
   Departure:     13:00
   Arrival:       16:05
   Price:         ₹8,829
 
-Flight 45
+Flight 46
   Flight number: AI-2417
   Airline:       Air India
   Departure:     13:00
   Arrival:       15:55
   Price:         ₹16,223
 
-Flight 46
+Flight 47
   Flight number: 6E-6115,6E-365
   Airline:       IndiGo
   Departure:     13:10
   Arrival:       18:45
   Price:         ₹9,977
 
-Flight 47
+Flight 48
   Flight number: IX-1090,IX-1368
   Airline:       Air India Express
   Departure:     13:10
   Arrival:       19:05
   Price:         ₹8,977
 
-Flight 48
+Flight 49
   Flight number: 6E-176
   Airline:       IndiGo
   Departure:     13:15
   Arrival:       16:10
   Price:         ₹8,829
 
-Flight 49
+Flight 50
   Flight number: 6E-6282,6E-6417
   Airline:       IndiGo
   Departure:     13:30
   Arrival:       19:05
   Price:         ₹9,767
 
-Flight 50
+Flight 51
   Flight number: AI-2706,AI-9489
   Airline:       Air India
   Departure:     14:10
   Arrival:       09:55
   Price:         ₹12,350
 
-Flight 51
+Flight 52
   Flight number: QP-1574
   Airline:       Akasa Air
   Departure:     14:10
   Arrival:       17:05
   Price:         ₹8,829
 
-Flight 52
+Flight 53
   Flight number: AI-1717,AI-9748
   Airline:       Air India
   Departure:     14:20
   Arrival:       12:20
   Price:         ₹10,620
 
-Flight 53
+Flight 54
   Flight number: 6E-828
   Airline:       IndiGo
   Departure:     14:30
   Arrival:       17:25
   Price:         ₹9,286
 
-Flight 54
+Flight 55
   Flight number: AI-2465,AI-9565
   Airline:       Air India
   Departure:     14:30
   Arrival:       22:30
-  Price:         ₹13,703
+  Price:         ₹13,476
 
-Flight 55
+Flight 56
   Flight number: AI-2465,AI-9571
   Airline:       Air India
   Departure:     14:30
   Arrival:       09:25
   Price:         ₹13,951
 
-Flight 56
+Flight 57
   Flight number: AI-2465,AI-9573
   Airline:       Air India
   Departure:     14:30
   Arrival:       07:55
-  Price:         ₹13,703
+  Price:         ₹13,476
 
-Flight 57
+Flight 58
   Flight number: AI-2465,AI-9575
   Airline:       Air India
   Departure:     14:30
   Arrival:       20:50
   Price:         ₹13,951
 
-Flight 58
+Flight 59
   Flight number: 6E-6212,6E-6783
   Airline:       IndiGo
   Departure:     14:45
   Arrival:       20:05
   Price:         ₹9,767
 
-Flight 59
+Flight 60
   Flight number: 6E-2456
   Airline:       IndiGo
   Departure:     14:55
   Arrival:       17:30
   Price:         ₹11,429
 
-Flight 60
+Flight 61
   Flight number: AI-2819
   Airline:       Air India
   Departure:     15:00
   Arrival:       17:55
   Price:         ₹12,775
 
-Flight 61
+Flight 62
   Flight number: 6E-6091,6E-189
   Airline:       IndiGo
   Departure:     15:15
   Arrival:       20:10
   Price:         ₹9,977
 
-Flight 62
-  Flight number: AI-2519,AI-9565
-  Airline:       Air India
-  Departure:     15:30
-  Arrival:       22:30
-  Price:         ₹13,654
-
 Flight 63
-  Flight number: AI-2521,AI-9603
-  Airline:       Air India
-  Departure:     15:40
-  Arrival:       16:00
-  Price:         ₹13,596
-
-Flight 64
   Flight number: 6E-880
   Airline:       IndiGo
   Departure:     15:45
   Arrival:       18:40
   Price:         ₹9,286
 
-Flight 65
+Flight 64
   Flight number: AI-537,AI-9427
   Airline:       Air India
   Departure:     15:45
   Arrival:       07:50
   Price:         ₹14,019
 
-Flight 66
+Flight 65
   Flight number: AI-537,AI-9479
   Airline:       Air India
   Departure:     15:45
   Arrival:       22:35
   Price:         ₹14,019
 
-Flight 67
+Flight 66
   Flight number: AI-537,AI-9481
   Airline:       Air India
   Departure:     15:45
   Arrival:       11:55
   Price:         ₹14,019
 
-Flight 68
+Flight 67
   Flight number: AI-537,AI-9483
   Airline:       Air India
   Departure:     15:45
   Arrival:       08:35
   Price:         ₹13,769
 
-Flight 69
+Flight 68
   Flight number: AI-537,AI-9763
   Airline:       Air India
   Departure:     15:45
   Arrival:       10:00
-  Price:         ₹14,019
+  Price:         ₹13,769
 
-Flight 70
+Flight 69
   Flight number: AI-2664
   Airline:       Air India
   Departure:     15:50
   Arrival:       18:45
   Price:         ₹10,084
 
-Flight 71
+Flight 70
   Flight number: AI-1777,AI-2853
   Airline:       Air India
   Departure:     16:00
   Arrival:       17:35
   Price:         ₹13,633
 
-Flight 72
+Flight 71
   Flight number: AI-2971,AI-9805
   Airline:       Air India
   Departure:     16:00
   Arrival:       22:15
-  Price:         ₹13,639
+  Price:         ₹13,586
 
-Flight 73
+Flight 72
   Flight number: AI-2971,AI-9809
   Airline:       Air India
   Departure:     16:00
   Arrival:       16:40
   Price:         ₹13,867
 
-Flight 74
+Flight 73
   Flight number: AI-2971,AI-9811
   Airline:       Air India
   Departure:     16:00
   Arrival:       01:40
-  Price:         ₹13,639
+  Price:         ₹13,508
 
-Flight 75
+Flight 74
   Flight number: 6E-6217,6E-285
   Airline:       IndiGo
   Departure:     16:15
   Arrival:       21:20
   Price:         ₹10,576
 
-Flight 76
+Flight 75
   Flight number: 6E-734,6E-979
   Airline:       IndiGo
   Departure:     16:20
   Arrival:       21:55
   Price:         ₹9,161
 
-Flight 77
+Flight 76
   Flight number: AI-465,AI-9595
   Airline:       Air India
   Departure:     16:20
   Arrival:       23:00
   Price:         ₹12,237
 
-Flight 78
+Flight 77
   Flight number: AI-2817
   Airline:       Air India
   Departure:     16:30
   Arrival:       19:15
   Price:         ₹10,084
 
-Flight 79
+Flight 78
   Flight number: QP-1822
   Airline:       Akasa Air
   Departure:     16:40
   Arrival:       19:40
   Price:         ₹9,328
 
-Flight 80
+Flight 79
   Flight number: 6E-2150,6E-6557
   Airline:       IndiGo
   Departure:     16:55
   Arrival:       22:15
   Price:         ₹9,239
 
-Flight 81
+Flight 80
   Flight number: 6E-837
   Airline:       IndiGo
   Departure:     17:00
   Arrival:       19:55
   Price:         ₹10,832
 
-Flight 82
+Flight 81
   Flight number: AI-2601,AI-9489
   Airline:       Air India
   Departure:     17:00
   Arrival:       09:55
   Price:         ₹11,605
 
-Flight 83
+Flight 82
   Flight number: AI-2601,AI-9491
   Airline:       Air India
   Departure:     17:00
   Arrival:       17:35
   Price:         ₹11,605
 
-Flight 84
+Flight 83
   Flight number: 6E-5073,6E-481
   Airline:       IndiGo
   Departure:     17:05
   Arrival:       22:05
   Price:         ₹9,161
 
-Flight 85
+Flight 84
   Flight number: 6E-7653,6E-6466
   Airline:       IndiGo
   Departure:     17:20
   Arrival:       22:00
   Price:         ₹9,557
 
-Flight 86
+Flight 85
   Flight number: IX-1038,IX-1640
   Airline:       Air India Express
   Departure:     17:35
   Arrival:       22:45
   Price:         ₹11,760
 
-Flight 87
+Flight 86
   Flight number: AI-2547,AI-9809
   Airline:       Air India
   Departure:     17:40
   Arrival:       16:40
   Price:         ₹13,690
 
-Flight 88
+Flight 87
   Flight number: AI-2547,AI-9811
   Airline:       Air India
   Departure:     17:40
   Arrival:       01:40
-  Price:         ₹13,463
+  Price:         ₹13,331
 
-Flight 89
+Flight 88
   Flight number: AI-2903,AI-9841
   Airline:       Air India
   Departure:     17:40
   Arrival:       09:15
   Price:         ₹13,460
 
-Flight 90
+Flight 89
   Flight number: 6E-6632,6E-593
   Airline:       IndiGo
   Departure:     17:50
   Arrival:       23:00
   Price:         ₹17,062
 
-Flight 91
+Flight 90
   Flight number: AI-9486,AI-2845
   Airline:       Air India
   Departure:     17:50
   Arrival:       07:35
   Price:         ₹13,617
 
-Flight 92
+Flight 91
   Flight number: 6E-717,6E-6505
   Airline:       IndiGo
   Departure:     17:55
   Arrival:       22:50
   Price:         ₹9,767
 
-Flight 93
+Flight 92
   Flight number: 6E-329,6E-6188
   Airline:       IndiGo
   Departure:     18:00
   Arrival:       23:25
   Price:         ₹9,161
 
-Flight 94
+Flight 93
   Flight number: AI-2813
   Airline:       Air India
   Departure:     18:00
   Arrival:       20:55
   Price:         ₹9,599
 
-Flight 95
+Flight 94
   Flight number: AI-2879,AI-9573
   Airline:       Air India
   Departure:     18:00
   Arrival:       07:55
   Price:         ₹13,654
 
-Flight 96
+Flight 95
   Flight number: 6E-950,6E-796
   Airline:       IndiGo
   Departure:     18:15
   Arrival:       23:00
   Price:         ₹9,977
 
-Flight 97
+Flight 96
   Flight number: 6E-811
   Airline:       IndiGo
   Departure:     18:20
   Arrival:       21:10
   Price:         ₹9,771
 
-Flight 98
+Flight 97
   Flight number: 6E-6179,6E-499
   Airline:       IndiGo
   Departure:     18:30
   Arrival:       23:35
   Price:         ₹9,898
 
-Flight 99
+Flight 98
   Flight number: AI-2487
   Airline:       Air India
   Departure:     18:30
   Arrival:       21:25
   Price:         ₹9,599
 
-Flight 100
+Flight 99
   Flight number: AI-1710,AI-9748
   Airline:       Air India
   Departure:     18:35
   Arrival:       12:20
   Price:         ₹10,190
 
-Flight 101
+Flight 100
   Flight number: AI-2512
   Airline:       Air India
   Departure:     19:00
   Arrival:       21:55
   Price:         ₹10,003
 
-Flight 102
+Flight 101
   Flight number: AI-2977,AI-2853
   Airline:       Air India
   Departure:     19:00
   Arrival:       17:35
   Price:         ₹13,633
 
-Flight 103
+Flight 102
   Flight number: AI-2977,AI-2863
   Airline:       Air India
   Departure:     19:00
   Arrival:       12:05
   Price:         ₹13,877
+
+Flight 103
+  Flight number: AI-1730,AI-9807
+  Airline:       Air India
+  Departure:     19:10
+  Arrival:       20:40
+  Price:         ₹13,955
 
 Flight 104
   Flight number: AI-1730,AI-9809
@@ -8928,7 +8928,7 @@ Flight 105
   Airline:       Air India
   Departure:     19:10
   Arrival:       01:40
-  Price:         ₹13,727
+  Price:         ₹13,596
 
 Flight 106
   Flight number: AI-531,AI-9779
@@ -8970,7 +8970,7 @@ Flight 111
   Airline:       Air India
   Departure:     19:30
   Arrival:       07:55
-  Price:         ₹13,537
+  Price:         ₹13,310
 
 Flight 112
   Flight number: AI-2809
@@ -9061,14 +9061,14 @@ Flight 124
   Airline:       Air India
   Departure:     20:30
   Arrival:       09:25
-  Price:         ₹13,371
+  Price:         ₹13,144
 
 Flight 125
   Flight number: AI-2871,AI-9573
   Airline:       Air India
   Departure:     20:30
   Arrival:       07:55
-  Price:         ₹13,371
+  Price:         ₹13,144
 
 Flight 126
   Flight number: AI-2957,AI-2863
@@ -9085,200 +9085,200 @@ Flight 127
   Price:         ₹8,829
 
 Flight 128
+  Flight number: AI-2973,AI-9809
+  Airline:       Air India
+  Departure:     20:50
+  Arrival:       16:40
+  Price:         ₹14,131
+
+Flight 129
   Flight number: AI-2973,AI-9811
   Airline:       Air India
   Departure:     20:50
   Arrival:       01:40
-  Price:         ₹13,904
+  Price:         ₹13,772
 
-Flight 129
+Flight 130
   Flight number: QP-1824
   Airline:       Akasa Air
   Departure:     20:50
   Arrival:       23:50
   Price:         ₹9,158
 
-Flight 130
+Flight 131
   Flight number: AI-2981,AI-2863
   Airline:       Air India
   Departure:     21:00
   Arrival:       12:05
   Price:         ₹13,877
 
-Flight 131
+Flight 132
   Flight number: IX-5978
   Airline:       Air India Express
   Departure:     21:00
   Arrival:       00:05
   Price:         ₹9,028
 
-Flight 132
+Flight 133
   Flight number: AI-2412
   Airline:       Air India
   Departure:     21:30
   Arrival:       00:25
   Price:         ₹9,599
 
-Flight 133
+Flight 134
   Flight number: AI-2895,AI-9427
   Airline:       Air India
   Departure:     21:55
   Arrival:       07:50
   Price:         ₹14,019
 
-Flight 134
+Flight 135
   Flight number: AI-2895,AI-9479
   Airline:       Air India
   Departure:     21:55
   Arrival:       22:35
   Price:         ₹13,769
 
-Flight 135
+Flight 136
   Flight number: AI-2895,AI-9481
   Airline:       Air India
   Departure:     21:55
   Arrival:       11:55
   Price:         ₹14,019
 
-Flight 136
+Flight 137
   Flight number: AI-2895,AI-9483
   Airline:       Air India
   Departure:     21:55
   Arrival:       08:35
   Price:         ₹14,019
 
-Flight 137
+Flight 138
   Flight number: AI-2895,AI-9763
   Airline:       Air India
   Departure:     21:55
   Arrival:       10:00
   Price:         ₹14,019
 
-Flight 138
+Flight 139
   Flight number: AI-2895,AI-9971
   Airline:       Air India
   Departure:     21:55
   Arrival:       17:45
   Price:         ₹13,769
 
-Flight 139
+Flight 140
   Flight number: QP-1350
   Airline:       Akasa Air
   Departure:     21:55
   Arrival:       00:45
   Price:         ₹10,231
 
-Flight 140
+Flight 141
   Flight number: 6E-846
   Airline:       IndiGo
   Departure:     22:00
   Arrival:       00:55
   Price:         ₹9,286
 
-Flight 141
+Flight 142
   Flight number: AI-2449,AI-9565
   Airline:       Air India
   Departure:     22:00
   Arrival:       22:30
   Price:         ₹13,619
 
-Flight 142
+Flight 143
   Flight number: AI-2449,AI-9569
   Airline:       Air India
   Departure:     22:00
   Arrival:       18:20
   Price:         ₹13,619
 
-Flight 143
+Flight 144
   Flight number: AI-2449,AI-9571
   Airline:       Air India
   Departure:     22:00
   Arrival:       09:25
-  Price:         ₹13,371
+  Price:         ₹13,144
 
-Flight 144
+Flight 145
   Flight number: AI-2449,AI-9573
   Airline:       Air India
   Departure:     22:00
   Arrival:       07:55
-  Price:         ₹13,371
+  Price:         ₹13,144
 
-Flight 145
+Flight 146
   Flight number: IX-1070
   Airline:       Air India Express
   Departure:     22:00
   Arrival:       00:55
   Price:         ₹8,828
 
-Flight 146
+Flight 147
   Flight number: AI-2909,AI-9779
   Airline:       Air India
   Departure:     22:30
   Arrival:       11:15
   Price:         ₹13,730
 
-Flight 147
+Flight 148
   Flight number: QP-1812
   Airline:       Akasa Air
   Departure:     22:55
   Arrival:       02:05
   Price:         ₹8,829
 
-Flight 148
+Flight 149
   Flight number: AI-1706,AI-9565
   Airline:       Air India
   Departure:     23:00
   Arrival:       22:30
   Price:         ₹13,619
 
-Flight 149
+Flight 150
   Flight number: AI-1706,AI-9569
   Airline:       Air India
   Departure:     23:00
   Arrival:       18:20
   Price:         ₹13,619
 
-Flight 150
+Flight 151
   Flight number: AI-1706,AI-9571
   Airline:       Air India
   Departure:     23:00
   Arrival:       09:25
-  Price:         ₹13,371
+  Price:         ₹13,144
 
-Flight 151
+Flight 152
   Flight number: AI-1706,AI-9573
   Airline:       Air India
   Departure:     23:00
   Arrival:       07:55
-  Price:         ₹13,371
+  Price:         ₹13,144
 
-Flight 152
+Flight 153
   Flight number: AI-1706,AI-9575
   Airline:       Air India
   Departure:     23:00
   Arrival:       20:50
-  Price:         ₹13,143
+  Price:         ₹13,619
 
-Flight 153
+Flight 154
   Flight number: AI-2439,AI-2632
   Airline:       Air India
   Departure:     23:00
   Arrival:       14:05
   Price:         ₹13,794
 
-Flight 154
+Flight 155
   Flight number: AI-2439,AI-2853
   Airline:       Air India
   Departure:     23:00
   Arrival:       17:35
-  Price:         ₹13,745
-
-Flight 155
-  Flight number: AI-9484,AI-2401
-  Airline:       Air India
-  Departure:     23:25
-  Arrival:       22:45
-  Price:         ₹13,617
+  Price:         ₹13,626
 
 Flight 156
   Flight number: AI-9484,AI-2603
@@ -9292,7 +9292,7 @@ Flight 157
   Airline:       Air India
   Departure:     23:25
   Arrival:       07:35
-  Price:         ₹13,617
+  Price:         ₹13,266
 
 Flight 158
   Flight number: 6E-871
@@ -9620,25 +9620,25 @@ Flight 45
   Price:         ₹14,351
 
 Flight 46
+  Flight number: AI-437,AI-9603
+  Airline:       Air India
+  Departure:     09:20
+  Arrival:       16:00
+  Price:         ₹14,718
+
+Flight 47
   Flight number: 6E-826
   Airline:       IndiGo
   Departure:     09:30
   Arrival:       12:25
   Price:         ₹9,936
 
-Flight 47
+Flight 48
   Flight number: AI-2415
   Airline:       Air India
   Departure:     09:30
   Arrival:       12:25
   Price:         ₹10,431
-
-Flight 48
-  Flight number: AI-2927,AI-2849
-  Airline:       Air India
-  Departure:     09:30
-  Arrival:       19:35
-  Price:         ₹14,192
 
 Flight 49
   Flight number: AI-2467,AI-9483
@@ -9655,480 +9655,480 @@ Flight 50
   Price:         ₹14,650
 
 Flight 51
-  Flight number: AI-2995,AI-2849
-  Airline:       Air India
-  Departure:     10:00
-  Arrival:       19:35
-  Price:         ₹14,192
-
-Flight 52
   Flight number: 6E-2277,6E-633
   Airline:       IndiGo
   Departure:     10:25
   Arrival:       15:45
   Price:         ₹16,513
 
-Flight 53
+Flight 52
   Flight number: IX-2749
   Airline:       Air India Express
   Departure:     10:25
   Arrival:       13:20
   Price:         ₹10,349
 
-Flight 54
+Flight 53
   Flight number: AI-2485
   Airline:       Air India
   Departure:     10:30
   Arrival:       13:20
   Price:         ₹10,662
 
-Flight 55
+Flight 54
   Flight number: 6E-842
   Airline:       IndiGo
   Departure:     10:45
   Arrival:       13:40
   Price:         ₹10,349
 
-Flight 56
+Flight 55
   Flight number: IX-1074,IX-1168
   Airline:       Air India Express
   Departure:     11:00
   Arrival:       18:50
   Price:         ₹9,035
 
-Flight 57
+Flight 56
   Flight number: 6E-2147,6E-455
   Airline:       IndiGo
   Departure:     11:10
   Arrival:       16:10
   Price:         ₹10,156
 
-Flight 58
+Flight 57
   Flight number: 6E-6488,6E-6739
   Airline:       IndiGo
   Departure:     11:20
   Arrival:       16:45
   Price:         ₹10,077
 
-Flight 59
+Flight 58
   Flight number: AI-2532,AI-9491
   Airline:       Air India
   Departure:     11:20
   Arrival:       17:35
   Price:         ₹13,704
 
-Flight 60
+Flight 59
   Flight number: AI-2907,AI-9411
   Airline:       Air India
   Departure:     12:00
   Arrival:       23:35
   Price:         ₹14,052
 
-Flight 61
+Flight 60
   Flight number: 6E-850
   Airline:       IndiGo
   Departure:     12:15
   Arrival:       15:20
   Price:         ₹9,936
 
-Flight 62
+Flight 61
   Flight number: 6E-2519
   Airline:       IndiGo
   Departure:     13:00
   Arrival:       16:05
   Price:         ₹9,936
 
-Flight 63
+Flight 62
   Flight number: AI-1735,AI-9807
   Airline:       Air India
   Departure:     13:00
   Arrival:       20:40
   Price:         ₹14,271
 
-Flight 64
+Flight 63
   Flight number: AI-1735,AI-9811
   Airline:       Air India
   Departure:     13:00
   Arrival:       07:25
   Price:         ₹12,642
 
-Flight 65
+Flight 64
   Flight number: AI-1735,AI-9931
   Airline:       Air India
   Departure:     13:00
   Arrival:       01:40
   Price:         ₹14,271
 
-Flight 66
+Flight 65
   Flight number: AI-2417
   Airline:       Air India
   Departure:     13:00
   Arrival:       15:55
   Price:         ₹12,950
 
-Flight 67
+Flight 66
   Flight number: 6E-6115,6E-365
   Airline:       IndiGo
   Departure:     13:10
   Arrival:       18:45
   Price:         ₹10,156
 
-Flight 68
+Flight 67
   Flight number: IX-1090,IX-1368
   Airline:       Air India Express
   Departure:     13:10
   Arrival:       19:05
   Price:         ₹14,759
 
-Flight 69
+Flight 68
   Flight number: 6E-176
   Airline:       IndiGo
   Departure:     13:15
   Arrival:       16:10
   Price:         ₹10,349
 
-Flight 70
+Flight 69
   Flight number: SG-646
   Airline:       SpiceJet
   Departure:     13:20
   Arrival:       15:40
   Price:         ₹9,752
 
-Flight 71
-  Flight number: AI-2951,AI-2845
-  Airline:       Air India
-  Departure:     13:30
-  Arrival:       07:35
-  Price:         ₹12,561
-
-Flight 72
+Flight 70
   Flight number: AI-1717,AI-9748
   Airline:       Air India
   Departure:     14:20
   Arrival:       12:20
   Price:         ₹11,198
 
-Flight 73
+Flight 71
   Flight number: 6E-828
   Airline:       IndiGo
   Departure:     14:30
   Arrival:       17:25
   Price:         ₹10,349
 
-Flight 74
+Flight 72
   Flight number: AI-2465,AI-9573
   Airline:       Air India
   Departure:     14:30
   Arrival:       11:35
   Price:         ₹14,700
 
-Flight 75
+Flight 73
   Flight number: 6E-6212,6E-6783
   Airline:       IndiGo
   Departure:     14:45
   Arrival:       20:05
   Price:         ₹9,946
 
-Flight 76
+Flight 74
   Flight number: 6E-2456
   Airline:       IndiGo
   Departure:     14:55
   Arrival:       17:30
   Price:         ₹11,971
 
-Flight 77
+Flight 75
   Flight number: AI-2819
   Airline:       Air India
   Departure:     15:00
   Arrival:       17:55
   Price:         ₹10,844
 
-Flight 78
+Flight 76
   Flight number: 6E-6091,6E-189
   Airline:       IndiGo
   Departure:     15:15
   Arrival:       20:10
   Price:         ₹10,156
 
-Flight 79
+Flight 77
   Flight number: 6E-880
   Airline:       IndiGo
   Departure:     15:45
   Arrival:       18:40
   Price:         ₹10,349
 
-Flight 80
+Flight 78
   Flight number: AI-537,AI-9427
   Airline:       Air India
   Departure:     15:45
   Arrival:       07:50
   Price:         ₹14,019
 
-Flight 81
+Flight 79
   Flight number: AI-537,AI-9479
   Airline:       Air India
   Departure:     15:45
   Arrival:       22:35
   Price:         ₹14,019
 
-Flight 82
+Flight 80
   Flight number: AI-537,AI-9481
   Airline:       Air India
   Departure:     15:45
   Arrival:       11:55
   Price:         ₹14,187
 
-Flight 83
+Flight 81
   Flight number: AI-537,AI-9483
   Airline:       Air India
   Departure:     15:45
   Arrival:       08:35
   Price:         ₹14,019
 
-Flight 84
+Flight 82
   Flight number: AI-537,AI-9763
   Airline:       Air India
   Departure:     15:45
   Arrival:       10:00
   Price:         ₹14,187
 
-Flight 85
+Flight 83
   Flight number: AI-537,AI-9971
   Airline:       Air India
   Departure:     15:45
   Arrival:       17:45
   Price:         ₹14,019
 
-Flight 86
+Flight 84
   Flight number: AI-2664
   Airline:       Air India
   Departure:     15:50
   Arrival:       18:45
   Price:         ₹10,256
 
-Flight 87
+Flight 85
   Flight number: 6E-6217,6E-285
   Airline:       IndiGo
   Departure:     16:15
   Arrival:       21:20
   Price:         ₹12,489
 
-Flight 88
+Flight 86
   Flight number: 6E-734,6E-979
   Airline:       IndiGo
   Departure:     16:20
   Arrival:       21:55
   Price:         ₹10,077
 
-Flight 89
+Flight 87
+  Flight number: AI-465,AI-9595
+  Airline:       Air India
+  Departure:     16:20
+  Arrival:       23:00
+  Price:         ₹14,515
+
+Flight 88
   Flight number: 6E-6433,6E-6432
   Airline:       IndiGo
   Departure:     16:30
   Arrival:       21:20
   Price:         ₹9,867
 
-Flight 90
+Flight 89
   Flight number: AI-2817
   Airline:       Air India
   Departure:     16:30
   Arrival:       19:15
   Price:         ₹10,662
 
-Flight 91
+Flight 90
   Flight number: QP-1822
   Airline:       Akasa Air
   Departure:     16:40
   Arrival:       19:40
   Price:         ₹9,859
 
-Flight 92
+Flight 91
   Flight number: 6E-2150,6E-6557
   Airline:       IndiGo
   Departure:     16:55
   Arrival:       22:15
   Price:         ₹10,156
 
-Flight 93
+Flight 92
   Flight number: 6E-837
   Airline:       IndiGo
   Departure:     17:00
   Arrival:       19:55
   Price:         ₹10,349
 
-Flight 94
+Flight 93
   Flight number: AI-441,AI-2863
   Airline:       Air India
   Departure:     17:00
   Arrival:       12:05
   Price:         ₹14,388
 
-Flight 95
+Flight 94
   Flight number: 6E-5073,6E-481
   Airline:       IndiGo
   Departure:     17:05
   Arrival:       22:05
   Price:         ₹11,696
 
-Flight 96
+Flight 95
   Flight number: 6E-7653,6E-6466
   Airline:       IndiGo
   Departure:     17:20
   Arrival:       22:00
   Price:         ₹10,503
 
-Flight 97
+Flight 96
   Flight number: AI-2547,AI-9809
   Airline:       Air India
   Departure:     17:40
   Arrival:       16:40
   Price:         ₹14,619
 
-Flight 98
+Flight 97
   Flight number: AI-2547,AI-9811
   Airline:       Air India
   Departure:     17:40
   Arrival:       07:25
   Price:         ₹12,990
 
-Flight 99
+Flight 98
   Flight number: AI-2547,AI-9931
   Airline:       Air India
   Departure:     17:40
   Arrival:       01:40
   Price:         ₹14,619
 
-Flight 100
+Flight 99
   Flight number: AI-2903,AI-9841
   Airline:       Air India
   Departure:     17:40
   Arrival:       09:15
   Price:         ₹13,460
 
-Flight 101
+Flight 100
   Flight number: 6E-6632,6E-593
   Airline:       IndiGo
   Departure:     17:50
   Arrival:       23:00
   Price:         ₹10,930
 
-Flight 102
+Flight 101
   Flight number: AI-9486,AI-2603
   Airline:       Air India
   Departure:     17:50
   Arrival:       08:35
   Price:         ₹14,624
 
-Flight 103
+Flight 102
   Flight number: 6E-717,6E-6505
   Airline:       IndiGo
   Departure:     17:55
   Arrival:       22:50
   Price:         ₹12,489
 
-Flight 104
+Flight 103
   Flight number: 6E-329,6E-6188
   Airline:       IndiGo
   Departure:     18:00
   Arrival:       23:25
   Price:         ₹10,077
 
-Flight 105
+Flight 104
   Flight number: AI-2813
   Airline:       Air India
   Departure:     18:00
   Arrival:       20:55
   Price:         ₹10,256
 
-Flight 106
+Flight 105
   Flight number: AI-2837,AI-9427
   Airline:       Air India
   Departure:     18:00
   Arrival:       07:50
   Price:         ₹14,650
 
-Flight 107
+Flight 106
   Flight number: AI-2837,AI-9481
   Airline:       Air India
   Departure:     18:00
   Arrival:       11:55
   Price:         ₹14,650
 
-Flight 108
+Flight 107
   Flight number: AI-2837,AI-9483
   Airline:       Air India
   Departure:     18:00
   Arrival:       08:35
   Price:         ₹14,650
 
-Flight 109
+Flight 108
   Flight number: AI-2837,AI-9763
   Airline:       Air India
   Departure:     18:00
   Arrival:       10:00
   Price:         ₹14,650
 
-Flight 110
+Flight 109
   Flight number: 6E-950,6E-796
   Airline:       IndiGo
   Departure:     18:15
   Arrival:       23:00
   Price:         ₹10,156
 
-Flight 111
+Flight 110
   Flight number: 6E-811
   Airline:       IndiGo
   Departure:     18:20
   Arrival:       21:10
   Price:         ₹10,826
 
-Flight 112
+Flight 111
   Flight number: 6E-6179,6E-499
   Airline:       IndiGo
   Departure:     18:30
   Arrival:       23:35
   Price:         ₹10,077
 
-Flight 113
+Flight 112
   Flight number: AI-2487
   Airline:       Air India
   Departure:     18:30
   Arrival:       21:25
   Price:         ₹11,139
 
-Flight 114
+Flight 113
   Flight number: AI-1710,AI-9748
   Airline:       Air India
   Departure:     18:35
   Arrival:       12:20
   Price:         ₹10,767
 
-Flight 115
+Flight 114
   Flight number: AI-2512
   Airline:       Air India
   Departure:     19:00
   Arrival:       21:55
   Price:         ₹11,139
 
-Flight 116
+Flight 115
   Flight number: AI-2977,AI-2851
   Airline:       Air India
   Departure:     19:00
   Arrival:       10:05
   Price:         ₹14,629
 
-Flight 117
+Flight 116
   Flight number: AI-2977,AI-2863
   Airline:       Air India
   Departure:     19:00
   Arrival:       12:05
   Price:         ₹14,629
 
-Flight 118
+Flight 117
   Flight number: AI-1730,AI-9807
   Airline:       Air India
   Departure:     19:10
   Arrival:       20:40
   Price:         ₹14,271
+
+Flight 118
+  Flight number: AI-1730,AI-9809
+  Airline:       Air India
+  Departure:     19:10
+  Arrival:       16:40
+  Price:         ₹14,854
 
 Flight 119
   Flight number: AI-1730,AI-9811
@@ -11711,7 +11711,7 @@ Flight 4
   Airline:       Air India
   Departure:     00:30
   Arrival:       08:05
-  Price:         ₹28,105
+  Price:         ₹26,367
 
 Flight 5
   Flight number: 6E-344,6E-6348
@@ -11819,606 +11819,606 @@ Flight 19
   Price:         ₹31,688
 
 Flight 20
+  Flight number: AI-2720,AI-2951
+  Airline:       Air India
+  Departure:     07:00
+  Arrival:       15:50
+  Price:         ₹31,688
+
+Flight 21
   Flight number: AI-2720,AI-2955
   Airline:       Air India
   Departure:     07:00
   Arrival:       20:25
   Price:         ₹31,688
 
-Flight 21
+Flight 22
   Flight number: AI-2720,AI-441
   Airline:       Air India
   Departure:     07:00
   Arrival:       19:25
   Price:         ₹31,688
 
-Flight 22
+Flight 23
   Flight number: 6E-2122
   Airline:       IndiGo
   Departure:     07:40
   Arrival:       10:15
   Price:         ₹8,855
 
-Flight 23
+Flight 24
   Flight number: IX-1248,IX-1547
   Airline:       Air India Express
   Departure:     07:45
   Arrival:       21:55
   Price:         ₹25,596
 
-Flight 24
+Flight 25
   Flight number: 6E-7623,6E-2304
   Airline:       IndiGo
   Departure:     07:50
   Arrival:       13:15
   Price:         ₹30,099
 
-Flight 25
+Flight 26
   Flight number: 6E-896,6E-6676
   Airline:       IndiGo
   Departure:     08:25
   Arrival:       14:10
   Price:         ₹15,604
 
-Flight 26
+Flight 27
   Flight number: 6E-6513,6E-5384
   Airline:       IndiGo
   Departure:     08:40
   Arrival:       14:25
   Price:         ₹19,349
 
-Flight 27
+Flight 28
   Flight number: QP-1802,QP-1820
   Airline:       Akasa Air
   Departure:     09:05
   Arrival:       19:45
-  Price:         ₹15,885
+  Price:         ₹16,105
 
-Flight 28
+Flight 29
   Flight number: QP-1802,QP-2074
   Airline:       Akasa Air
   Departure:     09:05
   Arrival:       16:15
-  Price:         ₹14,245
+  Price:         ₹15,233
 
-Flight 29
+Flight 30
   Flight number: 6E-5183
   Airline:       IndiGo
   Departure:     09:15
   Arrival:       11:45
   Price:         ₹10,845
 
-Flight 30
+Flight 31
   Flight number: AI-2536,AI-1777
   Airline:       Air India
   Departure:     09:55
   Arrival:       18:25
   Price:         ₹12,810
 
-Flight 31
+Flight 32
   Flight number: AI-2536,AI-2805
   Airline:       Air India
   Departure:     09:55
   Arrival:       22:25
   Price:         ₹17,481
 
-Flight 32
+Flight 33
   Flight number: AI-2536,AI-2933
   Airline:       Air India
   Departure:     09:55
   Arrival:       17:55
   Price:         ₹22,965
 
-Flight 33
+Flight 34
   Flight number: AI-2536,AI-2941
   Airline:       Air India
   Departure:     09:55
   Arrival:       18:50
   Price:         ₹17,481
 
-Flight 34
+Flight 35
   Flight number: AI-2536,AI-2951
   Airline:       Air India
   Departure:     09:55
   Arrival:       15:50
   Price:         ₹26,986
 
-Flight 35
+Flight 36
   Flight number: AI-2536,AI-2955
   Airline:       Air India
   Departure:     09:55
   Arrival:       20:25
   Price:         ₹17,546
 
-Flight 36
+Flight 37
   Flight number: AI-2536,AI-2977
   Airline:       Air India
   Departure:     09:55
   Arrival:       21:25
   Price:         ₹17,677
 
-Flight 37
+Flight 38
   Flight number: AI-2536,AI-2985
   Airline:       Air India
   Departure:     09:55
   Arrival:       21:55
   Price:         ₹17,481
 
-Flight 38
+Flight 39
   Flight number: AI-2536,AI-441
   Airline:       Air India
   Departure:     09:55
   Arrival:       19:25
   Price:         ₹12,810
 
-Flight 39
+Flight 40
   Flight number: 6E-386,6E-5351
   Airline:       IndiGo
   Departure:     10:15
   Arrival:       16:05
   Price:         ₹16,041
 
-Flight 40
+Flight 41
   Flight number: AI-2704,AI-1777
   Airline:       Air India
   Departure:     10:30
   Arrival:       18:25
   Price:         ₹26,344
 
-Flight 41
+Flight 42
   Flight number: AI-2704,AI-2805
   Airline:       Air India
   Departure:     10:30
   Arrival:       22:25
   Price:         ₹26,986
 
-Flight 42
+Flight 43
   Flight number: AI-2704,AI-2933
   Airline:       Air India
   Departure:     10:30
   Arrival:       17:55
   Price:         ₹26,986
 
-Flight 43
+Flight 44
   Flight number: AI-2704,AI-2941
   Airline:       Air India
   Departure:     10:30
   Arrival:       18:50
   Price:         ₹26,986
 
-Flight 44
+Flight 45
   Flight number: AI-2704,AI-2955
   Airline:       Air India
   Departure:     10:30
   Arrival:       20:25
   Price:         ₹27,107
 
-Flight 45
+Flight 46
   Flight number: AI-2704,AI-2957
   Airline:       Air India
   Departure:     10:30
   Arrival:       23:05
   Price:         ₹26,986
 
-Flight 46
+Flight 47
   Flight number: AI-2704,AI-2977
   Airline:       Air India
   Departure:     10:30
   Arrival:       21:25
   Price:         ₹27,349
 
-Flight 47
+Flight 48
   Flight number: AI-2704,AI-2985
   Airline:       Air India
   Departure:     10:30
   Arrival:       21:55
   Price:         ₹26,986
 
-Flight 48
+Flight 49
   Flight number: AI-2704,AI-441
   Airline:       Air India
   Departure:     10:30
   Arrival:       19:25
   Price:         ₹26,344
 
-Flight 49
+Flight 50
   Flight number: AI-2772
   Airline:       Air India
   Departure:     10:30
   Arrival:       13:35
-  Price:         ₹13,930
+  Price:         ₹14,912
 
-Flight 50
+Flight 51
   Flight number: 6E-334,6E-5099
   Airline:       IndiGo
   Departure:     10:55
   Arrival:       15:55
   Price:         ₹16,934
 
-Flight 51
+Flight 52
   Flight number: AI-9438,AI-2402
   Airline:       Air India
   Departure:     11:15
   Arrival:       08:35
   Price:         ₹20,705
 
-Flight 52
+Flight 53
   Flight number: AI-9438,AI-2604
   Airline:       Air India
   Departure:     11:15
   Arrival:       11:15
   Price:         ₹27,262
 
-Flight 53
+Flight 54
   Flight number: AI-9438,AI-2610
   Airline:       Air India
   Departure:     11:15
   Arrival:       21:05
   Price:         ₹17,233
 
-Flight 54
+Flight 55
   Flight number: AI-9438,AI-2642
   Airline:       Air India
   Departure:     11:15
   Arrival:       23:35
   Price:         ₹16,745
 
-Flight 55
+Flight 56
   Flight number: AI-9438,AI-2811
   Airline:       Air India
   Departure:     11:15
   Arrival:       01:45
   Price:         ₹17,681
 
-Flight 56
+Flight 57
   Flight number: AI-9438,AI-2840
   Airline:       Air India
   Departure:     11:15
   Arrival:       00:35
   Price:         ₹17,745
 
-Flight 57
+Flight 58
   Flight number: AI-9438,AI-2850
   Airline:       Air India
   Departure:     11:15
   Arrival:       22:40
   Price:         ₹16,745
 
-Flight 58
+Flight 59
   Flight number: AI-9438,AI-2854
   Airline:       Air India
   Departure:     11:15
   Arrival:       20:05
   Price:         ₹17,353
 
-Flight 59
+Flight 60
   Flight number: AI-9438,AI-2858
   Airline:       Air India
   Departure:     11:15
   Arrival:       04:10
   Price:         ₹17,430
 
-Flight 60
+Flight 61
   Flight number: IX-1496,IX-1360
   Airline:       Air India Express
   Departure:     11:15
   Arrival:       22:40
   Price:         ₹16,004
 
-Flight 61
+Flight 62
   Flight number: IX-1496,IX-1581
   Airline:       Air India Express
   Departure:     11:15
   Arrival:       20:25
   Price:         ₹11,012
 
-Flight 62
+Flight 63
   Flight number: 6E-5288
   Airline:       IndiGo
   Departure:     11:35
   Arrival:       14:35
   Price:         ₹9,585
 
-Flight 63
+Flight 64
   Flight number: 6E-235,6E-5031
   Airline:       IndiGo
   Departure:     11:45
   Arrival:       17:45
-  Price:         ₹13,562
+  Price:         ₹15,891
 
-Flight 64
+Flight 65
   Flight number: 6E-634,6E-5231
   Airline:       IndiGo
   Departure:     11:50
   Arrival:       17:50
   Price:         ₹28,453
 
-Flight 65
+Flight 66
   Flight number: 6E-6358,6E-864
   Airline:       IndiGo
   Departure:     12:00
   Arrival:       17:45
   Price:         ₹9,348
 
-Flight 66
+Flight 67
   Flight number: AI-1874,AI-2433
   Airline:       Air India
   Departure:     12:55
   Arrival:       23:55
   Price:         ₹12,810
 
-Flight 67
+Flight 68
   Flight number: AI-1874,AI-2439
   Airline:       Air India
   Departure:     12:55
   Arrival:       01:25
   Price:         ₹12,810
 
-Flight 68
+Flight 69
   Flight number: AI-1874,AI-2805
   Airline:       Air India
   Departure:     12:55
   Arrival:       22:25
   Price:         ₹17,649
 
-Flight 69
+Flight 70
   Flight number: AI-1874,AI-2955
   Airline:       Air India
   Departure:     12:55
   Arrival:       20:25
   Price:         ₹17,649
 
-Flight 70
+Flight 71
   Flight number: AI-1874,AI-2957
   Airline:       Air India
   Departure:     12:55
   Arrival:       23:05
   Price:         ₹17,649
 
-Flight 71
+Flight 72
   Flight number: AI-1874,AI-2977
   Airline:       Air India
   Departure:     12:55
   Arrival:       21:25
   Price:         ₹17,677
 
-Flight 72
+Flight 73
   Flight number: AI-1874,AI-2981
   Airline:       Air India
   Departure:     12:55
   Arrival:       23:20
   Price:         ₹17,649
 
-Flight 73
+Flight 74
   Flight number: AI-1874,AI-2985
   Airline:       Air India
   Departure:     12:55
   Arrival:       21:55
   Price:         ₹17,649
 
-Flight 74
+Flight 75
   Flight number: AI-1874,AI-441
   Airline:       Air India
   Departure:     12:55
   Arrival:       19:25
   Price:         ₹12,810
 
-Flight 75
+Flight 76
   Flight number: 6E-455,6E-5255
   Airline:       IndiGo
   Departure:     13:25
   Arrival:       19:05
   Price:         ₹10,039
 
-Flight 76
+Flight 77
   Flight number: 6E-5227
   Airline:       IndiGo
   Departure:     13:45
   Arrival:       16:30
   Price:         ₹9,585
 
-Flight 77
+Flight 78
   Flight number: 6E-6908,6E-5039
   Airline:       IndiGo
   Departure:     15:00
   Arrival:       20:30
-  Price:         ₹18,089
+  Price:         ₹18,824
 
-Flight 78
+Flight 79
   Flight number: AI-2472
   Airline:       Air India
   Departure:     15:10
   Arrival:       18:15
   Price:         ₹11,894
 
-Flight 79
+Flight 80
   Flight number: AI-9440,AI-2402
   Airline:       Air India
   Departure:     15:15
   Arrival:       08:35
   Price:         ₹22,544
 
-Flight 80
+Flight 81
   Flight number: AI-9440,AI-2604
   Airline:       Air India
   Departure:     15:15
   Arrival:       11:15
   Price:         ₹29,102
 
-Flight 81
+Flight 82
   Flight number: AI-9440,AI-2610
   Airline:       Air India
   Departure:     15:15
   Arrival:       21:05
   Price:         ₹19,073
 
-Flight 82
+Flight 83
   Flight number: AI-9440,AI-2642
   Airline:       Air India
   Departure:     15:15
   Arrival:       23:35
   Price:         ₹18,585
 
-Flight 83
+Flight 84
   Flight number: AI-9440,AI-2811
   Airline:       Air India
   Departure:     15:15
   Arrival:       01:45
   Price:         ₹19,520
 
-Flight 84
+Flight 85
   Flight number: AI-9440,AI-2840
   Airline:       Air India
   Departure:     15:15
   Arrival:       00:35
   Price:         ₹19,584
 
-Flight 85
+Flight 86
   Flight number: AI-9440,AI-2850
   Airline:       Air India
   Departure:     15:15
   Arrival:       22:40
   Price:         ₹18,585
 
-Flight 86
+Flight 87
   Flight number: AI-9440,AI-2852
   Airline:       Air India
   Departure:     15:15
   Arrival:       12:35
   Price:         ₹18,954
 
-Flight 87
+Flight 88
   Flight number: AI-9440,AI-2858
   Airline:       Air India
   Departure:     15:15
   Arrival:       04:10
   Price:         ₹19,269
 
-Flight 88
+Flight 89
   Flight number: IX-1543,IX-1360
   Airline:       Air India Express
   Departure:     15:15
   Arrival:       22:40
-  Price:         ₹16,844
+  Price:         ₹17,844
 
-Flight 89
+Flight 90
   Flight number: 6E-6516,6E-303
   Airline:       IndiGo
   Departure:     16:10
   Arrival:       22:10
   Price:         ₹9,348
 
-Flight 90
+Flight 91
   Flight number: AI-2768,AI-1745
   Airline:       Air India
   Departure:     16:10
   Arrival:       07:20
   Price:         ₹23,191
 
-Flight 91
+Flight 92
   Flight number: AI-2768,AI-2433
   Airline:       Air India
   Departure:     16:10
   Arrival:       23:55
   Price:         ₹21,966
 
-Flight 92
+Flight 93
   Flight number: AI-2768,AI-2439
   Airline:       Air India
   Departure:     16:10
   Arrival:       01:25
   Price:         ₹21,966
 
-Flight 93
+Flight 94
   Flight number: AI-2768,AI-2805
   Airline:       Air India
   Departure:     16:10
   Arrival:       22:25
   Price:         ₹23,191
 
-Flight 94
+Flight 95
   Flight number: AI-2768,AI-2957
   Airline:       Air India
   Departure:     16:10
   Arrival:       23:05
   Price:         ₹23,191
 
-Flight 95
+Flight 96
   Flight number: AI-2768,AI-2981
   Airline:       Air India
   Departure:     16:10
   Arrival:       23:20
   Price:         ₹23,191
 
-Flight 96
+Flight 97
   Flight number: AI-2768,AI-2985
   Airline:       Air India
   Departure:     16:10
   Arrival:       21:55
   Price:         ₹23,191
 
-Flight 97
+Flight 98
   Flight number: AI-2768,AI-9484
   Airline:       Air India
   Departure:     16:10
   Arrival:       01:50
-  Price:         ₹15,905
+  Price:         ₹15,381
 
-Flight 98
+Flight 99
   Flight number: AI-2768,AI-9486
   Airline:       Air India
   Departure:     16:10
   Arrival:       08:05
-  Price:         ₹15,905
+  Price:         ₹15,381
 
-Flight 99
+Flight 100
   Flight number: 6E-6206
   Airline:       IndiGo
   Departure:     16:15
   Arrival:       19:05
-  Price:         ₹10,215
+  Price:         ₹9,585
 
-Flight 100
+Flight 101
   Flight number: AI-9782,AI-2740
   Airline:       Air India
   Departure:     16:35
   Arrival:       18:20
   Price:         ₹18,644
 
-Flight 101
-  Flight number: AI-9782,AI-2779
-  Airline:       Air India
-  Departure:     16:35
-  Arrival:       09:10
-  Price:         ₹28,766
-
 Flight 102
   Flight number: AI-9782,AI-2822
   Airline:       Air India
   Departure:     16:35
   Arrival:       11:55
-  Price:         ₹17,526
+  Price:         ₹20,534
 
 Flight 103
   Flight number: AI-9782,AI-2828
   Airline:       Air India
   Departure:     16:35
   Arrival:       08:15
-  Price:         ₹18,636
+  Price:         ₹21,644
 
 Flight 104
   Flight number: AI-9782,AI-436
   Airline:       Air India
   Departure:     16:35
   Arrival:       23:30
-  Price:         ₹26,050
+  Price:         ₹29,058
 
 Flight 105
   Flight number: 6E-6528,6E-2084
   Airline:       IndiGo
   Departure:     17:00
   Arrival:       22:35
-  Price:         ₹9,036
+  Price:         ₹13,049
 
 Flight 106
   Flight number: QP-1108
@@ -12467,7 +12467,7 @@ Flight 112
   Airline:       Air India
   Departure:     19:15
   Arrival:       07:20
-  Price:         ₹12,810
+  Price:         ₹18,797
 
 Flight 113
   Flight number: AI-1863,AI-2429
@@ -12481,7 +12481,7 @@ Flight 114
   Airline:       Air India
   Departure:     19:15
   Arrival:       12:00
-  Price:         ₹17,481
+  Price:         ₹21,781
 
 Flight 115
   Flight number: AI-1863,AI-2963
@@ -12502,7 +12502,7 @@ Flight 117
   Airline:       Air India
   Departure:     19:15
   Arrival:       12:25
-  Price:         ₹17,481
+  Price:         ₹21,781
 
 Flight 118
   Flight number: AI-1863,AI-9486
@@ -12516,21 +12516,21 @@ Flight 119
   Airline:       Akasa Air
   Departure:     20:25
   Arrival:       06:45
-  Price:         ₹15,194
+  Price:         ₹15,228
 
 Flight 120
   Flight number: QP-1564,QP-1383
   Airline:       Akasa Air
   Departure:     20:25
   Arrival:       07:10
-  Price:         ₹15,377
+  Price:         ₹15,228
 
 Flight 121
   Flight number: QP-1564,QP-1515
   Airline:       Akasa Air
   Departure:     20:25
   Arrival:       08:00
-  Price:         ₹19,340
+  Price:         ₹19,713
 
 Flight 122
   Flight number: AI-2482
@@ -12656,7 +12656,7 @@ Flight 139
   Airline:       Akasa Air
   Departure:     23:00
   Arrival:       01:40
-  Price:         ₹8,541
+  Price:         ₹8,396
 
 
 T_plus_7 (2026-09-27)
@@ -12778,7 +12778,7 @@ Flight 17
   Airline:       Air India
   Departure:     06:30
   Arrival:       23:30
-  Price:         ₹22,593
+  Price:         ₹21,993
 
 Flight 18
   Flight number: AI-9784,AI-640
@@ -13149,14 +13149,14 @@ Flight 70
   Airline:       Air India
   Departure:     12:55
   Arrival:       23:55
-  Price:         ₹18,797
+  Price:         ₹21,966
 
 Flight 71
   Flight number: AI-1874,AI-2439
   Airline:       Air India
   Departure:     12:55
   Arrival:       01:25
-  Price:         ₹18,797
+  Price:         ₹21,966
 
 Flight 72
   Flight number: AI-1874,AI-2805
@@ -13254,7 +13254,7 @@ Flight 85
   Airline:       Air India
   Departure:     16:10
   Arrival:       23:55
-  Price:         ₹12,810
+  Price:         ₹14,357
 
 Flight 86
   Flight number: AI-2768,AI-2439
@@ -13303,7 +13303,7 @@ Flight 92
   Airline:       Air India
   Departure:     16:10
   Arrival:       08:05
-  Price:         ₹19,106
+  Price:         ₹18,738
 
 Flight 93
   Flight number: 6E-6206
@@ -13324,7 +13324,7 @@ Flight 95
   Airline:       Air India
   Departure:     16:35
   Arrival:       09:10
-  Price:         ₹17,292
+  Price:         ₹17,852
 
 Flight 96
   Flight number: AI-9782,AI-2822
@@ -13408,7 +13408,7 @@ Flight 107
   Airline:       Air India Express
   Departure:     18:50
   Arrival:       04:35
-  Price:         ₹26,198
+  Price:         ₹21,703
 
 Flight 108
   Flight number: 6E-798,6E-6598
@@ -14412,7 +14412,7 @@ Flight 110
   Airline:       Air India
   Departure:     18:55
   Arrival:       11:15
-  Price:         ₹14,871
+  Price:         ₹15,291
 
 Flight 111
   Flight number: AI-9436,AI-2630
@@ -14454,7 +14454,7 @@ Flight 116
   Airline:       Air India
   Departure:     18:55
   Arrival:       04:10
-  Price:         ₹14,383
+  Price:         ₹14,803
 
 Flight 117
   Flight number: IX-1371,IX-5985
@@ -14478,46 +14478,46 @@ Flight 119
   Price:         ₹12,810
 
 Flight 120
-  Flight number: AI-1863,AI-2429
-  Airline:       Air India
-  Departure:     19:15
-  Arrival:       09:25
-  Price:         ₹17,481
-
-Flight 121
   Flight number: AI-1863,AI-2975
   Airline:       Air India
   Departure:     19:15
   Arrival:       08:50
   Price:         ₹17,481
 
-Flight 122
+Flight 121
   Flight number: 6E-2256,6E-6363
   Airline:       IndiGo
   Departure:     19:20
   Arrival:       01:00
   Price:         ₹8,831
 
-Flight 123
+Flight 122
   Flight number: AI-9991,AI-1745
   Airline:       Air India
   Departure:     19:45
   Arrival:       07:25
-  Price:         ₹17,230
+  Price:         ₹17,041
 
-Flight 124
+Flight 123
   Flight number: AI-9991,AI-2429
   Airline:       Air India
   Departure:     19:45
   Arrival:       09:25
   Price:         ₹17,230
 
+Flight 124
+  Flight number: AI-9991,AI-2678
+  Airline:       Air India
+  Departure:     19:45
+  Arrival:       10:45
+  Price:         ₹17,041
+
 Flight 125
   Flight number: AI-9991,AI-2927
   Airline:       Air India
   Departure:     19:45
   Arrival:       12:00
-  Price:         ₹17,230
+  Price:         ₹17,041
 
 Flight 126
   Flight number: AI-9991,AI-2943
@@ -14531,77 +14531,77 @@ Flight 127
   Airline:       Air India
   Departure:     19:45
   Arrival:       11:15
-  Price:         ₹17,230
+  Price:         ₹17,041
 
 Flight 128
   Flight number: AI-9991,AI-2975
   Airline:       Air India
   Departure:     19:45
   Arrival:       08:50
-  Price:         ₹17,230
+  Price:         ₹17,041
 
 Flight 129
+  Flight number: AI-9991,AI-2995
+  Airline:       Air India
+  Departure:     19:45
+  Arrival:       12:25
+  Price:         ₹17,041
+
+Flight 130
   Flight number: IX-1525,IX-1235
   Airline:       Air India Express
   Departure:     19:45
   Arrival:       01:50
   Price:         ₹9,048
 
-Flight 130
+Flight 131
   Flight number: QP-1564,QP-1515
   Airline:       Akasa Air
   Departure:     20:25
   Arrival:       07:35
   Price:         ₹14,891
 
-Flight 131
+Flight 132
   Flight number: QP-1564,QP-1517
   Airline:       Akasa Air
   Departure:     20:25
   Arrival:       06:50
   Price:         ₹13,431
 
-Flight 132
+Flight 133
   Flight number: AI-2482
   Airline:       Air India
   Departure:     20:35
   Arrival:       23:45
   Price:         ₹9,269
 
-Flight 133
+Flight 134
   Flight number: QP-1184
   Airline:       Akasa Air
   Departure:     20:50
   Arrival:       23:50
   Price:         ₹8,691
 
-Flight 134
+Flight 135
   Flight number: AI-2708,AI-1745
   Airline:       Air India
   Departure:     21:00
   Arrival:       07:25
   Price:         ₹12,810
 
-Flight 135
+Flight 136
   Flight number: AI-2708,AI-2429
   Airline:       Air India
   Departure:     21:00
   Arrival:       09:25
   Price:         ₹12,810
 
-Flight 136
+Flight 137
   Flight number: AI-2708,AI-2943
   Airline:       Air India
   Departure:     21:00
   Arrival:       09:55
   Price:         ₹12,810
-
-Flight 137
-  Flight number: AI-2708,AI-2963
-  Airline:       Air India
-  Departure:     21:00
-  Arrival:       11:15
-  Price:         ₹17,481
 
 Flight 138
   Flight number: AI-2708,AI-2975
@@ -14807,7 +14807,7 @@ Flight 17
   Airline:       Akasa Air
   Departure:     06:00
   Arrival:       08:45
-  Price:         ₹10,538
+  Price:         ₹11,114
 
 Flight 18
   Flight number: QP-1263,QP-1144
@@ -15115,7 +15115,7 @@ Flight 61
   Airline:       Air India Express
   Departure:     11:15
   Arrival:       20:25
-  Price:         ₹22,514
+  Price:         ₹23,040
 
 Flight 62
   Flight number: IX-1496,IX-5937
@@ -15318,7 +15318,7 @@ Flight 90
   Airline:       Air India Express
   Departure:     15:15
   Arrival:       20:25
-  Price:         ₹22,514
+  Price:         ₹23,040
 
 Flight 91
   Flight number: IX-1543,IX-5937
@@ -16021,7 +16021,7 @@ Flight 34
   Airline:       Air India Express
   Departure:     06:50
   Arrival:       16:50
-  Price:         ₹12,358
+  Price:         ₹16,025
 
 Flight 35
   Flight number: 6E-496,6E-5069
@@ -16133,7 +16133,7 @@ Flight 50
   Airline:       Air India Express
   Departure:     10:15
   Arrival:       16:50
-  Price:         ₹12,882
+  Price:         ₹16,549
 
 Flight 51
   Flight number: AI-2772
@@ -16462,7 +16462,7 @@ Flight 97
   Airline:       Air India
   Departure:     16:05
   Arrival:       17:30
-  Price:         ₹19,685
+  Price:         ₹18,953
 
 Flight 98
   Flight number: IX-1538,IX-1360
