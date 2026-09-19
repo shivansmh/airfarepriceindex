@@ -639,6 +639,7 @@ def parse_args() -> argparse.Namespace:
 
 if __name__ == "__main__":
     try:
+        OUTPUT_FOLDER.mkdir(parents=True, exist_ok=True)
         payload = json.loads(asyncio.run(
             scrape_all_routes(
                 ROUTES,
@@ -656,8 +657,10 @@ if __name__ == "__main__":
         print(f"Structured target data saved to: {JSON_OUTPUT}")
     except PlaywrightTimeoutError as exc:
         print(f"Page load timed out: {exc}")
+        raise
     except Exception as exc:
         print(f"Scrape failed: {exc}")
+        raise
     finally:
         if os.getenv("INTERACTIVE", "false").lower() in {"1", "true", "yes"}:
             input("\nScraping finished. Press Enter to close this window...")
