@@ -17,6 +17,12 @@ The generated `manifest.json` records the run date and row counts, which makes f
 
 All date keys use the India calendar date (`Asia/Kolkata`) because the workflow runs at 00:00 IST.
 
+## Supabase storage
+
+The production database schema is also provisioned in Supabase. The nightly workflow runs `api/write_supabase.py` after the local JSON export and batch-upserts the four fact tables. To enable that step in GitHub Actions, add repository secrets named `SUPABASE_URL` and `SUPABASE_SERVICE_ROLE_KEY`. Until both secrets exist, the workflow deliberately skips the remote write and continues publishing the GitHub JSON fallback.
+
+The one-time `--backfill` mode imports all dated JSON snapshots already present in this folder. Raw-flight records are deduplicated by date, route, booking window, itinerary, times, price, and source before upload.
+
 ## Adding supporting data
 
 Append festival ranges or monthly ATF prices to the corresponding CSV. The nightly exporter creates the headers if the files do not yet exist and does not overwrite user-maintained rows.

@@ -111,14 +111,16 @@ def export_daily_database() -> dict[str, Any]:
                     "route": route,
                     "booking_window": booking_window,
                     "carrier": flight.get("airline") or carrier_from_flight_number(flight.get("flight_number")),
+                    "airline": flight.get("airline"),
                     "departure_date": departure_date,
                     "departure_time": flight.get("departure_time"),
-                    "price": price,
-                    "base_fare": None,
-                    "taxes": None,
-                    "source_site": "via.com",
-                    "flight_number": flight.get("flight_number"),
                     "arrival_time": flight.get("arrival_time"),
+                    "flight_number": flight.get("flight_number"),
+                    "price": price,
+                    "base_fare": flight.get("base_fare"),
+                    "taxes": flight.get("taxes"),
+                    "baggage": flight.get("baggage"),
+                    "source_site": "via.com",
                 })
             summary_rows.append({
                 "date": run_date,
@@ -164,7 +166,7 @@ def export_daily_database() -> dict[str, Any]:
 
     atomic_json(RAW_DIR / f"{run_date}.json", {
         "table": "raw_scraped_flights",
-        "schema": ["scrape_date", "route", "booking_window", "carrier", "departure_date", "departure_time", "price", "base_fare", "taxes", "source_site"],
+        "schema": ["scrape_date", "route", "booking_window", "carrier", "airline", "departure_date", "departure_time", "arrival_time", "flight_number", "price", "base_fare", "taxes", "baggage", "source_site"],
         "rows": raw_rows,
     })
     atomic_json(SUMMARY_DIR / f"{run_date}.json", {
