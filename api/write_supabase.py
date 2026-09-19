@@ -139,8 +139,8 @@ def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--backfill", action="store_true", help="Import all dated database snapshots in the repository")
     args = parser.parse_args()
-    base_url = os.getenv("SUPABASE_URL")
-    key = os.getenv("SUPABASE_SERVICE_ROLE_KEY")
+    base_url = (os.getenv("SUPABASE_URL") or "").strip()
+    key = (os.getenv("SUPABASE_SERVICE_ROLE_KEY") or "").strip()
     if not base_url or not key:
         print("Supabase secrets are not configured; skipping remote upsert.")
         return
