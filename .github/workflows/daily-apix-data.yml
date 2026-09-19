@@ -61,6 +61,7 @@ jobs:
         run: python api/update_history.py
 
       - name: Generate Gemini daily briefing JSON
+        continue-on-error: true
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: >-
@@ -70,7 +71,11 @@ jobs:
           api/daily_briefing.json
 
       - name: Copy briefing JSON into the public dashboard artifact
-        run: cp api/daily_briefing.json dashboard/daily_briefing.json
+        run: |
+          if [ ! -s api/daily_briefing.json ]; then
+            printf '%s\n' '{"status":"unavailable","message":"Daily briefing is unavailable for this run."}' > api/daily_briefing.json
+          fi
+          cp api/daily_briefing.json dashboard/daily_briefing.json
 
       - name: Export GitHub Actions system logs
         env:
