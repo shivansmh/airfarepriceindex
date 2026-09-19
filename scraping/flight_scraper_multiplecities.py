@@ -14,7 +14,7 @@ from dataclasses import asdict, dataclass
 from pathlib import Path
 from typing import Any, Iterable
 
-from playwright.async_api import Browser, Page, TimeoutError as PlaywrightTimeoutError, async_playwright
+from playwright.async_api import Browser, BrowserContext, Page, TimeoutError as PlaywrightTimeoutError, async_playwright
 
 SCRIPT_VERSION = "via-airline-enriched-2026-09-18"
 
@@ -44,6 +44,8 @@ ROUTES = [
 DATE_OFFSETS = [1, 7, 15, 30, 45]
 SHOW_BROWSER = os.getenv("SHOW_BROWSER", "false").lower() in {"1", "true", "yes"}
 WAIT_MS = int(os.getenv("WAIT_MS", "3500"))
+MAX_CONCURRENCY = max(1, int(os.getenv("MAX_CONCURRENCY", "3")))
+SAVE_HTML = os.getenv("SAVE_HTML", "false").lower() in {"1", "true", "yes"}
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
 OUTPUT_FOLDER = Path(os.getenv("OUTPUT_FOLDER", str(REPO_ROOT / "dashboard"))).expanduser()
@@ -206,33 +208,59 @@ def analyze_html(html: str, visible_text: str, url: str, row_texts: list[str] | 
     )
 
 
+async def configure_context(context: BrowserContext) -> None:
+    """Skip heavy visual assets while retaining scripts and flight result data."""
+    await context.route(
+        "**/*",
+        lambda route: route.abort()
+        if route.request.resource_type in {"image", "media", "font", "stylesheet"}
+        else route.continue_(),
+    )
+
+
+async def scrape_page(
+    context: BrowserContext,
+    url: str,
+    html_path: str | None = None,
+    wait_ms: int = 2500,
+) -> str:
+    """Scrape one result page using a page from the shared browser context."""
+    page: Page = await context.new_page()
+    try:
+        await page.goto(url, wait_until="domcontentloaded", timeout=60_000)
+        try:
+            await page.wait_for_selector("#searchResultContainer .result", timeout=15_000)
+        except PlaywrightTimeoutError:
+            # Some responses render an empty result state; still collect diagnostics.
+            pass
+        if wait_ms:
+            await page.wait_for_timeout(wait_ms)
+
+        html = await page.content()
+        visible_text = await page.locator("body").inner_text(timeout=15_000)
+        row_texts = await page.locator("#searchResultContainer .result").all_inner_texts()
+        result = analyze_html(html, visible_text, page.url, row_texts)
+
+        if html_path:
+            destination = Path(html_path).expanduser().resolve()
+            destination.parent.mkdir(parents=True, exist_ok=True)
+            destination.write_text(html, encoding="utf-8")
+            result.html_file = str(destination)
+        return json.dumps(asdict(result), ensure_ascii=False, indent=2)
+    finally:
+        await page.close()
+
+
 async def scrape(url: str, html_path: str | None = None, wait_ms: int = 2500, headless: bool = True) -> str:
+    """Compatibility wrapper for one-off callers."""
     async with async_playwright() as playwright:
         browser: Browser = await playwright.chromium.launch(headless=headless)
-        page: Page = await browser.new_page(viewport={"width": 1440, "height": 1000})
+        context = await browser.new_context(viewport={"width": 1440, "height": 1000})
+        await configure_context(context)
         try:
-            await page.goto(url, wait_until="domcontentloaded", timeout=60_000)
-            try:
-                await page.wait_for_load_state("networkidle", timeout=15_000)
-            except PlaywrightTimeoutError:
-                pass
-            if wait_ms:
-                await page.wait_for_timeout(wait_ms)
-
-            
-            html = await page.content()
-            visible_text = await page.locator("body").inner_text(timeout=15_000)
-            row_texts = await page.locator("#searchResultContainer .result").all_inner_texts()
-            result = analyze_html(html, visible_text, page.url, row_texts)
-
-            if html_path:
-                destination = Path(html_path).expanduser().resolve()
-                destination.parent.mkdir(parents=True, exist_ok=True)
-                destination.write_text(html, encoding="utf-8")
-                result.html_file = str(destination)
-
-            return json.dumps(asdict(result), ensure_ascii=False, indent=2)
+            return await scrape_page(context, url, html_path, wait_ms)
         finally:
+            await context.close()
             await browser.close()
 
 
@@ -288,20 +316,52 @@ def url_for_route(base_url: str, source: str, destination: str, source_name: str
 
 
 async def scrape_all_routes(routes: list[tuple[str, str, str, str, str]], offsets: list[int], html_out: str | None = "rendered_flight_page.html", wait_ms: int = 2500, headless: bool = True) -> str:
-    """Scrape every configured route for every configured relative date."""
-    route_results: list[dict[str, Any]] = []
-    for route_name, source, destination, source_name, destination_name in routes:
-        route_url = url_for_route(BASE_URL, source, destination, source_name, destination_name)
-        route_html_out = html_out
-        if html_out:
-            output_path = Path(html_out).expanduser()
-            suffix = output_path.suffix or ".html"
-            stem = output_path.stem if output_path.suffix else "rendered_flight_page"
-            safe_route_name = re.sub(r"[^A-Za-z0-9]+", "_", route_name).strip("_").lower()
-            route_html_out = str(output_path.with_name(f"{stem}_{safe_route_name}{suffix}"))
-        payload = json.loads(await scrape_date_offsets(route_url, offsets, route_html_out, wait_ms, headless))
-        payload["route_name"] = route_name
-        route_results.append(payload)
+    """Scrape all route/window pairs concurrently with bounded politeness.
+
+    One Chromium process and one context are reused. MAX_CONCURRENCY controls the
+    number of simultaneous Via.com pages; it is intentionally small by default.
+    """
+    run_date = datetime.now(ZoneInfo("Asia/Kolkata")).date()
+    semaphore = asyncio.Semaphore(MAX_CONCURRENCY)
+    route_results: list[dict[str, Any]] = [
+        {
+            "script_version": SCRIPT_VERSION,
+            "mode": "relative_dates",
+            "run_date_T": run_date.isoformat(),
+            "route": url_for_route(BASE_URL, source, destination, source_name, destination_name),
+            "requested_offsets": offsets,
+            "results": {},
+            "route_name": route_name,
+        }
+        for route_name, source, destination, source_name, destination_name in routes
+    ]
+
+    async with async_playwright() as playwright:
+        browser: Browser = await playwright.chromium.launch(headless=headless)
+        context = await browser.new_context(viewport={"width": 1440, "height": 1000})
+        await configure_context(context)
+
+        async def one_job(route_index: int, offset: int) -> None:
+            async with semaphore:
+                route_payload = route_results[route_index]
+                travel_date = run_date + timedelta(days=offset)
+                dated_url = url_for_date(route_payload["route"], travel_date)
+                route_html = None
+                if html_out and SAVE_HTML:
+                    output_path = Path(html_out).expanduser()
+                    suffix = output_path.suffix or ".html"
+                    stem = output_path.stem if output_path.suffix else "rendered_flight_page"
+                    safe_route = re.sub(r"[^A-Za-z0-9]+", "_", route_payload["route_name"]).strip("_").lower()
+                    route_html = output_path.with_name(f"{stem}_{safe_route}_T_plus_{offset}_{travel_date.isoformat()}{suffix}")
+                result = json.loads(await scrape_page(context, dated_url, str(route_html) if route_html else None, wait_ms))
+                result["offset_days"] = offset
+                result["requested_date"] = travel_date.isoformat()
+                route_payload["results"][f"T_plus_{offset}"] = result
+
+        await asyncio.gather(*(one_job(route_index, offset) for route_index in range(len(routes)) for offset in offsets))
+        await context.close()
+        await browser.close()
+
     return json.dumps({"mode": "multi_route_relative_dates", "routes": route_results}, ensure_ascii=False, indent=2)
 
 

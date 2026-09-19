@@ -41,7 +41,9 @@ jobs:
           # Keep rendered HTML out of the repository; only the text report is copied below.
           OUTPUT_FOLDER: /tmp/apix-scrape
           SHOW_BROWSER: "false"
-          WAIT_MS: "3500"
+          WAIT_MS: "1000"
+          MAX_CONCURRENCY: "3"
+          SAVE_HTML: "false"
         run: python scraping/flight_scraper_multiplecities.py
 
       - name: Copy the fresh target report into the dashboard data folder
