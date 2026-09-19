@@ -20,6 +20,8 @@ jobs:
   refresh-data:
     runs-on: ubuntu-latest
     timeout-minutes: 35
+    env:
+      USE_DIRECT_API: "true"
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -34,6 +36,7 @@ jobs:
         run: python -m pip install -r requirements.txt
 
       - name: Install Playwright Chromium
+        if: ${{ env.USE_DIRECT_API != 'true' }}
         run: python -m playwright install --with-deps chromium
 
       - name: Scrape all routes and advance windows

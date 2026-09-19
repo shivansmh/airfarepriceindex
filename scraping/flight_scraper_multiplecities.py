@@ -7,6 +7,7 @@ import asyncio
 import json
 import os
 import re
+from contextlib import asynccontextmanager
 from datetime import date, datetime, timedelta
 from zoneinfo import ZoneInfo
 from urllib.parse import parse_qs, urlencode, urlsplit, urlunsplit
@@ -14,9 +15,10 @@ from dataclasses import asdict, dataclass
 from pathlib import Path
 from typing import Any, Iterable
 
+import httpx
 from playwright.async_api import Browser, BrowserContext, Page, TimeoutError as PlaywrightTimeoutError, async_playwright
 
-SCRIPT_VERSION = "via-airline-enriched-2026-09-18"
+SCRIPT_VERSION = "via-direct-api-2026-09-19"
 
 # IATA-style designators used by the carriers commonly returned by Via.com.
 # The fallback keeps the original code available when a new carrier appears.
@@ -35,6 +37,7 @@ AIRLINE_NAMES = {
 }
 
 BASE_URL = "https://in.via.com/flight/search?returnType=one-way&destination=BLR&bdestination=BLR&destinationL=Bangalore&destinationCity=&destinationCN=&source=DEL&bsource=DEL&sourceL=Delhi&sourceCity=&sourceCN=&month=9&day=1&year=2026&date=9/1/2026&numAdults=1&numChildren=0&numInfants=0&validation_result=&domesinter=international&livequote=-1&flightClass=ALL&travType=INTL&routingType=ALL&preferredCarrier=&prefCarrier=0&isAjax=false"
+VIA_API_URL = "https://in.via.com/apiv2/flight/search?&flowType=NODE&ajax=true&jsonData=true"
 
 ROUTES = [
     ("Delhi - Bombay", "DEL", "BOM", "Delhi", "Bombay"),
@@ -46,6 +49,7 @@ SHOW_BROWSER = os.getenv("SHOW_BROWSER", "false").lower() in {"1", "true", "yes"
 WAIT_MS = int(os.getenv("WAIT_MS", "3500"))
 MAX_CONCURRENCY = max(1, int(os.getenv("MAX_CONCURRENCY", "3")))
 SAVE_HTML = os.getenv("SAVE_HTML", "false").lower() in {"1", "true", "yes"}
+USE_DIRECT_API = os.getenv("USE_DIRECT_API", "true").lower() in {"1", "true", "yes"}
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
 OUTPUT_FOLDER = Path(os.getenv("OUTPUT_FOLDER", str(REPO_ROOT / "dashboard"))).expanduser()
@@ -104,6 +108,131 @@ def airline_label(flight_number: str | None) -> str | None:
     """Return a display-friendly airline value for a flight record."""
     names = airline_names(flight_number)
     return ", ".join(names) if names else None
+
+
+def _time_only(value: Any) -> str | None:
+    match = re.search(r"(?:T|\s)(\d{2}:\d{2})", str(value or ""))
+    return match.group(1) if match else None
+
+
+def _amount(value: Any) -> float | None:
+    if isinstance(value, dict):
+        value = value.get("amount")
+    try:
+        return float(value) if value is not None else None
+    except (TypeError, ValueError):
+        match = re.search(r"[\d,]+(?:\.\d+)?", str(value or ""))
+        return float(match.group(0).replace(",", "")) if match else None
+
+
+def parse_via_api_response(payload: dict[str, Any], url: str) -> FlightResult:
+    """Convert Via's structured ``onwardJourneys`` response into our schema."""
+    best_by_itinerary: dict[tuple[str, str | None, str | None], dict[str, Any]] = {}
+    for journey in payload.get("onwardJourneys", []) or []:
+        legs = journey.get("flights", []) or []
+        if not legs:
+            continue
+        flight_numbers = [
+            f"{leg.get('carrier', {}).get('code', '')}-{leg.get('flightNo', '')}".strip("-")
+            for leg in legs
+        ]
+        flight_number = ",".join(number for number in flight_numbers if number)
+        first_leg, last_leg = legs[0], legs[-1]
+        fare = journey.get("fares", {}).get("totalFare", {})
+        baggage = []
+        for leg in legs:
+            checkin = leg.get("amenities", {}).get("baggage", {}).get("checkin", {}).get("adt", {})
+            cabin = leg.get("amenities", {}).get("baggage", {}).get("cabin", {}).get("adt", {})
+            if checkin.get("desc"):
+                baggage.append(f"check-in: {checkin['desc']}")
+            if cabin.get("desc"):
+                baggage.append(f"cabin: {cabin['desc']}")
+        departure = first_leg.get("depDetail", {})
+        arrival = last_leg.get("arrDetail", {})
+        carrier_names = unique([
+            AIRLINE_NAMES.get(
+                leg.get("carrier", {}).get("code", "").upper(),
+                leg.get("carrier", {}).get("name", ""),
+            )
+            for leg in legs
+            if leg.get("carrier", {}).get("code") or leg.get("carrier", {}).get("name")
+        ])
+        total = _amount(fare.get("total"))
+        candidate = {
+            "departure_time": _time_only(departure.get("time")),
+            "arrival_time": _time_only(arrival.get("time")),
+            "flight_number": flight_number or None,
+            "airline": ", ".join(carrier_names) or airline_label(flight_number),
+            "price": f"₹{total:,.0f}" if total is not None else None,
+            "currency": "INR" if total is not None else None,
+            "base_fare": _amount(fare.get("base")),
+            "taxes": _amount(fare.get("tax")),
+            "baggage": "; ".join(unique(baggage)) or None,
+            "raw_text": None,
+        }
+        itinerary_key = (flight_number, candidate["departure_time"], candidate["arrival_time"])
+        previous = best_by_itinerary.get(itinerary_key)
+        previous_total = _amount((previous or {}).get("price"))
+        if previous is None or (total is not None and (previous_total is None or total < previous_total)):
+            best_by_itinerary[itinerary_key] = candidate
+    flights = sorted(
+        best_by_itinerary.values(),
+        key=lambda item: (item.get("departure_time") or "99:99", item.get("flight_number") or ""),
+    )
+    first = flights[0] if flights else {}
+    return FlightResult(
+        url=url,
+        price=first.get("price"),
+        flight_number=first.get("flight_number"),
+        departure_time=first.get("departure_time"),
+        arrival_time=first.get("arrival_time"),
+        currency=first.get("currency"),
+        html_file=None,
+        analysis={
+            "response_type": "via_json_api",
+            "via_journeys_found": len(payload.get("onwardJourneys", []) or []),
+            "via_rows_found": len(flights),
+            "script_version": SCRIPT_VERSION,
+        },
+        flights=flights,
+    )
+
+
+def api_payload(source: str, destination: str, source_name: str, destination_name: str, travel_date: date) -> dict[str, Any]:
+    return {
+        "sectorInfos": [{
+            "src": {"code": source, "name": source_name, "city": source_name},
+            "dest": {"code": destination, "name": destination_name, "city": destination_name},
+            "date": travel_date.isoformat(),
+            "debug": False,
+        }],
+        "prefAirlines": [],
+        "class": "ALL",
+        "paxCount": {"adt": 1, "chd": 0, "inf": 0},
+        "route": "ALL",
+        "disc": False,
+        "multiHop": False,
+        "multiCity": False,
+        "senior": False,
+        "special": False,
+        "domestic": True,
+        "isOfflineSearch": False,
+        "isPaxWiseCommission": False,
+        "isComboAllowed": False,
+        "isLiveSearch": False,
+    }
+
+
+async def scrape_api_page(client: httpx.AsyncClient, source: str, destination: str, source_name: str, destination_name: str, travel_date: date) -> str:
+    response = await client.post(VIA_API_URL, json=api_payload(source, destination, source_name, destination_name, travel_date))
+    response.raise_for_status()
+    result = parse_via_api_response(response.json(), VIA_API_URL)
+    return json.dumps(asdict(result), ensure_ascii=False, indent=2)
+
+
+@asynccontextmanager
+async def _null_async_context():
+    yield None
 
 
 def parse_via_rows(row_texts: list[str]) -> list[dict[str, Any]]:
@@ -323,6 +452,7 @@ async def scrape_all_routes(routes: list[tuple[str, str, str, str, str]], offset
     """
     run_date = datetime.now(ZoneInfo("Asia/Kolkata")).date()
     semaphore = asyncio.Semaphore(MAX_CONCURRENCY)
+    route_specs = list(routes)
     route_results: list[dict[str, Any]] = [
         {
             "script_version": SCRIPT_VERSION,
@@ -333,17 +463,33 @@ async def scrape_all_routes(routes: list[tuple[str, str, str, str, str]], offset
             "results": {},
             "route_name": route_name,
         }
-        for route_name, source, destination, source_name, destination_name in routes
+        for route_name, source, destination, source_name, destination_name in route_specs
     ]
 
-    async with async_playwright() as playwright:
-        browser: Browser = await playwright.chromium.launch(headless=headless)
-        context = await browser.new_context(viewport={"width": 1440, "height": 1000})
-        await configure_context(context)
+    client = httpx.AsyncClient(
+        timeout=httpx.Timeout(60.0, connect=20.0),
+        follow_redirects=True,
+        headers={
+            "User-Agent": "Mozilla/5.0",
+            "Accept": "application/json, text/plain, */*",
+            "Content-Type": "application/json",
+            "Origin": "https://in.via.com",
+            "Referer": "https://in.via.com/flight/search",
+        },
+    ) if USE_DIRECT_API else None
+
+    async with async_playwright() if not USE_DIRECT_API else _null_async_context() as playwright:
+        browser = None
+        context = None
+        if not USE_DIRECT_API:
+            browser = await playwright.chromium.launch(headless=headless)
+            context = await browser.new_context(viewport={"width": 1440, "height": 1000})
+            await configure_context(context)
 
         async def one_job(route_index: int, offset: int) -> None:
             async with semaphore:
                 route_payload = route_results[route_index]
+                _, source, destination, source_name, destination_name = route_specs[route_index]
                 travel_date = run_date + timedelta(days=offset)
                 dated_url = url_for_date(route_payload["route"], travel_date)
                 route_html = None
@@ -353,14 +499,22 @@ async def scrape_all_routes(routes: list[tuple[str, str, str, str, str]], offset
                     stem = output_path.stem if output_path.suffix else "rendered_flight_page"
                     safe_route = re.sub(r"[^A-Za-z0-9]+", "_", route_payload["route_name"]).strip("_").lower()
                     route_html = output_path.with_name(f"{stem}_{safe_route}_T_plus_{offset}_{travel_date.isoformat()}{suffix}")
-                result = json.loads(await scrape_page(context, dated_url, str(route_html) if route_html else None, wait_ms))
+                if USE_DIRECT_API:
+                    result = json.loads(await scrape_api_page(client, source, destination, source_name, destination_name, travel_date))
+                else:
+                    result = json.loads(await scrape_page(context, dated_url, str(route_html) if route_html else None, wait_ms))
                 result["offset_days"] = offset
                 result["requested_date"] = travel_date.isoformat()
                 route_payload["results"][f"T_plus_{offset}"] = result
 
         await asyncio.gather(*(one_job(route_index, offset) for route_index in range(len(routes)) for offset in offsets))
-        await context.close()
-        await browser.close()
+        if context is not None:
+            await context.close()
+        if browser is not None:
+            await browser.close()
+
+    if client is not None:
+        await client.aclose()
 
     return json.dumps({"mode": "multi_route_relative_dates", "routes": route_results}, ensure_ascii=False, indent=2)
 

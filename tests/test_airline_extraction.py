@@ -1,4 +1,4 @@
-from scraping.flight_scraper_multiplecities import airline_label, airline_names, parse_via_rows
+from scraping.flight_scraper_multiplecities import airline_label, airline_names, parse_via_api_response, parse_via_rows
 
 
 def test_known_airlines():
@@ -21,8 +21,23 @@ def test_scraped_row_contains_airline():
     assert rows[0]["flight_number"] == "6E-6673,6E-361"
 
 
+def test_structured_api_parser_uses_nested_fares_and_cheapest_variant():
+    payload = {
+        "onwardJourneys": [
+            {"fares": {"totalFare": {"total": {"amount": 7000}, "base": {"amount": 5000}, "tax": {"amount": 2000}}}, "flights": [{"carrier": {"code": "6E", "name": "IndiGo"}, "flightNo": "123", "depDetail": {"time": "2026-10-20 08:00:00.000"}, "arrDetail": {"time": "2026-10-20 10:00:00.000"}}]},
+            {"fares": {"totalFare": {"total": {"amount": 6400}, "base": {"amount": 4400}, "tax": {"amount": 2000}}}, "flights": [{"carrier": {"code": "6E", "name": "IndiGo"}, "flightNo": "123", "depDetail": {"time": "2026-10-20 08:00:00.000"}, "arrDetail": {"time": "2026-10-20 10:00:00.000"}}]},
+        ]
+    }
+    result = parse_via_api_response(payload, "https://in.via.com/apiv2/flight/search")
+    assert len(result.flights) == 1
+    assert result.flights[0]["price"] == "₹6,400"
+    assert result.flights[0]["base_fare"] == 4400
+    assert result.flights[0]["taxes"] == 2000
+
+
 if __name__ == "__main__":
     test_known_airlines()
     test_mixed_carrier_connection_preserves_both_names()
     test_scraped_row_contains_airline()
+    test_structured_api_parser_uses_nested_fares_and_cheapest_variant()
     print("airline extraction checks passed")
