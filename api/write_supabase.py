@@ -114,6 +114,8 @@ def post_batch(client: httpx.Client, base_url: str, key: str, table: str, rows: 
             unique_rows[tuple(row.get(field) for field in identity)] = row
         rows = list(unique_rows.values())
     url = f"{base_url}/rest/v1/{table}"
+    if table == "raw_scraped_flights":
+        url += "?on_conflict=scrape_date,route,booking_window,flight_number,departure_time,arrival_time,price,source_site"
     headers = {
         "apikey": key,
         "Authorization": f"Bearer {key}",
@@ -124,7 +126,8 @@ def post_batch(client: httpx.Client, base_url: str, key: str, table: str, rows: 
         try:
             response = client.post(url, headers=headers, json=rows)
             if response.status_code < 500 and response.status_code != 429:
-                response.raise_for_status()
+                if response.is_error:
+                    raise RuntimeError(f"Supabase {table} returned {response.status_code}: {response.text[:1000]}")
                 print(f"{table}: upserted {len(rows)} rows")
                 return
             if attempt == 3:
