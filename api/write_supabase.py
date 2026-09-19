@@ -139,8 +139,12 @@ def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--backfill", action="store_true", help="Import all dated database snapshots in the repository")
     args = parser.parse_args()
-    base_url = required_env("SUPABASE_URL").rstrip("/")
-    key = required_env("SUPABASE_SERVICE_ROLE_KEY")
+    base_url = os.getenv("SUPABASE_URL")
+    key = os.getenv("SUPABASE_SERVICE_ROLE_KEY")
+    if not base_url or not key:
+        print("Supabase secrets are not configured; skipping remote upsert.")
+        return
+    base_url = base_url.rstrip("/")
     with httpx.Client(timeout=httpx.Timeout(60.0, connect=20.0)) as client:
         if args.backfill:
             for table in ("raw_scraped_flights", "route_window_summary", "route_level_index", "daily_apix"):

@@ -82,15 +82,10 @@ jobs:
         run: python api/export_daily_database.py
 
       - name: Upsert daily data into Supabase
-        if: ${{ secrets.SUPABASE_URL != '' && secrets.SUPABASE_SERVICE_ROLE_KEY != '' }}
         env:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
         run: python api/write_supabase.py
-
-      - name: Note Supabase secrets are not configured
-        if: ${{ secrets.SUPABASE_URL == '' || secrets.SUPABASE_SERVICE_ROLE_KEY == '' }}
-        run: echo "Supabase upsert skipped; add SUPABASE_URL and SUPABASE_SERVICE_ROLE_KEY repository secrets. JSON exports remain available."
 
       - name: Commit refreshed data
         run: |
