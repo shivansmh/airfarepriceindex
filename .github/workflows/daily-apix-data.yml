@@ -10,6 +10,14 @@ on:
         description: "Temporary route limit for diagnostics; 0 runs all routes"
         required: false
         default: "0"
+      top_routes:
+        description: "Highest-passenger-volume routes to run; 0 disables ranking"
+        required: false
+        default: "0"
+      offsets:
+        description: "Comma-separated advance-purchase offsets, for example 1 or 1,7,15,30,45"
+        required: false
+        default: "1,7,15,30,45"
       debug_empty_results:
         description: "Log one diagnostic line for each route returning empty results"
         required: false
@@ -58,6 +66,8 @@ jobs:
           MAX_CONCURRENCY: "5"
           API_REQUEST_GAP_SECONDS: "1.0"
           ROUTE_LIMIT: ${{ inputs.route_limit || '0' }}
+          TOP_ROUTES: ${{ inputs.top_routes || '0' }}
+          DATE_OFFSETS: ${{ inputs.offsets || '1,7,15,30,45' }}
           DEBUG_EMPTY_RESULTS: ${{ inputs.debug_empty_results || 'false' }}
           EMPTY_RESULT_RETRIES: "0"
           SAVE_HTML: "false"

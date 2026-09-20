@@ -40,7 +40,7 @@ AIRLINE_NAMES = {
 BASE_URL = "https://in.via.com/flight/search?returnType=one-way&destination=BLR&bdestination=BLR&destinationL=Bangalore&destinationCity=&destinationCN=&source=DEL&bsource=DEL&sourceL=Delhi&sourceCity=&sourceCN=&month=9&day=1&year=2026&date=9/1/2026&numAdults=1&numChildren=0&numInfants=0&validation_result=&domesinter=international&livequote=-1&flightClass=ALL&travType=INTL&routingType=ALL&preferredCarrier=&prefCarrier=0&isAjax=false"
 VIA_API_URL = "https://in.via.com/apiv2/flight/search?&flowType=NODE&ajax=true&jsonData=true"
 
-DATE_OFFSETS = [1, 7, 15, 30, 45]
+DATE_OFFSETS = [int(value.strip()) for value in os.getenv("DATE_OFFSETS", "1,7,15,30,45").split(",") if value.strip()]
 SHOW_BROWSER = os.getenv("SHOW_BROWSER", "false").lower() in {"1", "true", "yes"}
 WAIT_MS = int(os.getenv("WAIT_MS", "3500"))
 MAX_CONCURRENCY = max(1, int(os.getenv("MAX_CONCURRENCY", "1")))
@@ -774,7 +774,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--date-url", help="One base Via.com route URL to scrape across a date range")
     parser.add_argument("--start-date", help="First travel date in YYYY-MM-DD format; use with --date-url")
     parser.add_argument("--end-date", help="Last travel date in YYYY-MM-DD format, inclusive; use with --date-url")
-    parser.add_argument("--offsets", default="1,7,15", help="Comma-separated day offsets for relative mode; default: 1,7,15")
+    parser.add_argument("--offsets", default=",".join(str(offset) for offset in DATE_OFFSETS), help="Comma-separated day offsets for relative mode")
     parser.add_argument("--html-out", default="rendered_flight_page.html", help="Base path for complete rendered HTML files")
     parser.add_argument("--wait-ms", type=int, default=2500, help="Additional wait after page load for results to render")
     parser.add_argument("--route-limit", type=int, default=None, help="Use the first N configured routes")
