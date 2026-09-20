@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-09-20T14:38:41+00:00",
-  "date": "2026-09-20",
-  "raw_flight_count": 854,
-  "summary_count": 5,
-  "route_index_count": 1,
+  "generated_at": "2026-09-20T22:52:08+00:00",
+  "date": "2026-09-21",
+  "raw_flight_count": 57,
+  "summary_count": 2045,
+  "route_index_count": 409,
   "apix_frequency_count": 3,
   "source_files": [
     "dashboard/target_day.json",
