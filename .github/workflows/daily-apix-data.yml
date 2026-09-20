@@ -56,9 +56,10 @@ jobs:
           SHOW_BROWSER: "false"
           WAIT_MS: "1000"
           MAX_CONCURRENCY: "5"
+          API_REQUEST_GAP_SECONDS: "1.0"
           ROUTE_LIMIT: ${{ inputs.route_limit || '0' }}
           DEBUG_EMPTY_RESULTS: ${{ inputs.debug_empty_results || 'false' }}
-          EMPTY_RESULT_RETRIES: "1"
+          EMPTY_RESULT_RETRIES: "0"
           SAVE_HTML: "false"
         run: python scraping/flight_scraper_multiplecities.py
 
