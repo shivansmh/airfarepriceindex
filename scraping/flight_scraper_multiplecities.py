@@ -43,6 +43,8 @@ DATE_OFFSETS = [1, 7, 15, 30, 45]
 SHOW_BROWSER = os.getenv("SHOW_BROWSER", "false").lower() in {"1", "true", "yes"}
 WAIT_MS = int(os.getenv("WAIT_MS", "3500"))
 MAX_CONCURRENCY = max(1, int(os.getenv("MAX_CONCURRENCY", "3")))
+API_REQUEST_GAP_SECONDS = max(0.0, float(os.getenv("API_REQUEST_GAP_SECONDS", "0.35")))
+EMPTY_RESULT_RETRIES = max(0, int(os.getenv("EMPTY_RESULT_RETRIES", "3")))
 SAVE_HTML = os.getenv("SAVE_HTML", "false").lower() in {"1", "true", "yes"}
 USE_DIRECT_API = os.getenv("USE_DIRECT_API", "true").lower() in {"1", "true", "yes"}
 ROUTE_LIMIT = int(os.getenv("ROUTE_LIMIT", "0"))
@@ -450,6 +452,8 @@ async def scrape_all_routes(routes: list[dict[str, Any]], offsets: list[int], ht
     """
     run_date = datetime.now(ZoneInfo("Asia/Kolkata")).date()
     semaphore = asyncio.Semaphore(MAX_CONCURRENCY)
+    api_request_lock = asyncio.Lock()
+    next_api_request_at = 0.0
     route_specs = list(routes)
     route_results: list[dict[str, Any]] = [
         {
@@ -492,6 +496,7 @@ async def scrape_all_routes(routes: list[dict[str, Any]], offsets: list[int], ht
             await configure_context(context)
 
         async def one_job(route_index: int, offset: int) -> None:
+            nonlocal next_api_request_at
             async with semaphore:
                 route_payload = route_results[route_index]
                 route = route_specs[route_index]
@@ -507,7 +512,20 @@ async def scrape_all_routes(routes: list[dict[str, Any]], offsets: list[int], ht
                     safe_route = re.sub(r"[^A-Za-z0-9]+", "_", route_payload["route_name"]).strip("_").lower()
                     route_html = output_path.with_name(f"{stem}_{safe_route}_T_plus_{offset}_{travel_date.isoformat()}{suffix}")
                 if USE_DIRECT_API:
-                    result = json.loads(await scrape_api_page(client, source, destination, source_name, destination_name, travel_date))
+                    result = None
+                    for attempt in range(EMPTY_RESULT_RETRIES + 1):
+                        async with api_request_lock:
+                            loop = asyncio.get_running_loop()
+                            wait_for_slot = max(0.0, next_api_request_at - loop.time())
+                            if wait_for_slot:
+                                await asyncio.sleep(wait_for_slot)
+                            next_api_request_at = loop.time() + API_REQUEST_GAP_SECONDS
+                            candidate = json.loads(await scrape_api_page(client, source, destination, source_name, destination_name, travel_date))
+                        result = candidate
+                        journeys = (candidate.get("analysis") or {}).get("via_journeys_found")
+                        if journeys != 0 or attempt == EMPTY_RESULT_RETRIES:
+                            break
+                        await asyncio.sleep(2 ** attempt)
                 else:
                     result = json.loads(await scrape_page(context, dated_url, str(route_html) if route_html else None, wait_ms))
                 result["offset_days"] = offset
@@ -529,6 +547,19 @@ async def scrape_all_routes(routes: list[dict[str, Any]], offsets: list[int], ht
             for offset in offsets
             if f"T_plus_{offset}" in route_payload["results"]
         }
+    nonempty_routes = sum(
+        any((result.get("flights") or []) for result in route_payload["results"].values())
+        for route_payload in route_results
+    )
+    total_flights = sum(
+        len(result.get("flights") or [])
+        for route_payload in route_results
+        for result in route_payload["results"].values()
+    )
+    print(
+        f"Scrape coverage: {nonempty_routes}/{len(route_results)} routes returned flights; "
+        f"{total_flights} flight records across {len(route_results) * len(offsets)} route/windows."
+    )
     return json.dumps({"mode": "multi_route_relative_dates", "routes": route_results}, ensure_ascii=False, indent=2)
 
 
