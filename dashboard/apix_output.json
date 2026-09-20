@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-20T12:07:29",
+  "generated_at": "2026-09-20T13:16:10",
   "base_file": "/home/runner/work/airfarepriceindex/airfarepriceindex/data/base_day.txt",
   "target_file": "/home/runner/work/airfarepriceindex/airfarepriceindex/dashboard/target_day.txt",
   "json_output_file": "/home/runner/work/airfarepriceindex/airfarepriceindex/dashboard/apix_output.json",
@@ -44,12 +44,8 @@
       "T_plus_15": 6992,
       "T_plus_45": 6395
     },
-    "KURNOOL - VISAKHAPATNAM": {
-      "T_plus_30": 7720.5
-    },
-    "TIRUPATI - HYDERABAD": {
-      "T_plus_1": 7025
-    },
+    "KURNOOL - VISAKHAPATNAM": {},
+    "TIRUPATI - HYDERABAD": {},
     "TIRUPATI - KALABURAGI": {},
     "TIRUPATI - KOLHAPUR": {},
     "TIRUPATI - SHIRDI": {},

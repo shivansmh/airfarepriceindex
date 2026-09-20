@@ -238,8 +238,8 @@
       "destination": "VISAKHAPATNAM",
       "destination_code": "VTZ",
       "booking_window": "T_plus_30",
-      "representative_price": 7720.5,
-      "sample_size": 2
+      "representative_price": null,
+      "sample_size": 0
     },
     {
       "date": "2026-09-20",
@@ -262,8 +262,8 @@
       "destination": "HYDERABAD",
       "destination_code": "HYD",
       "booking_window": "T_plus_1",
-      "representative_price": 7025.0,
-      "sample_size": 11
+      "representative_price": null,
+      "sample_size": 0
     },
     {
       "date": "2026-09-20",

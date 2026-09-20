@@ -390,20 +390,7 @@ No flight results found.
 
 T_plus_30 (2026-10-20)
 ------------------------------------------------------------
-Flight 1
-  Flight number: 6E-7176
-  Airline:       IndiGo
-  Departure:     11:40
-  Arrival:       13:30
-  Price:         ₹6,093
-
-Flight 2
-  Flight number: 6E-7177,6E-969
-  Airline:       IndiGo
-  Departure:     16:00
-  Arrival:       20:40
-  Price:         ₹9,348
-
+No flight results found.
 
 T_plus_45 (2026-11-04)
 ------------------------------------------------------------
@@ -415,83 +402,7 @@ ROUTE: TIRUPATI - HYDERABAD
 
 T_plus_1 (2026-09-21)
 ------------------------------------------------------------
-Flight 1
-  Flight number: 6E-6570
-  Airline:       IndiGo
-  Departure:     07:55
-  Arrival:       09:00
-  Price:         ₹7,025
-
-Flight 2
-  Flight number: 6E-7322,6E-7284
-  Airline:       IndiGo
-  Departure:     12:25
-  Arrival:       21:40
-  Price:         ₹7,575
-
-Flight 3
-  Flight number: S5-203,S5-213
-  Airline:       Star Air
-  Departure:     12:40
-  Arrival:       18:10
-  Price:         ₹3,300
-
-Flight 4
-  Flight number: 9I-878
-  Airline:       Alliance Air
-  Departure:     12:55
-  Arrival:       14:20
-  Price:         ₹4,328
-
-Flight 5
-  Flight number: 6E-6297
-  Airline:       IndiGo
-  Departure:     14:25
-  Arrival:       15:35
-  Price:         ₹7,025
-
-Flight 6
-  Flight number: 6E-7738,6E-638
-  Airline:       IndiGo
-  Departure:     16:35
-  Arrival:       19:45
-  Price:         ₹8,690
-
-Flight 7
-  Flight number: 6E-7738,6E-6784
-  Airline:       IndiGo
-  Departure:     16:35
-  Arrival:       22:45
-  Price:         ₹8,263
-
-Flight 8
-  Flight number: 6E-7738,6E-855
-  Airline:       IndiGo
-  Departure:     16:35
-  Arrival:       21:00
-  Price:         ₹9,148
-
-Flight 9
-  Flight number: 6E-7506
-  Airline:       IndiGo
-  Departure:     16:40
-  Arrival:       18:00
-  Price:         ₹7,421
-
-Flight 10
-  Flight number: IX-1830
-  Airline:       Air India Express
-  Departure:     17:55
-  Arrival:       19:00
-  Price:         ₹6,657
-
-Flight 11
-  Flight number: 6E-6541
-  Airline:       IndiGo
-  Departure:     21:00
-  Arrival:       22:10
-  Price:         ₹7,025
-
+No flight results found.
 
 T_plus_7 (2026-09-27)
 ------------------------------------------------------------
