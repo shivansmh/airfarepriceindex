@@ -37,6 +37,24 @@ If `pytest` is installed, the same tests can be run with `pytest -q`.
 
 The project combines Via.com airfare collection, data cleaning, an Airfare Price Index model, and a dashboard. Route definitions and passenger weights are stored in `config/routes.json` and sourced from `config/finalroutes.xlsx`.
 
+## Provider-specific scrapers
+
+The Via implementation is preserved as `scraping/via_scraper_multiplecities.py`; `scraping/flight_scraper_multiplecities.py` remains as the compatibility path used by existing jobs. The new `scraping/makemytrip_scraper_multiplecities.py` uses the normal MakeMyTrip rendered flight-search page through Playwright. It does not call undocumented private APIs. It extracts only visible result cards and writes the same route/window-oriented JSON shape where possible.
+
+MakeMyTrip runs are intentionally conservative. The default request gap is five seconds, the default route batch size is five, and the default batch pause is 60 seconds. A small first test can be run as follows:
+
+```bash
+OUTPUT_FOLDER="$PWD/diagnostics/makemytrip-one-route" \
+MMT_REQUEST_GAP_SECONDS=5 \
+ROUTE_BATCH_SIZE=1 \
+BATCH_PAUSE_SECONDS=0 \
+python3 scraping/makemytrip_scraper_multiplecities.py \
+  --route-codes DEL-BOM \
+  --offsets 1
+```
+
+The MakeMyTrip user agreement should be reviewed before scaling collection. The scraper does not attempt CAPTCHA bypass, private API reverse-engineering, proxy evasion, or access-control circumvention.
+
 For a controlled fingerprint comparison, set `ROTATE_USER_AGENTS=true`; the scraper cycles through the configured `USER_AGENTS` list while retaining the same conservative pacing. Authorized proxies can be supplied as a comma-separated `PROXY_URLS` list, which is rotated independently and recorded in diagnostics. Proxy use is opt-in and should be limited to infrastructure you control or are explicitly authorized to use; do not use public proxy lists to evade access controls.
 
 For larger runs, the workflow processes routes in polite batches. `ROUTE_BATCH_SIZE=5` and `BATCH_PAUSE_SECONDS=60` complete five routes, write an atomic checkpoint, close the HTTP clients, pause, and then continue with a fresh HTTP session. `RESET_CLIENT_BETWEEN_BATCHES=true` controls that reset. `CHECKPOINT_OUTPUT` points to the latest incremental JSON snapshot for inspection or a future resume implementation. This is a checkpointing and load-management measure, not an attempt to bypass Via.com controls; the scraper does not implement CAPTCHA evasion or unauthorized access-control circumvention.

@@ -1,0 +1,40 @@
+{
+  "mode": "makemytrip_relative_dates",
+  "routes": [
+    {
+      "script_version": "makemytrip-playwright-2026-09-20",
+      "mode": "makemytrip_relative_dates",
+      "run_date_T": "2026-09-20",
+      "route_name": "DELHI - MUMBAI",
+      "origin": "DELHI",
+      "origin_code": "DEL",
+      "destination": "MUMBAI",
+      "destination_code": "BOM",
+      "passengers": 3426228,
+      "contribution": 0.0332538638932862,
+      "requested_offsets": [
+        1
+      ],
+      "results": {
+        "T_plus_1": {
+          "url": "https://www.makemytrip.com/flight/search?itinerary=DEL-BOM-20260921&tripType=O&paxType=A-1_C-0_I-0&intl=false&cabinClass=E&lang=eng",
+          "price": null,
+          "flight_number": null,
+          "departure_time": null,
+          "arrival_time": null,
+          "currency": null,
+          "html_file": null,
+          "analysis": {
+            "response_type": "makemytrip_request_error",
+            "error_type": "Error",
+            "error": "Page.goto: net::ERR_CONNECTION_CLOSED at https://www.makemytrip.com/flight/search?itinerary=DEL-BOM-20260921&tripType=O&paxType=A-1_C-0_I-0&intl=false&cabinClass=E&lang=eng\nCall log:\n  - navigating to \"https://www.makemytrip.com/flight/search?itinerary=DEL-BOM-20260921&tripType=O&paxType=A-1_C-0_I-0&intl=false&cabinClass=E&lang=eng\", waiting until \"domcontentloaded\"\n",
+            "script_version": "makemytrip-playwright-2026-09-20"
+          },
+          "flights": [],
+          "offset_days": 1,
+          "requested_date": "2026-09-21"
+        }
+      }
+    }
+  ]
+}
