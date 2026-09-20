@@ -38,9 +38,6 @@ TABLE_COLUMNS = {
 }
 TABLE_CONFLICTS = {
     "raw_scraped_flights": "state,scrape_date,route,booking_window,flight_number,departure_time,arrival_time,price,source_site",
-    "route_window_summary": "date,route,booking_window",
-    "route_level_index": "date,route",
-    "daily_apix": "date,frequency",
 }
 
 
