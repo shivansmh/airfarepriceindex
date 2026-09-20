@@ -24,11 +24,11 @@
           "html_file": null,
           "analysis": {
             "response_type": "via_json_api",
-            "via_journeys_found": 557,
-            "via_rows_found": 171,
+            "via_journeys_found": 558,
+            "via_rows_found": 170,
             "script_version": "via-direct-api-2026-09-19",
             "http_status": 200,
-            "response_bytes": 1023865,
+            "response_bytes": 1008079,
             "response_keys": [
               "isDomestic",
               "onwardJourneys",
@@ -82,10 +82,10 @@
               "arrival_time": "07:20",
               "flight_number": "AI-1745",
               "airline": "Air India",
-              "price": "₹21,077",
+              "price": "₹24,260",
               "currency": "INR",
-              "base_fare": 18900.0,
-              "taxes": 2177.0,
+              "base_fare": 21931.0,
+              "taxes": 2329.0,
               "baggage": "check-in: 15 KG; cabin: 7 Kg",
               "raw_text": null
             },
@@ -99,18 +99,6 @@
               "base_fare": 18356.0,
               "taxes": 2261.0,
               "baggage": "check-in: 15 kg baggage; cabin: 7 Kg",
-              "raw_text": null
-            },
-            {
-              "departure_time": "05:35",
-              "arrival_time": "08:05",
-              "flight_number": "IX-1056",
-              "airline": "Air India Express",
-              "price": "₹23,164",
-              "currency": "INR",
-              "base_fare": 20883.0,
-              "taxes": 2281.0,
-              "baggage": "check-in: 15 KG; cabin: 7 Kg",
               "raw_text": null
             },
             {
@@ -142,10 +130,10 @@
               "arrival_time": "11:05",
               "flight_number": "IX-1165,IX-1027",
               "airline": "Air India Express",
-              "price": "₹9,971",
+              "price": "₹8,349",
               "currency": "INR",
-              "base_fare": 8218.0,
-              "taxes": 1753.0,
+              "base_fare": 6674.0,
+              "taxes": 1675.0,
               "baggage": "check-in: 15 KG; cabin: 7 Kg",
               "raw_text": null
             },
@@ -238,10 +226,10 @@
               "arrival_time": "12:20",
               "flight_number": "AI-1705,AI-9890",
               "airline": "Air India",
-              "price": "₹13,415",
+              "price": "₹13,128",
               "currency": "INR",
-              "base_fare": 11183.0,
-              "taxes": 2232.0,
+              "base_fare": 10910.0,
+              "taxes": 2218.0,
               "baggage": "check-in: 15 KG; cabin: 7 Kg",
               "raw_text": null
             },
@@ -370,10 +358,10 @@
               "arrival_time": "12:50",
               "flight_number": "6E-6190,6E-2719",
               "airline": "IndiGo",
-              "price": "₹10,439",
+              "price": "₹7,644",
               "currency": "INR",
-              "base_fare": 8444.0,
-              "taxes": 1995.0,
+              "base_fare": 5782.0,
+              "taxes": 1862.0,
               "baggage": "check-in: 15 kg baggage; cabin: 7 Kg",
               "raw_text": null
             },
@@ -418,11 +406,11 @@
               "arrival_time": "11:00",
               "flight_number": "6E-675",
               "airline": "IndiGo",
-              "price": "₹33,500",
+              "price": "₹18,500",
               "currency": "INR",
-              "base_fare": 27286.0,
-              "taxes": 6214.0,
-              "baggage": "check-in: 30 KG; cabin: 12 KG",
+              "base_fare": 16465.0,
+              "taxes": 2035.0,
+              "baggage": "check-in: 15 kg baggage; cabin: 7 Kg",
               "raw_text": null
             },
             {
@@ -598,10 +586,10 @@
               "arrival_time": "12:45",
               "flight_number": "QP-1110",
               "airline": "Akasa Air",
-              "price": "₹10,069",
+              "price": "₹20,769",
               "currency": "INR",
-              "base_fare": 9011.0,
-              "taxes": 1058.0,
+              "base_fare": 19201.0,
+              "taxes": 1568.0,
               "baggage": "check-in: 15 KG; cabin: 7 Kg",
               "raw_text": null
             },
@@ -610,10 +598,10 @@
               "arrival_time": "21:55",
               "flight_number": "IX-1273,IX-1547",
               "airline": "Air India Express",
-              "price": "₹24,123",
+              "price": "₹22,549",
               "currency": "INR",
-              "base_fare": 21896.0,
-              "taxes": 2227.0,
+              "base_fare": 20396.0,
+              "taxes": 2153.0,
               "baggage": "check-in: 15 KG; cabin: 7 Kg",
               "raw_text": null
             },
@@ -682,10 +670,10 @@
               "arrival_time": "18:35",
               "flight_number": "IX-1812,IX-1800",
               "airline": "Air India Express",
-              "price": "₹19,551",
+              "price": "₹21,879",
               "currency": "INR",
-              "base_fare": 17342.0,
-              "taxes": 2209.0,
+              "base_fare": 19558.0,
+              "taxes": 2321.0,
               "baggage": "check-in: 15 KG; cabin: 7 Kg",
               "raw_text": null
             },
@@ -838,10 +826,10 @@
               "arrival_time": "23:05",
               "flight_number": "IX-1059,IX-1025",
               "airline": "Air India Express",
-              "price": "₹18,603",
+              "price": "₹19,863",
               "currency": "INR",
-              "base_fare": 16438.0,
-              "taxes": 2165.0,
+              "base_fare": 17638.0,
+              "taxes": 2225.0,
               "baggage": "check-in: 15 KG; cabin: 7 Kg",
               "raw_text": null
             },
@@ -994,10 +982,10 @@
               "arrival_time": "16:15",
               "flight_number": "QP-2074",
               "airline": "Akasa Air",
-              "price": "₹6,500",
+              "price": "₹7,017",
               "currency": "INR",
-              "base_fare": 5392.0,
-              "taxes": 1108.0,
+              "base_fare": 5885.0,
+              "taxes": 1132.0,
               "baggage": "check-in: 15 KG; cabin: 7 Kg",
               "raw_text": null
             },
@@ -1162,10 +1150,10 @@
               "arrival_time": "20:00",
               "flight_number": "AI-1780",
               "airline": "Air India",
-              "price": "₹7,473",
+              "price": "₹7,001",
               "currency": "INR",
-              "base_fare": 5943.0,
-              "taxes": 1530.0,
+              "base_fare": 5494.0,
+              "taxes": 1507.0,
               "baggage": "check-in: 15 KG; cabin: 7 Kg",
               "raw_text": null
             },
@@ -1390,10 +1378,10 @@
               "arrival_time": "19:45",
               "flight_number": "QP-1820",
               "airline": "Akasa Air",
-              "price": "₹6,977",
+              "price": "₹7,233",
               "currency": "INR",
-              "base_fare": 6065.0,
-              "taxes": 912.0,
+              "base_fare": 6309.0,
+              "taxes": 924.0,
               "baggage": "check-in: 15 KG; cabin: 7 Kg",
               "raw_text": null
             },
@@ -1402,10 +1390,10 @@
               "arrival_time": "19:45",
               "flight_number": "IX-1038",
               "airline": "Air India Express",
-              "price": "₹8,577",
+              "price": "₹7,318",
               "currency": "INR",
-              "base_fare": 6772.0,
-              "taxes": 1805.0,
+              "base_fare": 5573.0,
+              "taxes": 1745.0,
               "baggage": "check-in: 15 KG; cabin: 7 Kg",
               "raw_text": null
             },
@@ -1906,10 +1894,10 @@
               "arrival_time": "02:15",
               "flight_number": "6E-6479,6E-2058",
               "airline": "IndiGo",
-              "price": "₹8,561",
+              "price": "₹10,022",
               "currency": "INR",
-              "base_fare": 6674.0,
-              "taxes": 1887.0,
+              "base_fare": 8065.0,
+              "taxes": 1957.0,
               "baggage": "check-in: 15 kg baggage; cabin: 7 Kg",
               "raw_text": null
             },
@@ -2062,10 +2050,10 @@
               "arrival_time": "01:50",
               "flight_number": "IX-1235",
               "airline": "Air India Express",
-              "price": "₹6,529",
+              "price": "₹6,688",
               "currency": "INR",
-              "base_fare": 5040.0,
-              "taxes": 1489.0,
+              "base_fare": 5191.0,
+              "taxes": 1497.0,
               "baggage": "check-in: 15 KG; cabin: 7 Kg",
               "raw_text": null
             },
@@ -6241,7 +6229,7 @@
             "via_rows_found": 170,
             "script_version": "via-direct-api-2026-09-19",
             "http_status": 200,
-            "response_bytes": 1016828,
+            "response_bytes": 1016827,
             "response_keys": [
               "isDomestic",
               "onwardJourneys",
@@ -8312,7 +8300,7 @@
             "via_rows_found": 174,
             "script_version": "via-direct-api-2026-09-19",
             "http_status": 200,
-            "response_bytes": 1035027,
+            "response_bytes": 1035026,
             "response_keys": [
               "isDomestic",
               "onwardJourneys",
@@ -10442,7 +10430,7 @@
       "results": {
         "T_plus_1": {
           "url": "https://in.via.com/apiv2/flight/search?&flowType=NODE&ajax=true&jsonData=true",
-          "price": "₹7,505",
+          "price": "₹7,191",
           "flight_number": "AI-2422",
           "departure_time": "01:00",
           "arrival_time": "03:20",
@@ -10450,11 +10438,11 @@
           "html_file": null,
           "analysis": {
             "response_type": "via_json_api",
-            "via_journeys_found": 554,
-            "via_rows_found": 167,
+            "via_journeys_found": 556,
+            "via_rows_found": 168,
             "script_version": "via-direct-api-2026-09-19",
             "http_status": 200,
-            "response_bytes": 1013745,
+            "response_bytes": 1005622,
             "response_keys": [
               "isDomestic",
               "onwardJourneys",
@@ -10472,10 +10460,10 @@
               "arrival_time": "03:20",
               "flight_number": "AI-2422",
               "airline": "Air India",
-              "price": "₹7,505",
+              "price": "₹7,191",
               "currency": "INR",
-              "base_fare": 5943.0,
-              "taxes": 1562.0,
+              "base_fare": 5644.0,
+              "taxes": 1547.0,
               "baggage": "check-in: 15 KG; cabin: 7 Kg",
               "raw_text": null
             },
@@ -10532,10 +10520,10 @@
               "arrival_time": "13:45",
               "flight_number": "IX-1797,IX-1813",
               "airline": "Air India Express",
-              "price": "₹21,996",
+              "price": "₹21,057",
               "currency": "INR",
-              "base_fare": 19639.0,
-              "taxes": 2357.0,
+              "base_fare": 18746.0,
+              "taxes": 2311.0,
               "baggage": "check-in: 15 KG; cabin: 7 Kg",
               "raw_text": null
             },
@@ -10543,18 +10531,6 @@
               "departure_time": "05:20",
               "arrival_time": "10:30",
               "flight_number": "AI-2728,AI-1113",
-              "airline": "Air India",
-              "price": "₹16,830",
-              "currency": "INR",
-              "base_fare": 14355.0,
-              "taxes": 2475.0,
-              "baggage": "check-in: 15 KG; cabin: 7 Kg",
-              "raw_text": null
-            },
-            {
-              "departure_time": "05:20",
-              "arrival_time": "23:45",
-              "flight_number": "AI-2728,AI-1115",
               "airline": "Air India",
               "price": "₹16,830",
               "currency": "INR",
@@ -10579,18 +10555,6 @@
               "departure_time": "05:20",
               "arrival_time": "14:15",
               "flight_number": "AI-2728,AI-422",
-              "airline": "Air India",
-              "price": "₹16,830",
-              "currency": "INR",
-              "base_fare": 14355.0,
-              "taxes": 2475.0,
-              "baggage": "check-in: 15 KG; cabin: 7 Kg",
-              "raw_text": null
-            },
-            {
-              "departure_time": "05:20",
-              "arrival_time": "00:35",
-              "flight_number": "AI-2728,AI-480",
               "airline": "Air India",
               "price": "₹16,830",
               "currency": "INR",
@@ -10628,10 +10592,10 @@
               "arrival_time": "07:40",
               "flight_number": "QP-1111",
               "airline": "Akasa Air",
-              "price": "₹10,882",
+              "price": "₹10,483",
               "currency": "INR",
-              "base_fare": 9754.0,
-              "taxes": 1128.0,
+              "base_fare": 9375.0,
+              "taxes": 1108.0,
               "baggage": "check-in: 15 KG; cabin: 7 Kg",
               "raw_text": null
             },
@@ -10748,10 +10712,10 @@
               "arrival_time": "08:25",
               "flight_number": "QP-2071",
               "airline": "Akasa Air",
-              "price": "₹7,987",
+              "price": "₹8,405",
               "currency": "INR",
-              "base_fare": 6498.0,
-              "taxes": 1489.0,
+              "base_fare": 6896.0,
+              "taxes": 1509.0,
               "baggage": "check-in: 15 KG; cabin: 7 Kg",
               "raw_text": null
             },
@@ -10772,10 +10736,10 @@
               "arrival_time": "08:40",
               "flight_number": "AI-2928",
               "airline": "Air India",
-              "price": "₹17,505",
+              "price": "₹8,340",
               "currency": "INR",
-              "base_fare": 15467.0,
-              "taxes": 2038.0,
+              "base_fare": 6739.0,
+              "taxes": 1601.0,
               "baggage": "check-in: 15 KG; cabin: 7 Kg",
               "raw_text": null
             },
@@ -10784,11 +10748,35 @@
               "arrival_time": "08:40",
               "flight_number": "6E-5197",
               "airline": "IndiGo",
-              "price": "₹7,927",
+              "price": "₹7,559",
               "currency": "INR",
-              "base_fare": 6191.0,
-              "taxes": 1736.0,
+              "base_fare": 5841.0,
+              "taxes": 1718.0,
               "baggage": "check-in: 15 kg baggage; cabin: 7 Kg",
+              "raw_text": null
+            },
+            {
+              "departure_time": "06:40",
+              "arrival_time": "21:55",
+              "flight_number": "AI-2785,AI-2538",
+              "airline": "Air India",
+              "price": "₹15,382",
+              "currency": "INR",
+              "base_fare": 13126.0,
+              "taxes": 2256.0,
+              "baggage": "check-in: 15 KG; cabin: 7 Kg",
+              "raw_text": null
+            },
+            {
+              "departure_time": "06:40",
+              "arrival_time": "12:00",
+              "flight_number": "AI-2785,AI-886",
+              "airline": "Air India",
+              "price": "₹15,339",
+              "currency": "INR",
+              "base_fare": 13085.0,
+              "taxes": 2254.0,
+              "baggage": "check-in: 15 KG; cabin: 7 Kg",
               "raw_text": null
             },
             {
@@ -10961,6 +10949,18 @@
             },
             {
               "departure_time": "09:55",
+              "arrival_time": "10:15",
+              "flight_number": "AI-2847,AI-1117",
+              "airline": "Air India",
+              "price": "₹15,728",
+              "currency": "INR",
+              "base_fare": 13456.0,
+              "taxes": 2272.0,
+              "baggage": "check-in: 15 KG; cabin: 7 Kg",
+              "raw_text": null
+            },
+            {
+              "departure_time": "09:55",
               "arrival_time": "21:55",
               "flight_number": "AI-2847,AI-1121",
               "airline": "Air India",
@@ -10980,6 +10980,18 @@
               "currency": "INR",
               "base_fare": 12075.0,
               "taxes": 2203.0,
+              "baggage": "check-in: 15 KG; cabin: 7 Kg",
+              "raw_text": null
+            },
+            {
+              "departure_time": "09:55",
+              "arrival_time": "15:35",
+              "flight_number": "AI-2847,AI-2716",
+              "airline": "Air India",
+              "price": "₹15,728",
+              "currency": "INR",
+              "base_fare": 13456.0,
+              "taxes": 2272.0,
               "baggage": "check-in: 15 KG; cabin: 7 Kg",
               "raw_text": null
             },
@@ -11056,54 +11068,6 @@
               "raw_text": null
             },
             {
-              "departure_time": "10:10",
-              "arrival_time": "10:30",
-              "flight_number": "AI-2997,AI-1113",
-              "airline": "Air India",
-              "price": "₹17,124",
-              "currency": "INR",
-              "base_fare": 14635.0,
-              "taxes": 2489.0,
-              "baggage": "check-in: 15 KG; cabin: 7 Kg",
-              "raw_text": null
-            },
-            {
-              "departure_time": "10:10",
-              "arrival_time": "23:45",
-              "flight_number": "AI-2997,AI-1115",
-              "airline": "Air India",
-              "price": "₹17,124",
-              "currency": "INR",
-              "base_fare": 14635.0,
-              "taxes": 2489.0,
-              "baggage": "check-in: 15 KG; cabin: 7 Kg",
-              "raw_text": null
-            },
-            {
-              "departure_time": "10:10",
-              "arrival_time": "08:20",
-              "flight_number": "AI-2997,AI-1884",
-              "airline": "Air India",
-              "price": "₹17,124",
-              "currency": "INR",
-              "base_fare": 14635.0,
-              "taxes": 2489.0,
-              "baggage": "check-in: 15 KG; cabin: 7 Kg",
-              "raw_text": null
-            },
-            {
-              "departure_time": "10:10",
-              "arrival_time": "00:35",
-              "flight_number": "AI-2997,AI-480",
-              "airline": "Air India",
-              "price": "₹17,124",
-              "currency": "INR",
-              "base_fare": 14635.0,
-              "taxes": 2489.0,
-              "baggage": "check-in: 15 KG; cabin: 7 Kg",
-              "raw_text": null
-            },
-            {
               "departure_time": "10:15",
               "arrival_time": "15:25",
               "flight_number": "6E-5318,6E-6031",
@@ -11120,10 +11084,10 @@
               "arrival_time": "12:45",
               "flight_number": "QP-1834",
               "airline": "Akasa Air",
-              "price": "₹7,670",
+              "price": "₹6,883",
               "currency": "INR",
-              "base_fare": 6696.0,
-              "taxes": 974.0,
+              "base_fare": 5945.0,
+              "taxes": 938.0,
               "baggage": "check-in: 15 KG; cabin: 7 Kg",
               "raw_text": null
             },
@@ -11396,10 +11360,10 @@
               "arrival_time": "21:55",
               "flight_number": "AI-2503,AI-1121",
               "airline": "Air India",
-              "price": "₹14,168",
+              "price": "₹15,601",
               "currency": "INR",
-              "base_fare": 11970.0,
-              "taxes": 2198.0,
+              "base_fare": 13335.0,
+              "taxes": 2266.0,
               "baggage": "check-in: 15 KG; cabin: 7 Kg",
               "raw_text": null
             },
@@ -11408,10 +11372,10 @@
               "arrival_time": "00:45",
               "flight_number": "AI-2503,AI-2546",
               "airline": "Air India",
-              "price": "₹14,168",
+              "price": "₹15,601",
               "currency": "INR",
-              "base_fare": 11970.0,
-              "taxes": 2198.0,
+              "base_fare": 13335.0,
+              "taxes": 2266.0,
               "baggage": "check-in: 15 KG; cabin: 7 Kg",
               "raw_text": null
             },
@@ -11420,10 +11384,10 @@
               "arrival_time": "08:15",
               "flight_number": "AI-2503,AI-2906",
               "airline": "Air India",
-              "price": "₹14,168",
+              "price": "₹15,601",
               "currency": "INR",
-              "base_fare": 11970.0,
-              "taxes": 2198.0,
+              "base_fare": 13335.0,
+              "taxes": 2266.0,
               "baggage": "check-in: 15 KG; cabin: 7 Kg",
               "raw_text": null
             },
@@ -11432,10 +11396,10 @@
               "arrival_time": "20:40",
               "flight_number": "AI-2503,AI-2938",
               "airline": "Air India",
-              "price": "₹14,308",
+              "price": "₹15,753",
               "currency": "INR",
-              "base_fare": 12103.0,
-              "taxes": 2205.0,
+              "base_fare": 13480.0,
+              "taxes": 2273.0,
               "baggage": "check-in: 15 KG; cabin: 7 Kg",
               "raw_text": null
             },
@@ -11444,10 +11408,10 @@
               "arrival_time": "23:40",
               "flight_number": "AI-2503,AI-532",
               "airline": "Air India",
-              "price": "₹14,168",
+              "price": "₹15,601",
               "currency": "INR",
-              "base_fare": 11970.0,
-              "taxes": 2198.0,
+              "base_fare": 13335.0,
+              "taxes": 2266.0,
               "baggage": "check-in: 15 KG; cabin: 7 Kg",
               "raw_text": null
             },
@@ -11456,10 +11420,10 @@
               "arrival_time": "17:45",
               "flight_number": "AI-2503,AI-882",
               "airline": "Air India",
-              "price": "₹14,168",
+              "price": "₹15,601",
               "currency": "INR",
-              "base_fare": 11970.0,
-              "taxes": 2198.0,
+              "base_fare": 13335.0,
+              "taxes": 2266.0,
               "baggage": "check-in: 15 KG; cabin: 7 Kg",
               "raw_text": null
             },
@@ -11480,10 +11444,10 @@
               "arrival_time": "15:15",
               "flight_number": "AI-2677",
               "airline": "Air India",
-              "price": "₹10,420",
+              "price": "₹9,185",
               "currency": "INR",
-              "base_fare": 8720.0,
-              "taxes": 1700.0,
+              "base_fare": 7543.0,
+              "taxes": 1642.0,
               "baggage": "check-in: 15 KG; cabin: 7 Kg",
               "raw_text": null
             },
@@ -11692,6 +11656,54 @@
               "raw_text": null
             },
             {
+              "departure_time": "15:30",
+              "arrival_time": "21:55",
+              "flight_number": "AI-2915,AI-1121",
+              "airline": "Air India",
+              "price": "₹15,601",
+              "currency": "INR",
+              "base_fare": 13335.0,
+              "taxes": 2266.0,
+              "baggage": "check-in: 15 KG; cabin: 7 Kg",
+              "raw_text": null
+            },
+            {
+              "departure_time": "15:30",
+              "arrival_time": "00:45",
+              "flight_number": "AI-2915,AI-2546",
+              "airline": "Air India",
+              "price": "₹15,601",
+              "currency": "INR",
+              "base_fare": 13335.0,
+              "taxes": 2266.0,
+              "baggage": "check-in: 15 KG; cabin: 7 Kg",
+              "raw_text": null
+            },
+            {
+              "departure_time": "15:30",
+              "arrival_time": "20:40",
+              "flight_number": "AI-2915,AI-2938",
+              "airline": "Air India",
+              "price": "₹15,753",
+              "currency": "INR",
+              "base_fare": 13480.0,
+              "taxes": 2273.0,
+              "baggage": "check-in: 15 KG; cabin: 7 Kg",
+              "raw_text": null
+            },
+            {
+              "departure_time": "15:30",
+              "arrival_time": "23:40",
+              "flight_number": "AI-2915,AI-532",
+              "airline": "Air India",
+              "price": "₹15,601",
+              "currency": "INR",
+              "base_fare": 13335.0,
+              "taxes": 2266.0,
+              "baggage": "check-in: 15 KG; cabin: 7 Kg",
+              "raw_text": null
+            },
+            {
               "departure_time": "16:00",
               "arrival_time": "18:15",
               "flight_number": "6E-313",
@@ -11701,6 +11713,30 @@
               "base_fare": 5028.0,
               "taxes": 1495.0,
               "baggage": "check-in: 15 kg baggage; cabin: 7 Kg",
+              "raw_text": null
+            },
+            {
+              "departure_time": "16:00",
+              "arrival_time": "21:55",
+              "flight_number": "AI-2730,AI-2538",
+              "airline": "Air India",
+              "price": "₹15,382",
+              "currency": "INR",
+              "base_fare": 13126.0,
+              "taxes": 2256.0,
+              "baggage": "check-in: 15 KG; cabin: 7 Kg",
+              "raw_text": null
+            },
+            {
+              "departure_time": "16:00",
+              "arrival_time": "12:00",
+              "flight_number": "AI-2730,AI-886",
+              "airline": "Air India",
+              "price": "₹15,224",
+              "currency": "INR",
+              "base_fare": 12976.0,
+              "taxes": 2248.0,
+              "baggage": "check-in: 15 KG; cabin: 7 Kg",
               "raw_text": null
             },
             {
@@ -11792,10 +11828,10 @@
               "arrival_time": "19:05",
               "flight_number": "IX-1671",
               "airline": "Air India Express",
-              "price": "₹7,545",
+              "price": "₹9,134",
               "currency": "INR",
-              "base_fare": 5976.0,
-              "taxes": 1569.0,
+              "base_fare": 7491.0,
+              "taxes": 1643.0,
               "baggage": "check-in: 15 KG; cabin: 7 Kg",
               "raw_text": null
             },
@@ -11888,10 +11924,10 @@
               "arrival_time": "00:40",
               "flight_number": "IX-1164,IX-1004",
               "airline": "Air India Express",
-              "price": "₹20,027",
+              "price": "₹17,717",
               "currency": "INR",
-              "base_fare": 17764.0,
-              "taxes": 2263.0,
+              "base_fare": 15564.0,
+              "taxes": 2153.0,
               "baggage": "check-in: 15 KG; cabin: 7 Kg",
               "raw_text": null
             },
@@ -11929,6 +11965,18 @@
               "base_fare": 4789.0,
               "taxes": 2087.0,
               "baggage": "check-in: 15 kg baggage; cabin: 7 Kg",
+              "raw_text": null
+            },
+            {
+              "departure_time": "18:25",
+              "arrival_time": "10:15",
+              "flight_number": "AI-2493,AI-1117",
+              "airline": "Air India",
+              "price": "₹15,601",
+              "currency": "INR",
+              "base_fare": 13335.0,
+              "taxes": 2266.0,
+              "baggage": "check-in: 15 KG; cabin: 7 Kg",
               "raw_text": null
             },
             {
@@ -12064,6 +12112,18 @@
               "raw_text": null
             },
             {
+              "departure_time": "19:20",
+              "arrival_time": "17:45",
+              "flight_number": "AI-2505,AI-9723",
+              "airline": "Air India",
+              "price": "₹16,255",
+              "currency": "INR",
+              "base_fare": 13607.0,
+              "taxes": 2648.0,
+              "baggage": "check-in: 15 KG; cabin: 7 Kg",
+              "raw_text": null
+            },
+            {
               "departure_time": "19:30",
               "arrival_time": "21:45",
               "flight_number": "AI-2408",
@@ -12097,6 +12157,18 @@
               "base_fare": 5028.0,
               "taxes": 1495.0,
               "baggage": "check-in: 15 kg baggage; cabin: 7 Kg",
+              "raw_text": null
+            },
+            {
+              "departure_time": "19:55",
+              "arrival_time": "20:35",
+              "flight_number": "AI-2583,AI-466",
+              "airline": "Air India",
+              "price": "₹16,011",
+              "currency": "INR",
+              "base_fare": 13625.0,
+              "taxes": 2386.0,
+              "baggage": "check-in: 15 KG; cabin: 7 Kg",
               "raw_text": null
             },
             {
@@ -12152,10 +12224,10 @@
               "arrival_time": "22:35",
               "flight_number": "IX-2153",
               "airline": "Air India Express",
-              "price": "₹7,558",
+              "price": "₹7,260",
               "currency": "INR",
-              "base_fare": 5490.0,
-              "taxes": 2068.0,
+              "base_fare": 5206.0,
+              "taxes": 2054.0,
               "baggage": "check-in: 15 KG; cabin: 7 Kg",
               "raw_text": null
             },
@@ -12208,30 +12280,6 @@
               "raw_text": null
             },
             {
-              "departure_time": "21:05",
-              "arrival_time": "15:30",
-              "flight_number": "AI-2643,AI-1874",
-              "airline": "Air India",
-              "price": "₹17,169",
-              "currency": "INR",
-              "base_fare": 14228.0,
-              "taxes": 2941.0,
-              "baggage": "check-in: 15 KG; cabin: 7 Kg",
-              "raw_text": null
-            },
-            {
-              "departure_time": "21:05",
-              "arrival_time": "13:05",
-              "flight_number": "AI-2643,AI-2704",
-              "airline": "Air India",
-              "price": "₹17,020",
-              "currency": "INR",
-              "base_fare": 14086.0,
-              "taxes": 2934.0,
-              "baggage": "check-in: 15 KG; cabin: 7 Kg",
-              "raw_text": null
-            },
-            {
               "departure_time": "21:10",
               "arrival_time": "02:05",
               "flight_number": "6E-5056,6E-6025",
@@ -12248,10 +12296,10 @@
               "arrival_time": "04:10",
               "flight_number": "IX-1640,IX-5976",
               "airline": "Air India Express",
-              "price": "₹15,079",
+              "price": "₹16,577",
               "currency": "INR",
-              "base_fare": 12553.0,
-              "taxes": 2526.0,
+              "base_fare": 13979.0,
+              "taxes": 2598.0,
               "baggage": "check-in: 15 KG; cabin: 7 Kg",
               "raw_text": null
             },
@@ -12388,62 +12436,14 @@
               "raw_text": null
             },
             {
-              "departure_time": "22:55",
-              "arrival_time": "16:55",
-              "flight_number": "AI-639,AI-2468",
-              "airline": "Air India",
-              "price": "₹16,707",
-              "currency": "INR",
-              "base_fare": 13788.0,
-              "taxes": 2919.0,
-              "baggage": "check-in: 15 KG; cabin: 7 Kg",
-              "raw_text": null
-            },
-            {
-              "departure_time": "22:55",
-              "arrival_time": "19:20",
-              "flight_number": "AI-639,AI-2484",
-              "airline": "Air India",
-              "price": "₹16,707",
-              "currency": "INR",
-              "base_fare": 13788.0,
-              "taxes": 2919.0,
-              "baggage": "check-in: 15 KG; cabin: 7 Kg",
-              "raw_text": null
-            },
-            {
-              "departure_time": "22:55",
-              "arrival_time": "00:40",
-              "flight_number": "AI-639,AI-2838",
-              "airline": "Air India",
-              "price": "₹16,707",
-              "currency": "INR",
-              "base_fare": 13788.0,
-              "taxes": 2919.0,
-              "baggage": "check-in: 15 KG; cabin: 7 Kg",
-              "raw_text": null
-            },
-            {
-              "departure_time": "22:55",
-              "arrival_time": "23:00",
-              "flight_number": "AI-639,AI-538",
-              "airline": "Air India",
-              "price": "₹16,707",
-              "currency": "INR",
-              "base_fare": 13788.0,
-              "taxes": 2919.0,
-              "baggage": "check-in: 15 KG; cabin: 7 Kg",
-              "raw_text": null
-            },
-            {
               "departure_time": "23:25",
               "arrival_time": "01:50",
               "flight_number": "SG-164",
               "airline": "SpiceJet",
-              "price": "₹6,735",
+              "price": "₹6,444",
               "currency": "INR",
-              "base_fare": 5179.0,
-              "taxes": 1556.0,
+              "base_fare": 4900.0,
+              "taxes": 1544.0,
               "baggage": "check-in: 15 kg baggage; cabin: 7 Kg",
               "raw_text": null
             },
@@ -14512,7 +14512,7 @@
             "via_rows_found": 169,
             "script_version": "via-direct-api-2026-09-19",
             "http_status": 200,
-            "response_bytes": 1029014,
+            "response_bytes": 1029015,
             "response_keys": [
               "isDomestic",
               "onwardJourneys",
@@ -16571,7 +16571,7 @@
             "via_rows_found": 172,
             "script_version": "via-direct-api-2026-09-19",
             "http_status": 200,
-            "response_bytes": 1034472,
+            "response_bytes": 1034471,
             "response_keys": [
               "isDomestic",
               "onwardJourneys",
@@ -20768,11 +20768,11 @@
           "html_file": null,
           "analysis": {
             "response_type": "via_json_api",
-            "via_journeys_found": 518,
+            "via_journeys_found": 517,
             "via_rows_found": 158,
             "script_version": "via-direct-api-2026-09-19",
             "http_status": 200,
-            "response_bytes": 1013266,
+            "response_bytes": 999188,
             "response_keys": [
               "isDomestic",
               "onwardJourneys",
@@ -20826,10 +20826,10 @@
               "arrival_time": "01:40",
               "flight_number": "AI-2469,AI-9811",
               "airline": "Air India",
-              "price": "₹11,441",
+              "price": "₹11,223",
               "currency": "INR",
-              "base_fare": 9097.0,
-              "taxes": 2344.0,
+              "base_fare": 8889.0,
+              "taxes": 2334.0,
               "baggage": "check-in: 15 KG; cabin: 7 Kg",
               "raw_text": null
             },
@@ -20862,10 +20862,46 @@
               "arrival_time": "12:05",
               "flight_number": "IX-1165,IX-1503",
               "airline": "Air India Express",
-              "price": "₹10,639",
+              "price": "₹9,799",
               "currency": "INR",
-              "base_fare": 8597.0,
-              "taxes": 2042.0,
+              "base_fare": 7797.0,
+              "taxes": 2002.0,
+              "baggage": "check-in: 15 KG; cabin: 7 Kg",
+              "raw_text": null
+            },
+            {
+              "departure_time": "05:55",
+              "arrival_time": "18:30",
+              "flight_number": "AI-2499,AI-9474",
+              "airline": "Air India",
+              "price": "₹14,544",
+              "currency": "INR",
+              "base_fare": 11952.0,
+              "taxes": 2592.0,
+              "baggage": "check-in: 15 KG; cabin: 7 Kg",
+              "raw_text": null
+            },
+            {
+              "departure_time": "05:55",
+              "arrival_time": "01:05",
+              "flight_number": "AI-2499,AI-9546",
+              "airline": "Air India",
+              "price": "₹15,417",
+              "currency": "INR",
+              "base_fare": 12783.0,
+              "taxes": 2634.0,
+              "baggage": "check-in: 15 KG; cabin: 7 Kg",
+              "raw_text": null
+            },
+            {
+              "departure_time": "05:55",
+              "arrival_time": "12:05",
+              "flight_number": "AI-2499,AI-9748",
+              "airline": "Air India",
+              "price": "₹15,069",
+              "currency": "INR",
+              "base_fare": 12452.0,
+              "taxes": 2617.0,
               "baggage": "check-in: 15 KG; cabin: 7 Kg",
               "raw_text": null
             },
@@ -20922,10 +20958,10 @@
               "arrival_time": "15:00",
               "flight_number": "IX-1811,IX-1896",
               "airline": "Air India Express",
-              "price": "₹15,263",
+              "price": "₹19,913",
               "currency": "INR",
-              "base_fare": 13001.0,
-              "taxes": 2262.0,
+              "base_fare": 17431.0,
+              "taxes": 2482.0,
               "baggage": "check-in: 15 KG; cabin: 7 Kg",
               "raw_text": null
             },
@@ -20958,10 +20994,10 @@
               "arrival_time": "14:15",
               "flight_number": "IX-1783,IX-1216",
               "airline": "Air India Express",
-              "price": "₹25,892",
+              "price": "₹24,212",
               "currency": "INR",
-              "base_fare": 23124.0,
-              "taxes": 2768.0,
+              "base_fare": 21524.0,
+              "taxes": 2688.0,
               "baggage": "check-in: 15 KG; cabin: 7 Kg",
               "raw_text": null
             },
@@ -21006,10 +21042,10 @@
               "arrival_time": "15:25",
               "flight_number": "IX-1001,IX-2963",
               "airline": "Air India Express",
-              "price": "₹27,696",
+              "price": "₹30,986",
               "currency": "INR",
-              "base_fare": 25042.0,
-              "taxes": 2654.0,
+              "base_fare": 28176.0,
+              "taxes": 2810.0,
               "baggage": "check-in: 15 KG; cabin: 7 Kg",
               "raw_text": null
             },
@@ -21078,10 +21114,10 @@
               "arrival_time": "15:45",
               "flight_number": "6E-2277,6E-633",
               "airline": "IndiGo",
-              "price": "₹12,699",
+              "price": "₹10,990",
               "currency": "INR",
-              "base_fare": 10359.0,
-              "taxes": 2340.0,
+              "base_fare": 8731.0,
+              "taxes": 2259.0,
               "baggage": "check-in: 15 kg baggage; cabin: 7 Kg",
               "raw_text": null
             },
@@ -21162,10 +21198,10 @@
               "arrival_time": "18:50",
               "flight_number": "IX-1812,IX-2115",
               "airline": "Air India Express",
-              "price": "₹15,740",
+              "price": "₹18,227",
               "currency": "INR",
-              "base_fare": 13456.0,
-              "taxes": 2284.0,
+              "base_fare": 15825.0,
+              "taxes": 2402.0,
               "baggage": "check-in: 15 KG; cabin: 7 Kg",
               "raw_text": null
             },
@@ -21234,10 +21270,10 @@
               "arrival_time": "01:40",
               "flight_number": "AI-1735,AI-9811",
               "airline": "Air India",
-              "price": "₹12,190",
+              "price": "₹12,321",
               "currency": "INR",
-              "base_fare": 9810.0,
-              "taxes": 2380.0,
+              "base_fare": 9935.0,
+              "taxes": 2386.0,
               "baggage": "check-in: 15 KG; cabin: 7 Kg",
               "raw_text": null
             },
@@ -21270,10 +21306,10 @@
               "arrival_time": "19:05",
               "flight_number": "IX-1090,IX-1368",
               "airline": "Air India Express",
-              "price": "₹23,790",
+              "price": "₹23,633",
               "currency": "INR",
-              "base_fare": 21122.0,
-              "taxes": 2668.0,
+              "base_fare": 20973.0,
+              "taxes": 2660.0,
               "baggage": "check-in: 15 KG; cabin: 7 Kg",
               "raw_text": null
             },
@@ -21282,10 +21318,10 @@
               "arrival_time": "16:10",
               "flight_number": "6E-176",
               "airline": "IndiGo",
-              "price": "₹13,383",
+              "price": "₹12,792",
               "currency": "INR",
-              "base_fare": 11335.0,
-              "taxes": 2048.0,
+              "base_fare": 10772.0,
+              "taxes": 2020.0,
               "baggage": "check-in: 15 kg baggage; cabin: 7 Kg",
               "raw_text": null
             },
@@ -21354,10 +21390,10 @@
               "arrival_time": "01:05",
               "flight_number": "AI-1717,AI-9546",
               "airline": "Air India",
-              "price": "₹10,935",
+              "price": "₹10,725",
               "currency": "INR",
-              "base_fare": 8515.0,
-              "taxes": 2420.0,
+              "base_fare": 8315.0,
+              "taxes": 2410.0,
               "baggage": "check-in: 15 KG; cabin: 7 Kg",
               "raw_text": null
             },
@@ -21450,10 +21486,10 @@
               "arrival_time": "23:35",
               "flight_number": "AI-1757,AI-9411",
               "airline": "Air India",
-              "price": "₹12,230",
+              "price": "₹12,830",
               "currency": "INR",
-              "base_fare": 9768.0,
-              "taxes": 2462.0,
+              "base_fare": 10340.0,
+              "taxes": 2490.0,
               "baggage": "check-in: 15 KG; cabin: 7 Kg",
               "raw_text": null
             },
@@ -21558,22 +21594,10 @@
               "arrival_time": "18:45",
               "flight_number": "AI-2664",
               "airline": "Air India",
-              "price": "₹12,343",
+              "price": "₹11,727",
               "currency": "INR",
-              "base_fare": 10325.0,
-              "taxes": 2018.0,
-              "baggage": "check-in: 15 KG; cabin: 7 Kg",
-              "raw_text": null
-            },
-            {
-              "departure_time": "16:00",
-              "arrival_time": "14:05",
-              "flight_number": "AI-1777,AI-2632",
-              "airline": "Air India",
-              "price": "₹15,523",
-              "currency": "INR",
-              "base_fare": 12984.0,
-              "taxes": 2539.0,
+              "base_fare": 9739.0,
+              "taxes": 1988.0,
               "baggage": "check-in: 15 KG; cabin: 7 Kg",
               "raw_text": null
             },
@@ -21642,10 +21666,10 @@
               "arrival_time": "01:40",
               "flight_number": "AI-2971,AI-9811",
               "airline": "Air India",
-              "price": "₹11,580",
+              "price": "₹11,711",
               "currency": "INR",
-              "base_fare": 9229.0,
-              "taxes": 2351.0,
+              "base_fare": 9354.0,
+              "taxes": 2357.0,
               "baggage": "check-in: 15 KG; cabin: 7 Kg",
               "raw_text": null
             },
@@ -21750,10 +21774,10 @@
               "arrival_time": "19:40",
               "flight_number": "QP-1822",
               "airline": "Akasa Air",
-              "price": "₹11,436",
+              "price": "₹11,872",
               "currency": "INR",
-              "base_fare": 10257.0,
-              "taxes": 1179.0,
+              "base_fare": 10671.0,
+              "taxes": 1201.0,
               "baggage": "check-in: 15 KG; cabin: 7 Kg",
               "raw_text": null
             },
@@ -21762,10 +21786,10 @@
               "arrival_time": "19:55",
               "flight_number": "6E-837",
               "airline": "IndiGo",
-              "price": "₹13,383",
+              "price": "₹12,792",
               "currency": "INR",
-              "base_fare": 11335.0,
-              "taxes": 2048.0,
+              "base_fare": 10772.0,
+              "taxes": 2020.0,
               "baggage": "check-in: 15 kg baggage; cabin: 7 Kg",
               "raw_text": null
             },
@@ -21858,10 +21882,10 @@
               "arrival_time": "23:00",
               "flight_number": "IX-1038,IX-1640",
               "airline": "Air India Express",
-              "price": "₹14,966",
+              "price": "₹14,903",
               "currency": "INR",
-              "base_fare": 12718.0,
-              "taxes": 2248.0,
+              "base_fare": 12659.0,
+              "taxes": 2244.0,
               "baggage": "check-in: 15 KG; cabin: 7 Kg",
               "raw_text": null
             },
@@ -21882,10 +21906,10 @@
               "arrival_time": "01:40",
               "flight_number": "AI-2547,AI-9811",
               "airline": "Air India",
-              "price": "₹10,686",
+              "price": "₹10,818",
               "currency": "INR",
-              "base_fare": 8378.0,
-              "taxes": 2308.0,
+              "base_fare": 8503.0,
+              "taxes": 2315.0,
               "baggage": "check-in: 15 KG; cabin: 7 Kg",
               "raw_text": null
             },
@@ -22074,10 +22098,10 @@
               "arrival_time": "01:05",
               "flight_number": "AI-1710,AI-9546",
               "airline": "Air India",
-              "price": "₹10,505",
+              "price": "₹10,295",
               "currency": "INR",
-              "base_fare": 8105.0,
-              "taxes": 2400.0,
+              "base_fare": 7905.0,
+              "taxes": 2390.0,
               "baggage": "check-in: 15 KG; cabin: 7 Kg",
               "raw_text": null
             },
@@ -22146,10 +22170,10 @@
               "arrival_time": "01:40",
               "flight_number": "AI-1730,AI-9811",
               "airline": "Air India",
-              "price": "₹10,686",
+              "price": "₹10,818",
               "currency": "INR",
-              "base_fare": 8378.0,
-              "taxes": 2308.0,
+              "base_fare": 8503.0,
+              "taxes": 2315.0,
               "baggage": "check-in: 15 KG; cabin: 7 Kg",
               "raw_text": null
             },
@@ -22290,10 +22314,10 @@
               "arrival_time": "23:10",
               "flight_number": "QP-1824",
               "airline": "Akasa Air",
-              "price": "₹10,421",
+              "price": "₹9,328",
               "currency": "INR",
-              "base_fare": 9290.0,
-              "taxes": 1131.0,
+              "base_fare": 8249.0,
+              "taxes": 1079.0,
               "baggage": "check-in: 15 KG; cabin: 7 Kg",
               "raw_text": null
             },
@@ -22326,10 +22350,10 @@
               "arrival_time": "11:15",
               "flight_number": "AI-2545,AI-9779",
               "airline": "Air India",
-              "price": "₹15,568",
+              "price": "₹15,186",
               "currency": "INR",
-              "base_fare": 13027.0,
-              "taxes": 2541.0,
+              "base_fare": 12663.0,
+              "taxes": 2523.0,
               "baggage": "check-in: 15 KG; cabin: 7 Kg",
               "raw_text": null
             },
@@ -22386,10 +22410,10 @@
               "arrival_time": "01:40",
               "flight_number": "AI-2973,AI-9811",
               "airline": "Air India",
-              "price": "₹10,686",
+              "price": "₹10,818",
               "currency": "INR",
-              "base_fare": 8378.0,
-              "taxes": 2308.0,
+              "base_fare": 8503.0,
+              "taxes": 2315.0,
               "baggage": "check-in: 15 KG; cabin: 7 Kg",
               "raw_text": null
             },
@@ -22457,18 +22481,6 @@
               "departure_time": "21:30",
               "arrival_time": "04:10",
               "flight_number": "AI-2433,AI-2812",
-              "airline": "Air India",
-              "price": "₹15,523",
-              "currency": "INR",
-              "base_fare": 12984.0,
-              "taxes": 2539.0,
-              "baggage": "check-in: 15 KG; cabin: 7 Kg",
-              "raw_text": null
-            },
-            {
-              "departure_time": "21:30",
-              "arrival_time": "10:05",
-              "flight_number": "AI-2433,AI-2851",
               "airline": "Air India",
               "price": "₹15,523",
               "currency": "INR",
@@ -22602,10 +22614,10 @@
               "arrival_time": "11:15",
               "flight_number": "AI-2909,AI-9779",
               "airline": "Air India",
-              "price": "₹13,709",
+              "price": "₹14,346",
               "currency": "INR",
-              "base_fare": 11257.0,
-              "taxes": 2452.0,
+              "base_fare": 11863.0,
+              "taxes": 2483.0,
               "baggage": "check-in: 15 KG; cabin: 7 Kg",
               "raw_text": null
             },
@@ -22618,18 +22630,6 @@
               "currency": "INR",
               "base_fare": 7774.0,
               "taxes": 1055.0,
-              "baggage": "check-in: 15 KG; cabin: 7 Kg",
-              "raw_text": null
-            },
-            {
-              "departure_time": "23:00",
-              "arrival_time": "10:05",
-              "flight_number": "AI-2439,AI-2851",
-              "airline": "Air India",
-              "price": "₹15,523",
-              "currency": "INR",
-              "base_fare": 12984.0,
-              "taxes": 2539.0,
               "baggage": "check-in: 15 KG; cabin: 7 Kg",
               "raw_text": null
             },
@@ -22699,7 +22699,7 @@
             "via_rows_found": 157,
             "script_version": "via-direct-api-2026-09-19",
             "http_status": 200,
-            "response_bytes": 1021550,
+            "response_bytes": 1021549,
             "response_keys": [
               "isDomestic",
               "onwardJourneys",
@@ -24614,7 +24614,7 @@
             "via_rows_found": 157,
             "script_version": "via-direct-api-2026-09-19",
             "http_status": 200,
-            "response_bytes": 1015923,
+            "response_bytes": 1015922,
             "response_keys": [
               "isDomestic",
               "onwardJourneys",
@@ -26529,7 +26529,7 @@
             "via_rows_found": 163,
             "script_version": "via-direct-api-2026-09-19",
             "http_status": 200,
-            "response_bytes": 1036274,
+            "response_bytes": 1036273,
             "response_keys": [
               "isDomestic",
               "onwardJourneys",
@@ -30682,7 +30682,7 @@
             "via_rows_found": 153,
             "script_version": "via-direct-api-2026-09-19",
             "http_status": 200,
-            "response_bytes": 990777,
+            "response_bytes": 990778,
             "response_keys": [
               "isDomestic",
               "onwardJourneys",
@@ -38330,7 +38330,7 @@
             "via_rows_found": 177,
             "script_version": "via-direct-api-2026-09-19",
             "http_status": 200,
-            "response_bytes": 1095298,
+            "response_bytes": 1100337,
             "response_keys": [
               "isDomestic",
               "onwardJourneys",
@@ -42399,7 +42399,7 @@
             "via_rows_found": 155,
             "script_version": "via-direct-api-2026-09-19",
             "http_status": 200,
-            "response_bytes": 995280,
+            "response_bytes": 995279,
             "response_keys": [
               "isDomestic",
               "onwardJourneys",
@@ -48048,7 +48048,7 @@
             "via_rows_found": 160,
             "script_version": "via-direct-api-2026-09-19",
             "http_status": 200,
-            "response_bytes": 1022701,
+            "response_bytes": 1026817,
             "response_keys": [
               "isDomestic",
               "onwardJourneys",
@@ -50022,7 +50022,7 @@
             "via_rows_found": 150,
             "script_version": "via-direct-api-2026-09-19",
             "http_status": 200,
-            "response_bytes": 954849,
+            "response_bytes": 971270,
             "response_keys": [
               "isDomestic",
               "onwardJourneys",
@@ -51853,7 +51853,7 @@
             "via_rows_found": 154,
             "script_version": "via-direct-api-2026-09-19",
             "http_status": 200,
-            "response_bytes": 988045,
+            "response_bytes": 1005027,
             "response_keys": [
               "isDomestic",
               "onwardJourneys",
@@ -53732,7 +53732,7 @@
             "via_rows_found": 152,
             "script_version": "via-direct-api-2026-09-19",
             "http_status": 200,
-            "response_bytes": 971925,
+            "response_bytes": 975398,
             "response_keys": [
               "isDomestic",
               "onwardJourneys",
@@ -55587,7 +55587,7 @@
             "via_rows_found": 158,
             "script_version": "via-direct-api-2026-09-19",
             "http_status": 200,
-            "response_bytes": 1008749,
+            "response_bytes": 1013173,
             "response_keys": [
               "isDomestic",
               "onwardJourneys",
@@ -57514,7 +57514,7 @@
             "via_rows_found": 159,
             "script_version": "via-direct-api-2026-09-19",
             "http_status": 200,
-            "response_bytes": 1054152,
+            "response_bytes": 1058687,
             "response_keys": [
               "isDomestic",
               "onwardJourneys",
@@ -59476,7 +59476,7 @@
             "via_rows_found": 142,
             "script_version": "via-direct-api-2026-09-19",
             "http_status": 200,
-            "response_bytes": 912669,
+            "response_bytes": 928335,
             "response_keys": [
               "isDomestic",
               "onwardJourneys",
@@ -61211,7 +61211,7 @@
             "via_rows_found": 141,
             "script_version": "via-direct-api-2026-09-19",
             "http_status": 200,
-            "response_bytes": 898795,
+            "response_bytes": 914041,
             "response_keys": [
               "isDomestic",
               "onwardJourneys",
@@ -62934,7 +62934,7 @@
             "via_rows_found": 146,
             "script_version": "via-direct-api-2026-09-19",
             "http_status": 200,
-            "response_bytes": 978674,
+            "response_bytes": 981978,
             "response_keys": [
               "isDomestic",
               "onwardJourneys",
@@ -64717,7 +64717,7 @@
             "via_rows_found": 143,
             "script_version": "via-direct-api-2026-09-19",
             "http_status": 200,
-            "response_bytes": 994920,
+            "response_bytes": 998223,
             "response_keys": [
               "isDomestic",
               "onwardJourneys",
@@ -66464,7 +66464,7 @@
             "via_rows_found": 147,
             "script_version": "via-direct-api-2026-09-19",
             "http_status": 200,
-            "response_bytes": 958909,
+            "response_bytes": 962829,
             "response_keys": [
               "isDomestic",
               "onwardJourneys",
@@ -68282,7 +68282,7 @@
             "via_rows_found": 140,
             "script_version": "via-direct-api-2026-09-19",
             "http_status": 200,
-            "response_bytes": 916005,
+            "response_bytes": 931936,
             "response_keys": [
               "isDomestic",
               "onwardJourneys",
@@ -69993,7 +69993,7 @@
             "via_rows_found": 138,
             "script_version": "via-direct-api-2026-09-19",
             "http_status": 200,
-            "response_bytes": 920132,
+            "response_bytes": 936036,
             "response_keys": [
               "isDomestic",
               "onwardJourneys",
@@ -71680,7 +71680,7 @@
             "via_rows_found": 145,
             "script_version": "via-direct-api-2026-09-19",
             "http_status": 200,
-            "response_bytes": 960811,
+            "response_bytes": 964282,
             "response_keys": [
               "isDomestic",
               "onwardJourneys",
@@ -73451,7 +73451,7 @@
             "via_rows_found": 143,
             "script_version": "via-direct-api-2026-09-19",
             "http_status": 200,
-            "response_bytes": 948070,
+            "response_bytes": 951514,
             "response_keys": [
               "isDomestic",
               "onwardJourneys",
@@ -75198,7 +75198,7 @@
             "via_rows_found": 147,
             "script_version": "via-direct-api-2026-09-19",
             "http_status": 200,
-            "response_bytes": 964476,
+            "response_bytes": 961172,
             "response_keys": [
               "isDomestic",
               "onwardJourneys",
@@ -77016,7 +77016,7 @@
             "via_rows_found": 105,
             "script_version": "via-direct-api-2026-09-19",
             "http_status": 200,
-            "response_bytes": 635378,
+            "response_bytes": 646396,
             "response_keys": [
               "isDomestic",
               "onwardJourneys",
@@ -78307,7 +78307,7 @@
             "via_rows_found": 116,
             "script_version": "via-direct-api-2026-09-19",
             "http_status": 200,
-            "response_bytes": 732990,
+            "response_bytes": 745450,
             "response_keys": [
               "isDomestic",
               "onwardJourneys",
@@ -79730,7 +79730,7 @@
             "via_rows_found": 123,
             "script_version": "via-direct-api-2026-09-19",
             "http_status": 200,
-            "response_bytes": 757062,
+            "response_bytes": 758966,
             "response_keys": [
               "isDomestic",
               "onwardJourneys",
@@ -81237,7 +81237,7 @@
             "via_rows_found": 127,
             "script_version": "via-direct-api-2026-09-19",
             "http_status": 200,
-            "response_bytes": 783109,
+            "response_bytes": 785013,
             "response_keys": [
               "isDomestic",
               "onwardJourneys",
@@ -82792,7 +82792,7 @@
             "via_rows_found": 113,
             "script_version": "via-direct-api-2026-09-19",
             "http_status": 200,
-            "response_bytes": 684193,
+            "response_bytes": 682401,
             "response_keys": [
               "isDomestic",
               "onwardJourneys",
@@ -84202,7 +84202,7 @@
             "via_rows_found": 78,
             "script_version": "via-direct-api-2026-09-19",
             "http_status": 200,
-            "response_bytes": 441894,
+            "response_bytes": 449777,
             "response_keys": [
               "isDomestic",
               "onwardJourneys",
@@ -85169,7 +85169,7 @@
             "via_rows_found": 128,
             "script_version": "via-direct-api-2026-09-19",
             "http_status": 200,
-            "response_bytes": 758140,
+            "response_bytes": 771119,
             "response_keys": [
               "isDomestic",
               "onwardJourneys",
@@ -86736,7 +86736,7 @@
             "via_rows_found": 118,
             "script_version": "via-direct-api-2026-09-19",
             "http_status": 200,
-            "response_bytes": 700509,
+            "response_bytes": 712466,
             "response_keys": [
               "isDomestic",
               "onwardJourneys",
@@ -88183,7 +88183,7 @@
             "via_rows_found": 111,
             "script_version": "via-direct-api-2026-09-19",
             "http_status": 200,
-            "response_bytes": 638247,
+            "response_bytes": 648985,
             "response_keys": [
               "isDomestic",
               "onwardJourneys",
@@ -89546,7 +89546,7 @@
             "via_rows_found": 105,
             "script_version": "via-direct-api-2026-09-19",
             "http_status": 200,
-            "response_bytes": 594205,
+            "response_bytes": 604382,
             "response_keys": [
               "isDomestic",
               "onwardJourneys",
@@ -90860,7 +90860,7 @@
             "via_rows_found": 118,
             "script_version": "via-direct-api-2026-09-19",
             "http_status": 200,
-            "response_bytes": 752119,
+            "response_bytes": 765027,
             "response_keys": [
               "isDomestic",
               "onwardJourneys",
@@ -92307,7 +92307,7 @@
             "via_rows_found": 0,
             "script_version": "via-direct-api-2026-09-19",
             "http_status": 200,
-            "response_bytes": 2925,
+            "response_bytes": 2924,
             "response_keys": [
               "webDta"
             ],
@@ -92334,7 +92334,7 @@
             "via_rows_found": 0,
             "script_version": "via-direct-api-2026-09-19",
             "http_status": 200,
-            "response_bytes": 2925,
+            "response_bytes": 2924,
             "response_keys": [
               "webDta"
             ],
@@ -92361,7 +92361,7 @@
             "via_rows_found": 0,
             "script_version": "via-direct-api-2026-09-19",
             "http_status": 200,
-            "response_bytes": 2925,
+            "response_bytes": 2924,
             "response_keys": [
               "webDta"
             ],
@@ -92388,7 +92388,7 @@
             "via_rows_found": 0,
             "script_version": "via-direct-api-2026-09-19",
             "http_status": 200,
-            "response_bytes": 2924,
+            "response_bytes": 2925,
             "response_keys": [
               "webDta"
             ],
@@ -92465,7 +92465,7 @@
             "via_rows_found": 0,
             "script_version": "via-direct-api-2026-09-19",
             "http_status": 200,
-            "response_bytes": 2925,
+            "response_bytes": 2924,
             "response_keys": [
               "webDta"
             ],
@@ -92596,7 +92596,7 @@
             "via_rows_found": 0,
             "script_version": "via-direct-api-2026-09-19",
             "http_status": 200,
-            "response_bytes": 2924,
+            "response_bytes": 2925,
             "response_keys": [
               "webDta"
             ],
@@ -92623,7 +92623,7 @@
             "via_rows_found": 0,
             "script_version": "via-direct-api-2026-09-19",
             "http_status": 200,
-            "response_bytes": 2924,
+            "response_bytes": 2925,
             "response_keys": [
               "webDta"
             ],
@@ -92704,7 +92704,7 @@
             "via_rows_found": 0,
             "script_version": "via-direct-api-2026-09-19",
             "http_status": 200,
-            "response_bytes": 2924,
+            "response_bytes": 2925,
             "response_keys": [
               "webDta"
             ],
@@ -92754,7 +92754,7 @@
             "via_rows_found": 0,
             "script_version": "via-direct-api-2026-09-19",
             "http_status": 200,
-            "response_bytes": 2925,
+            "response_bytes": 2924,
             "response_keys": [
               "webDta"
             ],
@@ -92781,7 +92781,7 @@
             "via_rows_found": 0,
             "script_version": "via-direct-api-2026-09-19",
             "http_status": 200,
-            "response_bytes": 2924,
+            "response_bytes": 2925,
             "response_keys": [
               "webDta"
             ],
@@ -92939,7 +92939,7 @@
             "via_rows_found": 0,
             "script_version": "via-direct-api-2026-09-19",
             "http_status": 200,
-            "response_bytes": 2925,
+            "response_bytes": 2924,
             "response_keys": [
               "webDta"
             ],
@@ -92993,7 +92993,7 @@
             "via_rows_found": 0,
             "script_version": "via-direct-api-2026-09-19",
             "http_status": 200,
-            "response_bytes": 2924,
+            "response_bytes": 2925,
             "response_keys": [
               "webDta"
             ],
@@ -93020,7 +93020,7 @@
             "via_rows_found": 0,
             "script_version": "via-direct-api-2026-09-19",
             "http_status": 200,
-            "response_bytes": 2925,
+            "response_bytes": 2924,
             "response_keys": [
               "webDta"
             ],
@@ -93124,7 +93124,7 @@
             "via_rows_found": 0,
             "script_version": "via-direct-api-2026-09-19",
             "http_status": 200,
-            "response_bytes": 2925,
+            "response_bytes": 2924,
             "response_keys": [
               "webDta"
             ],
@@ -93228,7 +93228,7 @@
             "via_rows_found": 0,
             "script_version": "via-direct-api-2026-09-19",
             "http_status": 200,
-            "response_bytes": 2924,
+            "response_bytes": 2925,
             "response_keys": [
               "webDta"
             ],
@@ -93282,7 +93282,7 @@
             "via_rows_found": 0,
             "script_version": "via-direct-api-2026-09-19",
             "http_status": 200,
-            "response_bytes": 2925,
+            "response_bytes": 2924,
             "response_keys": [
               "webDta"
             ],
@@ -93336,7 +93336,7 @@
             "via_rows_found": 0,
             "script_version": "via-direct-api-2026-09-19",
             "http_status": 200,
-            "response_bytes": 2924,
+            "response_bytes": 2925,
             "response_keys": [
               "webDta"
             ],
@@ -93467,7 +93467,7 @@
             "via_rows_found": 0,
             "script_version": "via-direct-api-2026-09-19",
             "http_status": 200,
-            "response_bytes": 2924,
+            "response_bytes": 2925,
             "response_keys": [
               "webDta"
             ],
@@ -93598,7 +93598,7 @@
             "via_rows_found": 0,
             "script_version": "via-direct-api-2026-09-19",
             "http_status": 200,
-            "response_bytes": 2925,
+            "response_bytes": 2924,
             "response_keys": [
               "webDta"
             ],
@@ -93652,7 +93652,7 @@
             "via_rows_found": 0,
             "script_version": "via-direct-api-2026-09-19",
             "http_status": 200,
-            "response_bytes": 2925,
+            "response_bytes": 2924,
             "response_keys": [
               "webDta"
             ],
@@ -93810,7 +93810,7 @@
             "via_rows_found": 0,
             "script_version": "via-direct-api-2026-09-19",
             "http_status": 200,
-            "response_bytes": 2924,
+            "response_bytes": 2925,
             "response_keys": [
               "webDta"
             ],
@@ -93860,7 +93860,7 @@
             "via_rows_found": 0,
             "script_version": "via-direct-api-2026-09-19",
             "http_status": 200,
-            "response_bytes": 2925,
+            "response_bytes": 2924,
             "response_keys": [
               "webDta"
             ],
@@ -93887,7 +93887,7 @@
             "via_rows_found": 0,
             "script_version": "via-direct-api-2026-09-19",
             "http_status": 200,
-            "response_bytes": 2925,
+            "response_bytes": 2924,
             "response_keys": [
               "webDta"
             ],
@@ -93941,7 +93941,7 @@
             "via_rows_found": 0,
             "script_version": "via-direct-api-2026-09-19",
             "http_status": 200,
-            "response_bytes": 2925,
+            "response_bytes": 2924,
             "response_keys": [
               "webDta"
             ],
@@ -93968,7 +93968,7 @@
             "via_rows_found": 0,
             "script_version": "via-direct-api-2026-09-19",
             "http_status": 200,
-            "response_bytes": 2924,
+            "response_bytes": 2925,
             "response_keys": [
               "webDta"
             ],
@@ -94018,7 +94018,7 @@
             "via_rows_found": 0,
             "script_version": "via-direct-api-2026-09-19",
             "http_status": 200,
-            "response_bytes": 2925,
+            "response_bytes": 2924,
             "response_keys": [
               "webDta"
             ],
@@ -94072,7 +94072,7 @@
             "via_rows_found": 0,
             "script_version": "via-direct-api-2026-09-19",
             "http_status": 200,
-            "response_bytes": 2925,
+            "response_bytes": 2924,
             "response_keys": [
               "webDta"
             ],
@@ -94099,7 +94099,7 @@
             "via_rows_found": 0,
             "script_version": "via-direct-api-2026-09-19",
             "http_status": 200,
-            "response_bytes": 2925,
+            "response_bytes": 2924,
             "response_keys": [
               "webDta"
             ],
@@ -94126,7 +94126,7 @@
             "via_rows_found": 0,
             "script_version": "via-direct-api-2026-09-19",
             "http_status": 200,
-            "response_bytes": 2924,
+            "response_bytes": 2925,
             "response_keys": [
               "webDta"
             ],
@@ -94230,7 +94230,7 @@
             "via_rows_found": 0,
             "script_version": "via-direct-api-2026-09-19",
             "http_status": 200,
-            "response_bytes": 2925,
+            "response_bytes": 2924,
             "response_keys": [
               "webDta"
             ],
@@ -94334,7 +94334,7 @@
             "via_rows_found": 0,
             "script_version": "via-direct-api-2026-09-19",
             "http_status": 200,
-            "response_bytes": 2925,
+            "response_bytes": 2924,
             "response_keys": [
               "webDta"
             ],
@@ -94361,7 +94361,7 @@
             "via_rows_found": 0,
             "script_version": "via-direct-api-2026-09-19",
             "http_status": 200,
-            "response_bytes": 2925,
+            "response_bytes": 2924,
             "response_keys": [
               "webDta"
             ],
@@ -94388,7 +94388,7 @@
             "via_rows_found": 0,
             "script_version": "via-direct-api-2026-09-19",
             "http_status": 200,
-            "response_bytes": 2924,
+            "response_bytes": 2925,
             "response_keys": [
               "webDta"
             ],
@@ -94492,7 +94492,7 @@
             "via_rows_found": 0,
             "script_version": "via-direct-api-2026-09-19",
             "http_status": 200,
-            "response_bytes": 2924,
+            "response_bytes": 2925,
             "response_keys": [
               "webDta"
             ],
@@ -94546,7 +94546,7 @@
             "via_rows_found": 0,
             "script_version": "via-direct-api-2026-09-19",
             "http_status": 200,
-            "response_bytes": 2924,
+            "response_bytes": 2925,
             "response_keys": [
               "webDta"
             ],
@@ -94573,7 +94573,7 @@
             "via_rows_found": 0,
             "script_version": "via-direct-api-2026-09-19",
             "http_status": 200,
-            "response_bytes": 2925,
+            "response_bytes": 2924,
             "response_keys": [
               "webDta"
             ],
@@ -94600,7 +94600,7 @@
             "via_rows_found": 0,
             "script_version": "via-direct-api-2026-09-19",
             "http_status": 200,
-            "response_bytes": 2924,
+            "response_bytes": 2925,
             "response_keys": [
               "webDta"
             ],
