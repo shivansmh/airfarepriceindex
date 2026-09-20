@@ -5,6 +5,16 @@ on:
     # 00:00 India Standard Time = 18:30 UTC on the previous day.
     - cron: "30 18 * * *"
   workflow_dispatch:
+    inputs:
+      route_limit:
+        description: "Temporary route limit for diagnostics; 0 runs all routes"
+        required: false
+        default: "0"
+      debug_empty_results:
+        description: "Log one diagnostic line for each route returning empty results"
+        required: false
+        default: false
+        type: boolean
 
 permissions:
   actions: read
@@ -46,6 +56,9 @@ jobs:
           SHOW_BROWSER: "false"
           WAIT_MS: "1000"
           MAX_CONCURRENCY: "5"
+          ROUTE_LIMIT: ${{ inputs.route_limit || '0' }}
+          DEBUG_EMPTY_RESULTS: ${{ inputs.debug_empty_results || 'false' }}
+          EMPTY_RESULT_RETRIES: "1"
           SAVE_HTML: "false"
         run: python scraping/flight_scraper_multiplecities.py
 

@@ -44,7 +44,8 @@ SHOW_BROWSER = os.getenv("SHOW_BROWSER", "false").lower() in {"1", "true", "yes"
 WAIT_MS = int(os.getenv("WAIT_MS", "3500"))
 MAX_CONCURRENCY = max(1, int(os.getenv("MAX_CONCURRENCY", "3")))
 API_REQUEST_GAP_SECONDS = max(0.0, float(os.getenv("API_REQUEST_GAP_SECONDS", "0.35")))
-EMPTY_RESULT_RETRIES = max(0, int(os.getenv("EMPTY_RESULT_RETRIES", "3")))
+EMPTY_RESULT_RETRIES = max(0, int(os.getenv("EMPTY_RESULT_RETRIES", "1")))
+DEBUG_EMPTY_RESULTS = os.getenv("DEBUG_EMPTY_RESULTS", "false").lower() in {"1", "true", "yes"}
 SAVE_HTML = os.getenv("SAVE_HTML", "false").lower() in {"1", "true", "yes"}
 USE_DIRECT_API = os.getenv("USE_DIRECT_API", "true").lower() in {"1", "true", "yes"}
 ROUTE_LIMIT = int(os.getenv("ROUTE_LIMIT", "0"))
@@ -226,7 +227,13 @@ def api_payload(source: str, destination: str, source_name: str, destination_nam
 async def scrape_api_page(client: httpx.AsyncClient, source: str, destination: str, source_name: str, destination_name: str, travel_date: date) -> str:
     response = await client.post(VIA_API_URL, json=api_payload(source, destination, source_name, destination_name, travel_date))
     response.raise_for_status()
-    result = parse_via_api_response(response.json(), VIA_API_URL)
+    payload = response.json()
+    result = parse_via_api_response(payload, VIA_API_URL)
+    result.analysis.update({
+        "http_status": response.status_code,
+        "response_bytes": len(response.content),
+        "response_keys": sorted(payload.keys())[:20],
+    })
     return json.dumps(asdict(result), ensure_ascii=False, indent=2)
 
 
@@ -453,6 +460,8 @@ async def scrape_all_routes(routes: list[dict[str, Any]], offsets: list[int], ht
     run_date = datetime.now(ZoneInfo("Asia/Kolkata")).date()
     semaphore = asyncio.Semaphore(MAX_CONCURRENCY)
     api_request_lock = asyncio.Lock()
+    empty_debug_lock = asyncio.Lock()
+    empty_debug_routes: set[int] = set()
     next_api_request_at = 0.0
     route_specs = list(routes)
     route_results: list[dict[str, Any]] = [
@@ -523,6 +532,22 @@ async def scrape_all_routes(routes: list[dict[str, Any]], offsets: list[int], ht
                             candidate = json.loads(await scrape_api_page(client, source, destination, source_name, destination_name, travel_date))
                         result = candidate
                         journeys = (candidate.get("analysis") or {}).get("via_journeys_found")
+                        if journeys == 0 and DEBUG_EMPTY_RESULTS:
+                            async with empty_debug_lock:
+                                if route_index not in empty_debug_routes:
+                                    empty_debug_routes.add(route_index)
+                                    analysis = candidate.get("analysis") or {}
+                                    print(
+                                        "EMPTY_RESULT "
+                                        f"route_index={route_index + 1}/{len(route_specs)} "
+                                        f"state={route.get('state')} "
+                                        f"route={source}-{destination} "
+                                        f"names={source_name}->{destination_name} "
+                                        f"offset={offset} date={travel_date.isoformat()} "
+                                        f"attempt={attempt + 1} status={analysis.get('http_status')} "
+                                        f"bytes={analysis.get('response_bytes')} "
+                                        f"keys={analysis.get('response_keys')}"
+                                    )
                         if journeys != 0 or attempt == EMPTY_RESULT_RETRIES:
                             break
                         await asyncio.sleep(2 ** attempt)
