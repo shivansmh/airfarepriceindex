@@ -9,8 +9,8 @@ import os
 import random
 import re
 from contextlib import asynccontextmanager
-from datetime import date, datetime, timedelta
-from zoneinfo import ZoneInfo
+from datetime import date, datetime, timedelta, timezone
+from zoneinfo import ZoneInfo, ZoneInfoNotFoundError
 from urllib.parse import parse_qs, urlencode, urlsplit, urlunsplit
 from dataclasses import asdict, dataclass
 from pathlib import Path
@@ -65,6 +65,11 @@ TOP_ROUTES = max(0, int(os.getenv("TOP_ROUTES", "0")))
 REPO_ROOT = Path(__file__).resolve().parents[1]
 ROUTES_FILE = REPO_ROOT / "config" / "routes.json"
 ROUTES = json.loads(ROUTES_FILE.read_text(encoding="utf-8"))["routes"]
+try:
+    INDIA_TZ = ZoneInfo("Asia/Kolkata")
+except ZoneInfoNotFoundError:
+    # Windows Python installations may not ship the IANA tzdata database.
+    INDIA_TZ = timezone(timedelta(hours=5, minutes=30), name="IST")
 OUTPUT_FOLDER = Path(os.getenv("OUTPUT_FOLDER", str(REPO_ROOT / "dashboard"))).expanduser()
 HTML_OUTPUT_BASE = OUTPUT_FOLDER / "rendered_flight_page.html"
 REPORT_OUTPUT = OUTPUT_FOLDER / "target_day.txt"
@@ -503,7 +508,7 @@ async def scrape_all_routes(routes: list[dict[str, Any]], offsets: list[int], ht
     One Chromium process and one context are reused. MAX_CONCURRENCY controls the
     number of simultaneous Via.com pages; it is intentionally small by default.
     """
-    run_date = datetime.now(ZoneInfo("Asia/Kolkata")).date()
+    run_date = datetime.now(INDIA_TZ).date()
     semaphore = asyncio.Semaphore(MAX_CONCURRENCY)
     api_request_lock = asyncio.Lock()
     empty_debug_lock = asyncio.Lock()
@@ -704,7 +709,7 @@ async def scrape_all_routes(routes: list[dict[str, Any]], offsets: list[int], ht
 
 async def scrape_date_offsets(base_url: str, offsets: list[int] = [1, 7, 15, 30, 45], html_out: str | None = "rendered_flight_page.html", wait_ms: int = 2500, headless: bool = True) -> str:
     """Scrape one route at dates relative to the date on which the script runs."""
-    run_date = datetime.now(ZoneInfo("Asia/Kolkata")).date()
+    run_date = datetime.now(INDIA_TZ).date()
     results_by_offset: dict[str, dict[str, Any]] = {}
     for offset in offsets:
         travel_date = run_date + timedelta(days=offset)
