@@ -24,18 +24,6 @@ APIX_FILE = ROOT / "dashboard" / "apix_output.json"
 HISTORY_FILE = ROOT / "dashboard" / "apix_history.json"
 POST_BATCH_SIZE = 200
 
-# These two tables were provisioned before state/origin metadata was added to
-# the file database. Keep their API payloads on the deployed five/four-column
-# schemas until the Supabase migration is applied; raw flight rows already use
-# the newer state-aware schema.
-TABLE_COLUMNS = {
-    "route_window_summary": (
-        "date", "route", "booking_window", "representative_price", "sample_size"
-    ),
-    "route_level_index": (
-        "date", "route", "route_level_index", "explanation_text"
-    ),
-}
 TABLE_CONFLICTS = {
     "raw_scraped_flights": "state,scrape_date,route,booking_window,flight_number,departure_time,arrival_time,price,source_site",
 }
@@ -155,18 +143,6 @@ def post_batch(client: httpx.Client, base_url: str, key: str, table: str, rows: 
         unique_rows = {}
         for row in rows:
             unique_rows[tuple(row.get(field) for field in identity)] = row
-        rows = list(unique_rows.values())
-    elif table in TABLE_COLUMNS:
-        # Repeated airport pairs occur in the workbook across different states,
-        # but the deployed summary/index tables key only on route. Last-write
-        # wins for that legacy key, while the raw table preserves every state.
-        columns = TABLE_COLUMNS[table]
-        unique_rows = {}
-        identity = ("date", "route", "booking_window") if table == "route_window_summary" else ("date", "route")
-        for row in rows:
-            unique_rows[tuple(row.get(field) for field in identity)] = {
-                field: row.get(field) for field in columns
-            }
         rows = list(unique_rows.values())
     url = f"{base_url}/rest/v1/{table}"
     conflict = TABLE_CONFLICTS.get(table)
