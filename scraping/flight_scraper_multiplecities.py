@@ -824,6 +824,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--wait-ms", type=int, default=2500, help="Additional wait after page load for results to render")
     parser.add_argument("--route-limit", type=int, default=None, help="Use the first N configured routes")
     parser.add_argument("--top-routes", type=int, default=None, help="Use the N highest-passenger-volume routes")
+    parser.add_argument("--route-codes", help="Comma-separated exact route codes, for example DEL-CCU")
     parser.add_argument("--headed", action="store_true", help="Show Chromium while scraping")
     return parser.parse_args()
 
@@ -836,7 +837,24 @@ if __name__ == "__main__":
             raise ValueError("--offsets must contain at least one integer")
         route_limit = ROUTE_LIMIT if args.route_limit is None else max(0, args.route_limit)
         top_routes = TOP_ROUTES if args.top_routes is None else max(0, args.top_routes)
-        selected_routes = select_routes(ROUTES, route_limit=route_limit, top_routes=top_routes)
+        candidate_routes = ROUTES
+        if args.route_codes:
+            requested_codes = {
+                code.strip().upper().replace("→", "-")
+                for code in args.route_codes.split(",")
+                if code.strip()
+            }
+            candidate_routes = [
+                route for route in ROUTES
+                if f"{route['origin_code']}-{route['destination_code']}".upper() in requested_codes
+            ]
+            missing_codes = requested_codes - {
+                f"{route['origin_code']}-{route['destination_code']}".upper()
+                for route in candidate_routes
+            }
+            if missing_codes:
+                raise ValueError(f"Route code(s) not found in config/routes.json: {', '.join(sorted(missing_codes))}")
+        selected_routes = select_routes(candidate_routes, route_limit=route_limit, top_routes=top_routes)
         print(
             f"Selected {len(selected_routes)} of {len(ROUTES)} routes; "
             f"offsets={offsets}; concurrency={MAX_CONCURRENCY}; gap={API_REQUEST_GAP_SECONDS:.2f}s"
