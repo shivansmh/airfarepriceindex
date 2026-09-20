@@ -52,6 +52,7 @@ API_TIMEOUT_SECONDS = max(1.0, float(os.getenv("API_TIMEOUT_SECONDS", "30")))
 ROUTE_BATCH_SIZE = max(1, int(os.getenv("ROUTE_BATCH_SIZE", "5")))
 BATCH_PAUSE_SECONDS = max(0.0, float(os.getenv("BATCH_PAUSE_SECONDS", "60")))
 CHECKPOINT_OUTPUT = os.getenv("CHECKPOINT_OUTPUT", "").strip()
+RESET_CLIENT_BETWEEN_BATCHES = os.getenv("RESET_CLIENT_BETWEEN_BATCHES", "true").lower() in {"1", "true", "yes"}
 ROTATE_USER_AGENTS = os.getenv("ROTATE_USER_AGENTS", "false").lower() in {"1", "true", "yes"}
 USER_AGENTS = tuple(filter(None, (value.strip() for value in os.getenv("USER_AGENTS", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/131.0 Safari/537.36,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Version/18.1 Safari/605.1.15,Mozilla/5.0 (X11; Linux x86_64; rv:133.0) Gecko/20100101 Firefox/133.0").split(","))))
 PROXY_URLS = tuple(filter(None, (value.strip() for value in os.getenv("PROXY_URLS", "").split(","))))
@@ -658,6 +659,11 @@ async def scrape_all_routes(routes: list[dict[str, Any]], offsets: list[int], ht
                 *(one_job(route_index, offset) for route_index in range(batch_start, batch_end) for offset in offsets)
             )
             await write_checkpoint()
+            if RESET_CLIENT_BETWEEN_BATCHES and batch_end < len(routes):
+                for api_client in api_clients.values():
+                    await api_client.aclose()
+                api_clients.clear()
+                print("Closed API clients; the next batch will use a fresh HTTP session", flush=True)
             print(
                 f"Completed route batch {batch_start // ROUTE_BATCH_SIZE + 1}: "
                 f"routes {batch_start + 1}-{batch_end} of {len(routes)}",
