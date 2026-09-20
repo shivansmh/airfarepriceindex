@@ -39,19 +39,17 @@ AIRLINE_NAMES = {
 BASE_URL = "https://in.via.com/flight/search?returnType=one-way&destination=BLR&bdestination=BLR&destinationL=Bangalore&destinationCity=&destinationCN=&source=DEL&bsource=DEL&sourceL=Delhi&sourceCity=&sourceCN=&month=9&day=1&year=2026&date=9/1/2026&numAdults=1&numChildren=0&numInfants=0&validation_result=&domesinter=international&livequote=-1&flightClass=ALL&travType=INTL&routingType=ALL&preferredCarrier=&prefCarrier=0&isAjax=false"
 VIA_API_URL = "https://in.via.com/apiv2/flight/search?&flowType=NODE&ajax=true&jsonData=true"
 
-ROUTES = [
-    ("Delhi - Bombay", "DEL", "BOM", "Delhi", "Bombay"),
-    ("Delhi - Bengaluru", "DEL", "BLR", "Delhi", "Bangalore"),
-    ("Calcutta - Bombay", "CCU", "BOM", "Kolkata", "Bombay"),
-]
 DATE_OFFSETS = [1, 7, 15, 30, 45]
 SHOW_BROWSER = os.getenv("SHOW_BROWSER", "false").lower() in {"1", "true", "yes"}
 WAIT_MS = int(os.getenv("WAIT_MS", "3500"))
 MAX_CONCURRENCY = max(1, int(os.getenv("MAX_CONCURRENCY", "3")))
 SAVE_HTML = os.getenv("SAVE_HTML", "false").lower() in {"1", "true", "yes"}
 USE_DIRECT_API = os.getenv("USE_DIRECT_API", "true").lower() in {"1", "true", "yes"}
+ROUTE_LIMIT = int(os.getenv("ROUTE_LIMIT", "0"))
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
+ROUTES_FILE = REPO_ROOT / "config" / "routes.json"
+ROUTES = json.loads(ROUTES_FILE.read_text(encoding="utf-8"))["routes"]
 OUTPUT_FOLDER = Path(os.getenv("OUTPUT_FOLDER", str(REPO_ROOT / "dashboard"))).expanduser()
 HTML_OUTPUT_BASE = OUTPUT_FOLDER / "rendered_flight_page.html"
 REPORT_OUTPUT = OUTPUT_FOLDER / "target_day.txt"
@@ -444,7 +442,7 @@ def url_for_route(base_url: str, source: str, destination: str, source_name: str
     return urlunsplit((parts.scheme, parts.netloc, parts.path, urlencode(query, doseq=True), parts.fragment))
 
 
-async def scrape_all_routes(routes: list[tuple[str, str, str, str, str]], offsets: list[int], html_out: str | None = "rendered_flight_page.html", wait_ms: int = 2500, headless: bool = True) -> str:
+async def scrape_all_routes(routes: list[dict[str, Any]], offsets: list[int], html_out: str | None = "rendered_flight_page.html", wait_ms: int = 2500, headless: bool = True) -> str:
     """Scrape all route/window pairs concurrently with bounded politeness.
 
     One Chromium process and one context are reused. MAX_CONCURRENCY controls the
@@ -458,12 +456,19 @@ async def scrape_all_routes(routes: list[tuple[str, str, str, str, str]], offset
             "script_version": SCRIPT_VERSION,
             "mode": "relative_dates",
             "run_date_T": run_date.isoformat(),
-            "route": url_for_route(BASE_URL, source, destination, source_name, destination_name),
+            "route": url_for_route(BASE_URL, route["origin_code"], route["destination_code"], route["origin"], route["destination"]),
             "requested_offsets": offsets,
             "results": {},
-            "route_name": route_name,
+            "route_name": f"{route['origin']} - {route['destination']}",
+            "state": route["state"],
+            "origin": route["origin"],
+            "origin_code": route["origin_code"],
+            "destination": route["destination"],
+            "destination_code": route["destination_code"],
+            "passengers": route.get("passengers"),
+            "contribution": route.get("contribution"),
         }
-        for route_name, source, destination, source_name, destination_name in route_specs
+        for route in route_specs
     ]
 
     client = httpx.AsyncClient(
@@ -489,7 +494,9 @@ async def scrape_all_routes(routes: list[tuple[str, str, str, str, str]], offset
         async def one_job(route_index: int, offset: int) -> None:
             async with semaphore:
                 route_payload = route_results[route_index]
-                _, source, destination, source_name, destination_name = route_specs[route_index]
+                route = route_specs[route_index]
+                source, destination = route["origin_code"], route["destination_code"]
+                source_name, destination_name = route["origin"], route["destination"]
                 travel_date = run_date + timedelta(days=offset)
                 dated_url = url_for_date(route_payload["route"], travel_date)
                 route_html = None
@@ -516,6 +523,12 @@ async def scrape_all_routes(routes: list[tuple[str, str, str, str, str]], offset
     if client is not None:
         await client.aclose()
 
+    for route_payload in route_results:
+        route_payload["results"] = {
+            f"T_plus_{offset}": route_payload["results"][f"T_plus_{offset}"]
+            for offset in offsets
+            if f"T_plus_{offset}" in route_payload["results"]
+        }
     return json.dumps({"mode": "multi_route_relative_dates", "routes": route_results}, ensure_ascii=False, indent=2)
 
 
@@ -591,7 +604,8 @@ def format_multi_route_report(payload: dict[str, Any]) -> str:
     for route_payload in payload.get("routes", []):
         route_name = route_payload.get("route_name", "Unnamed route")
         report = format_clean_report(route_payload)
-        sections.append(f"ROUTE: {route_name}\n" + "=" * 60 + "\n" + report.split("\n", 2)[-1])
+        state = route_payload.get("state", "Unknown")
+        sections.append(f"STATE: {state}\nROUTE: {route_name}\n" + "=" * 60 + "\n" + report.split("\n", 2)[-1])
     return "\n\n".join(sections)
 
 
@@ -642,7 +656,7 @@ if __name__ == "__main__":
         OUTPUT_FOLDER.mkdir(parents=True, exist_ok=True)
         payload = json.loads(asyncio.run(
             scrape_all_routes(
-                ROUTES,
+                ROUTES[:ROUTE_LIMIT] if ROUTE_LIMIT > 0 else ROUTES,
                 DATE_OFFSETS,
                 str(HTML_OUTPUT_BASE),
                 WAIT_MS,

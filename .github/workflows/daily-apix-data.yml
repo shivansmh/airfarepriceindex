@@ -19,7 +19,7 @@ concurrency:
 jobs:
   refresh-data:
     runs-on: ubuntu-latest
-    timeout-minutes: 35
+    timeout-minutes: 120
     env:
       USE_DIRECT_API: "true"
     steps:
@@ -45,7 +45,7 @@ jobs:
           OUTPUT_FOLDER: /tmp/apix-scrape
           SHOW_BROWSER: "false"
           WAIT_MS: "1000"
-          MAX_CONCURRENCY: "3"
+          MAX_CONCURRENCY: "5"
           SAVE_HTML: "false"
         run: python scraping/flight_scraper_multiplecities.py
 

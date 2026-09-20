@@ -23,6 +23,10 @@ The production database schema is also provisioned in Supabase. The nightly work
 
 The one-time `--backfill` mode imports all dated JSON snapshots already present in this folder. Raw-flight records are deduplicated by date, route, booking window, itinerary, times, price, and source before upload.
 
+## Statewise route source
+
+The active route manifest is generated from `config/finalroutes.xlsx` and stored in `config/routes.json`. It contains **409 directional routes across 32 states**, in the workbook's original statewise order. Every target route, raw flight, route/window summary, and route-level index carries `state`, `origin`, `origin_code`, `destination`, and `destination_code`, allowing the dashboard to aggregate indexes by state without parsing display strings. Regenerate the manifest after replacing the workbook with `python tools/build_route_manifest.py`.
+
 ## Adding supporting data
 
 Append festival ranges or monthly ATF prices to the corresponding CSV. The nightly exporter creates the headers if the files do not yet exist and does not overwrite user-maintained rows.

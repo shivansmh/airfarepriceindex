@@ -18,11 +18,23 @@ WINDOW_WEIGHTS = {
     "T_plus_1": 0.05,
 }
 
-ROUTE_WEIGHTS = {
-    "Delhi - Bengaluru": 0.30,
-    "Delhi - Bombay": 0.40,
-    "Calcutta - Bombay": 0.30,
-}
+ROUTE_CONFIG = REPO_ROOT / "config" / "routes.json"
+
+
+def load_route_weights():
+    """Load normalized passenger-share weights for the statewise route manifest."""
+    if not ROUTE_CONFIG.exists():
+        return {"Delhi - Bengaluru": 0.30, "Delhi - Bombay": 0.40, "Calcutta - Bombay": 0.30}
+    routes = json.loads(ROUTE_CONFIG.read_text(encoding="utf-8")).get("routes", [])
+    weights = {
+        f"{route['origin']} - {route['destination']}": float(route.get("passengers") or 0)
+        for route in routes
+    }
+    total = sum(weights.values())
+    return {route: weight / total for route, weight in weights.items()} if total else weights
+
+
+ROUTE_WEIGHTS = load_route_weights()
 
 # --- 2. Data Parsing Engine ---
 def parse_and_calculate_medians(filepath):
@@ -133,6 +145,25 @@ def calculate_apix(base_prices, target_prices):
                 "windows": window_details,
             }
 
+    state_by_route = {}
+    if ROUTE_CONFIG.exists():
+        manifest = json.loads(ROUTE_CONFIG.read_text(encoding="utf-8")).get("routes", [])
+        state_by_route = {
+            f"{route['origin']} - {route['destination']}": route["state"]
+            for route in manifest
+        }
+    state_sums = {}
+    state_weights = {}
+    for route, value in route_level_indices.items():
+        state = state_by_route.get(route, "Unknown")
+        state_sums[state] = state_sums.get(state, 0.0) + ROUTE_WEIGHTS[route] * value
+        state_weights[state] = state_weights.get(state, 0.0) + ROUTE_WEIGHTS[route]
+    state_level_indices = {
+        state: round(state_sums[state] / state_weights[state], 6)
+        for state in state_sums
+        if state_weights[state] > 0
+    }
+
     if route_level_indices:
         final_apix = sum(ROUTE_WEIGHTS[route] * rli for route, rli in route_level_indices.items())
         if 0 < total_active_route_weight < 1.0:
@@ -150,6 +181,7 @@ def calculate_apix(base_prices, target_prices):
         "window_weights": WINDOW_WEIGHTS,
         "route_weights": ROUTE_WEIGHTS,
         "route_level_apix": route_level_indices,
+        "state_level_apix": state_level_indices,
         "route_details": route_details,
         "active_route_weight": round(total_active_route_weight, 6),
         "daily_apix": round(final_apix, 6),

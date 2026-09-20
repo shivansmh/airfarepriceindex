@@ -96,8 +96,13 @@ def export_daily_database() -> dict[str, Any]:
     summary_rows: list[dict[str, Any]] = []
     routes = target.get("routes", []) if isinstance(target, dict) else []
     for route_payload in routes:
+        state = route_payload.get("state") or "Unknown"
+        origin = route_payload.get("origin") or ""
+        destination = route_payload.get("destination") or ""
+        origin_code = route_payload.get("origin_code") or ""
+        destination_code = route_payload.get("destination_code") or ""
         route_name = route_payload.get("route_name") or route_code(route_payload.get("route", ""))
-        route = route_code(route_name)
+        route = f"{origin_code}-{destination_code}" if origin_code and destination_code else route_code(route_name)
         for booking_window, result in (route_payload.get("results") or {}).items():
             departure_date = result.get("requested_date")
             flights = result.get("flights") or []
@@ -108,7 +113,12 @@ def export_daily_database() -> dict[str, Any]:
                     prices.append(price)
                 raw_rows.append({
                     "scrape_date": run_date,
+                    "state": state,
                     "route": route,
+                    "origin": origin,
+                    "origin_code": origin_code,
+                    "destination": destination,
+                    "destination_code": destination_code,
                     "booking_window": booking_window,
                     "carrier": flight.get("airline") or carrier_from_flight_number(flight.get("flight_number")),
                     "airline": flight.get("airline"),
@@ -124,7 +134,12 @@ def export_daily_database() -> dict[str, Any]:
                 })
             summary_rows.append({
                 "date": run_date,
+                "state": state,
                 "route": route,
+                "origin": origin,
+                "origin_code": origin_code,
+                "destination": destination,
+                "destination_code": destination_code,
                 "booking_window": booking_window,
                 "representative_price": round(statistics.median(prices), 2) if prices else None,
                 "sample_size": len(prices),
@@ -134,11 +149,16 @@ def export_daily_database() -> dict[str, Any]:
     route_index_rows = [
         {
             "date": run_date,
-            "route": route_code(route),
-            "route_level_index": value,
+            "state": route_payload.get("state") or "Unknown",
+            "route": f"{route_payload.get('origin_code')}-{route_payload.get('destination_code')}",
+            "origin": route_payload.get("origin"),
+            "origin_code": route_payload.get("origin_code"),
+            "destination": route_payload.get("destination"),
+            "destination_code": route_payload.get("destination_code"),
+            "route_level_index": route_indices.get(route_payload.get("route_name")),
             "explanation_text": None,
         }
-        for route, value in route_indices.items()
+        for route_payload in routes
     ]
 
     # Daily is the headline value. Weekly/monthly are rolling means of available
@@ -166,17 +186,17 @@ def export_daily_database() -> dict[str, Any]:
 
     atomic_json(RAW_DIR / f"{run_date}.json", {
         "table": "raw_scraped_flights",
-        "schema": ["scrape_date", "route", "booking_window", "carrier", "airline", "departure_date", "departure_time", "arrival_time", "flight_number", "price", "base_fare", "taxes", "baggage", "source_site"],
+        "schema": ["scrape_date", "state", "route", "origin", "origin_code", "destination", "destination_code", "booking_window", "carrier", "airline", "departure_date", "departure_time", "arrival_time", "flight_number", "price", "base_fare", "taxes", "baggage", "source_site"],
         "rows": raw_rows,
     })
     atomic_json(SUMMARY_DIR / f"{run_date}.json", {
         "table": "route_window_summary",
-        "schema": ["date", "route", "booking_window", "representative_price", "sample_size"],
+        "schema": ["date", "state", "route", "origin", "origin_code", "destination", "destination_code", "booking_window", "representative_price", "sample_size"],
         "rows": summary_rows,
     })
     atomic_json(ROUTE_INDEX_DIR / f"{run_date}.json", {
         "table": "route_level_index",
-        "schema": ["date", "route", "route_level_index", "explanation_text"],
+        "schema": ["date", "state", "route", "origin", "origin_code", "destination", "destination_code", "route_level_index", "explanation_text"],
         "rows": route_index_rows,
     })
     atomic_json(APIX_DIR / f"{run_date}.json", {

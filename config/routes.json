@@ -1,0 +1,3687 @@
+{
+  "source_workbook": "finalroutes.xlsx",
+  "route_count": 409,
+  "routes": [
+    {
+      "state": "Andaman and Nicobar Islands",
+      "origin": "PORT BLAIR",
+      "origin_code": "IXZ",
+      "destination": "VISAKHAPATNAM",
+      "destination_code": "VTZ",
+      "passengers": 17896,
+      "contribution": 0.000173692803933144
+    },
+    {
+      "state": "Andhra Pradesh",
+      "origin": "Cuddapah",
+      "origin_code": "CDP",
+      "destination": "VIJAYAWADA",
+      "destination_code": "VGA",
+      "passengers": 4955,
+      "contribution": 4.80916318444753e-05
+    },
+    {
+      "state": "Andhra Pradesh",
+      "origin": "Cuddapah",
+      "origin_code": "CDP",
+      "destination": "VISAKHAPATNAM",
+      "destination_code": "VTZ",
+      "passengers": 2622,
+      "contribution": 2.54482863160876e-05
+    },
+    {
+      "state": "Andhra Pradesh",
+      "origin": "KURNOOL",
+      "origin_code": "KJB",
+      "destination": "VISAKHAPATNAM",
+      "destination_code": "VTZ",
+      "passengers": 4270,
+      "contribution": 4.14432427802037e-05
+    },
+    {
+      "state": "Andhra Pradesh",
+      "origin": "TIRUPATI",
+      "origin_code": "TIR",
+      "destination": "HYDERABAD",
+      "destination_code": "HYD",
+      "passengers": 357979,
+      "contribution": 0.00347442871363338
+    },
+    {
+      "state": "Andhra Pradesh",
+      "origin": "TIRUPATI",
+      "origin_code": "TIR",
+      "destination": "KALABURAGI",
+      "destination_code": "GBI",
+      "passengers": 983,
+      "contribution": 9.54068094916634e-06
+    },
+    {
+      "state": "Andhra Pradesh",
+      "origin": "TIRUPATI",
+      "origin_code": "TIR",
+      "destination": "KOLHAPUR",
+      "destination_code": "KLH",
+      "passengers": 10532,
+      "contribution": 0.000102220195072859
+    },
+    {
+      "state": "Andhra Pradesh",
+      "origin": "TIRUPATI",
+      "origin_code": "TIR",
+      "destination": "SHIRDI",
+      "destination_code": "SAG",
+      "passengers": 5050,
+      "contribution": 4.90136712037538e-05
+    },
+    {
+      "state": "Andhra Pradesh",
+      "origin": "TIRUPATI",
+      "origin_code": "TIR",
+      "destination": "Shivamogga Airport",
+      "destination_code": "RQY",
+      "passengers": 7833,
+      "contribution": 7.60245715918819e-05
+    },
+    {
+      "state": "Andhra Pradesh",
+      "origin": "TIRUPATI",
+      "origin_code": "TIR",
+      "destination": "VIJAYAWADA",
+      "destination_code": "VGA",
+      "passengers": 8982,
+      "contribution": 8.71763950004192e-05
+    },
+    {
+      "state": "Andhra Pradesh",
+      "origin": "TIRUPATI",
+      "origin_code": "TIR",
+      "destination": "VISAKHAPATNAM",
+      "destination_code": "VTZ",
+      "passengers": 20709,
+      "contribution": 0.000200994874645255
+    },
+    {
+      "state": "Andhra Pradesh",
+      "origin": "VIJAYAWADA",
+      "origin_code": "VGA",
+      "destination": "Cuddapah",
+      "destination_code": "CDP",
+      "passengers": 3212,
+      "contribution": 3.11746360210807e-05
+    },
+    {
+      "state": "Andhra Pradesh",
+      "origin": "VIJAYAWADA",
+      "origin_code": "VGA",
+      "destination": "MUMBAI",
+      "destination_code": "BOM",
+      "passengers": 67316,
+      "contribution": 0.000653347384307306
+    },
+    {
+      "state": "Andhra Pradesh",
+      "origin": "VIJAYAWADA",
+      "origin_code": "VGA",
+      "destination": "SHIRDI",
+      "destination_code": "SAG",
+      "passengers": 16788,
+      "contribution": 0.000162938913300717
+    },
+    {
+      "state": "Andhra Pradesh",
+      "origin": "VIJAYAWADA",
+      "origin_code": "VGA",
+      "destination": "TIRUPATI",
+      "destination_code": "TIR",
+      "passengers": 13026,
+      "contribution": 0.000126426154673287
+    },
+    {
+      "state": "Andhra Pradesh",
+      "origin": "VIJAYAWADA",
+      "origin_code": "VGA",
+      "destination": "VISAKHAPATNAM",
+      "destination_code": "VTZ",
+      "passengers": 41274,
+      "contribution": 0.000400592131735393
+    },
+    {
+      "state": "Andhra Pradesh",
+      "origin": "VISAKHAPATNAM",
+      "origin_code": "VTZ",
+      "destination": "Cuddapah",
+      "destination_code": "CDP",
+      "passengers": 2398,
+      "contribution": 2.32742145636835e-05
+    },
+    {
+      "state": "Andhra Pradesh",
+      "origin": "VISAKHAPATNAM",
+      "origin_code": "VTZ",
+      "destination": "HYDERABAD",
+      "destination_code": "HYD",
+      "passengers": 454417,
+      "contribution": 0.00441042483710816
+    },
+    {
+      "state": "Andhra Pradesh",
+      "origin": "VISAKHAPATNAM",
+      "origin_code": "VTZ",
+      "destination": "JEYPORE",
+      "destination_code": "PYB",
+      "passengers": 1362,
+      "contribution": 1.32191327088144e-05
+    },
+    {
+      "state": "Andhra Pradesh",
+      "origin": "VISAKHAPATNAM",
+      "origin_code": "VTZ",
+      "destination": "KURNOOL",
+      "destination_code": "KJB",
+      "passengers": 4210,
+      "contribution": 4.08609021322383e-05
+    },
+    {
+      "state": "Andhra Pradesh",
+      "origin": "VISAKHAPATNAM",
+      "origin_code": "VTZ",
+      "destination": "MUMBAI",
+      "destination_code": "BOM",
+      "passengers": 115318,
+      "contribution": 0.00111923931403455
+    },
+    {
+      "state": "Andhra Pradesh",
+      "origin": "VISAKHAPATNAM",
+      "origin_code": "VTZ",
+      "destination": "PORT BLAIR",
+      "destination_code": "IXZ",
+      "passengers": 17460,
+      "contribution": 0.000169461128557929
+    },
+    {
+      "state": "Andhra Pradesh",
+      "origin": "VISAKHAPATNAM",
+      "origin_code": "VTZ",
+      "destination": "TIRUPATI",
+      "destination_code": "TIR",
+      "passengers": 21463,
+      "contribution": 0.000208312955454687
+    },
+    {
+      "state": "Andhra Pradesh",
+      "origin": "VISAKHAPATNAM",
+      "origin_code": "VTZ",
+      "destination": "VIJAYAWADA",
+      "destination_code": "VGA",
+      "passengers": 38384,
+      "contribution": 0.000372542723858394
+    },
+    {
+      "state": "Arunachal Pradesh",
+      "origin": "Itanagar",
+      "origin_code": "HGI",
+      "destination": "KOLKATA",
+      "destination_code": "CCU",
+      "passengers": 46979,
+      "contribution": 0.000455963021679436
+    },
+    {
+      "state": "Arunachal Pradesh",
+      "origin": "PASIGHAT",
+      "origin_code": "IXT",
+      "destination": "SHILLONG",
+      "destination_code": "SHL",
+      "passengers": 116,
+      "contribution": 1.12585858606643e-06
+    },
+    {
+      "state": "Arunachal Pradesh",
+      "origin": "TEZU",
+      "origin_code": "TEI",
+      "destination": "Itanagar",
+      "destination_code": "HGI",
+      "passengers": 115,
+      "contribution": 1.11615290860034e-06
+    },
+    {
+      "state": "Arunachal Pradesh",
+      "origin": "TEZU",
+      "origin_code": "TEI",
+      "destination": "JORHAT",
+      "destination_code": "JRH",
+      "passengers": 518,
+      "contribution": 5.02754092743455e-06
+    },
+    {
+      "state": "Assam",
+      "origin": "DIBRUGARH",
+      "origin_code": "DIB",
+      "destination": "GUWAHATI",
+      "destination_code": "GAU",
+      "passengers": 85211,
+      "contribution": 0.000827030482562984
+    },
+    {
+      "state": "Assam",
+      "origin": "DIBRUGARH",
+      "origin_code": "DIB",
+      "destination": "IMPHAL",
+      "destination_code": "IMF",
+      "passengers": 29643,
+      "contribution": 0.000287705397127302
+    },
+    {
+      "state": "Assam",
+      "origin": "DIBRUGARH",
+      "origin_code": "DIB",
+      "destination": "KOLKATA",
+      "destination_code": "CCU",
+      "passengers": 128676,
+      "contribution": 0.00124888775362658
+    },
+    {
+      "state": "Assam",
+      "origin": "GUWAHATI",
+      "origin_code": "GAU",
+      "destination": "AGARTALA",
+      "destination_code": "IXA",
+      "passengers": 153384,
+      "contribution": 0.00148869563245873
+    },
+    {
+      "state": "Assam",
+      "origin": "GUWAHATI",
+      "origin_code": "GAU",
+      "destination": "AIZAWL",
+      "destination_code": "AJL",
+      "passengers": 82371,
+      "contribution": 0.000799466358559289
+    },
+    {
+      "state": "Assam",
+      "origin": "GUWAHATI",
+      "origin_code": "GAU",
+      "destination": "DELHI",
+      "destination_code": "DEL",
+      "passengers": 757793,
+      "contribution": 0.00735489444406064
+    },
+    {
+      "state": "Assam",
+      "origin": "GUWAHATI",
+      "origin_code": "GAU",
+      "destination": "DIBRUGARH",
+      "destination_code": "DIB",
+      "passengers": 105129,
+      "contribution": 0.00102034816633256
+    },
+    {
+      "state": "Assam",
+      "origin": "GUWAHATI",
+      "origin_code": "GAU",
+      "destination": "DIMAPUR",
+      "destination_code": "DMU",
+      "passengers": 34286,
+      "contribution": 0.000332768857602357
+    },
+    {
+      "state": "Assam",
+      "origin": "GUWAHATI",
+      "origin_code": "GAU",
+      "destination": "IMPHAL",
+      "destination_code": "IMF",
+      "passengers": 258411,
+      "contribution": 0.00250805381968975
+    },
+    {
+      "state": "Assam",
+      "origin": "GUWAHATI",
+      "origin_code": "GAU",
+      "destination": "KOLKATA",
+      "destination_code": "CCU",
+      "passengers": 552468,
+      "contribution": 0.00536207621833574
+    },
+    {
+      "state": "Assam",
+      "origin": "GUWAHATI",
+      "origin_code": "GAU",
+      "destination": "MUMBAI",
+      "destination_code": "BOM",
+      "passengers": 191031,
+      "contribution": 0.00185408527202461
+    },
+    {
+      "state": "Assam",
+      "origin": "JORHAT",
+      "origin_code": "JRH",
+      "destination": "KOLKATA",
+      "destination_code": "CCU",
+      "passengers": 63405,
+      "contribution": 0.000615388479737428
+    },
+    {
+      "state": "Assam",
+      "origin": "JORHAT",
+      "origin_code": "JRH",
+      "destination": "PASIGHAT",
+      "destination_code": "IXT",
+      "passengers": 18,
+      "contribution": 1.74702194389618e-07
+    },
+    {
+      "state": "Assam",
+      "origin": "JORHAT",
+      "origin_code": "JRH",
+      "destination": "TEZU",
+      "destination_code": "TEI",
+      "passengers": 783,
+      "contribution": 7.59954545594837e-06
+    },
+    {
+      "state": "Assam",
+      "origin": "LILABARI",
+      "origin_code": "IXI",
+      "destination": "SHILLONG",
+      "destination_code": "SHL",
+      "passengers": 3670,
+      "contribution": 3.56198363005498e-05
+    },
+    {
+      "state": "Assam",
+      "origin": "LILABARI",
+      "origin_code": "IXI",
+      "destination": "TEZPUR",
+      "destination_code": "TEZ",
+      "passengers": 2004,
+      "contribution": 1.94501776420441e-05
+    },
+    {
+      "state": "Assam",
+      "origin": "SILCHAR",
+      "origin_code": "IXS",
+      "destination": "IMPHAL",
+      "destination_code": "IMF",
+      "passengers": 16736,
+      "contribution": 0.00016243421807248
+    },
+    {
+      "state": "Assam",
+      "origin": "SILCHAR",
+      "origin_code": "IXS",
+      "destination": "LILABARI",
+      "destination_code": "IXI",
+      "passengers": 53,
+      "contribution": 5.14400905702763e-07
+    },
+    {
+      "state": "Assam",
+      "origin": "TEZPUR",
+      "origin_code": "TEZ",
+      "destination": "LILABARI",
+      "destination_code": "IXI",
+      "passengers": 2523,
+      "contribution": 2.44874242469447e-05
+    },
+    {
+      "state": "Bihar",
+      "origin": "DARBHANGA",
+      "origin_code": "DBR",
+      "destination": "DELHI",
+      "destination_code": "DEL",
+      "passengers": 100173,
+      "contribution": 0.00097224682881062
+    },
+    {
+      "state": "Bihar",
+      "origin": "DARBHANGA",
+      "origin_code": "DBR",
+      "destination": "HYDERABAD",
+      "destination_code": "HYD",
+      "passengers": 52215,
+      "contribution": 0.000506781948891882
+    },
+    {
+      "state": "Bihar",
+      "origin": "DARBHANGA",
+      "origin_code": "DBR",
+      "destination": "MUMBAI",
+      "destination_code": "BOM",
+      "passengers": 60386,
+      "contribution": 0.000586087039467303
+    },
+    {
+      "state": "Bihar",
+      "origin": "GAYA",
+      "origin_code": "GAY",
+      "destination": "KOLKATA",
+      "destination_code": "CCU",
+      "passengers": 55081,
+      "contribution": 0.000534598420509696
+    },
+    {
+      "state": "Bihar",
+      "origin": "PATNA",
+      "origin_code": "PAT",
+      "destination": "DELHI",
+      "destination_code": "DEL",
+      "passengers": 655085,
+      "contribution": 0.00635804372287348
+    },
+    {
+      "state": "Bihar",
+      "origin": "PATNA",
+      "origin_code": "PAT",
+      "destination": "MUMBAI",
+      "destination_code": "BOM",
+      "passengers": 179541,
+      "contribution": 0.00174256703793924
+    },
+    {
+      "state": "Bihar",
+      "origin": "PATNA",
+      "origin_code": "PAT",
+      "destination": "PUNE",
+      "destination_code": "PNQ",
+      "passengers": 60487,
+      "contribution": 0.000587067312891378
+    },
+    {
+      "state": "Bihar",
+      "origin": "PATNA",
+      "origin_code": "PAT",
+      "destination": "RANCHI",
+      "destination_code": "IXR",
+      "passengers": 35859,
+      "contribution": 0.000348035888256517
+    },
+    {
+      "state": "Chandigarh",
+      "origin": "CHANDIGARH",
+      "origin_code": "IXC",
+      "destination": "DELHI",
+      "destination_code": "DEL",
+      "passengers": 475829,
+      "contribution": 0.00461824280301208
+    },
+    {
+      "state": "Chandigarh",
+      "origin": "CHANDIGARH",
+      "origin_code": "IXC",
+      "destination": "HYDERABAD",
+      "destination_code": "HYD",
+      "passengers": 126759,
+      "contribution": 0.00123028196992409
+    },
+    {
+      "state": "Chandigarh",
+      "origin": "CHANDIGARH",
+      "origin_code": "IXC",
+      "destination": "MUMBAI",
+      "destination_code": "BOM",
+      "passengers": 332845,
+      "contribution": 0.00323048621620068
+    },
+    {
+      "state": "Chhattisgarh",
+      "origin": "BILASPUR",
+      "origin_code": "PAB",
+      "destination": "DELHI",
+      "destination_code": "DEL",
+      "passengers": 8128,
+      "contribution": 7.88877464443784e-05
+    },
+    {
+      "state": "Chhattisgarh",
+      "origin": "BILASPUR",
+      "origin_code": "PAB",
+      "destination": "JABALPUR",
+      "destination_code": "JLR",
+      "passengers": 4498,
+      "contribution": 4.36561372424722e-05
+    },
+    {
+      "state": "Chhattisgarh",
+      "origin": "BILASPUR",
+      "origin_code": "PAB",
+      "destination": "KOLKATA",
+      "destination_code": "CCU",
+      "passengers": 2873,
+      "contribution": 2.78844113600762e-05
+    },
+    {
+      "state": "Chhattisgarh",
+      "origin": "JAGDALPUR",
+      "origin_code": "JGB",
+      "destination": "JABALPUR",
+      "destination_code": "JLR",
+      "passengers": 2260,
+      "contribution": 2.19348310733631e-05
+    },
+    {
+      "state": "Chhattisgarh",
+      "origin": "JAGDALPUR",
+      "origin_code": "JGB",
+      "destination": "RAIPUR",
+      "destination_code": "RPR",
+      "passengers": 6119,
+      "contribution": 5.93890404150039e-05
+    },
+    {
+      "state": "Chhattisgarh",
+      "origin": "RAIPUR",
+      "origin_code": "RPR",
+      "destination": "JAGDALPUR",
+      "destination_code": "JGB",
+      "passengers": 5241,
+      "contribution": 5.0867455599777e-05
+    },
+    {
+      "state": "Chhattisgarh",
+      "origin": "RAIPUR",
+      "origin_code": "RPR",
+      "destination": "MUMBAI",
+      "destination_code": "BOM",
+      "passengers": 185285,
+      "contribution": 0.00179831644930446
+    },
+    {
+      "state": "Chhattisgarh",
+      "origin": "RAIPUR",
+      "origin_code": "RPR",
+      "destination": "PUNE",
+      "destination_code": "PNQ",
+      "passengers": 40034,
+      "contribution": 0.000388557091677442
+    },
+    {
+      "state": "Daman and Diu",
+      "origin": "DIU",
+      "origin_code": "DIU",
+      "destination": "MUMBAI",
+      "destination_code": "BOM",
+      "passengers": 14553,
+      "contribution": 0.000141246724164006
+    },
+    {
+      "state": "Daman and Diu",
+      "origin": "DIU",
+      "origin_code": "DIU",
+      "destination": "SURAT",
+      "destination_code": "STV",
+      "passengers": 17571,
+      "contribution": 0.000170538458756665
+    },
+    {
+      "state": "Delhi",
+      "origin": "DELHI",
+      "origin_code": "DEL",
+      "destination": "AGARTALA",
+      "destination_code": "IXA",
+      "passengers": 62221,
+      "contribution": 0.000603896957617578
+    },
+    {
+      "state": "Delhi",
+      "origin": "DELHI",
+      "origin_code": "DEL",
+      "destination": "AHMEDABAD",
+      "destination_code": "AMD",
+      "passengers": 1274961,
+      "contribution": 0.0123743602478434
+    },
+    {
+      "state": "Delhi",
+      "origin": "DELHI",
+      "origin_code": "DEL",
+      "destination": "AIZAWL",
+      "destination_code": "AJL",
+      "passengers": 56258,
+      "contribution": 0.000546022002887284
+    },
+    {
+      "state": "Delhi",
+      "origin": "DELHI",
+      "origin_code": "DEL",
+      "destination": "AMRITSAR",
+      "destination_code": "ATQ",
+      "passengers": 647314,
+      "contribution": 0.0062826209032845
+    },
+    {
+      "state": "Delhi",
+      "origin": "DELHI",
+      "origin_code": "DEL",
+      "destination": "AURANGABAD",
+      "destination_code": "IXU",
+      "passengers": 139877,
+      "contribution": 0.00135760104692425
+    },
+    {
+      "state": "Delhi",
+      "origin": "DELHI",
+      "origin_code": "DEL",
+      "destination": "BELGAUM",
+      "destination_code": "IXG",
+      "passengers": 49775,
+      "contribution": 0.000483100095874623
+    },
+    {
+      "state": "Delhi",
+      "origin": "DELHI",
+      "origin_code": "DEL",
+      "destination": "BENGALURU",
+      "destination_code": "BLR",
+      "passengers": 2350018,
+      "contribution": 0.0228085167475056
+    },
+    {
+      "state": "Delhi",
+      "origin": "DELHI",
+      "origin_code": "DEL",
+      "destination": "BHATINDA",
+      "destination_code": "BUP",
+      "passengers": 14119,
+      "contribution": 0.000137034460143723
+    },
+    {
+      "state": "Delhi",
+      "origin": "DELHI",
+      "origin_code": "DEL",
+      "destination": "BHOPAL",
+      "destination_code": "BHO",
+      "passengers": 309214,
+      "contribution": 0.00300113135199951
+    },
+    {
+      "state": "Delhi",
+      "origin": "DELHI",
+      "origin_code": "DEL",
+      "destination": "BHUBANESWAR",
+      "destination_code": "BBI",
+      "passengers": 570082,
+      "contribution": 0.00553303202122344
+    },
+    {
+      "state": "Delhi",
+      "origin": "DELHI",
+      "origin_code": "DEL",
+      "destination": "BHUJ",
+      "destination_code": "BHJ",
+      "passengers": 9441,
+      "contribution": 9.16313009573544e-05
+    },
+    {
+      "state": "Delhi",
+      "origin": "DELHI",
+      "origin_code": "DEL",
+      "destination": "BIKANER",
+      "destination_code": "BKB",
+      "passengers": 4147,
+      "contribution": 4.02494444518747e-05
+    },
+    {
+      "state": "Delhi",
+      "origin": "DELHI",
+      "origin_code": "DEL",
+      "destination": "BILASPUR",
+      "destination_code": "PAB",
+      "passengers": 5762,
+      "contribution": 5.59241135596098e-05
+    },
+    {
+      "state": "Delhi",
+      "origin": "DELHI",
+      "origin_code": "DEL",
+      "destination": "CHANDIGARH",
+      "destination_code": "IXC",
+      "passengers": 477469,
+      "contribution": 0.00463416011405646
+    },
+    {
+      "state": "Delhi",
+      "origin": "DELHI",
+      "origin_code": "DEL",
+      "destination": "CHENNAI",
+      "destination_code": "MAA",
+      "passengers": 1230642,
+      "contribution": 0.0119442143282238
+    },
+    {
+      "state": "Delhi",
+      "origin": "DELHI",
+      "origin_code": "DEL",
+      "destination": "COIMBATORE",
+      "destination_code": "CJB",
+      "passengers": 212345,
+      "contribution": 0.00206095208153685
+    },
+    {
+      "state": "Delhi",
+      "origin": "DELHI",
+      "origin_code": "DEL",
+      "destination": "DABOLIM",
+      "destination_code": "GOI",
+      "passengers": 774678,
+      "contribution": 0.00751877480807557
+    },
+    {
+      "state": "Delhi",
+      "origin": "DELHI",
+      "origin_code": "DEL",
+      "destination": "DARBHANGA",
+      "destination_code": "DBR",
+      "passengers": 106287,
+      "contribution": 0.00103158734083829
+    },
+    {
+      "state": "Delhi",
+      "origin": "DELHI",
+      "origin_code": "DEL",
+      "destination": "GUWAHATI",
+      "destination_code": "GAU",
+      "passengers": 780850,
+      "contribution": 0.00757867824939627
+    },
+    {
+      "state": "Delhi",
+      "origin": "DELHI",
+      "origin_code": "DEL",
+      "destination": "Goa",
+      "destination_code": "GOI",
+      "passengers": 500253,
+      "contribution": 0.00485529426944385
+    },
+    {
+      "state": "Delhi",
+      "origin": "DELHI",
+      "origin_code": "DEL",
+      "destination": "HYDERABAD",
+      "destination_code": "HYD",
+      "passengers": 1638188,
+      "contribution": 0.0158997243568188
+    },
+    {
+      "state": "Delhi",
+      "origin": "DELHI",
+      "origin_code": "DEL",
+      "destination": "KOCHI",
+      "destination_code": "COK",
+      "passengers": 507324,
+      "contribution": 0.00492392311480658
+    },
+    {
+      "state": "Delhi",
+      "origin": "DELHI",
+      "origin_code": "DEL",
+      "destination": "KOLKATA",
+      "destination_code": "CCU",
+      "passengers": 1417339,
+      "contribution": 0.0137562351941104
+    },
+    {
+      "state": "Delhi",
+      "origin": "DELHI",
+      "origin_code": "DEL",
+      "destination": "LUCKNOW",
+      "destination_code": "LKO",
+      "passengers": 733425,
+      "contribution": 0.00711838649556696
+    },
+    {
+      "state": "Delhi",
+      "origin": "DELHI",
+      "origin_code": "DEL",
+      "destination": "MUMBAI",
+      "destination_code": "BOM",
+      "passengers": 3426228,
+      "contribution": 0.0332538638932862
+    },
+    {
+      "state": "Delhi",
+      "origin": "DELHI",
+      "origin_code": "DEL",
+      "destination": "PATNA",
+      "destination_code": "PAT",
+      "passengers": 696558,
+      "contribution": 0.00676056728442463
+    },
+    {
+      "state": "Delhi",
+      "origin": "DELHI",
+      "origin_code": "DEL",
+      "destination": "PUNE",
+      "destination_code": "PNQ",
+      "passengers": 1469849,
+      "contribution": 0.0142658803178547
+    },
+    {
+      "state": "Delhi",
+      "origin": "DELHI",
+      "origin_code": "DEL",
+      "destination": "SRINAGAR",
+      "destination_code": "SXR",
+      "passengers": 1155836,
+      "contribution": 0.0112181714196955
+    },
+    {
+      "state": "Goa",
+      "origin": "DABOLIM",
+      "origin_code": "GOI",
+      "destination": "AHMEDABAD",
+      "destination_code": "AMD",
+      "passengers": 186305,
+      "contribution": 0.00180821624031987
+    },
+    {
+      "state": "Goa",
+      "origin": "DABOLIM",
+      "origin_code": "GOI",
+      "destination": "BENGALURU",
+      "destination_code": "BLR",
+      "passengers": 588394,
+      "contribution": 0.00571076238698248
+    },
+    {
+      "state": "Goa",
+      "origin": "DABOLIM",
+      "origin_code": "GOI",
+      "destination": "DELHI",
+      "destination_code": "DEL",
+      "passengers": 787149,
+      "contribution": 0.00763981431175517
+    },
+    {
+      "state": "Goa",
+      "origin": "DABOLIM",
+      "origin_code": "GOI",
+      "destination": "HYDERABAD",
+      "destination_code": "HYD",
+      "passengers": 455735,
+      "contribution": 0.00442321692000847
+    },
+    {
+      "state": "Goa",
+      "origin": "DABOLIM",
+      "origin_code": "GOI",
+      "destination": "MUMBAI",
+      "destination_code": "BOM",
+      "passengers": 748000,
+      "contribution": 0.00725984674463522
+    },
+    {
+      "state": "Goa",
+      "origin": "Goa",
+      "origin_code": "GOI",
+      "destination": "AGATTI ISLAND",
+      "destination_code": "AGX",
+      "passengers": 11478,
+      "contribution": 0.00011140176595578
+    },
+    {
+      "state": "Goa",
+      "origin": "Goa",
+      "origin_code": "GOI",
+      "destination": "DELHI",
+      "destination_code": "DEL",
+      "passengers": 505323,
+      "contribution": 0.00490450205419693
+    },
+    {
+      "state": "Goa",
+      "origin": "Goa",
+      "origin_code": "GOI",
+      "destination": "HYDERABAD",
+      "destination_code": "HYD",
+      "passengers": 237766,
+      "contribution": 0.00230768010840232
+    },
+    {
+      "state": "Goa",
+      "origin": "Goa",
+      "origin_code": "GOI",
+      "destination": "MUMBAI",
+      "destination_code": "BOM",
+      "passengers": 486338,
+      "contribution": 0.00472023976750321
+    },
+    {
+      "state": "Goa",
+      "origin": "Goa",
+      "origin_code": "GOI",
+      "destination": "PUNE",
+      "destination_code": "PNQ",
+      "passengers": 141923,
+      "contribution": 0.00137745886301987
+    },
+    {
+      "state": "Gujarat",
+      "origin": "AHMEDABAD",
+      "origin_code": "AMD",
+      "destination": "BENGALURU",
+      "destination_code": "BLR",
+      "passengers": 488403,
+      "contribution": 0.00474028199147069
+    },
+    {
+      "state": "Gujarat",
+      "origin": "AHMEDABAD",
+      "origin_code": "AMD",
+      "destination": "CHENNAI",
+      "destination_code": "MAA",
+      "passengers": 226907,
+      "contribution": 0.00220228615679805
+    },
+    {
+      "state": "Gujarat",
+      "origin": "AHMEDABAD",
+      "origin_code": "AMD",
+      "destination": "DABOLIM",
+      "destination_code": "GOI",
+      "passengers": 190365,
+      "contribution": 0.0018476212908322
+    },
+    {
+      "state": "Gujarat",
+      "origin": "AHMEDABAD",
+      "origin_code": "AMD",
+      "destination": "DELHI",
+      "destination_code": "DEL",
+      "passengers": 1262081,
+      "contribution": 0.0122493511220802
+    },
+    {
+      "state": "Gujarat",
+      "origin": "AHMEDABAD",
+      "origin_code": "AMD",
+      "destination": "HYDERABAD",
+      "destination_code": "HYD",
+      "passengers": 262157,
+      "contribution": 0.00254441128747772
+    },
+    {
+      "state": "Gujarat",
+      "origin": "AHMEDABAD",
+      "origin_code": "AMD",
+      "destination": "KOLKATA",
+      "destination_code": "CCU",
+      "passengers": 216833,
+      "contribution": 0.00210451116200466
+    },
+    {
+      "state": "Gujarat",
+      "origin": "AHMEDABAD",
+      "origin_code": "AMD",
+      "destination": "MUMBAI",
+      "destination_code": "BOM",
+      "passengers": 1044930,
+      "contribution": 0.0101417535546413
+    },
+    {
+      "state": "Gujarat",
+      "origin": "AHMEDABAD",
+      "origin_code": "AMD",
+      "destination": "PUNE",
+      "destination_code": "PNQ",
+      "passengers": 317736,
+      "contribution": 0.00308384313536553
+    },
+    {
+      "state": "Gujarat",
+      "origin": "BHAVNAGAR",
+      "origin_code": "BHU",
+      "destination": "MUMBAI",
+      "destination_code": "BOM",
+      "passengers": 19256,
+      "contribution": 0.000186892525287027
+    },
+    {
+      "state": "Gujarat",
+      "origin": "BHAVNAGAR",
+      "origin_code": "BHU",
+      "destination": "PUNE",
+      "destination_code": "PNQ",
+      "passengers": 16621,
+      "contribution": 0.00016131806516388
+    },
+    {
+      "state": "Gujarat",
+      "origin": "BHUJ",
+      "origin_code": "BHJ",
+      "destination": "DELHI",
+      "destination_code": "DEL",
+      "passengers": 9411,
+      "contribution": 9.13401306333717e-05
+    },
+    {
+      "state": "Gujarat",
+      "origin": "BHUJ",
+      "origin_code": "BHJ",
+      "destination": "MUMBAI",
+      "destination_code": "BOM",
+      "passengers": 67303,
+      "contribution": 0.000653221210500246
+    },
+    {
+      "state": "Gujarat",
+      "origin": "JAMNAGAR",
+      "origin_code": "JGA",
+      "destination": "MUMBAI",
+      "destination_code": "BOM",
+      "passengers": 51665,
+      "contribution": 0.000501443826285533
+    },
+    {
+      "state": "Gujarat",
+      "origin": "KANDLA",
+      "origin_code": "IXY",
+      "destination": "MUMBAI",
+      "destination_code": "BOM",
+      "passengers": 18889,
+      "contribution": 0.000183330541656972
+    },
+    {
+      "state": "Gujarat",
+      "origin": "KESHOD",
+      "origin_code": "IXK",
+      "destination": "DIU",
+      "destination_code": "DIU",
+      "passengers": 186,
+      "contribution": 1.80525600869272e-06
+    },
+    {
+      "state": "Gujarat",
+      "origin": "KESHOD",
+      "origin_code": "IXK",
+      "destination": "MUMBAI",
+      "destination_code": "BOM",
+      "passengers": 6445,
+      "contribution": 6.25530912689492e-05
+    },
+    {
+      "state": "Gujarat",
+      "origin": "Rajkot International Airport",
+      "origin_code": "HSR",
+      "destination": "MUMBAI",
+      "destination_code": "BOM",
+      "passengers": 270754,
+      "contribution": 0.0026278509966537
+    },
+    {
+      "state": "Gujarat",
+      "origin": "SURAT",
+      "origin_code": "STV",
+      "destination": "DIU",
+      "destination_code": "DIU",
+      "passengers": 15209,
+      "contribution": 0.000147613648581761
+    },
+    {
+      "state": "Gujarat",
+      "origin": "VADODARA",
+      "origin_code": "BDQ",
+      "destination": "MUMBAI",
+      "destination_code": "BOM",
+      "passengers": 176722,
+      "contribution": 0.00171520673316233
+    },
+    {
+      "state": "Himachal Pradesh",
+      "origin": "DHARAMSALA",
+      "origin_code": "DHM",
+      "destination": "SIMLA",
+      "destination_code": "SLV",
+      "passengers": 1986,
+      "contribution": 1.92754754476545e-05
+    },
+    {
+      "state": "Himachal Pradesh",
+      "origin": "SIMLA",
+      "origin_code": "SLV",
+      "destination": "DHARAMSALA",
+      "destination_code": "DHM",
+      "passengers": 1934,
+      "contribution": 1.87707802194178e-05
+    },
+    {
+      "state": "Jammu and Kashmir",
+      "origin": "JAMMU",
+      "origin_code": "IXJ",
+      "destination": "LEH",
+      "destination_code": "IXL",
+      "passengers": 28757,
+      "contribution": 0.000279106166892346
+    },
+    {
+      "state": "Jammu and Kashmir",
+      "origin": "JAMMU",
+      "origin_code": "IXJ",
+      "destination": "MUMBAI",
+      "destination_code": "BOM",
+      "passengers": 36204,
+      "contribution": 0.000351384346982318
+    },
+    {
+      "state": "Jammu and Kashmir",
+      "origin": "JAMMU",
+      "origin_code": "IXJ",
+      "destination": "SRINAGAR",
+      "destination_code": "SXR",
+      "passengers": 266656,
+      "contribution": 0.00258807713039766
+    },
+    {
+      "state": "Jammu and Kashmir",
+      "origin": "SRINAGAR",
+      "origin_code": "SXR",
+      "destination": "AMRITSAR",
+      "destination_code": "ATQ",
+      "passengers": 81172,
+      "contribution": 0.000787829251277447
+    },
+    {
+      "state": "Jammu and Kashmir",
+      "origin": "SRINAGAR",
+      "origin_code": "SXR",
+      "destination": "DELHI",
+      "destination_code": "DEL",
+      "passengers": 1159586,
+      "contribution": 0.0112545677101933
+    },
+    {
+      "state": "Jammu and Kashmir",
+      "origin": "SRINAGAR",
+      "origin_code": "SXR",
+      "destination": "JAMMU",
+      "destination_code": "IXJ",
+      "passengers": 249802,
+      "contribution": 0.00242449764238418
+    },
+    {
+      "state": "Jammu and Kashmir",
+      "origin": "SRINAGAR",
+      "origin_code": "SXR",
+      "destination": "LEH",
+      "destination_code": "IXL",
+      "passengers": 10651,
+      "contribution": 0.000103375170691323
+    },
+    {
+      "state": "Jammu and Kashmir",
+      "origin": "SRINAGAR",
+      "origin_code": "SXR",
+      "destination": "MUMBAI",
+      "destination_code": "BOM",
+      "passengers": 209962,
+      "contribution": 0.00203782345213516
+    },
+    {
+      "state": "Jharkhand",
+      "origin": "Deoghar",
+      "origin_code": "DGH",
+      "destination": "KOLKATA",
+      "destination_code": "CCU",
+      "passengers": 23233,
+      "contribution": 0.000225492004569666
+    },
+    {
+      "state": "Jharkhand",
+      "origin": "Deoghar",
+      "origin_code": "DGH",
+      "destination": "MUMBAI",
+      "destination_code": "BOM",
+      "passengers": 8551,
+      "contribution": 8.29932480125345e-05
+    },
+    {
+      "state": "Jharkhand",
+      "origin": "Deoghar",
+      "origin_code": "DGH",
+      "destination": "RANCHI",
+      "destination_code": "IXR",
+      "passengers": 5269,
+      "contribution": 5.11392145688275e-05
+    },
+    {
+      "state": "Jharkhand",
+      "origin": "JAMSHEDPUR",
+      "origin_code": "IXW",
+      "destination": "KOLKATA",
+      "destination_code": "CCU",
+      "passengers": 2514,
+      "contribution": 2.44000731497499e-05
+    },
+    {
+      "state": "Jharkhand",
+      "origin": "RANCHI",
+      "origin_code": "IXR",
+      "destination": "Deoghar",
+      "destination_code": "DGH",
+      "passengers": 7184,
+      "contribution": 6.97255869163896e-05
+    },
+    {
+      "state": "Jharkhand",
+      "origin": "RANCHI",
+      "origin_code": "IXR",
+      "destination": "MUMBAI",
+      "destination_code": "BOM",
+      "passengers": 118036,
+      "contribution": 0.00114561934538738
+    },
+    {
+      "state": "Jharkhand",
+      "origin": "RANCHI",
+      "origin_code": "IXR",
+      "destination": "PATNA",
+      "destination_code": "PAT",
+      "passengers": 35557,
+      "contribution": 0.000345104773661757
+    },
+    {
+      "state": "Jharkhand",
+      "origin": "RANCHI",
+      "origin_code": "IXR",
+      "destination": "PUNE",
+      "destination_code": "PNQ",
+      "passengers": 66122,
+      "contribution": 0.000641758805412794
+    },
+    {
+      "state": "Karnataka",
+      "origin": "BELGAUM",
+      "origin_code": "IXG",
+      "destination": "BENGALURU",
+      "destination_code": "BLR",
+      "passengers": 43939,
+      "contribution": 0.000426457762182523
+    },
+    {
+      "state": "Karnataka",
+      "origin": "BELGAUM",
+      "origin_code": "IXG",
+      "destination": "DELHI",
+      "destination_code": "DEL",
+      "passengers": 49828,
+      "contribution": 0.000483614496780326
+    },
+    {
+      "state": "Karnataka",
+      "origin": "BELGAUM",
+      "origin_code": "IXG",
+      "destination": "HYDERABAD",
+      "destination_code": "HYD",
+      "passengers": 22604,
+      "contribution": 0.000219387133443495
+    },
+    {
+      "state": "Karnataka",
+      "origin": "BENGALURU",
+      "origin_code": "BLR",
+      "destination": "AGATTI ISLAND",
+      "destination_code": "AGX",
+      "passengers": 9937,
+      "contribution": 9.6445316980535e-05
+    },
+    {
+      "state": "Karnataka",
+      "origin": "BENGALURU",
+      "origin_code": "BLR",
+      "destination": "AHMEDABAD",
+      "destination_code": "AMD",
+      "passengers": 492250,
+      "contribution": 0.00477761973268274
+    },
+    {
+      "state": "Karnataka",
+      "origin": "BENGALURU",
+      "origin_code": "BLR",
+      "destination": "BELGAUM",
+      "destination_code": "IXG",
+      "passengers": 44872,
+      "contribution": 0.000435513159258385
+    },
+    {
+      "state": "Karnataka",
+      "origin": "BENGALURU",
+      "origin_code": "BLR",
+      "destination": "CHENNAI",
+      "destination_code": "MAA",
+      "passengers": 733012,
+      "contribution": 0.00711437805077347
+    },
+    {
+      "state": "Karnataka",
+      "origin": "BENGALURU",
+      "origin_code": "BLR",
+      "destination": "DABOLIM",
+      "destination_code": "GOI",
+      "passengers": 574907,
+      "contribution": 0.00557986191499733
+    },
+    {
+      "state": "Karnataka",
+      "origin": "BENGALURU",
+      "origin_code": "BLR",
+      "destination": "DELHI",
+      "destination_code": "DEL",
+      "passengers": 2331024,
+      "contribution": 0.0226241671097147
+    },
+    {
+      "state": "Karnataka",
+      "origin": "BENGALURU",
+      "origin_code": "BLR",
+      "destination": "HYDERABAD",
+      "destination_code": "HYD",
+      "passengers": 1153136,
+      "contribution": 0.011191966090537
+    },
+    {
+      "state": "Karnataka",
+      "origin": "BENGALURU",
+      "origin_code": "BLR",
+      "destination": "KOCHI",
+      "destination_code": "COK",
+      "passengers": 735881,
+      "contribution": 0.00714222363942368
+    },
+    {
+      "state": "Karnataka",
+      "origin": "BENGALURU",
+      "origin_code": "BLR",
+      "destination": "KOLKATA",
+      "destination_code": "CCU",
+      "passengers": 1180899,
+      "contribution": 0.0114614248140281
+    },
+    {
+      "state": "Karnataka",
+      "origin": "BENGALURU",
+      "origin_code": "BLR",
+      "destination": "MUMBAI",
+      "destination_code": "BOM",
+      "passengers": 2030837,
+      "contribution": 0.0197106489082016
+    },
+    {
+      "state": "Karnataka",
+      "origin": "BENGALURU",
+      "origin_code": "BLR",
+      "destination": "PUNE",
+      "destination_code": "PNQ",
+      "passengers": 939239,
+      "contribution": 0.00911595079757278
+    },
+    {
+      "state": "Karnataka",
+      "origin": "HUBLI",
+      "origin_code": "HBX",
+      "destination": "HYDERABAD",
+      "destination_code": "HYD",
+      "passengers": 22263,
+      "contribution": 0.000216077497427559
+    },
+    {
+      "state": "Karnataka",
+      "origin": "HUBLI",
+      "origin_code": "HBX",
+      "destination": "MUMBAI",
+      "destination_code": "BOM",
+      "passengers": 34952,
+      "contribution": 0.000339232838794773
+    },
+    {
+      "state": "Karnataka",
+      "origin": "HUBLI",
+      "origin_code": "HBX",
+      "destination": "PUNE",
+      "destination_code": "PNQ",
+      "passengers": 10735,
+      "contribution": 0.000104190447598475
+    },
+    {
+      "state": "Karnataka",
+      "origin": "KALABURAGI",
+      "origin_code": "GBI",
+      "destination": "TIRUPATI",
+      "destination_code": "TIR",
+      "passengers": 1334,
+      "contribution": 1.29473737397639e-05
+    },
+    {
+      "state": "Karnataka",
+      "origin": "MANGALORE",
+      "origin_code": "IXE",
+      "destination": "MUMBAI",
+      "destination_code": "BOM",
+      "passengers": 311704,
+      "contribution": 0.00302529848889008
+    },
+    {
+      "state": "Karnataka",
+      "origin": "MANGALORE",
+      "origin_code": "IXE",
+      "destination": "PUNE",
+      "destination_code": "PNQ",
+      "passengers": 15718,
+      "contribution": 0.000152553838412001
+    },
+    {
+      "state": "Karnataka",
+      "origin": "Shivamogga Airport",
+      "origin_code": "RQY",
+      "destination": "TIRUPATI",
+      "destination_code": "TIR",
+      "passengers": 9914,
+      "contribution": 9.62220863988149e-05
+    },
+    {
+      "state": "Kerala",
+      "origin": "KANNUR",
+      "origin_code": "CNN",
+      "destination": "KOCHI",
+      "destination_code": "COK",
+      "passengers": 14960,
+      "contribution": 0.000145196934892704
+    },
+    {
+      "state": "Kerala",
+      "origin": "KANNUR",
+      "origin_code": "CNN",
+      "destination": "MUMBAI",
+      "destination_code": "BOM",
+      "passengers": 33431,
+      "contribution": 0.00032447050336885
+    },
+    {
+      "state": "Kerala",
+      "origin": "KANNUR",
+      "origin_code": "CNN",
+      "destination": "TRIVANDRUM",
+      "destination_code": "TRV",
+      "passengers": 12954,
+      "contribution": 0.000125727345895728
+    },
+    {
+      "state": "Kerala",
+      "origin": "KOCHI",
+      "origin_code": "COK",
+      "destination": "AGATTI ISLAND",
+      "destination_code": "AGX",
+      "passengers": 36844,
+      "contribution": 0.000357595980560615
+    },
+    {
+      "state": "Kerala",
+      "origin": "KOCHI",
+      "origin_code": "COK",
+      "destination": "BENGALURU",
+      "destination_code": "BLR",
+      "passengers": 749267,
+      "contribution": 0.00727214383798476
+    },
+    {
+      "state": "Kerala",
+      "origin": "KOCHI",
+      "origin_code": "COK",
+      "destination": "DELHI",
+      "destination_code": "DEL",
+      "passengers": 500243,
+      "contribution": 0.00485519721266919
+    },
+    {
+      "state": "Kerala",
+      "origin": "KOCHI",
+      "origin_code": "COK",
+      "destination": "HYDERABAD",
+      "destination_code": "HYD",
+      "passengers": 356740,
+      "contribution": 0.0034624033792529
+    },
+    {
+      "state": "Kerala",
+      "origin": "KOCHI",
+      "origin_code": "COK",
+      "destination": "KANNUR",
+      "destination_code": "CNN",
+      "passengers": 17924,
+      "contribution": 0.000173964562902195
+    },
+    {
+      "state": "Kerala",
+      "origin": "KOCHI",
+      "origin_code": "COK",
+      "destination": "KOLKATA",
+      "destination_code": "CCU",
+      "passengers": 51233,
+      "contribution": 0.000497250973620182
+    },
+    {
+      "state": "Kerala",
+      "origin": "KOCHI",
+      "origin_code": "COK",
+      "destination": "MUMBAI",
+      "destination_code": "BOM",
+      "passengers": 581795,
+      "contribution": 0.00564671462138375
+    },
+    {
+      "state": "Kerala",
+      "origin": "KOCHI",
+      "origin_code": "COK",
+      "destination": "PUNE",
+      "destination_code": "PNQ",
+      "passengers": 78126,
+      "contribution": 0.000758265757715737
+    },
+    {
+      "state": "Kerala",
+      "origin": "KOZHIKODE",
+      "origin_code": "CCJ",
+      "destination": "MUMBAI",
+      "destination_code": "BOM",
+      "passengers": 83098,
+      "contribution": 0.000806522386077136
+    },
+    {
+      "state": "Kerala",
+      "origin": "TRIVANDRUM",
+      "origin_code": "TRV",
+      "destination": "KANNUR",
+      "destination_code": "CNN",
+      "passengers": 12037,
+      "contribution": 0.000116827239659324
+    },
+    {
+      "state": "Kerala",
+      "origin": "TRIVANDRUM",
+      "origin_code": "TRV",
+      "destination": "MUMBAI",
+      "destination_code": "BOM",
+      "passengers": 216156,
+      "contribution": 0.00209794041836012
+    },
+    {
+      "state": "Ladakh",
+      "origin": "LEH",
+      "origin_code": "IXL",
+      "destination": "JAMMU",
+      "destination_code": "IXJ",
+      "passengers": 33641,
+      "contribution": 0.000326508695636729
+    },
+    {
+      "state": "Ladakh",
+      "origin": "LEH",
+      "origin_code": "IXL",
+      "destination": "MUMBAI",
+      "destination_code": "BOM",
+      "passengers": 20344,
+      "contribution": 0.000197452302370132
+    },
+    {
+      "state": "Ladakh",
+      "origin": "LEH",
+      "origin_code": "IXL",
+      "destination": "SRINAGAR",
+      "destination_code": "SXR",
+      "passengers": 13189,
+      "contribution": 0.000128008180100259
+    },
+    {
+      "state": "Lakshadweep",
+      "origin": "AGATTI ISLAND",
+      "origin_code": "AGX",
+      "destination": "BENGALURU",
+      "destination_code": "BLR",
+      "passengers": 7540,
+      "contribution": 7.31808080943176e-05
+    },
+    {
+      "state": "Lakshadweep",
+      "origin": "AGATTI ISLAND",
+      "origin_code": "AGX",
+      "destination": "Goa",
+      "destination_code": "GOI",
+      "passengers": 10143,
+      "contribution": 9.84446865385495e-05
+    },
+    {
+      "state": "Lakshadweep",
+      "origin": "AGATTI ISLAND",
+      "origin_code": "AGX",
+      "destination": "KOCHI",
+      "destination_code": "COK",
+      "passengers": 27646,
+      "contribution": 0.000268323159227521
+    },
+    {
+      "state": "Madhya Pradesh",
+      "origin": "BHOPAL",
+      "origin_code": "BHO",
+      "destination": "DELHI",
+      "destination_code": "DEL",
+      "passengers": 305542,
+      "contribution": 0.00296549210434403
+    },
+    {
+      "state": "Madhya Pradesh",
+      "origin": "BHOPAL",
+      "origin_code": "BHO",
+      "destination": "HYDERABAD",
+      "destination_code": "HYD",
+      "passengers": 30179,
+      "contribution": 0.000292907640249126
+    },
+    {
+      "state": "Madhya Pradesh",
+      "origin": "BHOPAL",
+      "origin_code": "BHO",
+      "destination": "MUMBAI",
+      "destination_code": "BOM",
+      "passengers": 175925,
+      "contribution": 0.00170747130822186
+    },
+    {
+      "state": "Madhya Pradesh",
+      "origin": "GWALIOR",
+      "origin_code": "GWL",
+      "destination": "HYDERABAD",
+      "destination_code": "HYD",
+      "passengers": 8439,
+      "contribution": 8.19062121363324e-05
+    },
+    {
+      "state": "Madhya Pradesh",
+      "origin": "GWALIOR",
+      "origin_code": "GWL",
+      "destination": "INDORE",
+      "destination_code": "IDR",
+      "passengers": 2367,
+      "contribution": 2.29733385622347e-05
+    },
+    {
+      "state": "Madhya Pradesh",
+      "origin": "GWALIOR",
+      "origin_code": "GWL",
+      "destination": "MUMBAI",
+      "destination_code": "BOM",
+      "passengers": 57807,
+      "contribution": 0.000561056097282257
+    },
+    {
+      "state": "Madhya Pradesh",
+      "origin": "INDORE",
+      "origin_code": "IDR",
+      "destination": "GWALIOR",
+      "destination_code": "GWL",
+      "passengers": 2302,
+      "contribution": 2.23424695269389e-05
+    },
+    {
+      "state": "Madhya Pradesh",
+      "origin": "INDORE",
+      "origin_code": "IDR",
+      "destination": "KOLKATA",
+      "destination_code": "CCU",
+      "passengers": 91569,
+      "contribution": 0.000888739179892383
+    },
+    {
+      "state": "Madhya Pradesh",
+      "origin": "INDORE",
+      "origin_code": "IDR",
+      "destination": "MUMBAI",
+      "destination_code": "BOM",
+      "passengers": 360310,
+      "contribution": 0.00349705264780684
+    },
+    {
+      "state": "Madhya Pradesh",
+      "origin": "INDORE",
+      "origin_code": "IDR",
+      "destination": "PUNE",
+      "destination_code": "PNQ",
+      "passengers": 79847,
+      "contribution": 0.000774969228634878
+    },
+    {
+      "state": "Madhya Pradesh",
+      "origin": "JABALPUR",
+      "origin_code": "JLR",
+      "destination": "BILASPUR",
+      "destination_code": "PAB",
+      "passengers": 3649,
+      "contribution": 3.54160170737619e-05
+    },
+    {
+      "state": "Madhya Pradesh",
+      "origin": "JABALPUR",
+      "origin_code": "JLR",
+      "destination": "JAGDALPUR",
+      "destination_code": "JGB",
+      "passengers": 3221,
+      "contribution": 3.12619871182755e-05
+    },
+    {
+      "state": "Madhya Pradesh",
+      "origin": "JABALPUR",
+      "origin_code": "JLR",
+      "destination": "MUMBAI",
+      "destination_code": "BOM",
+      "passengers": 44404,
+      "contribution": 0.000430970902204255
+    },
+    {
+      "state": "Madhya Pradesh",
+      "origin": "KHAJURAHO",
+      "origin_code": "HJR",
+      "destination": "VARANASI",
+      "destination_code": "VNS",
+      "passengers": 11463,
+      "contribution": 0.000111256180793788
+    },
+    {
+      "state": "Maharashtra",
+      "origin": "AURANGABAD",
+      "origin_code": "IXU",
+      "destination": "DELHI",
+      "destination_code": "DEL",
+      "passengers": 134418,
+      "contribution": 0.00130461775363687
+    },
+    {
+      "state": "Maharashtra",
+      "origin": "AURANGABAD",
+      "origin_code": "IXU",
+      "destination": "HYDERABAD",
+      "destination_code": "HYD",
+      "passengers": 50395,
+      "contribution": 0.000489117615903599
+    },
+    {
+      "state": "Maharashtra",
+      "origin": "AURANGABAD",
+      "origin_code": "IXU",
+      "destination": "MUMBAI",
+      "destination_code": "BOM",
+      "passengers": 109196,
+      "contribution": 0.00105982115658715
+    },
+    {
+      "state": "Maharashtra",
+      "origin": "Gondia",
+      "origin_code": "GDB",
+      "destination": "HYDERABAD",
+      "destination_code": "HYD",
+      "passengers": 16134,
+      "contribution": 0.000156591400237894
+    },
+    {
+      "state": "Maharashtra",
+      "origin": "JALGAON",
+      "origin_code": "JLG",
+      "destination": "MUMBAI",
+      "destination_code": "BOM",
+      "passengers": 5550,
+      "contribution": 5.38665099367988e-05
+    },
+    {
+      "state": "Maharashtra",
+      "origin": "JALGAON",
+      "origin_code": "JLG",
+      "destination": "PUNE",
+      "destination_code": "PNQ",
+      "passengers": 10639,
+      "contribution": 0.00010325870256173
+    },
+    {
+      "state": "Maharashtra",
+      "origin": "KOLHAPUR",
+      "origin_code": "KLH",
+      "destination": "MUMBAI",
+      "destination_code": "BOM",
+      "passengers": 15761,
+      "contribution": 0.000152971182543042
+    },
+    {
+      "state": "Maharashtra",
+      "origin": "KOLHAPUR",
+      "origin_code": "KLH",
+      "destination": "TIRUPATI",
+      "destination_code": "TIR",
+      "passengers": 6886,
+      "contribution": 6.68332950314948e-05
+    },
+    {
+      "state": "Maharashtra",
+      "origin": "MUMBAI",
+      "origin_code": "BOM",
+      "destination": "AHMEDABAD",
+      "destination_code": "AMD",
+      "passengers": 1056513,
+      "contribution": 0.010254174416731
+    },
+    {
+      "state": "Maharashtra",
+      "origin": "MUMBAI",
+      "origin_code": "BOM",
+      "destination": "AMRITSAR",
+      "destination_code": "ATQ",
+      "passengers": 146645,
+      "contribution": 0.00142328907201475
+    },
+    {
+      "state": "Maharashtra",
+      "origin": "MUMBAI",
+      "origin_code": "BOM",
+      "destination": "AURANGABAD",
+      "destination_code": "IXU",
+      "passengers": 110339,
+      "contribution": 0.00107091474593089
+    },
+    {
+      "state": "Maharashtra",
+      "origin": "MUMBAI",
+      "origin_code": "BOM",
+      "destination": "Ayodhya International Airp",
+      "destination_code": "AYJ",
+      "passengers": 126388,
+      "contribution": 0.00122668116358417
+    },
+    {
+      "state": "Maharashtra",
+      "origin": "MUMBAI",
+      "origin_code": "BOM",
+      "destination": "BENGALURU",
+      "destination_code": "BLR",
+      "passengers": 2083737,
+      "contribution": 0.0202240792461577
+    },
+    {
+      "state": "Maharashtra",
+      "origin": "MUMBAI",
+      "origin_code": "BOM",
+      "destination": "BHAVNAGAR",
+      "destination_code": "BHU",
+      "passengers": 19491,
+      "contribution": 0.000189173359491558
+    },
+    {
+      "state": "Maharashtra",
+      "origin": "MUMBAI",
+      "origin_code": "BOM",
+      "destination": "BHOPAL",
+      "destination_code": "BHO",
+      "passengers": 174496,
+      "contribution": 0.00169360189512282
+    },
+    {
+      "state": "Maharashtra",
+      "origin": "MUMBAI",
+      "origin_code": "BOM",
+      "destination": "BHUBANESWAR",
+      "destination_code": "BBI",
+      "passengers": 294536,
+      "contribution": 0.00285867141815225
+    },
+    {
+      "state": "Maharashtra",
+      "origin": "MUMBAI",
+      "origin_code": "BOM",
+      "destination": "BHUJ",
+      "destination_code": "BHJ",
+      "passengers": 68733,
+      "contribution": 0.000667100329276755
+    },
+    {
+      "state": "Maharashtra",
+      "origin": "MUMBAI",
+      "origin_code": "BOM",
+      "destination": "CHANDIGARH",
+      "destination_code": "IXC",
+      "passengers": 347247,
+      "contribution": 0.00337026738306731
+    },
+    {
+      "state": "Maharashtra",
+      "origin": "MUMBAI",
+      "origin_code": "BOM",
+      "destination": "CHENNAI",
+      "destination_code": "MAA",
+      "passengers": 1066489,
+      "contribution": 0.0103509982551327
+    },
+    {
+      "state": "Maharashtra",
+      "origin": "MUMBAI",
+      "origin_code": "BOM",
+      "destination": "COIMBATORE",
+      "destination_code": "CJB",
+      "passengers": 370265,
+      "contribution": 0.00359367266698177
+    },
+    {
+      "state": "Maharashtra",
+      "origin": "MUMBAI",
+      "origin_code": "BOM",
+      "destination": "DABOLIM",
+      "destination_code": "GOI",
+      "passengers": 753390,
+      "contribution": 0.00731216034617745
+    },
+    {
+      "state": "Maharashtra",
+      "origin": "MUMBAI",
+      "origin_code": "BOM",
+      "destination": "DARBHANGA",
+      "destination_code": "DBR",
+      "passengers": 64468,
+      "contribution": 0.000625705614883882
+    },
+    {
+      "state": "Maharashtra",
+      "origin": "MUMBAI",
+      "origin_code": "BOM",
+      "destination": "DELHI",
+      "destination_code": "DEL",
+      "passengers": 3424641,
+      "contribution": 0.0332384609831475
+    },
+    {
+      "state": "Maharashtra",
+      "origin": "MUMBAI",
+      "origin_code": "BOM",
+      "destination": "DIU",
+      "destination_code": "DIU",
+      "passengers": 14239,
+      "contribution": 0.000138199141439654
+    },
+    {
+      "state": "Maharashtra",
+      "origin": "MUMBAI",
+      "origin_code": "BOM",
+      "destination": "Deoghar",
+      "destination_code": "DGH",
+      "passengers": 8678,
+      "contribution": 8.42258690507279e-05
+    },
+    {
+      "state": "Maharashtra",
+      "origin": "MUMBAI",
+      "origin_code": "BOM",
+      "destination": "GUWAHATI",
+      "destination_code": "GAU",
+      "passengers": 193977,
+      "contribution": 0.00188267819783971
+    },
+    {
+      "state": "Maharashtra",
+      "origin": "MUMBAI",
+      "origin_code": "BOM",
+      "destination": "GWALIOR",
+      "destination_code": "GWL",
+      "passengers": 58853,
+      "contribution": 0.000571208235911787
+    },
+    {
+      "state": "Maharashtra",
+      "origin": "MUMBAI",
+      "origin_code": "BOM",
+      "destination": "Goa",
+      "destination_code": "GOI",
+      "passengers": 494513,
+      "contribution": 0.0047995836807885
+    },
+    {
+      "state": "Maharashtra",
+      "origin": "MUMBAI",
+      "origin_code": "BOM",
+      "destination": "HUBLI",
+      "destination_code": "HBX",
+      "passengers": 35300,
+      "contribution": 0.000342610414552972
+    },
+    {
+      "state": "Maharashtra",
+      "origin": "MUMBAI",
+      "origin_code": "BOM",
+      "destination": "HYDERABAD",
+      "destination_code": "HYD",
+      "passengers": 1186691,
+      "contribution": 0.0115176400979117
+    },
+    {
+      "state": "Maharashtra",
+      "origin": "MUMBAI",
+      "origin_code": "BOM",
+      "destination": "INDORE",
+      "destination_code": "IDR",
+      "passengers": 364505,
+      "contribution": 0.00353776796477709
+    },
+    {
+      "state": "Maharashtra",
+      "origin": "MUMBAI",
+      "origin_code": "BOM",
+      "destination": "JABALPUR",
+      "destination_code": "JLR",
+      "passengers": 44855,
+      "contribution": 0.000435348162741461
+    },
+    {
+      "state": "Maharashtra",
+      "origin": "MUMBAI",
+      "origin_code": "BOM",
+      "destination": "JAIPUR",
+      "destination_code": "JAI",
+      "passengers": 601115,
+      "contribution": 0.00583422831002861
+    },
+    {
+      "state": "Maharashtra",
+      "origin": "MUMBAI",
+      "origin_code": "BOM",
+      "destination": "JAISALMER",
+      "destination_code": "JSA",
+      "passengers": 24975,
+      "contribution": 0.000242399294715594
+    },
+    {
+      "state": "Maharashtra",
+      "origin": "MUMBAI",
+      "origin_code": "BOM",
+      "destination": "JALGAON",
+      "destination_code": "JLG",
+      "passengers": 4840,
+      "contribution": 4.6975478935875e-05
+    },
+    {
+      "state": "Maharashtra",
+      "origin": "MUMBAI",
+      "origin_code": "BOM",
+      "destination": "JAMMU",
+      "destination_code": "IXJ",
+      "passengers": 35950,
+      "contribution": 0.000348919104905931
+    },
+    {
+      "state": "Maharashtra",
+      "origin": "MUMBAI",
+      "origin_code": "BOM",
+      "destination": "JAMNAGAR",
+      "destination_code": "JGA",
+      "passengers": 55533,
+      "contribution": 0.000538985386724369
+    },
+    {
+      "state": "Maharashtra",
+      "origin": "MUMBAI",
+      "origin_code": "BOM",
+      "destination": "JHARSUGUDA",
+      "destination_code": "VEJ",
+      "passengers": 3479,
+      "contribution": 3.37660519045267e-05
+    },
+    {
+      "state": "Maharashtra",
+      "origin": "MUMBAI",
+      "origin_code": "BOM",
+      "destination": "JODHPUR",
+      "destination_code": "JDH",
+      "passengers": 148237,
+      "contribution": 0.00143874051054076
+    },
+    {
+      "state": "Maharashtra",
+      "origin": "MUMBAI",
+      "origin_code": "BOM",
+      "destination": "KANDLA",
+      "destination_code": "IXY",
+      "passengers": 21127,
+      "contribution": 0.000205051847826081
+    },
+    {
+      "state": "Maharashtra",
+      "origin": "MUMBAI",
+      "origin_code": "BOM",
+      "destination": "KANNUR",
+      "destination_code": "CNN",
+      "passengers": 34947,
+      "contribution": 0.000339184310407443
+    },
+    {
+      "state": "Maharashtra",
+      "origin": "MUMBAI",
+      "origin_code": "BOM",
+      "destination": "KESHOD",
+      "destination_code": "IXK",
+      "passengers": 7214,
+      "contribution": 7.00167572403723e-05
+    },
+    {
+      "state": "Maharashtra",
+      "origin": "MUMBAI",
+      "origin_code": "BOM",
+      "destination": "KOCHI",
+      "destination_code": "COK",
+      "passengers": 589062,
+      "contribution": 0.00571724577952983
+    },
+    {
+      "state": "Maharashtra",
+      "origin": "MUMBAI",
+      "origin_code": "BOM",
+      "destination": "KOLHAPUR",
+      "destination_code": "KLH",
+      "passengers": 17052,
+      "contribution": 0.000165501212151764
+    },
+    {
+      "state": "Maharashtra",
+      "origin": "MUMBAI",
+      "origin_code": "BOM",
+      "destination": "KOZHIKODE",
+      "destination_code": "CCJ",
+      "passengers": 84338,
+      "contribution": 0.000818557426135087
+    },
+    {
+      "state": "Maharashtra",
+      "origin": "MUMBAI",
+      "origin_code": "BOM",
+      "destination": "LEH",
+      "destination_code": "IXL",
+      "passengers": 21094,
+      "contribution": 0.0002047315604697
+    },
+    {
+      "state": "Maharashtra",
+      "origin": "MUMBAI",
+      "origin_code": "BOM",
+      "destination": "MADURAI",
+      "destination_code": "IXM",
+      "passengers": 90083,
+      "contribution": 0.000874316543177774
+    },
+    {
+      "state": "Maharashtra",
+      "origin": "MUMBAI",
+      "origin_code": "BOM",
+      "destination": "MANGALORE",
+      "destination_code": "IXE",
+      "passengers": 318833,
+      "contribution": 0.00309449026354583
+    },
+    {
+      "state": "Maharashtra",
+      "origin": "MUMBAI",
+      "origin_code": "BOM",
+      "destination": "Malvan",
+      "destination_code": "SDW",
+      "passengers": 4753,
+      "contribution": 4.61310849963251e-05
+    },
+    {
+      "state": "Maharashtra",
+      "origin": "MUMBAI",
+      "origin_code": "BOM",
+      "destination": "NAGPUR",
+      "destination_code": "NAG",
+      "passengers": 346052,
+      "contribution": 0.00335866909849533
+    },
+    {
+      "state": "Maharashtra",
+      "origin": "MUMBAI",
+      "origin_code": "BOM",
+      "destination": "PATNA",
+      "destination_code": "PAT",
+      "passengers": 188602,
+      "contribution": 0.00183051018145948
+    },
+    {
+      "state": "Maharashtra",
+      "origin": "MUMBAI",
+      "origin_code": "BOM",
+      "destination": "RAIPUR",
+      "destination_code": "RPR",
+      "passengers": 184886,
+      "contribution": 0.00179444388399549
+    },
+    {
+      "state": "Maharashtra",
+      "origin": "MUMBAI",
+      "origin_code": "BOM",
+      "destination": "RANCHI",
+      "destination_code": "IXR",
+      "passengers": 121140,
+      "contribution": 0.00117574576824213
+    },
+    {
+      "state": "Maharashtra",
+      "origin": "MUMBAI",
+      "origin_code": "BOM",
+      "destination": "Rajkot International Airport",
+      "destination_code": "HSR",
+      "passengers": 283261,
+      "contribution": 0.00274923990472208
+    },
+    {
+      "state": "Maharashtra",
+      "origin": "MUMBAI",
+      "origin_code": "BOM",
+      "destination": "SRINAGAR",
+      "destination_code": "SXR",
+      "passengers": 204703,
+      "contribution": 0.00198678129434099
+    },
+    {
+      "state": "Maharashtra",
+      "origin": "MUMBAI",
+      "origin_code": "BOM",
+      "destination": "TRIVANDRUM",
+      "destination_code": "TRV",
+      "passengers": 211167,
+      "contribution": 0.0020495187934818
+    },
+    {
+      "state": "Maharashtra",
+      "origin": "MUMBAI",
+      "origin_code": "BOM",
+      "destination": "UDAIPUR",
+      "destination_code": "UDR",
+      "passengers": 282453,
+      "contribution": 0.00274139771732948
+    },
+    {
+      "state": "Maharashtra",
+      "origin": "MUMBAI",
+      "origin_code": "BOM",
+      "destination": "VADODARA",
+      "destination_code": "BDQ",
+      "passengers": 160761,
+      "contribution": 0.00156029441512607
+    },
+    {
+      "state": "Maharashtra",
+      "origin": "MUMBAI",
+      "origin_code": "BOM",
+      "destination": "VARANASI",
+      "destination_code": "VNS",
+      "passengers": 414098,
+      "contribution": 0.00401910162735288
+    },
+    {
+      "state": "Maharashtra",
+      "origin": "MUMBAI",
+      "origin_code": "BOM",
+      "destination": "VIJAYAWADA",
+      "destination_code": "VGA",
+      "passengers": 67312,
+      "contribution": 0.000653308561597441
+    },
+    {
+      "state": "Maharashtra",
+      "origin": "MUMBAI",
+      "origin_code": "BOM",
+      "destination": "VISAKHAPATNAM",
+      "destination_code": "VTZ",
+      "passengers": 116877,
+      "contribution": 0.00113437046520419
+    },
+    {
+      "state": "Maharashtra",
+      "origin": "Malvan",
+      "origin_code": "SDW",
+      "destination": "MUMBAI",
+      "destination_code": "BOM",
+      "passengers": 4588,
+      "contribution": 4.45296482144203e-05
+    },
+    {
+      "state": "Maharashtra",
+      "origin": "NAGPUR",
+      "origin_code": "NAG",
+      "destination": "Kishangarh",
+      "destination_code": "KQH",
+      "passengers": 11238,
+      "contribution": 0.000109072403363918
+    },
+    {
+      "state": "Maharashtra",
+      "origin": "NAGPUR",
+      "origin_code": "NAG",
+      "destination": "MUMBAI",
+      "destination_code": "BOM",
+      "passengers": 344802,
+      "contribution": 0.00334653700166272
+    },
+    {
+      "state": "Maharashtra",
+      "origin": "NAGPUR",
+      "origin_code": "NAG",
+      "destination": "NANDED",
+      "destination_code": "NDC",
+      "passengers": 1303,
+      "contribution": 1.26464977383151e-05
+    },
+    {
+      "state": "Maharashtra",
+      "origin": "NAGPUR",
+      "origin_code": "NAG",
+      "destination": "NASIK",
+      "destination_code": "ISK",
+      "passengers": 10075,
+      "contribution": 9.77847004708554e-05
+    },
+    {
+      "state": "Maharashtra",
+      "origin": "NAGPUR",
+      "origin_code": "NAG",
+      "destination": "PUNE",
+      "destination_code": "PNQ",
+      "passengers": 160408,
+      "contribution": 0.00155686831098054
+    },
+    {
+      "state": "Maharashtra",
+      "origin": "NANDED",
+      "origin_code": "NDC",
+      "destination": "HINDON AIRPORT",
+      "destination_code": "HDO",
+      "passengers": 23042,
+      "contribution": 0.000223638220173643
+    },
+    {
+      "state": "Maharashtra",
+      "origin": "NANDED",
+      "origin_code": "NDC",
+      "destination": "NAGPUR",
+      "destination_code": "NAG",
+      "passengers": 1518,
+      "contribution": 1.47332183935244e-05
+    },
+    {
+      "state": "Maharashtra",
+      "origin": "NANDED",
+      "origin_code": "NDC",
+      "destination": "PUNE",
+      "destination_code": "PNQ",
+      "passengers": 10271,
+      "contribution": 9.9687013254209e-05
+    },
+    {
+      "state": "Maharashtra",
+      "origin": "NASIK",
+      "origin_code": "ISK",
+      "destination": "NAGPUR",
+      "destination_code": "NAG",
+      "passengers": 10302,
+      "contribution": 9.99878892556578e-05
+    },
+    {
+      "state": "Maharashtra",
+      "origin": "PUNE",
+      "origin_code": "PNQ",
+      "destination": "AHMEDABAD",
+      "destination_code": "AMD",
+      "passengers": 326374,
+      "contribution": 0.00316768077731761
+    },
+    {
+      "state": "Maharashtra",
+      "origin": "PUNE",
+      "origin_code": "PNQ",
+      "destination": "BENGALURU",
+      "destination_code": "BLR",
+      "passengers": 941870,
+      "contribution": 0.00914148643498606
+    },
+    {
+      "state": "Maharashtra",
+      "origin": "PUNE",
+      "origin_code": "PNQ",
+      "destination": "BHAVNAGAR",
+      "destination_code": "BHU",
+      "passengers": 16383,
+      "contribution": 0.00015900811392695
+    },
+    {
+      "state": "Maharashtra",
+      "origin": "PUNE",
+      "origin_code": "PNQ",
+      "destination": "DELHI",
+      "destination_code": "DEL",
+      "passengers": 1454196,
+      "contribution": 0.014113957348478
+    },
+    {
+      "state": "Maharashtra",
+      "origin": "PUNE",
+      "origin_code": "PNQ",
+      "destination": "Goa",
+      "destination_code": "GOI",
+      "passengers": 138164,
+      "contribution": 0.00134097522142484
+    },
+    {
+      "state": "Maharashtra",
+      "origin": "PUNE",
+      "origin_code": "PNQ",
+      "destination": "HUBLI",
+      "destination_code": "HBX",
+      "passengers": 11817,
+      "contribution": 0.000114691990616784
+    },
+    {
+      "state": "Maharashtra",
+      "origin": "PUNE",
+      "origin_code": "PNQ",
+      "destination": "HYDERABAD",
+      "destination_code": "HYD",
+      "passengers": 314658,
+      "contribution": 0.00305396906012491
+    },
+    {
+      "state": "Maharashtra",
+      "origin": "PUNE",
+      "origin_code": "PNQ",
+      "destination": "INDORE",
+      "destination_code": "IDR",
+      "passengers": 75648,
+      "contribution": 0.000734215088954766
+    },
+    {
+      "state": "Maharashtra",
+      "origin": "PUNE",
+      "origin_code": "PNQ",
+      "destination": "JAIPUR",
+      "destination_code": "JAI",
+      "passengers": 138173,
+      "contribution": 0.00134106257252204
+    },
+    {
+      "state": "Maharashtra",
+      "origin": "PUNE",
+      "origin_code": "PNQ",
+      "destination": "JALGAON",
+      "destination_code": "JLG",
+      "passengers": 10123,
+      "contribution": 9.82505729892277e-05
+    },
+    {
+      "state": "Maharashtra",
+      "origin": "PUNE",
+      "origin_code": "PNQ",
+      "destination": "JODHPUR",
+      "destination_code": "JDH",
+      "passengers": 49328,
+      "contribution": 0.000478761658047281
+    },
+    {
+      "state": "Maharashtra",
+      "origin": "PUNE",
+      "origin_code": "PNQ",
+      "destination": "KOCHI",
+      "destination_code": "COK",
+      "passengers": 79852,
+      "contribution": 0.000775017757022208
+    },
+    {
+      "state": "Maharashtra",
+      "origin": "PUNE",
+      "origin_code": "PNQ",
+      "destination": "Kishangarh",
+      "destination_code": "KQH",
+      "passengers": 16075,
+      "contribution": 0.000156018765267395
+    },
+    {
+      "state": "Maharashtra",
+      "origin": "PUNE",
+      "origin_code": "PNQ",
+      "destination": "MANGALORE",
+      "destination_code": "IXE",
+      "passengers": 15496,
+      "contribution": 0.000150399178014529
+    },
+    {
+      "state": "Maharashtra",
+      "origin": "PUNE",
+      "origin_code": "PNQ",
+      "destination": "Malvan",
+      "destination_code": "SDW",
+      "passengers": 1524,
+      "contribution": 1.4791452458321e-05
+    },
+    {
+      "state": "Maharashtra",
+      "origin": "PUNE",
+      "origin_code": "PNQ",
+      "destination": "NAGPUR",
+      "destination_code": "NAG",
+      "passengers": 163494,
+      "contribution": 0.0015868200316409
+    },
+    {
+      "state": "Maharashtra",
+      "origin": "PUNE",
+      "origin_code": "PNQ",
+      "destination": "NANDED",
+      "destination_code": "NDC",
+      "passengers": 10274,
+      "contribution": 9.97161302866073e-05
+    },
+    {
+      "state": "Maharashtra",
+      "origin": "PUNE",
+      "origin_code": "PNQ",
+      "destination": "PATNA",
+      "destination_code": "PAT",
+      "passengers": 63051,
+      "contribution": 0.000611952669914432
+    },
+    {
+      "state": "Maharashtra",
+      "origin": "PUNE",
+      "origin_code": "PNQ",
+      "destination": "RAIPUR",
+      "destination_code": "RPR",
+      "passengers": 40502,
+      "contribution": 0.000393099348731572
+    },
+    {
+      "state": "Maharashtra",
+      "origin": "PUNE",
+      "origin_code": "PNQ",
+      "destination": "RANCHI",
+      "destination_code": "IXR",
+      "passengers": 67423,
+      "contribution": 0.000654385891796177
+    },
+    {
+      "state": "Maharashtra",
+      "origin": "PUNE",
+      "origin_code": "PNQ",
+      "destination": "VARANASI",
+      "destination_code": "VNS",
+      "passengers": 50347,
+      "contribution": 0.000488651743385227
+    },
+    {
+      "state": "Maharashtra",
+      "origin": "SHIRDI",
+      "origin_code": "SAG",
+      "destination": "TIRUPATI",
+      "destination_code": "TIR",
+      "passengers": 6312,
+      "contribution": 6.12622361659592e-05
+    },
+    {
+      "state": "Maharashtra",
+      "origin": "SHIRDI",
+      "origin_code": "SAG",
+      "destination": "VIJAYAWADA",
+      "destination_code": "VGA",
+      "passengers": 15873,
+      "contribution": 0.000154058218419245
+    },
+    {
+      "state": "Manipur",
+      "origin": "IMPHAL",
+      "origin_code": "IMF",
+      "destination": "DIBRUGARH",
+      "destination_code": "DIB",
+      "passengers": 28036,
+      "contribution": 0.000272108373439296
+    },
+    {
+      "state": "Manipur",
+      "origin": "IMPHAL",
+      "origin_code": "IMF",
+      "destination": "DIMAPUR",
+      "destination_code": "DMU",
+      "passengers": 7017,
+      "contribution": 6.81047387795526e-05
+    },
+    {
+      "state": "Manipur",
+      "origin": "IMPHAL",
+      "origin_code": "IMF",
+      "destination": "GUWAHATI",
+      "destination_code": "GAU",
+      "passengers": 260505,
+      "contribution": 0.00252837750830374
+    },
+    {
+      "state": "Manipur",
+      "origin": "IMPHAL",
+      "origin_code": "IMF",
+      "destination": "KOLKATA",
+      "destination_code": "CCU",
+      "passengers": 202854,
+      "contribution": 0.00196883549670619
+    },
+    {
+      "state": "Manipur",
+      "origin": "IMPHAL",
+      "origin_code": "IMF",
+      "destination": "SHILLONG",
+      "destination_code": "SHL",
+      "passengers": 8579,
+      "contribution": 8.3265006981585e-05
+    },
+    {
+      "state": "Manipur",
+      "origin": "IMPHAL",
+      "origin_code": "IMF",
+      "destination": "SILCHAR",
+      "destination_code": "IXS",
+      "passengers": 16537,
+      "contribution": 0.000160502788256728
+    },
+    {
+      "state": "Meghalaya",
+      "origin": "SHILLONG",
+      "origin_code": "SHL",
+      "destination": "IMPHAL",
+      "destination_code": "IMF",
+      "passengers": 7052,
+      "contribution": 6.84444374908657e-05
+    },
+    {
+      "state": "Meghalaya",
+      "origin": "SHILLONG",
+      "origin_code": "SHL",
+      "destination": "LILABARI",
+      "destination_code": "IXI",
+      "passengers": 2400,
+      "contribution": 2.32936259186157e-05
+    },
+    {
+      "state": "Mizoram",
+      "origin": "AIZAWL",
+      "origin_code": "AJL",
+      "destination": "DELHI",
+      "destination_code": "DEL",
+      "passengers": 53650,
+      "contribution": 0.000520709596055721
+    },
+    {
+      "state": "Mizoram",
+      "origin": "AIZAWL",
+      "origin_code": "AJL",
+      "destination": "GUWAHATI",
+      "destination_code": "GAU",
+      "passengers": 80131,
+      "contribution": 0.000777725641035247
+    },
+    {
+      "state": "Mizoram",
+      "origin": "AIZAWL",
+      "origin_code": "AJL",
+      "destination": "KOLKATA",
+      "destination_code": "CCU",
+      "passengers": 96826,
+      "contribution": 0.000939761926331618
+    },
+    {
+      "state": "Nagaland",
+      "origin": "DIMAPUR",
+      "origin_code": "DMU",
+      "destination": "GUWAHATI",
+      "destination_code": "GAU",
+      "passengers": 39319,
+      "contribution": 0.000381617532289188
+    },
+    {
+      "state": "Nagaland",
+      "origin": "DIMAPUR",
+      "origin_code": "DMU",
+      "destination": "IMPHAL",
+      "destination_code": "IMF",
+      "passengers": 7136,
+      "contribution": 6.92597143980173e-05
+    },
+    {
+      "state": "Nagaland",
+      "origin": "DIMAPUR",
+      "origin_code": "DMU",
+      "destination": "KOLKATA",
+      "destination_code": "CCU",
+      "passengers": 65374,
+      "contribution": 0.000634498958668159
+    },
+    {
+      "state": "Odisha",
+      "origin": "BHUBANESWAR",
+      "origin_code": "BBI",
+      "destination": "DELHI",
+      "destination_code": "DEL",
+      "passengers": 549982,
+      "contribution": 0.00533794790415504
+    },
+    {
+      "state": "Odisha",
+      "origin": "BHUBANESWAR",
+      "origin_code": "BBI",
+      "destination": "KOLKATA",
+      "destination_code": "CCU",
+      "passengers": 286814,
+      "contribution": 0.0027837241767591
+    },
+    {
+      "state": "Odisha",
+      "origin": "BHUBANESWAR",
+      "origin_code": "BBI",
+      "destination": "MUMBAI",
+      "destination_code": "BOM",
+      "passengers": 289149,
+      "contribution": 0.00280638693364242
+    },
+    {
+      "state": "Odisha",
+      "origin": "JEYPORE",
+      "origin_code": "PYB",
+      "destination": "VISAKHAPATNAM",
+      "destination_code": "VTZ",
+      "passengers": 1645,
+      "contribution": 1.59658394317178e-05
+    },
+    {
+      "state": "Odisha",
+      "origin": "JHARSUGUDA",
+      "origin_code": "VEJ",
+      "destination": "KOLKATA",
+      "destination_code": "CCU",
+      "passengers": 22840,
+      "contribution": 0.000221677673325493
+    },
+    {
+      "state": "Odisha",
+      "origin": "JHARSUGUDA",
+      "origin_code": "VEJ",
+      "destination": "LUCKNOW",
+      "destination_code": "LKO",
+      "passengers": 1686,
+      "contribution": 1.63637722078275e-05
+    },
+    {
+      "state": "Odisha",
+      "origin": "JHARSUGUDA",
+      "origin_code": "VEJ",
+      "destination": "MUMBAI",
+      "destination_code": "BOM",
+      "passengers": 3306,
+      "contribution": 3.20869697028931e-05
+    },
+    {
+      "state": "Punjab",
+      "origin": "ADAMPUR",
+      "origin_code": "AIP",
+      "destination": "HINDON AIRPORT",
+      "destination_code": "HDO",
+      "passengers": 18272,
+      "contribution": 0.000177342138660394
+    },
+    {
+      "state": "Punjab",
+      "origin": "AMRITSAR",
+      "origin_code": "ATQ",
+      "destination": "DELHI",
+      "destination_code": "DEL",
+      "passengers": 630326,
+      "contribution": 0.00611774085449056
+    },
+    {
+      "state": "Punjab",
+      "origin": "AMRITSAR",
+      "origin_code": "ATQ",
+      "destination": "MUMBAI",
+      "destination_code": "BOM",
+      "passengers": 148034,
+      "contribution": 0.00143677025801515
+    },
+    {
+      "state": "Punjab",
+      "origin": "AMRITSAR",
+      "origin_code": "ATQ",
+      "destination": "SRINAGAR",
+      "destination_code": "SXR",
+      "passengers": 84909,
+      "contribution": 0.000824099367968225
+    },
+    {
+      "state": "Punjab",
+      "origin": "BHATINDA",
+      "origin_code": "BUP",
+      "destination": "DELHI",
+      "destination_code": "DEL",
+      "passengers": 14145,
+      "contribution": 0.000137286807757841
+    },
+    {
+      "state": "Punjab",
+      "origin": "BHATINDA",
+      "origin_code": "BUP",
+      "destination": "HINDON AIRPORT",
+      "destination_code": "HDO",
+      "passengers": 995,
+      "contribution": 9.65714907875942e-06
+    },
+    {
+      "state": "Punjab",
+      "origin": "LUDHIANA",
+      "origin_code": "LUH",
+      "destination": "HINDON AIRPORT",
+      "destination_code": "HDO",
+      "passengers": 887,
+      "contribution": 8.60893591242171e-06
+    },
+    {
+      "state": "Rajasthan",
+      "origin": "BIKANER",
+      "origin_code": "BKB",
+      "destination": "DELHI",
+      "destination_code": "DEL",
+      "passengers": 4505,
+      "contribution": 4.37240769847349e-05
+    },
+    {
+      "state": "Rajasthan",
+      "origin": "BIKANER",
+      "origin_code": "BKB",
+      "destination": "JAIPUR",
+      "destination_code": "JAI",
+      "passengers": 2178,
+      "contribution": 2.11389655211437e-05
+    },
+    {
+      "state": "Rajasthan",
+      "origin": "JAIPUR",
+      "origin_code": "JAI",
+      "destination": "BIKANER",
+      "destination_code": "BKB",
+      "passengers": 2451,
+      "contribution": 2.37886154693863e-05
+    },
+    {
+      "state": "Rajasthan",
+      "origin": "JAIPUR",
+      "origin_code": "JAI",
+      "destination": "DHARAMSALA",
+      "destination_code": "DHM",
+      "passengers": 1207,
+      "contribution": 1.17147527015705e-05
+    },
+    {
+      "state": "Rajasthan",
+      "origin": "JAIPUR",
+      "origin_code": "JAI",
+      "destination": "HYDERABAD",
+      "destination_code": "HYD",
+      "passengers": 275753,
+      "contribution": 0.00267636967830668
+    },
+    {
+      "state": "Rajasthan",
+      "origin": "JAIPUR",
+      "origin_code": "JAI",
+      "destination": "KOLKATA",
+      "destination_code": "CCU",
+      "passengers": 263798,
+      "contribution": 0.00256033830419958
+    },
+    {
+      "state": "Rajasthan",
+      "origin": "JAIPUR",
+      "origin_code": "JAI",
+      "destination": "MUMBAI",
+      "destination_code": "BOM",
+      "passengers": 604710,
+      "contribution": 0.0058691202205192
+    },
+    {
+      "state": "Rajasthan",
+      "origin": "JAIPUR",
+      "origin_code": "JAI",
+      "destination": "PUNE",
+      "destination_code": "PNQ",
+      "passengers": 146242,
+      "contribution": 0.00141937768399591
+    },
+    {
+      "state": "Rajasthan",
+      "origin": "JAISALMER",
+      "origin_code": "JSA",
+      "destination": "Ayodhya International Airp",
+      "destination_code": "AYJ",
+      "passengers": 13,
+      "contribution": 1.26173807059168e-07
+    },
+    {
+      "state": "Rajasthan",
+      "origin": "JAISALMER",
+      "origin_code": "JSA",
+      "destination": "MUMBAI",
+      "destination_code": "BOM",
+      "passengers": 24747,
+      "contribution": 0.000240186400253326
+    },
+    {
+      "state": "Rajasthan",
+      "origin": "JODHPUR",
+      "origin_code": "JDH",
+      "destination": "KOLKATA",
+      "destination_code": "CCU",
+      "passengers": 367,
+      "contribution": 3.56198363005498e-06
+    },
+    {
+      "state": "Rajasthan",
+      "origin": "JODHPUR",
+      "origin_code": "JDH",
+      "destination": "MUMBAI",
+      "destination_code": "BOM",
+      "passengers": 142840,
+      "contribution": 0.00138635896925628
+    },
+    {
+      "state": "Rajasthan",
+      "origin": "JODHPUR",
+      "origin_code": "JDH",
+      "destination": "PUNE",
+      "destination_code": "PNQ",
+      "passengers": 46377,
+      "contribution": 0.00045012020384485
+    },
+    {
+      "state": "Rajasthan",
+      "origin": "Kishangarh",
+      "origin_code": "KQH",
+      "destination": "LUCKNOW",
+      "destination_code": "LKO",
+      "passengers": 7898,
+      "contribution": 7.66554406271778e-05
+    },
+    {
+      "state": "Rajasthan",
+      "origin": "Kishangarh",
+      "origin_code": "KQH",
+      "destination": "NAGPUR",
+      "destination_code": "NAG",
+      "passengers": 9932,
+      "contribution": 9.63967885932046e-05
+    },
+    {
+      "state": "Rajasthan",
+      "origin": "Kishangarh",
+      "origin_code": "KQH",
+      "destination": "PUNE",
+      "destination_code": "PNQ",
+      "passengers": 14042,
+      "contribution": 0.000136287122978834
+    },
+    {
+      "state": "Rajasthan",
+      "origin": "UDAIPUR",
+      "origin_code": "UDR",
+      "destination": "MUMBAI",
+      "destination_code": "BOM",
+      "passengers": 267781,
+      "contribution": 0.00259899601754701
+    },
+    {
+      "state": "Tamil Nadu",
+      "origin": "CHENNAI",
+      "origin_code": "MAA",
+      "destination": "AHMEDABAD",
+      "destination_code": "AMD",
+      "passengers": 226372,
+      "contribution": 0.0021970936193537
+    },
+    {
+      "state": "Tamil Nadu",
+      "origin": "CHENNAI",
+      "origin_code": "MAA",
+      "destination": "BENGALURU",
+      "destination_code": "BLR",
+      "passengers": 741936,
+      "contribution": 0.00720099151648085
+    },
+    {
+      "state": "Tamil Nadu",
+      "origin": "CHENNAI",
+      "origin_code": "MAA",
+      "destination": "COIMBATORE",
+      "destination_code": "CJB",
+      "passengers": 457180,
+      "contribution": 0.00443724162394697
+    },
+    {
+      "state": "Tamil Nadu",
+      "origin": "CHENNAI",
+      "origin_code": "MAA",
+      "destination": "DELHI",
+      "destination_code": "DEL",
+      "passengers": 1222119,
+      "contribution": 0.0118614928391803
+    },
+    {
+      "state": "Tamil Nadu",
+      "origin": "CHENNAI",
+      "origin_code": "MAA",
+      "destination": "HYDERABAD",
+      "destination_code": "HYD",
+      "passengers": 796010,
+      "contribution": 0.0077258163197822
+    },
+    {
+      "state": "Tamil Nadu",
+      "origin": "CHENNAI",
+      "origin_code": "MAA",
+      "destination": "KOLKATA",
+      "destination_code": "CCU",
+      "passengers": 535483,
+      "contribution": 0.0051972252865742
+    },
+    {
+      "state": "Tamil Nadu",
+      "origin": "CHENNAI",
+      "origin_code": "MAA",
+      "destination": "MUMBAI",
+      "destination_code": "BOM",
+      "passengers": 1046438,
+      "contribution": 0.0101563897162602
+    },
+    {
+      "state": "Tamil Nadu",
+      "origin": "COIMBATORE",
+      "origin_code": "CJB",
+      "destination": "CHENNAI",
+      "destination_code": "MAA",
+      "passengers": 463517,
+      "contribution": 0.00449874650204958
+    },
+    {
+      "state": "Tamil Nadu",
+      "origin": "COIMBATORE",
+      "origin_code": "CJB",
+      "destination": "DELHI",
+      "destination_code": "DEL",
+      "passengers": 212352,
+      "contribution": 0.00206102002127912
+    },
+    {
+      "state": "Tamil Nadu",
+      "origin": "COIMBATORE",
+      "origin_code": "CJB",
+      "destination": "HYDERABAD",
+      "destination_code": "HYD",
+      "passengers": 196714,
+      "contribution": 0.0019092426370644
+    },
+    {
+      "state": "Tamil Nadu",
+      "origin": "COIMBATORE",
+      "origin_code": "CJB",
+      "destination": "MUMBAI",
+      "destination_code": "BOM",
+      "passengers": 364412,
+      "contribution": 0.00353686533677274
+    },
+    {
+      "state": "Tamil Nadu",
+      "origin": "MADURAI",
+      "origin_code": "IXM",
+      "destination": "MUMBAI",
+      "destination_code": "BOM",
+      "passengers": 82993,
+      "contribution": 0.000805503289943196
+    },
+    {
+      "state": "Telangana",
+      "origin": "HYDERABAD",
+      "origin_code": "HYD",
+      "destination": "AHMEDABAD",
+      "destination_code": "AMD",
+      "passengers": 243086,
+      "contribution": 0.00235931431252192
+    },
+    {
+      "state": "Telangana",
+      "origin": "HYDERABAD",
+      "origin_code": "HYD",
+      "destination": "AURANGABAD",
+      "destination_code": "IXU",
+      "passengers": 43889,
+      "contribution": 0.000425972478309218
+    },
+    {
+      "state": "Telangana",
+      "origin": "HYDERABAD",
+      "origin_code": "HYD",
+      "destination": "BELGAUM",
+      "destination_code": "IXG",
+      "passengers": 22348,
+      "contribution": 0.000216902480012176
+    },
+    {
+      "state": "Telangana",
+      "origin": "HYDERABAD",
+      "origin_code": "HYD",
+      "destination": "BENGALURU",
+      "destination_code": "BLR",
+      "passengers": 1140466,
+      "contribution": 0.0110689951570417
+    },
+    {
+      "state": "Telangana",
+      "origin": "HYDERABAD",
+      "origin_code": "HYD",
+      "destination": "BHOPAL",
+      "destination_code": "BHO",
+      "passengers": 30349,
+      "contribution": 0.000294557605418361
+    },
+    {
+      "state": "Telangana",
+      "origin": "HYDERABAD",
+      "origin_code": "HYD",
+      "destination": "CHANDIGARH",
+      "destination_code": "IXC",
+      "passengers": 131074,
+      "contribution": 0.00127216196819026
+    },
+    {
+      "state": "Telangana",
+      "origin": "HYDERABAD",
+      "origin_code": "HYD",
+      "destination": "CHENNAI",
+      "destination_code": "MAA",
+      "passengers": 777815,
+      "contribution": 0.00754922151828669
+    },
+    {
+      "state": "Telangana",
+      "origin": "HYDERABAD",
+      "origin_code": "HYD",
+      "destination": "COIMBATORE",
+      "destination_code": "CJB",
+      "passengers": 194441,
+      "contribution": 0.00188718163218398
+    },
+    {
+      "state": "Telangana",
+      "origin": "HYDERABAD",
+      "origin_code": "HYD",
+      "destination": "DABOLIM",
+      "destination_code": "GOI",
+      "passengers": 445581,
+      "contribution": 0.00432466547101779
+    },
+    {
+      "state": "Telangana",
+      "origin": "HYDERABAD",
+      "origin_code": "HYD",
+      "destination": "DARBHANGA",
+      "destination_code": "DBR",
+      "passengers": 55160,
+      "contribution": 0.000535365169029517
+    },
+    {
+      "state": "Telangana",
+      "origin": "HYDERABAD",
+      "origin_code": "HYD",
+      "destination": "DELHI",
+      "destination_code": "DEL",
+      "passengers": 1657730,
+      "contribution": 0.0160893927058612
+    },
+    {
+      "state": "Telangana",
+      "origin": "HYDERABAD",
+      "origin_code": "HYD",
+      "destination": "GWALIOR",
+      "destination_code": "GWL",
+      "passengers": 7961,
+      "contribution": 7.72668983075414e-05
+    },
+    {
+      "state": "Telangana",
+      "origin": "HYDERABAD",
+      "origin_code": "HYD",
+      "destination": "Goa",
+      "destination_code": "GOI",
+      "passengers": 232740,
+      "contribution": 0.00225889937345776
+    },
+    {
+      "state": "Telangana",
+      "origin": "HYDERABAD",
+      "origin_code": "HYD",
+      "destination": "Gondia",
+      "destination_code": "GDB",
+      "passengers": 14887,
+      "contribution": 0.00014448842043768
+    },
+    {
+      "state": "Telangana",
+      "origin": "HYDERABAD",
+      "origin_code": "HYD",
+      "destination": "HUBLI",
+      "destination_code": "HBX",
+      "passengers": 22416,
+      "contribution": 0.000217562466079871
+    },
+    {
+      "state": "Telangana",
+      "origin": "HYDERABAD",
+      "origin_code": "HYD",
+      "destination": "JAIPUR",
+      "destination_code": "JAI",
+      "passengers": 290775,
+      "contribution": 0.00282216836520228
+    },
+    {
+      "state": "Telangana",
+      "origin": "HYDERABAD",
+      "origin_code": "HYD",
+      "destination": "KOCHI",
+      "destination_code": "COK",
+      "passengers": 363008,
+      "contribution": 0.00352323856561035
+    },
+    {
+      "state": "Telangana",
+      "origin": "HYDERABAD",
+      "origin_code": "HYD",
+      "destination": "KOLKATA",
+      "destination_code": "CCU",
+      "passengers": 604223,
+      "contribution": 0.00586439355559322
+    },
+    {
+      "state": "Telangana",
+      "origin": "HYDERABAD",
+      "origin_code": "HYD",
+      "destination": "MUMBAI",
+      "destination_code": "BOM",
+      "passengers": 1166588,
+      "contribution": 0.0113225268638109
+    },
+    {
+      "state": "Telangana",
+      "origin": "HYDERABAD",
+      "origin_code": "HYD",
+      "destination": "PUNE",
+      "destination_code": "PNQ",
+      "passengers": 305945,
+      "contribution": 0.00296940349236286
+    },
+    {
+      "state": "Telangana",
+      "origin": "HYDERABAD",
+      "origin_code": "HYD",
+      "destination": "TIRUPATI",
+      "destination_code": "TIR",
+      "passengers": 366575,
+      "contribution": 0.00355785871713189
+    },
+    {
+      "state": "Telangana",
+      "origin": "HYDERABAD",
+      "origin_code": "HYD",
+      "destination": "VARANASI",
+      "destination_code": "VNS",
+      "passengers": 271955,
+      "contribution": 0.00263950751529047
+    },
+    {
+      "state": "Telangana",
+      "origin": "HYDERABAD",
+      "origin_code": "HYD",
+      "destination": "VISAKHAPATNAM",
+      "destination_code": "VTZ",
+      "passengers": 469336,
+      "contribution": 0.00455522383922475
+    },
+    {
+      "state": "Tripura",
+      "origin": "AGARTALA",
+      "origin_code": "IXA",
+      "destination": "DELHI",
+      "destination_code": "DEL",
+      "passengers": 58465,
+      "contribution": 0.000567442433054944
+    },
+    {
+      "state": "Tripura",
+      "origin": "AGARTALA",
+      "origin_code": "IXA",
+      "destination": "GUWAHATI",
+      "destination_code": "GAU",
+      "passengers": 143812,
+      "contribution": 0.00139579288775332
+    },
+    {
+      "state": "Tripura",
+      "origin": "AGARTALA",
+      "origin_code": "IXA",
+      "destination": "KOLKATA",
+      "destination_code": "CCU",
+      "passengers": 377454,
+      "contribution": 0.00366344678228549
+    },
+    {
+      "state": "Uttar Pradesh",
+      "origin": "Ayodhya International Airp",
+      "origin_code": "AYJ",
+      "destination": "MUMBAI",
+      "destination_code": "BOM",
+      "passengers": 124771,
+      "contribution": 0.0012109870831215
+    },
+    {
+      "state": "Uttar Pradesh",
+      "origin": "HINDON AIRPORT",
+      "origin_code": "HDO",
+      "destination": "ADAMPUR",
+      "destination_code": "AIP",
+      "passengers": 17543,
+      "contribution": 0.000170266699787615
+    },
+    {
+      "state": "Uttar Pradesh",
+      "origin": "HINDON AIRPORT",
+      "origin_code": "HDO",
+      "destination": "BHATINDA",
+      "destination_code": "BUP",
+      "passengers": 862,
+      "contribution": 8.36629397576947e-06
+    },
+    {
+      "state": "Uttar Pradesh",
+      "origin": "HINDON AIRPORT",
+      "origin_code": "HDO",
+      "destination": "LUDHIANA",
+      "destination_code": "LUH",
+      "passengers": 871,
+      "contribution": 8.45364507296428e-06
+    },
+    {
+      "state": "Uttar Pradesh",
+      "origin": "HINDON AIRPORT",
+      "origin_code": "HDO",
+      "destination": "NANDED",
+      "destination_code": "NDC",
+      "passengers": 23851,
+      "contribution": 0.000231490113243709
+    },
+    {
+      "state": "Uttar Pradesh",
+      "origin": "LUCKNOW",
+      "origin_code": "LKO",
+      "destination": "DELHI",
+      "destination_code": "DEL",
+      "passengers": 705648,
+      "contribution": 0.00684879189259138
+    },
+    {
+      "state": "Uttar Pradesh",
+      "origin": "LUCKNOW",
+      "origin_code": "LKO",
+      "destination": "JHARSUGUDA",
+      "destination_code": "VEJ",
+      "passengers": 1573,
+      "contribution": 1.52670306541594e-05
+    },
+    {
+      "state": "Uttar Pradesh",
+      "origin": "LUCKNOW",
+      "origin_code": "LKO",
+      "destination": "Kishangarh",
+      "destination_code": "KQH",
+      "passengers": 8414,
+      "contribution": 8.16635701996802e-05
+    },
+    {
+      "state": "Uttar Pradesh",
+      "origin": "VARANASI",
+      "origin_code": "VNS",
+      "destination": "HYDERABAD",
+      "destination_code": "HYD",
+      "passengers": 270632,
+      "contribution": 0.00262666690400283
+    },
+    {
+      "state": "Uttar Pradesh",
+      "origin": "VARANASI",
+      "origin_code": "VNS",
+      "destination": "KHAJURAHO",
+      "destination_code": "HJR",
+      "passengers": 7250,
+      "contribution": 7.03661616291515e-05
+    },
+    {
+      "state": "Uttar Pradesh",
+      "origin": "VARANASI",
+      "origin_code": "VNS",
+      "destination": "MUMBAI",
+      "destination_code": "BOM",
+      "passengers": 406966,
+      "contribution": 0.00394988073566473
+    },
+    {
+      "state": "Uttar Pradesh",
+      "origin": "VARANASI",
+      "origin_code": "VNS",
+      "destination": "PUNE",
+      "destination_code": "PNQ",
+      "passengers": 48394,
+      "contribution": 0.000469696555293953
+    },
+    {
+      "state": "West Bengal",
+      "origin": "KOLKATA",
+      "origin_code": "CCU",
+      "destination": "AGARTALA",
+      "destination_code": "IXA",
+      "passengers": 385386,
+      "contribution": 0.00374043221594651
+    },
+    {
+      "state": "West Bengal",
+      "origin": "KOLKATA",
+      "origin_code": "CCU",
+      "destination": "AHMEDABAD",
+      "destination_code": "AMD",
+      "passengers": 208616,
+      "contribution": 0.0020247596102658
+    },
+    {
+      "state": "West Bengal",
+      "origin": "KOLKATA",
+      "origin_code": "CCU",
+      "destination": "AIZAWL",
+      "destination_code": "AJL",
+      "passengers": 85414,
+      "contribution": 0.0008290007350886
+    },
+    {
+      "state": "West Bengal",
+      "origin": "KOLKATA",
+      "origin_code": "CCU",
+      "destination": "BENGALURU",
+      "destination_code": "BLR",
+      "passengers": 1146081,
+      "contribution": 0.0111234925360137
+    },
+    {
+      "state": "West Bengal",
+      "origin": "KOLKATA",
+      "origin_code": "CCU",
+      "destination": "BHUBANESWAR",
+      "destination_code": "BBI",
+      "passengers": 289264,
+      "contribution": 0.00280750308655102
+    },
+    {
+      "state": "West Bengal",
+      "origin": "KOLKATA",
+      "origin_code": "CCU",
+      "destination": "BILASPUR",
+      "destination_code": "PAB",
+      "passengers": 2563,
+      "contribution": 2.48756513455883e-05
+    },
+    {
+      "state": "West Bengal",
+      "origin": "KOLKATA",
+      "origin_code": "CCU",
+      "destination": "CHENNAI",
+      "destination_code": "MAA",
+      "passengers": 513065,
+      "contribution": 0.0049796434091394
+    },
+    {
+      "state": "West Bengal",
+      "origin": "KOLKATA",
+      "origin_code": "CCU",
+      "destination": "DELHI",
+      "destination_code": "DEL",
+      "passengers": 1353047,
+      "contribution": 0.0131322377784605
+    },
+    {
+      "state": "West Bengal",
+      "origin": "KOLKATA",
+      "origin_code": "CCU",
+      "destination": "DIBRUGARH",
+      "destination_code": "DIB",
+      "passengers": 120252,
+      "contribution": 0.00116712712665224
+    },
+    {
+      "state": "West Bengal",
+      "origin": "KOLKATA",
+      "origin_code": "CCU",
+      "destination": "DIMAPUR",
+      "destination_code": "DMU",
+      "passengers": 64096,
+      "contribution": 0.000622095102866496
+    },
+    {
+      "state": "West Bengal",
+      "origin": "KOLKATA",
+      "origin_code": "CCU",
+      "destination": "Deoghar",
+      "destination_code": "DGH",
+      "passengers": 21490,
+      "contribution": 0.000208575008746271
+    },
+    {
+      "state": "West Bengal",
+      "origin": "KOLKATA",
+      "origin_code": "CCU",
+      "destination": "GAYA",
+      "destination_code": "GAY",
+      "passengers": 53329,
+      "contribution": 0.000517594073589107
+    },
+    {
+      "state": "West Bengal",
+      "origin": "KOLKATA",
+      "origin_code": "CCU",
+      "destination": "GUWAHATI",
+      "destination_code": "GAU",
+      "passengers": 552938,
+      "contribution": 0.0053666378867448
+    },
+    {
+      "state": "West Bengal",
+      "origin": "KOLKATA",
+      "origin_code": "CCU",
+      "destination": "HYDERABAD",
+      "destination_code": "HYD",
+      "passengers": 571770,
+      "contribution": 0.0055494152047862
+    },
+    {
+      "state": "West Bengal",
+      "origin": "KOLKATA",
+      "origin_code": "CCU",
+      "destination": "IMPHAL",
+      "destination_code": "IMF",
+      "passengers": 189313,
+      "contribution": 0.00183741091813787
+    },
+    {
+      "state": "West Bengal",
+      "origin": "KOLKATA",
+      "origin_code": "CCU",
+      "destination": "INDORE",
+      "destination_code": "IDR",
+      "passengers": 92912,
+      "contribution": 0.000901773904729342
+    },
+    {
+      "state": "West Bengal",
+      "origin": "KOLKATA",
+      "origin_code": "CCU",
+      "destination": "Itanagar",
+      "destination_code": "HGI",
+      "passengers": 49835,
+      "contribution": 0.000483682436522589
+    },
+    {
+      "state": "West Bengal",
+      "origin": "KOLKATA",
+      "origin_code": "CCU",
+      "destination": "JAIPUR",
+      "destination_code": "JAI",
+      "passengers": 252932,
+      "contribution": 0.00245487641285304
+    },
+    {
+      "state": "West Bengal",
+      "origin": "KOLKATA",
+      "origin_code": "CCU",
+      "destination": "JAMSHEDPUR",
+      "destination_code": "IXW",
+      "passengers": 1755,
+      "contribution": 1.70334639529877e-05
+    },
+    {
+      "state": "West Bengal",
+      "origin": "KOLKATA",
+      "origin_code": "CCU",
+      "destination": "JHARSUGUDA",
+      "destination_code": "VEJ",
+      "passengers": 23671,
+      "contribution": 0.000229743091299813
+    },
+    {
+      "state": "West Bengal",
+      "origin": "KOLKATA",
+      "origin_code": "CCU",
+      "destination": "JORHAT",
+      "destination_code": "JRH",
+      "passengers": 65381,
+      "contribution": 0.000634566898410422
+    },
+    {
+      "state": "West Bengal",
+      "origin": "KOLKATA",
+      "origin_code": "CCU",
+      "destination": "KOCHI",
+      "destination_code": "COK",
+      "passengers": 52715,
+      "contribution": 0.000511634787624927
+    }
+  ]
+}
