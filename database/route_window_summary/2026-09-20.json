@@ -24,6 +24,54 @@
       "booking_window": "T_plus_1",
       "representative_price": 14293.0,
       "sample_size": 171
+    },
+    {
+      "date": "2026-09-20",
+      "state": "Delhi",
+      "route": "DEL-BOM",
+      "origin": "DELHI",
+      "origin_code": "DEL",
+      "destination": "MUMBAI",
+      "destination_code": "BOM",
+      "booking_window": "T_plus_7",
+      "representative_price": 12572.0,
+      "sample_size": 168
+    },
+    {
+      "date": "2026-09-20",
+      "state": "Delhi",
+      "route": "DEL-BOM",
+      "origin": "DELHI",
+      "origin_code": "DEL",
+      "destination": "MUMBAI",
+      "destination_code": "BOM",
+      "booking_window": "T_plus_15",
+      "representative_price": 9174.0,
+      "sample_size": 171
+    },
+    {
+      "date": "2026-09-20",
+      "state": "Delhi",
+      "route": "DEL-BOM",
+      "origin": "DELHI",
+      "origin_code": "DEL",
+      "destination": "MUMBAI",
+      "destination_code": "BOM",
+      "booking_window": "T_plus_30",
+      "representative_price": 9527.0,
+      "sample_size": 170
+    },
+    {
+      "date": "2026-09-20",
+      "state": "Delhi",
+      "route": "DEL-BOM",
+      "origin": "DELHI",
+      "origin_code": "DEL",
+      "destination": "MUMBAI",
+      "destination_code": "BOM",
+      "booking_window": "T_plus_45",
+      "representative_price": 11380.5,
+      "sample_size": 174
     }
   ]
 }

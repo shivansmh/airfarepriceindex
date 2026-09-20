@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-20T14:36:07",
+  "generated_at": "2026-09-20T14:37:57",
   "base_file": "/home/runner/work/airfarepriceindex/airfarepriceindex/data/base_day.txt",
   "target_file": "/home/runner/work/airfarepriceindex/airfarepriceindex/dashboard/target_day.txt",
   "json_output_file": "/home/runner/work/airfarepriceindex/airfarepriceindex/dashboard/apix_output.json",
@@ -28,7 +28,11 @@
   },
   "target_medians": {
     "DELHI - MUMBAI": {
-      "T_plus_1": 14293
+      "T_plus_1": 14293,
+      "T_plus_7": 12572,
+      "T_plus_15": 9174,
+      "T_plus_30": 9527,
+      "T_plus_45": 11380.5
     }
   },
   "window_weights": {
