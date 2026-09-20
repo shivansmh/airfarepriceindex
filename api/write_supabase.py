@@ -144,6 +144,21 @@ def post_batch(client: httpx.Client, base_url: str, key: str, table: str, rows: 
         for row in rows:
             unique_rows[tuple(row.get(field) for field in identity)] = row
         rows = list(unique_rows.values())
+    elif table == "route_window_summary":
+        # The workbook can contain the same airport pair more than once across
+        # states. Supabase rejects duplicate constrained values in one upsert,
+        # even when no explicit on_conflict parameter is supplied.
+        identity = ("date", "route", "booking_window")
+        unique_rows = {}
+        for row in rows:
+            unique_rows[tuple(row.get(field) for field in identity)] = row
+        rows = list(unique_rows.values())
+    elif table == "route_level_index":
+        identity = ("date", "route")
+        unique_rows = {}
+        for row in rows:
+            unique_rows[tuple(row.get(field) for field in identity)] = row
+        rows = list(unique_rows.values())
     url = f"{base_url}/rest/v1/{table}"
     conflict = TABLE_CONFLICTS.get(table)
     if conflict:
