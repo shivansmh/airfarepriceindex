@@ -23,6 +23,11 @@ on:
         required: false
         default: false
         type: boolean
+      scrape_only:
+        description: "Run scraping and commit target data only; skip APIx, Gemini, Supabase, database, and Pages steps"
+        required: false
+        default: false
+        type: boolean
 
 permissions:
   actions: read
@@ -79,12 +84,15 @@ jobs:
           cp /tmp/apix-scrape/target_day.json dashboard/target_day.json
 
       - name: Calculate APIx and write dashboard JSON
+        if: ${{ inputs.scrape_only != true }}
         run: python cleaning/matchedmodel.py
 
       - name: Build rolling 30-day APIx history
+        if: ${{ inputs.scrape_only != true }}
         run: python api/update_history.py
 
       - name: Generate Gemini daily briefing JSON
+        if: ${{ inputs.scrape_only != true }}
         continue-on-error: true
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
@@ -95,6 +103,7 @@ jobs:
           api/daily_briefing.json
 
       - name: Copy briefing JSON into the public dashboard artifact
+        if: ${{ inputs.scrape_only != true }}
         run: |
           if [ ! -s api/daily_briefing.json ]; then
             printf '%s\n' '{"status":"unavailable","message":"Daily briefing is unavailable for this run."}' > api/daily_briefing.json
@@ -102,15 +111,18 @@ jobs:
           cp api/daily_briefing.json dashboard/daily_briefing.json
 
       - name: Export GitHub Actions system logs
+        if: ${{ inputs.scrape_only != true }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_REPOSITORY: ${{ github.repository }}
         run: python api/system_logs.py dashboard/system_logs.json
 
       - name: Export daily database snapshots
+        if: ${{ inputs.scrape_only != true }}
         run: python api/export_daily_database.py
 
       - name: Upsert daily data into Supabase
+        if: ${{ inputs.scrape_only != true }}
         env:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
@@ -129,12 +141,15 @@ jobs:
           fi
 
       - name: Configure Pages
+        if: ${{ inputs.scrape_only != true }}
         uses: actions/configure-pages@v5
 
       - name: Upload refreshed dashboard
+        if: ${{ inputs.scrape_only != true }}
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./dashboard
 
       - name: Deploy refreshed dashboard
+        if: ${{ inputs.scrape_only != true }}
         uses: actions/deploy-pages@v4
