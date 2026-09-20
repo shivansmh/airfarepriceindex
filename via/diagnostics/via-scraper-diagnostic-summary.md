@@ -2,7 +2,7 @@
 
 **Repository:** `shivansmh/airfarepriceindex`  
 **Diagnostic period:** 20 September 2026  
-**Scope:** Via.com direct flight-search API used by `scraping/flight_scraper_multiplecities.py`  
+**Scope:** Via.com direct flight-search API used by `via/scraping/flight_scraper_multiplecities.py`  
 **Author:** Manus AI
 
 ## Executive conclusion

@@ -10,9 +10,9 @@ The complete route basket contains 409 routes. For diagnostics, select the highe
 
 ```bash
 PYTHONPATH="$PWD" \
-OUTPUT_FOLDER="$PWD/diagnostics/run-name" \
+OUTPUT_FOLDER="$PWD/via/diagnostics/run-name" \
 DEBUG_EMPTY_RESULTS=true \
-python3 scraping/flight_scraper_multiplecities.py \
+python3 via/scraping/flight_scraper_multiplecities.py \
   --top-routes 10 \
   --offsets 1,7,15,30,45 \
   --html-out '' \
@@ -39,16 +39,16 @@ The project combines Via.com airfare collection, data cleaning, an Airfare Price
 
 ## Provider-specific scrapers
 
-The Via implementation is preserved as `scraping/via_scraper_multiplecities.py`; `scraping/flight_scraper_multiplecities.py` remains as the compatibility path used by existing jobs. The new `scraping/makemytrip_scraper_multiplecities.py` uses the normal MakeMyTrip rendered flight-search page through Playwright. It does not call undocumented private APIs. It extracts only visible result cards and writes the same route/window-oriented JSON shape where possible.
+The repository separates provider code into `via/` and `makemytrip/`. The Via implementation is stored under `via/scraping/`, and the MakeMyTrip implementation is stored under `makemytrip/scraping/`. Each provider has its own `tests/` and `diagnostics/` folders. Shared route configuration, cleaning, APIx, database, and dashboard code remains at the repository root.
 
 MakeMyTrip runs are intentionally conservative. The default request gap is five seconds, the default route batch size is five, and the default batch pause is 60 seconds. A small first test can be run as follows:
 
 ```bash
-OUTPUT_FOLDER="$PWD/diagnostics/makemytrip-one-route" \
+OUTPUT_FOLDER="$PWD/makemytrip/diagnostics/makemytrip-one-route" \
 MMT_REQUEST_GAP_SECONDS=5 \
 ROUTE_BATCH_SIZE=1 \
 BATCH_PAUSE_SECONDS=0 \
-python3 scraping/makemytrip_scraper_multiplecities.py \
+python3 makemytrip/scraping/makemytrip_scraper_multiplecities.py \
   --route-codes DEL-BOM \
   --offsets 1
 ```

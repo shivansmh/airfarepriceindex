@@ -1,4 +1,4 @@
-from scraping.flight_scraper_multiplecities import airline_label, airline_names, parse_via_api_response, parse_via_rows, select_routes
+from via.scraping.flight_scraper_multiplecities import airline_label, airline_names, parse_via_api_response, parse_via_rows, select_routes
 
 
 def test_known_airlines():

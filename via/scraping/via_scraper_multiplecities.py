@@ -62,7 +62,7 @@ USE_DIRECT_API = os.getenv("USE_DIRECT_API", "true").lower() in {"1", "true", "y
 ROUTE_LIMIT = int(os.getenv("ROUTE_LIMIT", "0"))
 TOP_ROUTES = max(0, int(os.getenv("TOP_ROUTES", "0")))
 
-REPO_ROOT = Path(__file__).resolve().parents[1]
+REPO_ROOT = Path(__file__).resolve().parents[2]
 ROUTES_FILE = REPO_ROOT / "config" / "routes.json"
 ROUTES = json.loads(ROUTES_FILE.read_text(encoding="utf-8"))["routes"]
 try:

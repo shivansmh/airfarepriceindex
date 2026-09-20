@@ -13,7 +13,7 @@ from urllib.parse import quote
 from playwright.async_api import TimeoutError as PlaywrightTimeoutError
 from playwright.async_api import async_playwright
 
-REPO_ROOT = Path(__file__).resolve().parents[1]
+REPO_ROOT = Path(__file__).resolve().parents[2]
 ROUTES = json.loads((REPO_ROOT / "config" / "routes.json").read_text(encoding="utf-8"))["routes"]
 DATE_OFFSETS = [int(value.strip()) for value in os.getenv("DATE_OFFSETS", "1,7,15,30,45").split(",") if value.strip()]
 MAX_CONCURRENCY = max(1, int(os.getenv("MAX_CONCURRENCY", "1")))

@@ -1,4 +1,4 @@
-from scraping.makemytrip_scraper_multiplecities import mmt_url, parse_card
+from makemytrip.scraping.makemytrip_scraper_multiplecities import mmt_url, parse_card
 
 
 def test_makemytrip_url_contains_route_and_date():

@@ -87,7 +87,7 @@ jobs:
           DEBUG_EMPTY_RESULTS: ${{ inputs.debug_empty_results || 'false' }}
           EMPTY_RESULT_RETRIES: "0"
           SAVE_HTML: "false"
-        run: python scraping/flight_scraper_multiplecities.py
+        run: python via/scraping/flight_scraper_multiplecities.py
 
       - name: Copy the fresh target report into the dashboard data folder
         run: |
