@@ -49,6 +49,9 @@ EMPTY_RESULT_RETRIES = max(0, int(os.getenv("EMPTY_RESULT_RETRIES", "2")))
 API_MAX_RETRIES = max(0, int(os.getenv("API_MAX_RETRIES", "3")))
 RETRY_BACKOFF_SECONDS = max(0.0, float(os.getenv("RETRY_BACKOFF_SECONDS", "2.0")))
 API_TIMEOUT_SECONDS = max(1.0, float(os.getenv("API_TIMEOUT_SECONDS", "30")))
+ROUTE_BATCH_SIZE = max(1, int(os.getenv("ROUTE_BATCH_SIZE", "5")))
+BATCH_PAUSE_SECONDS = max(0.0, float(os.getenv("BATCH_PAUSE_SECONDS", "60")))
+CHECKPOINT_OUTPUT = os.getenv("CHECKPOINT_OUTPUT", "").strip()
 ROTATE_USER_AGENTS = os.getenv("ROTATE_USER_AGENTS", "false").lower() in {"1", "true", "yes"}
 USER_AGENTS = tuple(filter(None, (value.strip() for value in os.getenv("USER_AGENTS", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/131.0 Safari/537.36,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Version/18.1 Safari/605.1.15,Mozilla/5.0 (X11; Linux x86_64; rv:133.0) Gecko/20100101 Firefox/133.0").split(","))))
 PROXY_URLS = tuple(filter(None, (value.strip() for value in os.getenv("PROXY_URLS", "").split(","))))
@@ -631,7 +634,36 @@ async def scrape_all_routes(routes: list[dict[str, Any]], offsets: list[int], ht
                 result["requested_date"] = travel_date.isoformat()
                 route_payload["results"][f"T_plus_{offset}"] = result
 
-        await asyncio.gather(*(one_job(route_index, offset) for route_index in range(len(routes)) for offset in offsets))
+        checkpoint_path = Path(CHECKPOINT_OUTPUT).expanduser() if CHECKPOINT_OUTPUT else None
+
+        async def write_checkpoint() -> None:
+            if checkpoint_path is None:
+                return
+            checkpoint_path.parent.mkdir(parents=True, exist_ok=True)
+            checkpoint_path.write_text(
+                json.dumps({"mode": "multi_route_relative_dates", "routes": route_results}, ensure_ascii=False, indent=2) + "\n",
+                encoding="utf-8",
+            )
+
+        for batch_start in range(0, len(routes), ROUTE_BATCH_SIZE):
+            batch_end = min(batch_start + ROUTE_BATCH_SIZE, len(routes))
+            print(
+                f"Starting route batch {batch_start // ROUTE_BATCH_SIZE + 1}: "
+                f"routes {batch_start + 1}-{batch_end} of {len(routes)}",
+                flush=True,
+            )
+            await asyncio.gather(
+                *(one_job(route_index, offset) for route_index in range(batch_start, batch_end) for offset in offsets)
+            )
+            await write_checkpoint()
+            print(
+                f"Completed route batch {batch_start // ROUTE_BATCH_SIZE + 1}: "
+                f"routes {batch_start + 1}-{batch_end} of {len(routes)}",
+                flush=True,
+            )
+            if batch_end < len(routes) and BATCH_PAUSE_SECONDS:
+                print(f"Pausing {BATCH_PAUSE_SECONDS:.0f}s before the next route batch", flush=True)
+                await asyncio.sleep(BATCH_PAUSE_SECONDS)
         if context is not None:
             await context.close()
         if browser is not None:
