@@ -55,6 +55,72 @@
       "destination_code": "VTZ",
       "route_level_index": null,
       "explanation_text": null
+    },
+    {
+      "date": "2026-09-20",
+      "state": "Andhra Pradesh",
+      "route": "TIR-HYD",
+      "origin": "TIRUPATI",
+      "origin_code": "TIR",
+      "destination": "HYDERABAD",
+      "destination_code": "HYD",
+      "route_level_index": null,
+      "explanation_text": null
+    },
+    {
+      "date": "2026-09-20",
+      "state": "Andhra Pradesh",
+      "route": "TIR-GBI",
+      "origin": "TIRUPATI",
+      "origin_code": "TIR",
+      "destination": "KALABURAGI",
+      "destination_code": "GBI",
+      "route_level_index": null,
+      "explanation_text": null
+    },
+    {
+      "date": "2026-09-20",
+      "state": "Andhra Pradesh",
+      "route": "TIR-KLH",
+      "origin": "TIRUPATI",
+      "origin_code": "TIR",
+      "destination": "KOLHAPUR",
+      "destination_code": "KLH",
+      "route_level_index": null,
+      "explanation_text": null
+    },
+    {
+      "date": "2026-09-20",
+      "state": "Andhra Pradesh",
+      "route": "TIR-SAG",
+      "origin": "TIRUPATI",
+      "origin_code": "TIR",
+      "destination": "SHIRDI",
+      "destination_code": "SAG",
+      "route_level_index": null,
+      "explanation_text": null
+    },
+    {
+      "date": "2026-09-20",
+      "state": "Andhra Pradesh",
+      "route": "TIR-RQY",
+      "origin": "TIRUPATI",
+      "origin_code": "TIR",
+      "destination": "Shivamogga Airport",
+      "destination_code": "RQY",
+      "route_level_index": null,
+      "explanation_text": null
+    },
+    {
+      "date": "2026-09-20",
+      "state": "Andhra Pradesh",
+      "route": "TIR-VGA",
+      "origin": "TIRUPATI",
+      "origin_code": "TIR",
+      "destination": "VIJAYAWADA",
+      "destination_code": "VGA",
+      "route_level_index": null,
+      "explanation_text": null
     }
   ]
 }
