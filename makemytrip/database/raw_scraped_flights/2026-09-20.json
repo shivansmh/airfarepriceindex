@@ -1,0 +1,26 @@
+{
+  "table": "raw_scraped_flights",
+  "source_site": "makemytrip.com",
+  "schema": [
+    "scrape_date",
+    "state",
+    "route",
+    "origin",
+    "origin_code",
+    "destination",
+    "destination_code",
+    "booking_window",
+    "carrier",
+    "airline",
+    "departure_date",
+    "departure_time",
+    "arrival_time",
+    "flight_number",
+    "price",
+    "base_fare",
+    "taxes",
+    "baggage",
+    "source_site"
+  ],
+  "rows": []
+}

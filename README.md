@@ -41,6 +41,8 @@ The project combines Via.com airfare collection, data cleaning, an Airfare Price
 
 The repository separates provider code into `via/` and `makemytrip/`. The Via implementation is stored under `via/scraping/`, and the MakeMyTrip implementation is stored under `makemytrip/scraping/`. Each provider has its own `tests/` and `diagnostics/` folders. Shared route configuration, cleaning, APIx, database, and dashboard code remains at the repository root.
 
+Scraped data is also separated by provider. Via continues to use the root `database/` fact tables. MakeMyTrip writes its own date-stamped `raw_scraped_flights/` and `route_window_summary/` snapshots under `makemytrip/database/`, with `source_site` set to `makemytrip.com`.
+
 MakeMyTrip runs are intentionally conservative. The default request gap is five seconds, the default route batch size is five, and the default batch pause is 60 seconds. A small first test can be run as follows:
 
 ```bash

@@ -23,6 +23,7 @@ ROUTE_BATCH_SIZE = max(1, int(os.getenv("ROUTE_BATCH_SIZE", "5")))
 BATCH_PAUSE_SECONDS = max(0.0, float(os.getenv("BATCH_PAUSE_SECONDS", "60")))
 OUTPUT_FOLDER = Path(os.getenv("OUTPUT_FOLDER", str(REPO_ROOT / "diagnostics" / "makemytrip"))).expanduser()
 CHECKPOINT_OUTPUT = os.getenv("CHECKPOINT_OUTPUT", str(OUTPUT_FOLDER / "checkpoint.json"))
+DATABASE_ROOT = REPO_ROOT / "makemytrip" / "database"
 SCRIPT_VERSION = "makemytrip-playwright-2026-09-20"
 
 
@@ -102,6 +103,87 @@ def request_error(url: str, exc: Exception) -> dict[str, Any]:
     }
 
 
+def money(value: Any) -> float | None:
+    if value is None:
+        return None
+    match = re.search(r"[\d,]+(?:\.\d+)?", str(value))
+    return float(match.group(0).replace(",", "")) if match else None
+
+
+def write_database_snapshot(payload: dict[str, Any], scrape_date: date) -> dict[str, int]:
+    """Write MakeMyTrip snapshots separately from the Via database."""
+    raw_rows: list[dict[str, Any]] = []
+    summary_rows: list[dict[str, Any]] = []
+    for route in payload.get("routes", []):
+        state = route.get("state") or "Unknown"
+        origin = route.get("origin") or ""
+        destination = route.get("destination") or ""
+        origin_code = route.get("origin_code") or ""
+        destination_code = route.get("destination_code") or ""
+        route_code = f"{origin_code}-{destination_code}"
+        for booking_window, result in (route.get("results") or {}).items():
+            prices: list[float] = []
+            for flight in result.get("flights") or []:
+                price = money(flight.get("price"))
+                if price is not None:
+                    prices.append(price)
+                raw_rows.append({
+                    "scrape_date": scrape_date.isoformat(),
+                    "state": state,
+                    "route": route_code,
+                    "origin": origin,
+                    "origin_code": origin_code,
+                    "destination": destination,
+                    "destination_code": destination_code,
+                    "booking_window": booking_window,
+                    "carrier": flight.get("airline"),
+                    "airline": flight.get("airline"),
+                    "departure_date": result.get("requested_date"),
+                    "departure_time": flight.get("departure_time"),
+                    "arrival_time": flight.get("arrival_time"),
+                    "flight_number": flight.get("flight_number"),
+                    "price": price,
+                    "base_fare": None,
+                    "taxes": None,
+                    "baggage": None,
+                    "source_site": "makemytrip.com",
+                })
+            summary_rows.append({
+                "date": scrape_date.isoformat(),
+                "state": state,
+                "route": route_code,
+                "origin": origin,
+                "origin_code": origin_code,
+                "destination": destination,
+                "destination_code": destination_code,
+                "booking_window": booking_window,
+                "representative_price": round(sum(prices) / len(prices), 2) if prices else None,
+                "sample_size": len(prices),
+            })
+    raw_dir = DATABASE_ROOT / "raw_scraped_flights"
+    summary_dir = DATABASE_ROOT / "route_window_summary"
+    raw_dir.mkdir(parents=True, exist_ok=True)
+    summary_dir.mkdir(parents=True, exist_ok=True)
+    date_key = scrape_date.isoformat()
+    raw_payload = {
+        "table": "raw_scraped_flights",
+        "source_site": "makemytrip.com",
+        "schema": ["scrape_date", "state", "route", "origin", "origin_code", "destination", "destination_code", "booking_window", "carrier", "airline", "departure_date", "departure_time", "arrival_time", "flight_number", "price", "base_fare", "taxes", "baggage", "source_site"],
+        "rows": raw_rows,
+    }
+    summary_payload = {
+        "table": "route_window_summary",
+        "source_site": "makemytrip.com",
+        "schema": ["date", "state", "route", "origin", "origin_code", "destination", "destination_code", "booking_window", "representative_price", "sample_size"],
+        "rows": summary_rows,
+    }
+    (raw_dir / f"{date_key}.json").write_text(json.dumps(raw_payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    (summary_dir / f"{date_key}.json").write_text(json.dumps(summary_payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    manifest = {"date": date_key, "source_site": "makemytrip.com", "raw_flight_count": len(raw_rows), "summary_count": len(summary_rows)}
+    (DATABASE_ROOT / "manifest.json").write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    return {"raw_flight_count": len(raw_rows), "summary_count": len(summary_rows)}
+
+
 async def extract_page(page, url: str, source: str, destination: str, travel_date: date) -> dict[str, Any]:
     await page.goto(url, wait_until="domcontentloaded", timeout=60_000)
     try:
@@ -162,6 +244,7 @@ async def scrape_routes(routes: list[dict[str, Any]], offsets: list[int], headle
             "script_version": SCRIPT_VERSION,
             "mode": "makemytrip_relative_dates",
             "run_date_T": run_date.isoformat(),
+            "state": route.get("state") or "Unknown",
             "route_name": f"{route['origin']} - {route['destination']}",
             "origin": route["origin"],
             "origin_code": route["origin_code"],
@@ -255,4 +338,6 @@ if __name__ == "__main__":
     OUTPUT_FOLDER.mkdir(parents=True, exist_ok=True)
     payload = asyncio.run(scrape_routes(selected, offsets, headless=not args.headed))
     (OUTPUT_FOLDER / "target_day.json").write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    database_counts = write_database_snapshot(payload, datetime.now(timezone(timedelta(hours=5, minutes=30))).date())
+    print(f"MakeMyTrip database snapshot saved under {DATABASE_ROOT}: {database_counts}")
     print(f"Structured MakeMyTrip data saved to: {OUTPUT_FOLDER / 'target_day.json'}")

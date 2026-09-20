@@ -1,0 +1,30 @@
+{
+  "table": "route_window_summary",
+  "source_site": "makemytrip.com",
+  "schema": [
+    "date",
+    "state",
+    "route",
+    "origin",
+    "origin_code",
+    "destination",
+    "destination_code",
+    "booking_window",
+    "representative_price",
+    "sample_size"
+  ],
+  "rows": [
+    {
+      "date": "2026-09-20",
+      "state": "Delhi",
+      "route": "DEL-BOM",
+      "origin": "DELHI",
+      "origin_code": "DEL",
+      "destination": "MUMBAI",
+      "destination_code": "BOM",
+      "booking_window": "T_plus_1",
+      "representative_price": null,
+      "sample_size": 0
+    }
+  ]
+}
