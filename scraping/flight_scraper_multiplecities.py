@@ -640,10 +640,12 @@ async def scrape_all_routes(routes: list[dict[str, Any]], offsets: list[int], ht
             if checkpoint_path is None:
                 return
             checkpoint_path.parent.mkdir(parents=True, exist_ok=True)
-            checkpoint_path.write_text(
+            temporary_path = checkpoint_path.with_name(checkpoint_path.name + ".tmp")
+            temporary_path.write_text(
                 json.dumps({"mode": "multi_route_relative_dates", "routes": route_results}, ensure_ascii=False, indent=2) + "\n",
                 encoding="utf-8",
             )
+            temporary_path.replace(checkpoint_path)
 
         for batch_start in range(0, len(routes), ROUTE_BATCH_SIZE):
             batch_end = min(batch_start + ROUTE_BATCH_SIZE, len(routes))
