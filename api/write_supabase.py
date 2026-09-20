@@ -22,6 +22,26 @@ ROOT = Path(__file__).resolve().parents[1]
 TARGET_FILE = ROOT / "dashboard" / "target_day.json"
 APIX_FILE = ROOT / "dashboard" / "apix_output.json"
 HISTORY_FILE = ROOT / "dashboard" / "apix_history.json"
+POST_BATCH_SIZE = 200
+
+# These two tables were provisioned before state/origin metadata was added to
+# the file database. Keep their API payloads on the deployed five/four-column
+# schemas until the Supabase migration is applied; raw flight rows already use
+# the newer state-aware schema.
+TABLE_COLUMNS = {
+    "route_window_summary": (
+        "date", "route", "booking_window", "representative_price", "sample_size"
+    ),
+    "route_level_index": (
+        "date", "route", "route_level_index", "explanation_text"
+    ),
+}
+TABLE_CONFLICTS = {
+    "raw_scraped_flights": "state,scrape_date,route,booking_window,flight_number,departure_time,arrival_time,price,source_site",
+    "route_window_summary": "date,route,booking_window",
+    "route_level_index": "date,route",
+    "daily_apix": "date,frequency",
+}
 
 
 def required_env(name: str) -> str:
@@ -139,29 +159,47 @@ def post_batch(client: httpx.Client, base_url: str, key: str, table: str, rows: 
         for row in rows:
             unique_rows[tuple(row.get(field) for field in identity)] = row
         rows = list(unique_rows.values())
+    elif table in TABLE_COLUMNS:
+        # Repeated airport pairs occur in the workbook across different states,
+        # but the deployed summary/index tables key only on route. Last-write
+        # wins for that legacy key, while the raw table preserves every state.
+        columns = TABLE_COLUMNS[table]
+        unique_rows = {}
+        identity = ("date", "route", "booking_window") if table == "route_window_summary" else ("date", "route")
+        for row in rows:
+            unique_rows[tuple(row.get(field) for field in identity)] = {
+                field: row.get(field) for field in columns
+            }
+        rows = list(unique_rows.values())
     url = f"{base_url}/rest/v1/{table}"
-    if table == "raw_scraped_flights":
-        url += "?on_conflict=state,scrape_date,route,booking_window,flight_number,departure_time,arrival_time,price,source_site"
+    conflict = TABLE_CONFLICTS.get(table)
+    if conflict:
+        url += f"?on_conflict={conflict}"
     headers = {
         "apikey": key,
         "Authorization": f"Bearer {key}",
         "Content-Type": "application/json",
         "Prefer": "resolution=merge-duplicates,return=minimal",
     }
-    for attempt in range(4):
-        try:
-            response = client.post(url, headers=headers, json=rows)
-            if response.status_code < 500 and response.status_code != 429:
-                if response.is_error:
+    total = len(rows)
+    for start in range(0, total, POST_BATCH_SIZE):
+        chunk = rows[start:start + POST_BATCH_SIZE]
+        for attempt in range(4):
+            try:
+                response = client.post(url, headers=headers, json=chunk)
+                if response.status_code < 500 and response.status_code != 429:
+                    if response.is_error:
+                        raise RuntimeError(f"Supabase {table} returned {response.status_code}: {response.text[:1000]}")
+                    break
+                if attempt == 3:
                     raise RuntimeError(f"Supabase {table} returned {response.status_code}: {response.text[:1000]}")
-                print(f"{table}: upserted {len(rows)} rows")
-                return
-            if attempt == 3:
-                response.raise_for_status()
-        except (httpx.HTTPError, httpx.TimeoutException):
-            if attempt == 3:
-                raise
-        time.sleep(2 ** attempt)
+            except (httpx.HTTPError, httpx.TimeoutException):
+                if attempt == 3:
+                    raise
+            time.sleep(2 ** attempt)
+        else:
+            raise RuntimeError(f"Supabase {table}: exhausted retries for rows {start}:{start + len(chunk)}")
+    print(f"{table}: upserted {total} rows in {(total + POST_BATCH_SIZE - 1) // POST_BATCH_SIZE} batch(es)")
 
 
 def main() -> None:
