@@ -49,6 +49,9 @@ EMPTY_RESULT_RETRIES = max(0, int(os.getenv("EMPTY_RESULT_RETRIES", "2")))
 API_MAX_RETRIES = max(0, int(os.getenv("API_MAX_RETRIES", "3")))
 RETRY_BACKOFF_SECONDS = max(0.0, float(os.getenv("RETRY_BACKOFF_SECONDS", "2.0")))
 API_TIMEOUT_SECONDS = max(1.0, float(os.getenv("API_TIMEOUT_SECONDS", "30")))
+ROTATE_USER_AGENTS = os.getenv("ROTATE_USER_AGENTS", "false").lower() in {"1", "true", "yes"}
+USER_AGENTS = tuple(filter(None, (value.strip() for value in os.getenv("USER_AGENTS", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/131.0 Safari/537.36,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Version/18.1 Safari/605.1.15,Mozilla/5.0 (X11; Linux x86_64; rv:133.0) Gecko/20100101 Firefox/133.0").split(","))))
+PROXY_URLS = tuple(filter(None, (value.strip() for value in os.getenv("PROXY_URLS", "").split(","))))
 DEBUG_EMPTY_RESULTS = os.getenv("DEBUG_EMPTY_RESULTS", "false").lower() in {"1", "true", "yes"}
 SAVE_HTML = os.getenv("SAVE_HTML", "false").lower() in {"1", "true", "yes"}
 USE_DIRECT_API = os.getenv("USE_DIRECT_API", "true").lower() in {"1", "true", "yes"}
@@ -259,8 +262,9 @@ def error_result(url: str, error: str, attempts: int) -> dict[str, Any]:
     ))
 
 
-async def scrape_api_page(client: httpx.AsyncClient, source: str, destination: str, source_name: str, destination_name: str, travel_date: date) -> str:
-    response = await client.post(VIA_API_URL, json=api_payload(source, destination, source_name, destination_name, travel_date))
+async def scrape_api_page(client: httpx.AsyncClient, source: str, destination: str, source_name: str, destination_name: str, travel_date: date, user_agent: str | None = None) -> str:
+    headers = {"User-Agent": user_agent} if user_agent else None
+    response = await client.post(VIA_API_URL, json=api_payload(source, destination, source_name, destination_name, travel_date), headers=headers)
     response.raise_for_status()
     payload = response.json()
     result = parse_via_api_response(payload, VIA_API_URL)
@@ -522,17 +526,25 @@ async def scrape_all_routes(routes: list[dict[str, Any]], offsets: list[int], ht
         for route in route_specs
     ]
 
-    client = httpx.AsyncClient(
-        timeout=httpx.Timeout(API_TIMEOUT_SECONDS, connect=min(API_TIMEOUT_SECONDS, 10.0)),
-        follow_redirects=True,
-        headers={
-            "User-Agent": "Mozilla/5.0",
-            "Accept": "application/json, text/plain, */*",
-            "Content-Type": "application/json",
-            "Origin": "https://in.via.com",
-            "Referer": "https://in.via.com/flight/search",
-        },
-    ) if USE_DIRECT_API else None
+    api_clients: dict[str | None, httpx.AsyncClient] = {}
+
+    def get_api_client(proxy: str | None = None) -> httpx.AsyncClient:
+        if proxy not in api_clients:
+            api_clients[proxy] = httpx.AsyncClient(
+                timeout=httpx.Timeout(API_TIMEOUT_SECONDS, connect=min(API_TIMEOUT_SECONDS, 10.0)),
+                follow_redirects=True,
+                proxy=proxy,
+                headers={
+                    "User-Agent": USER_AGENTS[0] if USER_AGENTS else "Mozilla/5.0",
+                    "Accept": "application/json, text/plain, */*",
+                    "Content-Type": "application/json",
+                    "Origin": "https://in.via.com",
+                    "Referer": "https://in.via.com/flight/search",
+                },
+            )
+        return api_clients[proxy]
+
+    client = get_api_client() if USE_DIRECT_API else None
 
     async with async_playwright() if not USE_DIRECT_API else _null_async_context() as playwright:
         browser = None
@@ -565,13 +577,19 @@ async def scrape_all_routes(routes: list[dict[str, Any]], offsets: list[int], ht
                     for attempt in range(max_attempts):
                         total_attempts = attempt + 1
                         try:
+                            identity_index = route_index * len(offsets) + offsets.index(offset)
+                            user_agent = USER_AGENTS[identity_index % len(USER_AGENTS)] if ROTATE_USER_AGENTS and USER_AGENTS else None
+                            proxy = PROXY_URLS[identity_index % len(PROXY_URLS)] if PROXY_URLS else None
                             async with api_request_lock:
                                 loop = asyncio.get_running_loop()
                                 wait_for_slot = max(0.0, next_api_request_at - loop.time())
                                 if wait_for_slot:
                                     await asyncio.sleep(wait_for_slot)
                                 next_api_request_at = loop.time() + API_REQUEST_GAP_SECONDS
-                                candidate = json.loads(await scrape_api_page(client, source, destination, source_name, destination_name, travel_date))
+                                request_client = get_api_client(proxy) if USE_DIRECT_API else client
+                                candidate = json.loads(await scrape_api_page(request_client, source, destination, source_name, destination_name, travel_date, user_agent))
+                                candidate.setdefault("analysis", {})["user_agent_rotated"] = bool(user_agent)
+                                candidate["analysis"]["proxy_configured"] = bool(proxy)
                             result = candidate
                         except (httpx.HTTPError, json.JSONDecodeError, KeyError, TypeError, ValueError) as exc:
                             status = getattr(getattr(exc, "response", None), "status_code", None)
@@ -619,8 +637,8 @@ async def scrape_all_routes(routes: list[dict[str, Any]], offsets: list[int], ht
         if browser is not None:
             await browser.close()
 
-    if client is not None:
-        await client.aclose()
+    for api_client in api_clients.values():
+        await api_client.aclose()
 
     for route_payload in route_results:
         route_payload["results"] = {

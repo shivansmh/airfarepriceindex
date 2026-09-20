@@ -36,3 +36,5 @@ If `pytest` is installed, the same tests can be run with `pytest -q`.
 ## Project overview
 
 The project combines Via.com airfare collection, data cleaning, an Airfare Price Index model, and a dashboard. Route definitions and passenger weights are stored in `config/routes.json` and sourced from `config/finalroutes.xlsx`.
+
+For a controlled fingerprint comparison, set `ROTATE_USER_AGENTS=true`; the scraper cycles through the configured `USER_AGENTS` list while retaining the same conservative pacing. Authorized proxies can be supplied as a comma-separated `PROXY_URLS` list, which is rotated independently and recorded in diagnostics. Proxy use is opt-in and should be limited to infrastructure you control or are explicitly authorized to use; do not use public proxy lists to evade access controls.

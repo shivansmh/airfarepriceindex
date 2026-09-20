@@ -1,0 +1,465 @@
+{
+  "mode": "multi_route_relative_dates",
+  "routes": [
+    {
+      "script_version": "via-direct-api-2026-09-19",
+      "mode": "relative_dates",
+      "run_date_T": "2026-09-20",
+      "route": "https://in.via.com/flight/search?returnType=one-way&destination=BOM&bdestination=BOM&destinationL=MUMBAI&destinationCity=MUMBAI&destinationCN=&source=DEL&bsource=DEL&sourceL=DELHI&sourceCity=DELHI&sourceCN=&month=9&day=1&year=2026&date=9%2F1%2F2026&numAdults=1&numChildren=0&numInfants=0&validation_result=&domesinter=international&livequote=-1&flightClass=ALL&travType=INTL&routingType=ALL&preferredCarrier=&prefCarrier=0&isAjax=false",
+      "requested_offsets": [
+        1
+      ],
+      "results": {
+        "T_plus_1": {
+          "url": "https://in.via.com/apiv2/flight/search?&flowType=NODE&ajax=true&jsonData=true",
+          "price": null,
+          "flight_number": null,
+          "departure_time": null,
+          "arrival_time": null,
+          "currency": null,
+          "html_file": null,
+          "analysis": {
+            "response_type": "via_json_api",
+            "via_journeys_found": 0,
+            "via_rows_found": 0,
+            "script_version": "via-direct-api-2026-09-19",
+            "http_status": 200,
+            "response_bytes": 2924,
+            "response_keys": [
+              "webDta"
+            ],
+            "web_data_type": "dict",
+            "web_data_preview": "{'hdr': {'priNavEl': [{'dsplyNm': 'Flights', 'dsplyUrl': 'https://in.via.com/', 'className': 'via_products_flt', 'selected': True, 'tempNav': False, 'parentActionId': 0, 'orderInMenuTree': 20, 'isRedirection': False}, {'dsplyNm': 'Hotels', 'dsplyUrl': 'https://in.via.com/hotels', 'className': 'via_products_hotel', 'selected': False, 'tempNav': False, 'parentActionId': 0, 'orderInMenuTree': 22, 'isRedirection': False}, {'dsplyNm': 'Holidays', 'dsplyUrl': 'https://in.via.com/holidays', 'className'",
+            "user_agent_rotated": true,
+            "proxy_configured": false
+          },
+          "flights": [],
+          "offset_days": 1,
+          "requested_date": "2026-09-21"
+        }
+      },
+      "route_name": "DELHI - MUMBAI",
+      "state": "Delhi",
+      "origin": "DELHI",
+      "origin_code": "DEL",
+      "destination": "MUMBAI",
+      "destination_code": "BOM",
+      "passengers": 3426228,
+      "contribution": 0.0332538638932862
+    },
+    {
+      "script_version": "via-direct-api-2026-09-19",
+      "mode": "relative_dates",
+      "run_date_T": "2026-09-20",
+      "route": "https://in.via.com/flight/search?returnType=one-way&destination=DEL&bdestination=DEL&destinationL=DELHI&destinationCity=DELHI&destinationCN=&source=BOM&bsource=BOM&sourceL=MUMBAI&sourceCity=MUMBAI&sourceCN=&month=9&day=1&year=2026&date=9%2F1%2F2026&numAdults=1&numChildren=0&numInfants=0&validation_result=&domesinter=international&livequote=-1&flightClass=ALL&travType=INTL&routingType=ALL&preferredCarrier=&prefCarrier=0&isAjax=false",
+      "requested_offsets": [
+        1
+      ],
+      "results": {
+        "T_plus_1": {
+          "url": "https://in.via.com/apiv2/flight/search?&flowType=NODE&ajax=true&jsonData=true",
+          "price": null,
+          "flight_number": null,
+          "departure_time": null,
+          "arrival_time": null,
+          "currency": null,
+          "html_file": null,
+          "analysis": {
+            "response_type": "via_json_api",
+            "via_journeys_found": 0,
+            "via_rows_found": 0,
+            "script_version": "via-direct-api-2026-09-19",
+            "http_status": 200,
+            "response_bytes": 2925,
+            "response_keys": [
+              "webDta"
+            ],
+            "web_data_type": "dict",
+            "web_data_preview": "{'hdr': {'priNavEl': [{'dsplyNm': 'Flights', 'dsplyUrl': 'https://in.via.com/', 'className': 'via_products_flt', 'selected': True, 'tempNav': False, 'parentActionId': 0, 'orderInMenuTree': 20, 'isRedirection': False}, {'dsplyNm': 'Hotels', 'dsplyUrl': 'https://in.via.com/hotels', 'className': 'via_products_hotel', 'selected': False, 'tempNav': False, 'parentActionId': 0, 'orderInMenuTree': 22, 'isRedirection': False}, {'dsplyNm': 'Holidays', 'dsplyUrl': 'https://in.via.com/holidays', 'className'",
+            "user_agent_rotated": true,
+            "proxy_configured": false
+          },
+          "flights": [],
+          "offset_days": 1,
+          "requested_date": "2026-09-21"
+        }
+      },
+      "route_name": "MUMBAI - DELHI",
+      "state": "Maharashtra",
+      "origin": "MUMBAI",
+      "origin_code": "BOM",
+      "destination": "DELHI",
+      "destination_code": "DEL",
+      "passengers": 3424641,
+      "contribution": 0.0332384609831475
+    },
+    {
+      "script_version": "via-direct-api-2026-09-19",
+      "mode": "relative_dates",
+      "run_date_T": "2026-09-20",
+      "route": "https://in.via.com/flight/search?returnType=one-way&destination=BLR&bdestination=BLR&destinationL=BENGALURU&destinationCity=BENGALURU&destinationCN=&source=DEL&bsource=DEL&sourceL=DELHI&sourceCity=DELHI&sourceCN=&month=9&day=1&year=2026&date=9%2F1%2F2026&numAdults=1&numChildren=0&numInfants=0&validation_result=&domesinter=international&livequote=-1&flightClass=ALL&travType=INTL&routingType=ALL&preferredCarrier=&prefCarrier=0&isAjax=false",
+      "requested_offsets": [
+        1
+      ],
+      "results": {
+        "T_plus_1": {
+          "url": "https://in.via.com/apiv2/flight/search?&flowType=NODE&ajax=true&jsonData=true",
+          "price": null,
+          "flight_number": null,
+          "departure_time": null,
+          "arrival_time": null,
+          "currency": null,
+          "html_file": null,
+          "analysis": {
+            "response_type": "via_json_api",
+            "via_journeys_found": 0,
+            "via_rows_found": 0,
+            "script_version": "via-direct-api-2026-09-19",
+            "http_status": 200,
+            "response_bytes": 2924,
+            "response_keys": [
+              "webDta"
+            ],
+            "web_data_type": "dict",
+            "web_data_preview": "{'hdr': {'priNavEl': [{'dsplyNm': 'Flights', 'dsplyUrl': 'https://in.via.com/', 'className': 'via_products_flt', 'selected': True, 'tempNav': False, 'parentActionId': 0, 'orderInMenuTree': 20, 'isRedirection': False}, {'dsplyNm': 'Hotels', 'dsplyUrl': 'https://in.via.com/hotels', 'className': 'via_products_hotel', 'selected': False, 'tempNav': False, 'parentActionId': 0, 'orderInMenuTree': 22, 'isRedirection': False}, {'dsplyNm': 'Holidays', 'dsplyUrl': 'https://in.via.com/holidays', 'className'",
+            "user_agent_rotated": true,
+            "proxy_configured": false
+          },
+          "flights": [],
+          "offset_days": 1,
+          "requested_date": "2026-09-21"
+        }
+      },
+      "route_name": "DELHI - BENGALURU",
+      "state": "Delhi",
+      "origin": "DELHI",
+      "origin_code": "DEL",
+      "destination": "BENGALURU",
+      "destination_code": "BLR",
+      "passengers": 2350018,
+      "contribution": 0.0228085167475056
+    },
+    {
+      "script_version": "via-direct-api-2026-09-19",
+      "mode": "relative_dates",
+      "run_date_T": "2026-09-20",
+      "route": "https://in.via.com/flight/search?returnType=one-way&destination=DEL&bdestination=DEL&destinationL=DELHI&destinationCity=DELHI&destinationCN=&source=BLR&bsource=BLR&sourceL=BENGALURU&sourceCity=BENGALURU&sourceCN=&month=9&day=1&year=2026&date=9%2F1%2F2026&numAdults=1&numChildren=0&numInfants=0&validation_result=&domesinter=international&livequote=-1&flightClass=ALL&travType=INTL&routingType=ALL&preferredCarrier=&prefCarrier=0&isAjax=false",
+      "requested_offsets": [
+        1
+      ],
+      "results": {
+        "T_plus_1": {
+          "url": "https://in.via.com/apiv2/flight/search?&flowType=NODE&ajax=true&jsonData=true",
+          "price": null,
+          "flight_number": null,
+          "departure_time": null,
+          "arrival_time": null,
+          "currency": null,
+          "html_file": null,
+          "analysis": {
+            "response_type": "via_json_api",
+            "via_journeys_found": 0,
+            "via_rows_found": 0,
+            "script_version": "via-direct-api-2026-09-19",
+            "http_status": 200,
+            "response_bytes": 2925,
+            "response_keys": [
+              "webDta"
+            ],
+            "web_data_type": "dict",
+            "web_data_preview": "{'hdr': {'priNavEl': [{'dsplyNm': 'Flights', 'dsplyUrl': 'https://in.via.com/', 'className': 'via_products_flt', 'selected': True, 'tempNav': False, 'parentActionId': 0, 'orderInMenuTree': 20, 'isRedirection': False}, {'dsplyNm': 'Hotels', 'dsplyUrl': 'https://in.via.com/hotels', 'className': 'via_products_hotel', 'selected': False, 'tempNav': False, 'parentActionId': 0, 'orderInMenuTree': 22, 'isRedirection': False}, {'dsplyNm': 'Holidays', 'dsplyUrl': 'https://in.via.com/holidays', 'className'",
+            "user_agent_rotated": true,
+            "proxy_configured": false
+          },
+          "flights": [],
+          "offset_days": 1,
+          "requested_date": "2026-09-21"
+        }
+      },
+      "route_name": "BENGALURU - DELHI",
+      "state": "Karnataka",
+      "origin": "BENGALURU",
+      "origin_code": "BLR",
+      "destination": "DELHI",
+      "destination_code": "DEL",
+      "passengers": 2331024,
+      "contribution": 0.0226241671097147
+    },
+    {
+      "script_version": "via-direct-api-2026-09-19",
+      "mode": "relative_dates",
+      "run_date_T": "2026-09-20",
+      "route": "https://in.via.com/flight/search?returnType=one-way&destination=BLR&bdestination=BLR&destinationL=BENGALURU&destinationCity=BENGALURU&destinationCN=&source=BOM&bsource=BOM&sourceL=MUMBAI&sourceCity=MUMBAI&sourceCN=&month=9&day=1&year=2026&date=9%2F1%2F2026&numAdults=1&numChildren=0&numInfants=0&validation_result=&domesinter=international&livequote=-1&flightClass=ALL&travType=INTL&routingType=ALL&preferredCarrier=&prefCarrier=0&isAjax=false",
+      "requested_offsets": [
+        1
+      ],
+      "results": {
+        "T_plus_1": {
+          "url": "https://in.via.com/apiv2/flight/search?&flowType=NODE&ajax=true&jsonData=true",
+          "price": null,
+          "flight_number": null,
+          "departure_time": null,
+          "arrival_time": null,
+          "currency": null,
+          "html_file": null,
+          "analysis": {
+            "response_type": "via_json_api",
+            "via_journeys_found": 0,
+            "via_rows_found": 0,
+            "script_version": "via-direct-api-2026-09-19",
+            "http_status": 200,
+            "response_bytes": 2925,
+            "response_keys": [
+              "webDta"
+            ],
+            "web_data_type": "dict",
+            "web_data_preview": "{'hdr': {'priNavEl': [{'dsplyNm': 'Flights', 'dsplyUrl': 'https://in.via.com/', 'className': 'via_products_flt', 'selected': True, 'tempNav': False, 'parentActionId': 0, 'orderInMenuTree': 20, 'isRedirection': False}, {'dsplyNm': 'Hotels', 'dsplyUrl': 'https://in.via.com/hotels', 'className': 'via_products_hotel', 'selected': False, 'tempNav': False, 'parentActionId': 0, 'orderInMenuTree': 22, 'isRedirection': False}, {'dsplyNm': 'Holidays', 'dsplyUrl': 'https://in.via.com/holidays', 'className'",
+            "user_agent_rotated": true,
+            "proxy_configured": false
+          },
+          "flights": [],
+          "offset_days": 1,
+          "requested_date": "2026-09-21"
+        }
+      },
+      "route_name": "MUMBAI - BENGALURU",
+      "state": "Maharashtra",
+      "origin": "MUMBAI",
+      "origin_code": "BOM",
+      "destination": "BENGALURU",
+      "destination_code": "BLR",
+      "passengers": 2083737,
+      "contribution": 0.0202240792461577
+    },
+    {
+      "script_version": "via-direct-api-2026-09-19",
+      "mode": "relative_dates",
+      "run_date_T": "2026-09-20",
+      "route": "https://in.via.com/flight/search?returnType=one-way&destination=BOM&bdestination=BOM&destinationL=MUMBAI&destinationCity=MUMBAI&destinationCN=&source=BLR&bsource=BLR&sourceL=BENGALURU&sourceCity=BENGALURU&sourceCN=&month=9&day=1&year=2026&date=9%2F1%2F2026&numAdults=1&numChildren=0&numInfants=0&validation_result=&domesinter=international&livequote=-1&flightClass=ALL&travType=INTL&routingType=ALL&preferredCarrier=&prefCarrier=0&isAjax=false",
+      "requested_offsets": [
+        1
+      ],
+      "results": {
+        "T_plus_1": {
+          "url": "https://in.via.com/apiv2/flight/search?&flowType=NODE&ajax=true&jsonData=true",
+          "price": null,
+          "flight_number": null,
+          "departure_time": null,
+          "arrival_time": null,
+          "currency": null,
+          "html_file": null,
+          "analysis": {
+            "response_type": "via_json_api",
+            "via_journeys_found": 0,
+            "via_rows_found": 0,
+            "script_version": "via-direct-api-2026-09-19",
+            "http_status": 200,
+            "response_bytes": 2924,
+            "response_keys": [
+              "webDta"
+            ],
+            "web_data_type": "dict",
+            "web_data_preview": "{'hdr': {'priNavEl': [{'dsplyNm': 'Flights', 'dsplyUrl': 'https://in.via.com/', 'className': 'via_products_flt', 'selected': True, 'tempNav': False, 'parentActionId': 0, 'orderInMenuTree': 20, 'isRedirection': False}, {'dsplyNm': 'Hotels', 'dsplyUrl': 'https://in.via.com/hotels', 'className': 'via_products_hotel', 'selected': False, 'tempNav': False, 'parentActionId': 0, 'orderInMenuTree': 22, 'isRedirection': False}, {'dsplyNm': 'Holidays', 'dsplyUrl': 'https://in.via.com/holidays', 'className'",
+            "user_agent_rotated": true,
+            "proxy_configured": false
+          },
+          "flights": [],
+          "offset_days": 1,
+          "requested_date": "2026-09-21"
+        }
+      },
+      "route_name": "BENGALURU - MUMBAI",
+      "state": "Karnataka",
+      "origin": "BENGALURU",
+      "origin_code": "BLR",
+      "destination": "MUMBAI",
+      "destination_code": "BOM",
+      "passengers": 2030837,
+      "contribution": 0.0197106489082016
+    },
+    {
+      "script_version": "via-direct-api-2026-09-19",
+      "mode": "relative_dates",
+      "run_date_T": "2026-09-20",
+      "route": "https://in.via.com/flight/search?returnType=one-way&destination=DEL&bdestination=DEL&destinationL=DELHI&destinationCity=DELHI&destinationCN=&source=HYD&bsource=HYD&sourceL=HYDERABAD&sourceCity=HYDERABAD&sourceCN=&month=9&day=1&year=2026&date=9%2F1%2F2026&numAdults=1&numChildren=0&numInfants=0&validation_result=&domesinter=international&livequote=-1&flightClass=ALL&travType=INTL&routingType=ALL&preferredCarrier=&prefCarrier=0&isAjax=false",
+      "requested_offsets": [
+        1
+      ],
+      "results": {
+        "T_plus_1": {
+          "url": "https://in.via.com/apiv2/flight/search?&flowType=NODE&ajax=true&jsonData=true",
+          "price": null,
+          "flight_number": null,
+          "departure_time": null,
+          "arrival_time": null,
+          "currency": null,
+          "html_file": null,
+          "analysis": {
+            "response_type": "via_json_api",
+            "via_journeys_found": 0,
+            "via_rows_found": 0,
+            "script_version": "via-direct-api-2026-09-19",
+            "http_status": 200,
+            "response_bytes": 2925,
+            "response_keys": [
+              "webDta"
+            ],
+            "web_data_type": "dict",
+            "web_data_preview": "{'hdr': {'priNavEl': [{'dsplyNm': 'Flights', 'dsplyUrl': 'https://in.via.com/', 'className': 'via_products_flt', 'selected': True, 'tempNav': False, 'parentActionId': 0, 'orderInMenuTree': 20, 'isRedirection': False}, {'dsplyNm': 'Hotels', 'dsplyUrl': 'https://in.via.com/hotels', 'className': 'via_products_hotel', 'selected': False, 'tempNav': False, 'parentActionId': 0, 'orderInMenuTree': 22, 'isRedirection': False}, {'dsplyNm': 'Holidays', 'dsplyUrl': 'https://in.via.com/holidays', 'className'",
+            "user_agent_rotated": true,
+            "proxy_configured": false
+          },
+          "flights": [],
+          "offset_days": 1,
+          "requested_date": "2026-09-21"
+        }
+      },
+      "route_name": "HYDERABAD - DELHI",
+      "state": "Telangana",
+      "origin": "HYDERABAD",
+      "origin_code": "HYD",
+      "destination": "DELHI",
+      "destination_code": "DEL",
+      "passengers": 1657730,
+      "contribution": 0.0160893927058612
+    },
+    {
+      "script_version": "via-direct-api-2026-09-19",
+      "mode": "relative_dates",
+      "run_date_T": "2026-09-20",
+      "route": "https://in.via.com/flight/search?returnType=one-way&destination=HYD&bdestination=HYD&destinationL=HYDERABAD&destinationCity=HYDERABAD&destinationCN=&source=DEL&bsource=DEL&sourceL=DELHI&sourceCity=DELHI&sourceCN=&month=9&day=1&year=2026&date=9%2F1%2F2026&numAdults=1&numChildren=0&numInfants=0&validation_result=&domesinter=international&livequote=-1&flightClass=ALL&travType=INTL&routingType=ALL&preferredCarrier=&prefCarrier=0&isAjax=false",
+      "requested_offsets": [
+        1
+      ],
+      "results": {
+        "T_plus_1": {
+          "url": "https://in.via.com/apiv2/flight/search?&flowType=NODE&ajax=true&jsonData=true",
+          "price": null,
+          "flight_number": null,
+          "departure_time": null,
+          "arrival_time": null,
+          "currency": null,
+          "html_file": null,
+          "analysis": {
+            "response_type": "via_json_api",
+            "via_journeys_found": 0,
+            "via_rows_found": 0,
+            "script_version": "via-direct-api-2026-09-19",
+            "http_status": 200,
+            "response_bytes": 2925,
+            "response_keys": [
+              "webDta"
+            ],
+            "web_data_type": "dict",
+            "web_data_preview": "{'hdr': {'priNavEl': [{'dsplyNm': 'Flights', 'dsplyUrl': 'https://in.via.com/', 'className': 'via_products_flt', 'selected': True, 'tempNav': False, 'parentActionId': 0, 'orderInMenuTree': 20, 'isRedirection': False}, {'dsplyNm': 'Hotels', 'dsplyUrl': 'https://in.via.com/hotels', 'className': 'via_products_hotel', 'selected': False, 'tempNav': False, 'parentActionId': 0, 'orderInMenuTree': 22, 'isRedirection': False}, {'dsplyNm': 'Holidays', 'dsplyUrl': 'https://in.via.com/holidays', 'className'",
+            "user_agent_rotated": true,
+            "proxy_configured": false
+          },
+          "flights": [],
+          "offset_days": 1,
+          "requested_date": "2026-09-21"
+        }
+      },
+      "route_name": "DELHI - HYDERABAD",
+      "state": "Delhi",
+      "origin": "DELHI",
+      "origin_code": "DEL",
+      "destination": "HYDERABAD",
+      "destination_code": "HYD",
+      "passengers": 1638188,
+      "contribution": 0.0158997243568188
+    },
+    {
+      "script_version": "via-direct-api-2026-09-19",
+      "mode": "relative_dates",
+      "run_date_T": "2026-09-20",
+      "route": "https://in.via.com/flight/search?returnType=one-way&destination=PNQ&bdestination=PNQ&destinationL=PUNE&destinationCity=PUNE&destinationCN=&source=DEL&bsource=DEL&sourceL=DELHI&sourceCity=DELHI&sourceCN=&month=9&day=1&year=2026&date=9%2F1%2F2026&numAdults=1&numChildren=0&numInfants=0&validation_result=&domesinter=international&livequote=-1&flightClass=ALL&travType=INTL&routingType=ALL&preferredCarrier=&prefCarrier=0&isAjax=false",
+      "requested_offsets": [
+        1
+      ],
+      "results": {
+        "T_plus_1": {
+          "url": "https://in.via.com/apiv2/flight/search?&flowType=NODE&ajax=true&jsonData=true",
+          "price": null,
+          "flight_number": null,
+          "departure_time": null,
+          "arrival_time": null,
+          "currency": null,
+          "html_file": null,
+          "analysis": {
+            "response_type": "via_json_api",
+            "via_journeys_found": 0,
+            "via_rows_found": 0,
+            "script_version": "via-direct-api-2026-09-19",
+            "http_status": 200,
+            "response_bytes": 2925,
+            "response_keys": [
+              "webDta"
+            ],
+            "web_data_type": "dict",
+            "web_data_preview": "{'hdr': {'priNavEl': [{'dsplyNm': 'Flights', 'dsplyUrl': 'https://in.via.com/', 'className': 'via_products_flt', 'selected': True, 'tempNav': False, 'parentActionId': 0, 'orderInMenuTree': 20, 'isRedirection': False}, {'dsplyNm': 'Hotels', 'dsplyUrl': 'https://in.via.com/hotels', 'className': 'via_products_hotel', 'selected': False, 'tempNav': False, 'parentActionId': 0, 'orderInMenuTree': 22, 'isRedirection': False}, {'dsplyNm': 'Holidays', 'dsplyUrl': 'https://in.via.com/holidays', 'className'",
+            "user_agent_rotated": true,
+            "proxy_configured": false
+          },
+          "flights": [],
+          "offset_days": 1,
+          "requested_date": "2026-09-21"
+        }
+      },
+      "route_name": "DELHI - PUNE",
+      "state": "Delhi",
+      "origin": "DELHI",
+      "origin_code": "DEL",
+      "destination": "PUNE",
+      "destination_code": "PNQ",
+      "passengers": 1469849,
+      "contribution": 0.0142658803178547
+    },
+    {
+      "script_version": "via-direct-api-2026-09-19",
+      "mode": "relative_dates",
+      "run_date_T": "2026-09-20",
+      "route": "https://in.via.com/flight/search?returnType=one-way&destination=DEL&bdestination=DEL&destinationL=DELHI&destinationCity=DELHI&destinationCN=&source=PNQ&bsource=PNQ&sourceL=PUNE&sourceCity=PUNE&sourceCN=&month=9&day=1&year=2026&date=9%2F1%2F2026&numAdults=1&numChildren=0&numInfants=0&validation_result=&domesinter=international&livequote=-1&flightClass=ALL&travType=INTL&routingType=ALL&preferredCarrier=&prefCarrier=0&isAjax=false",
+      "requested_offsets": [
+        1
+      ],
+      "results": {
+        "T_plus_1": {
+          "url": "https://in.via.com/apiv2/flight/search?&flowType=NODE&ajax=true&jsonData=true",
+          "price": null,
+          "flight_number": null,
+          "departure_time": null,
+          "arrival_time": null,
+          "currency": null,
+          "html_file": null,
+          "analysis": {
+            "response_type": "via_json_api",
+            "via_journeys_found": 0,
+            "via_rows_found": 0,
+            "script_version": "via-direct-api-2026-09-19",
+            "http_status": 200,
+            "response_bytes": 2925,
+            "response_keys": [
+              "webDta"
+            ],
+            "web_data_type": "dict",
+            "web_data_preview": "{'hdr': {'priNavEl': [{'dsplyNm': 'Flights', 'dsplyUrl': 'https://in.via.com/', 'className': 'via_products_flt', 'selected': True, 'tempNav': False, 'parentActionId': 0, 'orderInMenuTree': 20, 'isRedirection': False}, {'dsplyNm': 'Hotels', 'dsplyUrl': 'https://in.via.com/hotels', 'className': 'via_products_hotel', 'selected': False, 'tempNav': False, 'parentActionId': 0, 'orderInMenuTree': 22, 'isRedirection': False}, {'dsplyNm': 'Holidays', 'dsplyUrl': 'https://in.via.com/holidays', 'className'",
+            "user_agent_rotated": true,
+            "proxy_configured": false
+          },
+          "flights": [],
+          "offset_days": 1,
+          "requested_date": "2026-09-21"
+        }
+      },
+      "route_name": "PUNE - DELHI",
+      "state": "Maharashtra",
+      "origin": "PUNE",
+      "origin_code": "PNQ",
+      "destination": "DELHI",
+      "destination_code": "DEL",
+      "passengers": 1454196,
+      "contribution": 0.014113957348478
+    }
+  ]
+}
