@@ -1,4 +1,4 @@
-from scraping.flight_scraper_multiplecities import airline_label, airline_names, parse_via_api_response, parse_via_rows
+from scraping.flight_scraper_multiplecities import airline_label, airline_names, parse_via_api_response, parse_via_rows, select_routes
 
 
 def test_known_airlines():
@@ -33,6 +33,16 @@ def test_structured_api_parser_uses_nested_fares_and_cheapest_variant():
     assert result.flights[0]["price"] == "₹6,400"
     assert result.flights[0]["base_fare"] == 4400
     assert result.flights[0]["taxes"] == 2000
+
+
+def test_select_routes_prioritizes_highest_passenger_volume():
+    routes = [
+        {"origin_code": "LOW", "destination_code": "AAA", "passengers": 10},
+        {"origin_code": "HIGH", "destination_code": "BBB", "passengers": 100},
+        {"origin_code": "MID", "destination_code": "CCC", "passengers": 50},
+    ]
+    selected = select_routes(routes, top_routes=2)
+    assert [(route["origin_code"], route["passengers"]) for route in selected] == [("HIGH", 100), ("MID", 50)]
 
 
 if __name__ == "__main__":

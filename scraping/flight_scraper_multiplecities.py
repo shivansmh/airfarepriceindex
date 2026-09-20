@@ -6,6 +6,7 @@ import argparse
 import asyncio
 import json
 import os
+import random
 import re
 from contextlib import asynccontextmanager
 from datetime import date, datetime, timedelta
@@ -42,13 +43,17 @@ VIA_API_URL = "https://in.via.com/apiv2/flight/search?&flowType=NODE&ajax=true&j
 DATE_OFFSETS = [1, 7, 15, 30, 45]
 SHOW_BROWSER = os.getenv("SHOW_BROWSER", "false").lower() in {"1", "true", "yes"}
 WAIT_MS = int(os.getenv("WAIT_MS", "3500"))
-MAX_CONCURRENCY = max(1, int(os.getenv("MAX_CONCURRENCY", "3")))
-API_REQUEST_GAP_SECONDS = max(0.0, float(os.getenv("API_REQUEST_GAP_SECONDS", "0.35")))
-EMPTY_RESULT_RETRIES = max(0, int(os.getenv("EMPTY_RESULT_RETRIES", "1")))
+MAX_CONCURRENCY = max(1, int(os.getenv("MAX_CONCURRENCY", "1")))
+API_REQUEST_GAP_SECONDS = max(0.0, float(os.getenv("API_REQUEST_GAP_SECONDS", "1.5")))
+EMPTY_RESULT_RETRIES = max(0, int(os.getenv("EMPTY_RESULT_RETRIES", "2")))
+API_MAX_RETRIES = max(0, int(os.getenv("API_MAX_RETRIES", "3")))
+RETRY_BACKOFF_SECONDS = max(0.0, float(os.getenv("RETRY_BACKOFF_SECONDS", "2.0")))
+API_TIMEOUT_SECONDS = max(1.0, float(os.getenv("API_TIMEOUT_SECONDS", "30")))
 DEBUG_EMPTY_RESULTS = os.getenv("DEBUG_EMPTY_RESULTS", "false").lower() in {"1", "true", "yes"}
 SAVE_HTML = os.getenv("SAVE_HTML", "false").lower() in {"1", "true", "yes"}
 USE_DIRECT_API = os.getenv("USE_DIRECT_API", "true").lower() in {"1", "true", "yes"}
 ROUTE_LIMIT = int(os.getenv("ROUTE_LIMIT", "0"))
+TOP_ROUTES = max(0, int(os.getenv("TOP_ROUTES", "0")))
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
 ROUTES_FILE = REPO_ROOT / "config" / "routes.json"
@@ -224,15 +229,48 @@ def api_payload(source: str, destination: str, source_name: str, destination_nam
     }
 
 
+def select_routes(routes: list[dict[str, Any]], route_limit: int = 0, top_routes: int = 0) -> list[dict[str, Any]]:
+    """Select routes deterministically, optionally prioritizing passenger volume."""
+    selected = list(routes)
+    if top_routes > 0:
+        selected = sorted(selected, key=lambda route: route.get("passengers", 0) or 0, reverse=True)[:top_routes]
+    elif route_limit > 0:
+        selected = selected[:route_limit]
+    return selected
+
+
+def error_result(url: str, error: str, attempts: int) -> dict[str, Any]:
+    """Keep one failed window in the output so a batch does not hide the cause."""
+    return asdict(FlightResult(
+        url=url,
+        price=None,
+        flight_number=None,
+        departure_time=None,
+        arrival_time=None,
+        currency=None,
+        html_file=None,
+        analysis={
+            "response_type": "request_error",
+            "error": error,
+            "attempts": attempts,
+            "script_version": SCRIPT_VERSION,
+        },
+        flights=[],
+    ))
+
+
 async def scrape_api_page(client: httpx.AsyncClient, source: str, destination: str, source_name: str, destination_name: str, travel_date: date) -> str:
     response = await client.post(VIA_API_URL, json=api_payload(source, destination, source_name, destination_name, travel_date))
     response.raise_for_status()
     payload = response.json()
     result = parse_via_api_response(payload, VIA_API_URL)
+    web_data = payload.get("webDta")
     result.analysis.update({
         "http_status": response.status_code,
         "response_bytes": len(response.content),
         "response_keys": sorted(payload.keys())[:20],
+        "web_data_type": type(web_data).__name__ if web_data is not None else None,
+        "web_data_preview": re.sub(r"\s+", " ", str(web_data))[:500] if web_data is not None else None,
     })
     return json.dumps(asdict(result), ensure_ascii=False, indent=2)
 
@@ -485,7 +523,7 @@ async def scrape_all_routes(routes: list[dict[str, Any]], offsets: list[int], ht
     ]
 
     client = httpx.AsyncClient(
-        timeout=httpx.Timeout(60.0, connect=20.0),
+        timeout=httpx.Timeout(API_TIMEOUT_SECONDS, connect=min(API_TIMEOUT_SECONDS, 10.0)),
         follow_redirects=True,
         headers={
             "User-Agent": "Mozilla/5.0",
@@ -522,35 +560,53 @@ async def scrape_all_routes(routes: list[dict[str, Any]], offsets: list[int], ht
                     route_html = output_path.with_name(f"{stem}_{safe_route}_T_plus_{offset}_{travel_date.isoformat()}{suffix}")
                 if USE_DIRECT_API:
                     result = None
-                    for attempt in range(EMPTY_RESULT_RETRIES + 1):
-                        async with api_request_lock:
-                            loop = asyncio.get_running_loop()
-                            wait_for_slot = max(0.0, next_api_request_at - loop.time())
-                            if wait_for_slot:
-                                await asyncio.sleep(wait_for_slot)
-                            next_api_request_at = loop.time() + API_REQUEST_GAP_SECONDS
-                            candidate = json.loads(await scrape_api_page(client, source, destination, source_name, destination_name, travel_date))
-                        result = candidate
-                        journeys = (candidate.get("analysis") or {}).get("via_journeys_found")
+                    total_attempts = 0
+                    max_attempts = max(EMPTY_RESULT_RETRIES, API_MAX_RETRIES) + 1
+                    for attempt in range(max_attempts):
+                        total_attempts = attempt + 1
+                        try:
+                            async with api_request_lock:
+                                loop = asyncio.get_running_loop()
+                                wait_for_slot = max(0.0, next_api_request_at - loop.time())
+                                if wait_for_slot:
+                                    await asyncio.sleep(wait_for_slot)
+                                next_api_request_at = loop.time() + API_REQUEST_GAP_SECONDS
+                                candidate = json.loads(await scrape_api_page(client, source, destination, source_name, destination_name, travel_date))
+                            result = candidate
+                        except (httpx.HTTPError, json.JSONDecodeError, KeyError, TypeError, ValueError) as exc:
+                            status = getattr(getattr(exc, "response", None), "status_code", None)
+                            retry_after = getattr(getattr(exc, "response", None), "headers", {}).get("Retry-After")
+                            if attempt >= API_MAX_RETRIES:
+                                result = error_result(VIA_API_URL, f"{type(exc).__name__}: {exc}", total_attempts)
+                                print(f"REQUEST_ERROR route={source}-{destination} offset={offset} status={status} attempts={total_attempts} error={exc}")
+                                break
+                            try:
+                                server_wait = float(retry_after) if retry_after else 0.0
+                            except ValueError:
+                                server_wait = 0.0
+                            delay = max(server_wait, RETRY_BACKOFF_SECONDS * (2 ** attempt)) + random.uniform(0, 0.5)
+                            print(f"RETRY route={source}-{destination} offset={offset} status={status} wait={delay:.2f}s error={exc}")
+                            await asyncio.sleep(delay)
+                            continue
+
+                        journeys = (result.get("analysis") or {}).get("via_journeys_found")
                         if journeys == 0 and DEBUG_EMPTY_RESULTS:
                             async with empty_debug_lock:
-                                if route_index not in empty_debug_routes:
-                                    empty_debug_routes.add(route_index)
-                                    analysis = candidate.get("analysis") or {}
-                                    print(
-                                        "EMPTY_RESULT "
-                                        f"route_index={route_index + 1}/{len(route_specs)} "
-                                        f"state={route.get('state')} "
-                                        f"route={source}-{destination} "
-                                        f"names={source_name}->{destination_name} "
-                                        f"offset={offset} date={travel_date.isoformat()} "
-                                        f"attempt={attempt + 1} status={analysis.get('http_status')} "
-                                        f"bytes={analysis.get('response_bytes')} "
-                                        f"keys={analysis.get('response_keys')}"
-                                    )
-                        if journeys != 0 or attempt == EMPTY_RESULT_RETRIES:
+                                analysis = result.get("analysis") or {}
+                                print(
+                                    "EMPTY_RESULT "
+                                    f"route_index={route_index + 1}/{len(route_specs)} "
+                                    f"state={route.get('state')} "
+                                    f"route={source}-{destination} "
+                                    f"names={source_name}->{destination_name} "
+                                    f"offset={offset} date={travel_date.isoformat()} "
+                                    f"attempt={attempt + 1} status={analysis.get('http_status')} "
+                                    f"bytes={analysis.get('response_bytes')} "
+                                    f"keys={analysis.get('response_keys')}"
+                                )
+                        if journeys != 0 or attempt >= EMPTY_RESULT_RETRIES:
                             break
-                        await asyncio.sleep(2 ** attempt)
+                        await asyncio.sleep(RETRY_BACKOFF_SECONDS * (2 ** attempt) + random.uniform(0, 0.5))
                 else:
                     result = json.loads(await scrape_page(context, dated_url, str(route_html) if route_html else None, wait_ms))
                 result["offset_days"] = offset
@@ -694,7 +750,7 @@ def format_clean_report(payload: dict[str, Any]) -> str:
 
 
 def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description="Scrape flight details from exactly three airline booking pages.")
+    parser = argparse.ArgumentParser(description="Scrape Via.com flight details for configured routes.")
     parser.add_argument("urls", nargs="*", help="Exactly three booking-page URLs")
     parser.add_argument("--routes-file", help="Text file containing exactly three URLs, one per line")
     parser.add_argument("--date-url", help="One base Via.com route URL to scrape across a date range")
@@ -703,20 +759,33 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--offsets", default="1,7,15", help="Comma-separated day offsets for relative mode; default: 1,7,15")
     parser.add_argument("--html-out", default="rendered_flight_page.html", help="Base path for complete rendered HTML files")
     parser.add_argument("--wait-ms", type=int, default=2500, help="Additional wait after page load for results to render")
+    parser.add_argument("--route-limit", type=int, default=None, help="Use the first N configured routes")
+    parser.add_argument("--top-routes", type=int, default=None, help="Use the N highest-passenger-volume routes")
     parser.add_argument("--headed", action="store_true", help="Show Chromium while scraping")
     return parser.parse_args()
 
 
 if __name__ == "__main__":
     try:
+        args = parse_args()
+        offsets = [int(value.strip()) for value in args.offsets.split(",") if value.strip()]
+        if not offsets:
+            raise ValueError("--offsets must contain at least one integer")
+        route_limit = ROUTE_LIMIT if args.route_limit is None else max(0, args.route_limit)
+        top_routes = TOP_ROUTES if args.top_routes is None else max(0, args.top_routes)
+        selected_routes = select_routes(ROUTES, route_limit=route_limit, top_routes=top_routes)
+        print(
+            f"Selected {len(selected_routes)} of {len(ROUTES)} routes; "
+            f"offsets={offsets}; concurrency={MAX_CONCURRENCY}; gap={API_REQUEST_GAP_SECONDS:.2f}s"
+        )
         OUTPUT_FOLDER.mkdir(parents=True, exist_ok=True)
         payload = json.loads(asyncio.run(
             scrape_all_routes(
-                ROUTES[:ROUTE_LIMIT] if ROUTE_LIMIT > 0 else ROUTES,
-                DATE_OFFSETS,
-                str(HTML_OUTPUT_BASE),
-                WAIT_MS,
-                headless=not SHOW_BROWSER,
+                selected_routes,
+                offsets,
+                args.html_out if args.html_out else None,
+                args.wait_ms,
+                headless=not (SHOW_BROWSER or args.headed),
             )
         ))
         report = format_multi_route_report(payload)
