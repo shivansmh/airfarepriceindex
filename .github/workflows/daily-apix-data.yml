@@ -45,6 +45,11 @@ on:
         required: false
         default: true
         type: boolean
+      use_decodo_proxy:
+        description: "Use the authorized DECODO_PROXY_URL secret for this run"
+        required: false
+        default: false
+        type: boolean
 
 permissions:
   actions: read
@@ -93,6 +98,7 @@ jobs:
           ROUTE_BATCH_SIZE: ${{ inputs.route_batch_size || '5' }}
           BATCH_PAUSE_SECONDS: ${{ inputs.batch_pause_seconds || '60' }}
           RESET_CLIENT_BETWEEN_BATCHES: ${{ inputs.reset_client_between_batches != false }}
+          PROXY_URLS: ${{ inputs.use_decodo_proxy == true && secrets.DECODO_PROXY_URL || '' }}
           CHECKPOINT_OUTPUT: /tmp/apix-scrape/checkpoint.json
           DEBUG_EMPTY_RESULTS: ${{ inputs.debug_empty_results || 'false' }}
           EMPTY_RESULT_RETRIES: "0"
