@@ -36,6 +36,15 @@ on:
         description: "Pause between route batches"
         required: false
         default: "60"
+      request_gap_seconds:
+        description: "Minimum gap between Via API request starts"
+        required: false
+        default: "1.0"
+      reset_client_between_batches:
+        description: "Close and recreate the Via HTTP client after each route batch"
+        required: false
+        default: true
+        type: boolean
 
 permissions:
   actions: read
@@ -77,12 +86,13 @@ jobs:
           SHOW_BROWSER: "false"
           WAIT_MS: "1000"
           MAX_CONCURRENCY: "5"
-          API_REQUEST_GAP_SECONDS: "1.0"
+          API_REQUEST_GAP_SECONDS: ${{ inputs.request_gap_seconds || '1.0' }}
           ROUTE_LIMIT: ${{ inputs.route_limit || '0' }}
           TOP_ROUTES: ${{ inputs.top_routes || '0' }}
           DATE_OFFSETS: ${{ inputs.offsets || '1,7,15,30,45' }}
           ROUTE_BATCH_SIZE: ${{ inputs.route_batch_size || '5' }}
           BATCH_PAUSE_SECONDS: ${{ inputs.batch_pause_seconds || '60' }}
+          RESET_CLIENT_BETWEEN_BATCHES: ${{ inputs.reset_client_between_batches != false }}
           CHECKPOINT_OUTPUT: /tmp/apix-scrape/checkpoint.json
           DEBUG_EMPTY_RESULTS: ${{ inputs.debug_empty_results || 'false' }}
           EMPTY_RESULT_RETRIES: "0"
