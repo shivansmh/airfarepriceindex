@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-22T23:26:12",
+  "generated_at": "2026-09-23T23:31:59",
   "base_file": "/home/runner/work/airfarepriceindex/airfarepriceindex/data/base_day.txt",
   "target_file": "/home/runner/work/airfarepriceindex/airfarepriceindex/dashboard/target_day.txt",
   "json_output_file": "/home/runner/work/airfarepriceindex/airfarepriceindex/dashboard/apix_output.json",
@@ -28,32 +28,27 @@
   },
   "target_medians": {
     "PORT BLAIR - VISAKHAPATNAM": {
-      "T_plus_1": 25584,
-      "T_plus_7": 14383,
-      "T_plus_15": 13927,
-      "T_plus_30": 24763.5,
-      "T_plus_45": 15383
+      "T_plus_1": 17916.5,
+      "T_plus_7": 13309,
+      "T_plus_15": 17306,
+      "T_plus_30": 27364,
+      "T_plus_45": 14855
     },
     "Cuddapah - VIJAYAWADA": {
-      "T_plus_1": 8154.5,
-      "T_plus_7": 10456,
-      "T_plus_15": 4213,
-      "T_plus_30": 5299,
-      "T_plus_45": 2760
+      "T_plus_7": 5875,
+      "T_plus_15": 5299,
+      "T_plus_30": 4761.5
     },
     "Cuddapah - VISAKHAPATNAM": {
-      "T_plus_1": 10191,
-      "T_plus_7": 7516,
-      "T_plus_30": 6395,
+      "T_plus_15": 6992,
       "T_plus_45": 6395
     },
     "KURNOOL - VISAKHAPATNAM": {
-      "T_plus_1": 8528,
-      "T_plus_15": 8301.5,
-      "T_plus_45": 7143
+      "T_plus_7": 8255.5,
+      "T_plus_30": 8047.5
     },
     "TIRUPATI - HYDERABAD": {
-      "T_plus_1": 6657
+      "T_plus_1": 8054.5
     },
     "TIRUPATI - KALABURAGI": {},
     "TIRUPATI - KOLHAPUR": {},
