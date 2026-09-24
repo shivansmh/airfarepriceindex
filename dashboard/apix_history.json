@@ -190,5 +190,13 @@
     "price_change_from_base_percent": -100.0,
     "direction": "fell",
     "route_level_apix": {}
+  },
+  {
+    "date": "2026-09-24",
+    "generated_at": "2026-09-24T23:33:08",
+    "daily_apix": 0.0,
+    "price_change_from_base_percent": -100.0,
+    "direction": "fell",
+    "route_level_apix": {}
   }
 ]
