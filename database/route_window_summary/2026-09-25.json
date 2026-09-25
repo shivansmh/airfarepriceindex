@@ -1,0 +1,117 @@
+{
+  "table": "route_window_summary",
+  "schema": [
+    "date",
+    "route",
+    "booking_window",
+    "representative_price",
+    "sample_size"
+  ],
+  "rows": [
+    {
+      "date": "2026-09-25",
+      "route": "DEL-BOM",
+      "booking_window": "T_plus_15",
+      "representative_price": 9972.5,
+      "sample_size": 168
+    },
+    {
+      "date": "2026-09-25",
+      "route": "DEL-BOM",
+      "booking_window": "T_plus_1",
+      "representative_price": 11175.0,
+      "sample_size": 165
+    },
+    {
+      "date": "2026-09-25",
+      "route": "DEL-BOM",
+      "booking_window": "T_plus_45",
+      "representative_price": 10786.0,
+      "sample_size": 180
+    },
+    {
+      "date": "2026-09-25",
+      "route": "DEL-BOM",
+      "booking_window": "T_plus_7",
+      "representative_price": 9957.0,
+      "sample_size": 169
+    },
+    {
+      "date": "2026-09-25",
+      "route": "DEL-BOM",
+      "booking_window": "T_plus_30",
+      "representative_price": 10425.0,
+      "sample_size": 173
+    },
+    {
+      "date": "2026-09-25",
+      "route": "DEL-BLR",
+      "booking_window": "T_plus_1",
+      "representative_price": 11897.0,
+      "sample_size": 152
+    },
+    {
+      "date": "2026-09-25",
+      "route": "DEL-BLR",
+      "booking_window": "T_plus_15",
+      "representative_price": 11441.0,
+      "sample_size": 155
+    },
+    {
+      "date": "2026-09-25",
+      "route": "DEL-BLR",
+      "booking_window": "T_plus_30",
+      "representative_price": 15737.0,
+      "sample_size": 173
+    },
+    {
+      "date": "2026-09-25",
+      "route": "DEL-BLR",
+      "booking_window": "T_plus_7",
+      "representative_price": 11420.0,
+      "sample_size": 155
+    },
+    {
+      "date": "2026-09-25",
+      "route": "DEL-BLR",
+      "booking_window": "T_plus_45",
+      "representative_price": 13927.0,
+      "sample_size": 179
+    },
+    {
+      "date": "2026-09-25",
+      "route": "CCU-BOM",
+      "booking_window": "T_plus_1",
+      "representative_price": 16078.0,
+      "sample_size": 140
+    },
+    {
+      "date": "2026-09-25",
+      "route": "CCU-BOM",
+      "booking_window": "T_plus_7",
+      "representative_price": 14045.5,
+      "sample_size": 150
+    },
+    {
+      "date": "2026-09-25",
+      "route": "CCU-BOM",
+      "booking_window": "T_plus_15",
+      "representative_price": 14901.0,
+      "sample_size": 151
+    },
+    {
+      "date": "2026-09-25",
+      "route": "CCU-BOM",
+      "booking_window": "T_plus_30",
+      "representative_price": 27234.0,
+      "sample_size": 150
+    },
+    {
+      "date": "2026-09-25",
+      "route": "CCU-BOM",
+      "booking_window": "T_plus_45",
+      "representative_price": 18035.5,
+      "sample_size": 154
+    }
+  ]
+}
