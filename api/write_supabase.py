@@ -43,9 +43,15 @@ def build_rows() -> dict[str, list[dict[str, Any]]]:
     date_key = run_date()
     raw: list[dict[str, Any]] = []
     summaries: list[dict[str, Any]] = []
+    route_states = {
+        "DEL-BOM": "Delhi",
+        "DEL-BLR": "Delhi",
+        "CCU-BOM": "West Bengal",
+    }
     for route_payload in target.get("routes", []):
         route_name = route_payload.get("route_name") or route_payload.get("route", "")
         route = route_code(route_name)
+        state = route_states.get(route, "Unknown")
         for window, result in (route_payload.get("results") or {}).items():
             prices: list[float] = []
             for flight in result.get("flights", []) or []:
@@ -54,6 +60,7 @@ def build_rows() -> dict[str, list[dict[str, Any]]]:
                     prices.append(price)
                 raw.append({
                     "scrape_date": date_key,
+                    "state": state,
                     "route": route,
                     "booking_window": window,
                     "carrier": flight.get("airline") or carrier_from_flight_number(flight.get("flight_number")),
@@ -70,13 +77,14 @@ def build_rows() -> dict[str, list[dict[str, Any]]]:
                 })
             summaries.append({
                 "date": date_key,
+                "state": state,
                 "route": route,
                 "booking_window": window,
                 "representative_price": statistics.median(prices) if prices else None,
                 "sample_size": len(prices),
             })
     route_indexes = [
-        {"date": date_key, "route": route_code(route), "route_level_index": value, "explanation_text": None}
+        {"date": date_key, "state": route_states.get(route_code(route), "Unknown"), "route": route_code(route), "route_level_index": value, "explanation_text": None}
         for route, value in (apix.get("route_level_apix", {}) or {}).items()
     ]
     daily = apix.get("daily_apix")
@@ -108,14 +116,14 @@ def post_batch(client: httpx.Client, base_url: str, key: str, table: str, rows: 
         print(f"{table}: no rows")
         return
     if table == "raw_scraped_flights":
-        identity = ("scrape_date", "route", "booking_window", "flight_number", "departure_time", "arrival_time", "price", "source_site")
+        identity = ("state", "scrape_date", "route", "booking_window", "flight_number", "departure_time", "arrival_time", "price", "source_site")
         unique_rows = {}
         for row in rows:
             unique_rows[tuple(row.get(field) for field in identity)] = row
         rows = list(unique_rows.values())
     url = f"{base_url}/rest/v1/{table}"
     if table == "raw_scraped_flights":
-        url += "?on_conflict=scrape_date,route,booking_window,flight_number,departure_time,arrival_time,price,source_site"
+        url += "?on_conflict=state,scrape_date,route,booking_window,flight_number,departure_time,arrival_time,price,source_site"
     headers = {
         "apikey": key,
         "Authorization": f"Bearer {key}",
