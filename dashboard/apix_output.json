@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-01T22:49:17",
+  "generated_at": "2026-10-02T22:24:38",
   "base_file": "/home/runner/work/airfarepriceindex/airfarepriceindex/data/base_day.txt",
   "target_file": "/home/runner/work/airfarepriceindex/airfarepriceindex/dashboard/target_day.txt",
   "json_output_file": "/home/runner/work/airfarepriceindex/airfarepriceindex/dashboard/apix_output.json",
@@ -28,25 +28,25 @@
   },
   "target_medians": {
     "Delhi - Bombay": {
-      "T_plus_15": 9583,
-      "T_plus_7": 10283,
-      "T_plus_1": 14624,
-      "T_plus_30": 12361,
-      "T_plus_45": 14369
+      "T_plus_1": 16895,
+      "T_plus_7": 9787.5,
+      "T_plus_15": 9576,
+      "T_plus_30": 9729,
+      "T_plus_45": 12043
     },
     "Delhi - Bengaluru": {
-      "T_plus_1": 14292,
-      "T_plus_7": 13480.5,
+      "T_plus_1": 17249,
+      "T_plus_7": 13645,
       "T_plus_15": 13264,
-      "T_plus_30": 14229,
-      "T_plus_45": 15999
+      "T_plus_30": 12879,
+      "T_plus_45": 14209
     },
     "Calcutta - Bombay": {
-      "T_plus_1": 14691,
-      "T_plus_7": 16935.5,
-      "T_plus_15": 18878,
-      "T_plus_30": 20936,
-      "T_plus_45": 20918
+      "T_plus_7": 16581,
+      "T_plus_1": 26344,
+      "T_plus_15": 18467,
+      "T_plus_30": 17409,
+      "T_plus_45": 18521.5
     }
   },
   "window_weights": {
@@ -62,29 +62,29 @@
     "Calcutta - Bombay": 0.3
   },
   "route_level_apix": {
-    "Delhi - Bengaluru": 152.643825,
-    "Delhi - Bombay": 173.734879,
-    "Calcutta - Bombay": 194.560931
+    "Delhi - Bengaluru": 148.87303,
+    "Delhi - Bombay": 159.827937,
+    "Calcutta - Bombay": 187.642223
   },
   "route_details": {
     "Delhi - Bengaluru": {
       "route_weight": 0.3,
       "active_window_weight": 1.0,
-      "route_level_apix": 152.643825,
+      "route_level_apix": 148.87303,
       "windows": {
         "T_plus_45": {
           "weight": 0.15,
           "base_median_price": 10048,
-          "target_median_price": 15999,
-          "price_relativity": 159.225717,
-          "weighted_contribution": 23.883857
+          "target_median_price": 14209,
+          "price_relativity": 141.411226,
+          "weighted_contribution": 21.211684
         },
         "T_plus_30": {
           "weight": 0.2,
           "base_median_price": 8829,
-          "target_median_price": 14229,
-          "price_relativity": 161.16208,
-          "weighted_contribution": 32.232416
+          "target_median_price": 12879,
+          "price_relativity": 145.87156,
+          "weighted_contribution": 29.174312
         },
         "T_plus_15": {
           "weight": 0.3,
@@ -96,107 +96,107 @@
         "T_plus_7": {
           "weight": 0.3,
           "base_median_price": 8609,
-          "target_median_price": 13480.5,
-          "price_relativity": 156.586131,
-          "weighted_contribution": 46.975839
+          "target_median_price": 13645,
+          "price_relativity": 158.496922,
+          "weighted_contribution": 47.549077
         },
         "T_plus_1": {
           "weight": 0.05,
           "base_median_price": 10665.5,
-          "target_median_price": 14292,
-          "price_relativity": 134.002156,
-          "weighted_contribution": 6.700108
+          "target_median_price": 17249,
+          "price_relativity": 161.727064,
+          "weighted_contribution": 8.086353
         }
       }
     },
     "Delhi - Bombay": {
       "route_weight": 0.4,
       "active_window_weight": 1.0,
-      "route_level_apix": 173.734879,
+      "route_level_apix": 159.827937,
       "windows": {
         "T_plus_45": {
           "weight": 0.15,
           "base_median_price": 6684,
-          "target_median_price": 14369,
-          "price_relativity": 214.976062,
-          "weighted_contribution": 32.246409
+          "target_median_price": 12043,
+          "price_relativity": 180.176541,
+          "weighted_contribution": 27.026481
         },
         "T_plus_30": {
           "weight": 0.2,
           "base_median_price": 6530,
-          "target_median_price": 12361,
-          "price_relativity": 189.295559,
-          "weighted_contribution": 37.859112
+          "target_median_price": 9729,
+          "price_relativity": 148.98928,
+          "weighted_contribution": 29.797856
         },
         "T_plus_15": {
           "weight": 0.3,
           "base_median_price": 6530,
-          "target_median_price": 9583,
-          "price_relativity": 146.753446,
-          "weighted_contribution": 44.026034
+          "target_median_price": 9576,
+          "price_relativity": 146.646248,
+          "weighted_contribution": 43.993874
         },
         "T_plus_7": {
           "weight": 0.3,
           "base_median_price": 6373,
-          "target_median_price": 10283,
-          "price_relativity": 161.352581,
-          "weighted_contribution": 48.405774
+          "target_median_price": 9787.5,
+          "price_relativity": 153.577593,
+          "weighted_contribution": 46.073278
         },
         "T_plus_1": {
           "weight": 0.05,
           "base_median_price": 6530,
-          "target_median_price": 14624,
-          "price_relativity": 223.950995,
-          "weighted_contribution": 11.19755
+          "target_median_price": 16895,
+          "price_relativity": 258.728943,
+          "weighted_contribution": 12.936447
         }
       }
     },
     "Calcutta - Bombay": {
       "route_weight": 0.3,
       "active_window_weight": 1.0,
-      "route_level_apix": 194.560931,
+      "route_level_apix": 187.642223,
       "windows": {
         "T_plus_45": {
           "weight": 0.15,
           "base_median_price": 12915,
-          "target_median_price": 20918,
-          "price_relativity": 161.966705,
-          "weighted_contribution": 24.295006
+          "target_median_price": 18521.5,
+          "price_relativity": 143.410763,
+          "weighted_contribution": 21.511614
         },
         "T_plus_30": {
           "weight": 0.2,
           "base_median_price": 9138,
-          "target_median_price": 20936,
-          "price_relativity": 229.109214,
-          "weighted_contribution": 45.821843
+          "target_median_price": 17409,
+          "price_relativity": 190.512147,
+          "weighted_contribution": 38.102429
         },
         "T_plus_15": {
           "weight": 0.3,
           "base_median_price": 9348,
-          "target_median_price": 18878,
-          "price_relativity": 201.946941,
-          "weighted_contribution": 60.584082
+          "target_median_price": 18467,
+          "price_relativity": 197.550278,
+          "weighted_contribution": 59.265083
         },
         "T_plus_7": {
           "weight": 0.3,
           "base_median_price": 9041,
-          "target_median_price": 16935.5,
-          "price_relativity": 187.318881,
-          "weighted_contribution": 56.195664
+          "target_median_price": 16581,
+          "price_relativity": 183.397854,
+          "weighted_contribution": 55.019356
         },
         "T_plus_1": {
           "weight": 0.05,
           "base_median_price": 9584,
-          "target_median_price": 14691,
-          "price_relativity": 153.286728,
-          "weighted_contribution": 7.664336
+          "target_median_price": 26344,
+          "price_relativity": 274.874791,
+          "weighted_contribution": 13.74374
         }
       }
     }
   },
   "active_route_weight": 1.0,
-  "daily_apix": 173.655378,
-  "price_change_from_base_percent": 73.655378,
+  "daily_apix": 164.885751,
+  "price_change_from_base_percent": 64.885751,
   "direction": "rose",
   "warnings": []
 }
