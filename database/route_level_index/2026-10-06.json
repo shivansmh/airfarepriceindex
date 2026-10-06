@@ -1,0 +1,29 @@
+{
+  "table": "route_level_index",
+  "schema": [
+    "date",
+    "route",
+    "route_level_index",
+    "explanation_text"
+  ],
+  "rows": [
+    {
+      "date": "2026-10-06",
+      "route": "DEL-BLR",
+      "route_level_index": 141.834606,
+      "explanation_text": null
+    },
+    {
+      "date": "2026-10-06",
+      "route": "DEL-BOM",
+      "route_level_index": 165.147832,
+      "explanation_text": null
+    },
+    {
+      "date": "2026-10-06",
+      "route": "CCU-BOM",
+      "route_level_index": 184.223226,
+      "explanation_text": null
+    }
+  ]
+}
