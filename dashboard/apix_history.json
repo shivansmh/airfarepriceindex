@@ -322,5 +322,17 @@
       "Delhi - Bombay": 164.45929,
       "Calcutta - Bombay": 217.808742
     }
+  },
+  {
+    "date": "2026-10-09",
+    "generated_at": "2026-10-09T22:47:30",
+    "daily_apix": 188.780833,
+    "price_change_from_base_percent": 88.780833,
+    "direction": "rose",
+    "route_level_apix": {
+      "Delhi - Bengaluru": 169.401185,
+      "Delhi - Bombay": 180.654543,
+      "Calcutta - Bombay": 218.995536
+    }
   }
 ]
