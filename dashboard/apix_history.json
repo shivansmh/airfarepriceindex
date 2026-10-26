@@ -1,17 +1,5 @@
 [
   {
-    "date": "2026-09-19",
-    "generated_at": "2026-09-19T20:52:55",
-    "daily_apix": 164.617407,
-    "price_change_from_base_percent": 64.617407,
-    "direction": "rose",
-    "route_level_apix": {
-      "Delhi - Bengaluru": 145.774793,
-      "Delhi - Bombay": 162.086524,
-      "Calcutta - Bombay": 186.83453
-    }
-  },
-  {
     "date": "2026-09-25",
     "generated_at": "2026-09-25T21:43:29",
     "daily_apix": 163.787403,
@@ -357,6 +345,18 @@
       "Delhi - Bengaluru": 158.262076,
       "Delhi - Bombay": 169.69984,
       "Calcutta - Bombay": 179.225022
+    }
+  },
+  {
+    "date": "2026-10-26",
+    "generated_at": "2026-10-26T22:48:42",
+    "daily_apix": 165.473759,
+    "price_change_from_base_percent": 65.473759,
+    "direction": "rose",
+    "route_level_apix": {
+      "Delhi - Bengaluru": 152.67913,
+      "Delhi - Bombay": 168.151319,
+      "Calcutta - Bombay": 174.698309
     }
   }
 ]
