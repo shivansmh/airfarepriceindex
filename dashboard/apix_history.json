@@ -349,14 +349,14 @@
   },
   {
     "date": "2026-11-12",
-    "generated_at": "2026-11-12T00:54:16",
-    "daily_apix": 193.09409,
-    "price_change_from_base_percent": 93.09409,
+    "generated_at": "2026-11-12T23:44:17",
+    "daily_apix": 190.344426,
+    "price_change_from_base_percent": 90.344426,
     "direction": "rose",
     "route_level_apix": {
-      "Delhi - Bengaluru": 161.858214,
-      "Delhi - Bombay": 217.609604,
-      "Calcutta - Bombay": 191.642613
+      "Delhi - Bengaluru": 164.157452,
+      "Delhi - Bombay": 210.353017,
+      "Calcutta - Bombay": 189.853279
     }
   }
 ]
